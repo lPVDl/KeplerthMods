@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 using Keplerth;
 using Harmony;
 
@@ -13,6 +14,13 @@ namespace ChassisMod.Core
         public static void Set(string id, Sprite sprite)
         {
             Sprites[id] = sprite;
+        }
+
+        public static string FindOrAdd(Sprite sprite)
+        {
+            var key = Sprites.FirstOrDefault(x => x.Value == sprite).Key;
+            if (key != null) return key;
+            return Add(sprite);
         }
 
         public static string Add(Sprite sprite)

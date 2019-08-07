@@ -8,33 +8,16 @@ namespace ChassisMod
 {
     public sealed class Weapon : DataWrapper<ConfigWeapon>
     {
-        public Sprite Sprite
+        public PropertyWrapper<string, Sprite, PropertyIdentity.ID0> Icon
         {
-            set
-            {
-                if (value == null) throw new ArgumentNullException("value was null");
-
-                var sprite = SpritePatcher.Add(value);
-                var patchInfo = $"SET_SPRITE [{this}] -> {value}";
-                AddModification(patchInfo, weapon =>
-                {
-                    weapon.Texture = sprite;
-                });
-            }
+            get => this;
+            set => value.Patch(this, "Icon", x => x.Texture, (x, v) => x.Texture = v, x => SpritePatcher.FindOrAdd(x));
         }
 
-        public float AttackSpeed
+        public PropertyWrapper<float, PropertyIdentity.ID1> AttackSpeed
         {
-            set
-            {
-                if (value <= 0) throw new ArgumentException("value must be greater than zero");
-
-                var patchInfo = $"SET_ATTACK_SPEED [{this}] -> {value}";
-                AddModification(patchInfo, weapon => 
-                {
-                    weapon.AttackSpeed = value;
-                });
-            }
+            get => this;
+            set => value.Patch(this, "AttackSpeed", x => x.AttackSpeed, (x, v) => x.AttackSpeed = Math.Max(v, .01f));
         }
 
         internal Weapon(string name, int id) : base(name, id) { }
@@ -45,8 +28,8 @@ namespace ChassisMod
         {
             if (source == null) throw new ArgumentNullException("source was null");
 
-            var patchInfo = $"COPY_TO [{this}] FROM [{source}]";
-            AddModification(patchInfo, item => 
+            // var patchInfo = $"{this} = {source}";
+            AddModification("", item => 
             {
                 var data = ConfigWeapon.Table[source.ID];
                 item.CopyInstanceFieldValues(data);

@@ -19,7 +19,10 @@ namespace ChassisMod
                 Tips = "CraftBaseTips" + ID,
                 Introduce = "CraftBaseIntroduce" + ID
             };
-            AddInstatiation(data);
+
+            var craftNames = crafts.Select(x => x.Name);
+
+            AddInstatiation(data, string.Join(", ", craftNames));
         }
 
         internal CraftGroup(string name, int id) : base(name, id) { }

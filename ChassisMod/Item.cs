@@ -11,94 +11,45 @@ namespace ChassisMod
     {
         public Weapon Weapon { get; }
 
-        public Sprite Icon
+        public PropertyWrapper<string, Sprite, PropertyIdentity.ID0> Icon
         {
-            set
-            {
-                if (value == null) throw new ArgumentNullException("value was null");
-
-                var sprite = SpritePatcher.Add(value);
-                var patchInfo = $"SET_ICON [{this}] -> {value}";
-                AddModification(patchInfo, item =>
-                {
-                    item.DropTexture = sprite;
-                });
-            }
+            get => this;
+            set => value.Patch(this, "Icon", x => x.DropTexture, (x, v) => x.DropTexture = v, x => SpritePatcher.FindOrAdd(x));
         }
 
-        public int Durability
+        public PropertyWrapper<int, PropertyIdentity.ID1> Durability
         {
-            set
-            {
-                if (value <= 0) throw new ArgumentException("value must be greater than zero");
-
-                var patchInfo = $"SET_DURABILITY [{this}] -> {value}";
-                AddModification(patchInfo, item =>
-                {
-                    item.Durability = value;
-                });
-            }
+            get => this;
+            set => value.Patch(this, "Durability", x => x.Durability, (x, v) => x.Durability = Math.Max(v, 1));
         }
 
-        public int ItemType
+        public PropertyWrapper<int, PropertyIdentity.ID2> ItemType
         {
-            set
-            {
-                if (value < 0) throw new ArgumentException("value must be greater than zero");
-
-                var patchInfo = $"SET_ITEM_TYPE [{this}] -> {value}";
-                AddModification(patchInfo, item =>
-                {
-                    item.ItemType = value;
-                });
-            }
+            get => this;
+            set => value.Patch(this, "ItemType", x => x.ItemType, (x, v) => x.ItemType = Math.Max(v, 0));
         }
 
-        public int WallDamageBonus
+        public PropertyWrapper<int, PropertyIdentity.ID3> WallDamageBonus
         {
-            set
-            {
-                if (value <= 0) throw new ArgumentException("value must be greater than zero");
-
-                var patchInfo = $"SET_WALL_DMG_BONUS [{this}] -> {value}";
-                AddModification(patchInfo, item =>
-                {
-                    item.AttWall = value;
-                });
-            }
+            get => this;
+            set => value.Patch(this, "WallDamageBonus", x => x.AttWall, (x, v) => x.AttWall = Math.Max(v, 1));
         }
 
-        public int TreeDamageBonus
+        public PropertyWrapper<int, PropertyIdentity.ID4> TreeDamageBonus
         {
-            set
-            {
-                if (value <= 0) throw new ArgumentException("value must be greater than zero");
-
-                var patchInfo = $"SET_TREE_DMG_BONUS [{this}] -> {value}";
-                AddModification(patchInfo, item =>
-                {
-                    item.AttTree = value;
-                });
-            }
+            get => this;
+            set => value.Patch(this, "TreeDamageBonus", x => x.AttTree, (x, v) => x.AttTree = Math.Max(v, 1));
         }
 
-        public int BuildDamageBonus
+        public PropertyWrapper<int, PropertyIdentity.ID5> BuildDamageBonus
         {
-            set
-            {
-                if (value <= 0) throw new ArgumentException("value must be greater than zero");
-
-                var patchInfo = $"SET_BUILD_DMG_BONUS [{this}] -> {value}";
-                AddModification(patchInfo, item =>
-                {
-                    item.AttBuild = value;
-                });
-            }
+            get => this;
+            set => value.Patch(this, "BuildDamageBonus", x => x.AttBuild, (x, v) => x.AttBuild = Math.Max(v, 1));
         }
 
         internal Item(string name, int id) : base(name, id)
         {
-            Weapon = new Weapon(AssemblyID, Name, ID);
+            Weapon = new Weapon(AssemblyID, Name + ".Weapon", ID);
         }
 
         public Item(string name, Item source) : base(Assembly.GetCallingAssembly().GetName().Name, name)
@@ -111,10 +62,10 @@ namespace ChassisMod
                 Description = "ItemDes" + ID,
                 FunctionDes = "ItemFunctionDes" + ID,
             };
-            AddInstatiation(data);
+            AddInstatiation(data, source.ToString());
 
-            Weapon = new Weapon(AssemblyID, Name, ID);
-            Weapon.AddInstatiation(new ConfigWeapon());
+            Weapon = new Weapon(AssemblyID, Name + ".Weapon", ID);
+            Weapon.AddInstatiation(new ConfigWeapon(), source.Weapon.ToString());
 
             CopyFrom(source);
             Weapon.CopyFrom(source.Weapon);
@@ -125,8 +76,8 @@ namespace ChassisMod
 
         internal void CopyFrom(Item source)
         { 
-            var patchInfo = $"COPY_TO [{this}] FROM [{source}]";
-            AddModification(patchInfo, CopyData);
+            // var patchInfo = $"{this} = {source}";
+            AddModification("", CopyData);
 
             void CopyData(ConfigItem item)
             {

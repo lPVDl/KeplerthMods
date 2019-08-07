@@ -23,7 +23,8 @@ namespace ChassisMod.Core
                 try
                 {
                     patch.PatchAction();
-                    PatchLog.WriteLine(patch.Description);
+                    if (!string.IsNullOrEmpty(patch.Description))
+                        PatchLog.WriteLine(patch.Description);
                 }
                 catch(Exception e) { Log.Exception(e, patch.Description); }
             }

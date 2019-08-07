@@ -14,11 +14,13 @@ namespace ChassisMod
             if (toInsert == null) throw new ArgumentNullException("toInsert was null");
             if (insertAt == null) throw new ArgumentNullException("insertAt was null");
 
-            var patchInfo = $"INSERT [{toInsert}] RELATIVE [{insertAt}] INTO [{this}]";
-            AddModification(patchInfo, Insert);
+            var patchInfo = $"{Name}.Crafts = ";
+            if (indexDelta <= 0)
+                patchInfo += $"[... >{toInsert}<, {insertAt} ...]";
+            else
+                patchInfo += $"[... {insertAt}, >{toInsert}< ...]";
 
-            // var patch = new DataModification<ConfigCraftTable>(patchInfo, ID, Insert);
-            // DataPatcher.Add(patch);
+            AddModification(patchInfo, Insert);
 
             void Insert(ConfigCraftTable table)
             {

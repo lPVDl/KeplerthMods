@@ -64,6 +64,9 @@
   <ItemGroup>
     <Compile Include="Core\Data\CraftTableDataHelper.cs" />
     <Compile Include="Core\Data\WeaponDataHelper.cs" />
+    <Compile Include="Core\PropertyIdentity.cs" />
+    <Compile Include="Core\PropertyPatcher.cs" />
+    <Compile Include="Core\PropertyWrapper.cs" />
     <Compile Include="Core\SpritePatcher.cs" />
     <Compile Include="Core\Data\Util\FormatUtil.cs" />
     <Compile Include="Core\Data\Util\PathUtil.cs" />

@@ -18,7 +18,7 @@ namespace ChassisMod.Core
             }
 
             OccupiedID[id] = name;
-            PatchLog.WriteLine($"NEW_ID [{name}({id})]");
+            PatchLog.WriteLine($"{name} = {id}");
 
             return id;
         }

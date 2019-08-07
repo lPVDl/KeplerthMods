@@ -4,9 +4,9 @@ using System;
 
 namespace ChassisMod.Core
 {
-    public abstract class DataWrapper<T> where T: DBBase
+    public abstract partial class DataWrapper<TConfig> where TConfig: DBBase
     {
-        protected static int[] EmptyArray = new int[] { };
+        protected static int[] EmptyArray = new int[] { 0 };
 
         public int ID { get; private set; }
 
@@ -14,7 +14,7 @@ namespace ChassisMod.Core
         internal string Name { get; private set; }
         internal string FullName { get; private set; }
 
-        internal bool Exists(int configID) => DataHelper<T>.Database.ContainsKey(configID);
+        internal bool Exists(int configID) => DataHelper<TConfig>.Database.ContainsKey(configID);
 
 
         /// <summary>
@@ -60,20 +60,20 @@ namespace ChassisMod.Core
             ID = id;
         }
 
-        internal void AddInstatiation(T data)
+        internal void AddInstatiation(TConfig data, string dataInfo = "")
         {
-            var patch = new DataReplacement<T>($"CREATE [{ToString()}]", ID, data);
+            var patch = new DataReplacement<TConfig>($"new {ToString()}({dataInfo})", ID, data);
             DataPatcher.Add(patch);
         }
 
-        internal void AddModification(string description, Action<T> modification)
+        internal void AddModification(string description, Action<TConfig> modification)
         {
-            var patch = new DataModification<T>(description, ID, modification);
+            var patch = new DataModification<TConfig>(description, ID, modification);
             DataPatcher.Add(patch);
         }
 
-        public override string ToString() => $"{FullName}({ID})";
+        public override string ToString() => Name;
 
-        private static string CreateFullName(string assemblyID, string name) => string.Join(".", typeof(T).Name, assemblyID, name);
+        private static string CreateFullName(string assemblyID, string name) => string.Join(".", typeof(TConfig).Name, assemblyID, name);
     }
 }

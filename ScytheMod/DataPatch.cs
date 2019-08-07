@@ -35,7 +35,7 @@ namespace ScytheMod
                 {
                     Scythes[i] = new Item(materials[i] + "Scythe", pickaxes[i]);
                     Scythes[i].Icon = assets.LoadAsset<Sprite>("Scythe" + materials[i] + "Icon");
-                    Scythes[i].Weapon.Sprite = assets.LoadAsset<Sprite>("Scythe" + materials[i] + "Weapon");
+                    Scythes[i].Weapon.Icon = assets.LoadAsset<Sprite>("Scythe" + materials[i] + "Weapon");
                     Scythes[i].Weapon.AttackSpeed = attackSpeeds[i];
                     Scythes[i].Durability = durabilities[i];
                     Scythes[i].BuildDamageBonus = 1;
