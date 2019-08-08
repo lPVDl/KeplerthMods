@@ -13,6 +13,7 @@ namespace ChassisMod.Core.Data
             // CreateFile(folder, "Building", DataDescription.Create(BuildingDataHelper.Instance));
             CreateFile(folder, "CraftTable", DataDescription.Create(CraftTableDataHelper.Instance));
             CreateFile(folder, "Weapon", DataDescription.Create(WeaponDataHelper.Instance));
+            CreateFile(folder, "Food", DataDescription.Create(FoodDataHelper.Instance));
         }
 
         private static void CreateFile(string folder, string className, IEnumerable<DataDescription> data)
@@ -31,7 +32,7 @@ namespace ChassisMod.Core.Data
                     
                     file.WriteLine("\t\t/// <summary>");
                     foreach(var line in entity.Comment)
-                        file.WriteLine($"\t\t/// {line}");
+                        file.WriteLine($"\t\t/// {line}<para/>");
                     file.WriteLine("\t\t/// </summary>");
                     
                     file.Write("\t\t");

@@ -63,7 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Data\CraftTableDataHelper.cs" />
+    <Compile Include="Core\Data\FoodDataHelper.cs" />
     <Compile Include="Core\Data\WeaponDataHelper.cs" />
+    <Compile Include="Food.cs" />
     <Compile Include="Core\PropertyIdentity.cs" />
     <Compile Include="Core\PropertyPatcher.cs" />
     <Compile Include="Core\PropertyWrapper.cs" />

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using ChassisMod.Core.Data.Util;
-using Common.Reflection;
 using System.Linq;
 using DataBase;
 using System;
@@ -20,7 +19,7 @@ namespace ChassisMod.Core.Data
             {
                 var item = Database[entityID];
                 var name = LanguageDataHelper.English[item.Name];
-                if (!LanguageDataHelper.IsDefaultName(name)) return Language.Normalize(name);
+                if (!LanguageDataHelper.IsDefault(name)) return Language.Normalize(name);
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 
@@ -31,12 +30,9 @@ namespace ChassisMod.Core.Data
         {
             try
             {
-                string[] blacklist = { "Name", "Description", "FunctionDes" };
                 var item = Database[entityID];
-                return from prop in item.GetInstanceProperties()
-                       let name = prop.Name
-                       where !blacklist.Contains(name)
-                       select name + ": " + FormatUtil.ContentToString(prop.GetValue(item)) + "<para/>";
+
+                return FormatUtil.GetPropertiesWithValues(item, nameof(item.Name), nameof(item.Description), nameof(item.FunctionDes));
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 

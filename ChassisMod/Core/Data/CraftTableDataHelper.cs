@@ -18,7 +18,7 @@ namespace ChassisMod.Core.Data
             {
                 var building = BuildingDataHelper.Database[entityID];
                 var name = LanguageDataHelper.English[building.Name];
-                if (!LanguageDataHelper.IsDefaultName(name)) return Language.Normalize(name);
+                if (!LanguageDataHelper.IsDefault(name)) return Language.Normalize(name);
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 
@@ -29,12 +29,14 @@ namespace ChassisMod.Core.Data
         {
             try
             {
+                var result = new List<string>();
                 var table = Database[entityID];
-                var comment = "CraftGroups: ";
-                var groups = from cgID in table.CraftBaseList select CraftGroupDataHelper.Instance.NameFor(cgID);
-                comment += string.Join(", ", groups);
 
-                return new string[] { comment };
+                var groups = from cgID in table.CraftBaseList
+                             select CraftGroupDataHelper.Instance.NameFor(cgID);
+                result.Add("CraftGroups: " + string.Join(", ", groups));
+
+                return result;
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 

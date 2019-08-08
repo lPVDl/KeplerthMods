@@ -20,7 +20,7 @@ namespace ChassisMod.Core.Data
             {
                 var item = ItemDataHelper.Database[entityID];
                 var name = LanguageDataHelper.English[item.Name];
-                if (!LanguageDataHelper.IsDefaultName(name)) return Language.Normalize(name);
+                if (!LanguageDataHelper.IsDefault(name)) return Language.Normalize(name);
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 

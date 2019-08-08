@@ -16,7 +16,7 @@ namespace ChassisMod.Core.Data
             {
                 var building = Database[entityID];
                 var name = LanguageDataHelper.English[building.Name];
-                if (!LanguageDataHelper.IsDefaultName(name)) return Language.Normalize(name);
+                if (!LanguageDataHelper.IsDefault(name)) return Language.Normalize(name);
             }
             catch (Exception) { }
 

@@ -18,7 +18,7 @@ namespace ChassisMod.Core.Data
             {
                 var group = Database[entityID];
                 var name = LanguageDataHelper.English[group.Name];
-                if (!LanguageDataHelper.IsDefaultName(name)) return Language.Normalize(name);
+                if (!LanguageDataHelper.IsDefault(name)) return Language.Normalize(name);
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 
@@ -29,20 +29,19 @@ namespace ChassisMod.Core.Data
         {
             try
             {
+                var result = new List<string>();
                 var group = Database[entityID];
-                var comment = "Crafts: ";
-                var crafts = group.CraftCellList.Select(id => CraftDataHelper.Instance.NameFor(id));
-                comment += string.Join(", ", crafts);
-                comment += ".<para/>";
 
-                comment += "At: ";
+                var crafts = group.CraftCellList.Select(id => CraftDataHelper.Instance.NameFor(id));
+                result.Add("Crafts: " + string.Join(", ", crafts));
+
                 var tableDB = CraftTableDataHelper.Database;
                 var tables = from tableID in tableDB.Keys
                              where tableDB[tableID].CraftBaseList.Contains(entityID)
                              select CraftTableDataHelper.Instance.NameFor(tableID);
-                comment += string.Join(", ", tables);
+                result.Add("At: " + string.Join(", ", tables));
 
-                return new string[] { comment };
+                return result;
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 

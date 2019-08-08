@@ -10,9 +10,9 @@ namespace ChassisMod.Core.Data
         internal static List<Dictionary<string, string>> Database { get; } = LoadDatabase();
         internal static Dictionary<string, string> English { get; } = Database[1];
 
-        private static string[] DefaultNames = { "English", "0", "", null };
+        private static string[] DefaultText = { "English", "0", "", null };
 
-        public static bool IsDefaultName(string name) => DefaultNames.Any(x => x == name);
+        public static bool IsDefault(string text) => DefaultText.Any(x => x == text);
 
         private static List<Dictionary<string, string>> LoadDatabase()
         {

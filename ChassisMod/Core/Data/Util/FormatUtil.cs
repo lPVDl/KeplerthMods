@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿using System.Collections.Generic;
+using System.Collections;
+using Common.Reflection;
+using System.Linq;
 
 namespace ChassisMod.Core.Data.Util
 {
@@ -17,6 +20,14 @@ namespace ChassisMod.Core.Data.Util
             }
 
             return name + "_0";
+        }
+
+        public static IEnumerable<string> GetPropertiesWithValues<T>(T obj, params string[] toExclude)
+        {
+            return from prop in obj.GetInstanceProperties()
+                   let name = prop.Name
+                   where !toExclude.Any(x => x == name)
+                   select name + ": " + ContentToString(prop.GetValue(obj));
         }
 
         public static string ContentToString(object data)

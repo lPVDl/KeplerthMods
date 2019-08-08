@@ -19,7 +19,7 @@ namespace ChassisMod.Core.Data
                 var craft = Database[entityID];
                 var item = DataHelper<ConfigItem>.Database[craft.CraftItem];
                 var name = LanguageDataHelper.English[item.Name];
-                if (!LanguageDataHelper.IsDefaultName(name)) return Language.Normalize(name);
+                if (!LanguageDataHelper.IsDefault(name)) return Language.Normalize(name);
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 
