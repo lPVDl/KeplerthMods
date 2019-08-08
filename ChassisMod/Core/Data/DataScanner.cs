@@ -21,7 +21,7 @@ namespace ChassisMod.Core.Data
 
             using (var file = new StreamWriter(fileName))
             {
-                file.WriteLine("namespace ChassisMod.KeplerDatabase");
+                file.WriteLine("namespace ChassisMod.KeplerthDatabase");
                 file.WriteLine("{");
                 file.WriteLine("\tpublic static class " + className + "DB");
                 file.WriteLine("\t{");

@@ -1,4 +1,4 @@
-namespace ChassisMod.KeplerDatabase
+namespace ChassisMod.KeplerthDatabase
 {
 	public static class CraftDB
 	{

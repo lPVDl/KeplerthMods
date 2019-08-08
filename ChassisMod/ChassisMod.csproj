@@ -90,11 +90,11 @@
     <Compile Include="Core\LanguagePatcher.cs" />
     <Compile Include="Core\DataPatch.cs" />
     <Compile Include="Core\DataPatcher.cs" />
-    <Compile Include="KeplerDatabase\CraftDB.cs" />
-    <Compile Include="KeplerDatabase\CraftGroupDB.cs" />
-    <Compile Include="KeplerDatabase\CraftTableDB.cs" />
-    <Compile Include="KeplerDatabase\ItemDB.cs" />
-    <Compile Include="KeplerDatabase\WeaponDB.cs" />
+    <Compile Include="KeplerthDatabase\CraftDB.cs" />
+    <Compile Include="KeplerthDatabase\CraftGroupDB.cs" />
+    <Compile Include="KeplerthDatabase\CraftTableDB.cs" />
+    <Compile Include="KeplerthDatabase\ItemDB.cs" />
+    <Compile Include="KeplerthDatabase\WeaponDB.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Craft.cs" />
