@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScytheMod", "ScytheMod\Scyt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackSplitMod", "StackSplitMod\StackSplitMod.csproj", "{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationModuleTest", "TranslationModuleTest\TranslationModuleTest.csproj", "{68F8062D-E37F-47DA-AD30-82A9FFB1E2A5}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Common\Common.projitems*{476408a8-4a66-40d2-ac92-f881fd748587}*SharedItemsImports = 4
@@ -35,6 +37,10 @@ Global
 		{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F8062D-E37F-47DA-AD30-82A9FFB1E2A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F8062D-E37F-47DA-AD30-82A9FFB1E2A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F8062D-E37F-47DA-AD30-82A9FFB1E2A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F8062D-E37F-47DA-AD30-82A9FFB1E2A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
