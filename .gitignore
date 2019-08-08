@@ -4,7 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # Mod assemblies
-[Mm]od/[Aa]ssemblies/
+**/[Mm]od/[Aa]ssemblies/**
 
 # User-specific files
 *.suo
@@ -331,3 +331,5 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+ScytheMod/mod/Assemblies/ScytheMod.dll
