@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using DataBase;
+using Common;
 
 namespace ChassisMod.Core.Data
 {
@@ -12,34 +13,39 @@ namespace ChassisMod.Core.Data
 
         public static IEnumerable<DataDescription> Create<TConfig>(DataHelper<TConfig> helper) where TConfig : DBBase
         {
-            var data = from key in helper.Keys
-                         select new DataDescription()
-                         {
-                             Comment = helper.CommentFor(key),
-                             Name = helper.NameFor(key),
-                             ID = key
-                         };
+            var keys = helper.Keys.ToArray();
+            var data = new DataDescription[keys.Length];
 
-            var result = data.ToArray();
-            for (var i = 0; i < result.Length; i++)
+            for (var i = 0; i < keys.Length; i++)
             {
-                for (var j = i + 1; j < result.Length; j++)
+                if ((i + 1) % 30 == 0) Log.Message($"{helper.GetType().Name}: {i + 1}/{keys.Length}...");
+                data[i] = new DataDescription()
                 {
-                    if (result[i].Name == result[j].Name)
+                    Comment = helper.CommentFor(keys[i]),
+                    Name = helper.NameFor(keys[i]),
+                    ID = keys[i]
+                };
+            }
+
+            for (var i = 0; i < data.Length; i++)
+            {
+                for (var j = i + 1; j < data.Length; j++)
+                {
+                    if (data[i].Name == data[j].Name)
                     {
-                        var name = result[i].Name;
+                        var name = data[i].Name;
                         var counter = 0;
-                        for (var p = i; p < result.Length; p++)
-                            if (result[p].Name == name)
+                        for (var p = i; p < data.Length; p++)
+                            if (data[p].Name == name)
                             {
-                                result[p].Name += counter;
+                                data[p].Name += counter;
                                 counter++;
                             }
                     }
                 }
             }
 
-            return result;
+            return data;
         }
 
         private DataDescription() { }
