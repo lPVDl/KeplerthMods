@@ -2,6 +2,7 @@
 using System.Collections;
 using Common.Reflection;
 using System.Linq;
+using System;
 
 namespace ChassisMod.Core.Data.Util
 {
@@ -30,7 +31,7 @@ namespace ChassisMod.Core.Data.Util
                    select name + ": " + ContentToString(prop.GetValue(obj));
         }
 
-        public static string ContentToString(object data)
+        private static string ContentToString(object data)
         {
             if (data is IEnumerable)
             {
@@ -48,6 +49,22 @@ namespace ChassisMod.Core.Data.Util
             }
 
             return data.ToString();
+        }
+
+        public static IEnumerable<string> GroupJoin(string separator, int groupSize, IEnumerable<string> values)
+        {
+            if (groupSize <= 0) throw new ArgumentException("group size must be greater than zero");
+
+            var result = new List<string>();
+            var source = values.ToArray();
+            for(var i = 0; i < source.Length; i += groupSize)
+            {
+                var size = Math.Min(groupSize, source.Length - i);
+                var line = string.Join(separator, source, i, size);
+                result.Add(line);
+            }
+
+            return result;
         }
     }
 }

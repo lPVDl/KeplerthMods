@@ -32,8 +32,8 @@ namespace ChassisMod.Core.Data
             try
             {
                 var weapon = Database[entityID];
-                return from prop in weapon.GetInstanceProperties()
-                       select $"{prop.Name}: {FormatUtil.ContentToString(prop.GetValue(weapon))} <para/>";
+
+                return FormatUtil.GetPropertiesWithValues(weapon);
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 
