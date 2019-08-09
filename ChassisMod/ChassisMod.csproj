@@ -92,6 +92,7 @@
     <Compile Include="Core\LanguagePatcher.cs" />
     <Compile Include="Core\DataPatch.cs" />
     <Compile Include="Core\DataPatcher.cs" />
+    <Compile Include="KeplerthDatabase\BuildingDB.cs" />
     <Compile Include="KeplerthDatabase\CraftDB.cs" />
     <Compile Include="KeplerthDatabase\CraftGroupDB.cs" />
     <Compile Include="KeplerthDatabase\CraftTableDB.cs" />

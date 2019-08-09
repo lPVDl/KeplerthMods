@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using ChassisMod.Core.Data.Util;
 using DataBase;
 using System;
+using Common;
 
 namespace ChassisMod.Core.Data
 {
@@ -18,11 +20,23 @@ namespace ChassisMod.Core.Data
                 var name = LanguageDataHelper.English[building.Name];
                 if (!LanguageDataHelper.IsDefault(name)) return Language.Normalize(name);
             }
-            catch (Exception) { }
+            catch (Exception e) { Log.ExceptionOnce(e); }
 
             return "Building" + Language.Normalize(entityID);
         }
 
-        public override IEnumerable<string> CommentFor(int entityID) => new string[] { "" };
+        public override IEnumerable<string> CommentFor(int entityID)
+        {
+            try
+            {
+                var building = Database[entityID];
+                var props = FormatUtil.GetPropertiesWithValues(building, nameof(building.Name));
+                return FormatUtil.GroupJoin("; ", 2, props);
+                        
+            }
+            catch(Exception e) { Log.ExceptionOnce(e); }
+
+            return new string[] { "???" };
+        }
     }
 }

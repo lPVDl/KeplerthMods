@@ -10,7 +10,7 @@ namespace ChassisMod.Core.Data
             CreateFile(folder, "Item", DataDescription.Create(ItemDataHelper.Instance));
             CreateFile(folder, "Craft", DataDescription.Create(CraftDataHelper.Instance));
             CreateFile(folder, "CraftGroup", DataDescription.Create(CraftGroupDataHelper.Instance));
-            // CreateFile(folder, "Building", DataDescription.Create(BuildingDataHelper.Instance));
+            CreateFile(folder, "Building", DataDescription.Create(BuildingDataHelper.Instance));
             CreateFile(folder, "CraftTable", DataDescription.Create(CraftTableDataHelper.Instance));
             CreateFile(folder, "Weapon", DataDescription.Create(WeaponDataHelper.Instance));
             CreateFile(folder, "Food", DataDescription.Create(FoodDataHelper.Instance));
