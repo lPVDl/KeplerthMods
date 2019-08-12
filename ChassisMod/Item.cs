@@ -1,4 +1,5 @@
-﻿using Common.Reflection;
+﻿using ChassisMod.Core.Data;
+using Common.Reflection;
 using System.Reflection;
 using ChassisMod.Core;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace ChassisMod
     public sealed class Item : DataWrapper<ConfigItem>
     {
         public Weapon Weapon { get; }
+        public Food Food { get; }
 
         public PropertyWrapper<string, Sprite, PropertyIdentity.ID0> Icon
         {
@@ -50,6 +52,11 @@ namespace ChassisMod
         internal Item(string name, int id) : base(name, id)
         {
             Weapon = new Weapon(AssemblyID, Name + ".Weapon", ID);
+
+            if (FoodDataHelper.Database.ContainsKey(id))
+            {
+                Food = new Food(AssemblyID, Name + ".Food", ID);
+            }
         }
 
         public Item(string name, Item source) : base(Assembly.GetCallingAssembly().GetName().Name, name)
@@ -67,16 +74,23 @@ namespace ChassisMod
             Weapon = new Weapon(AssemblyID, Name + ".Weapon", ID);
             Weapon.AddInstatiation(new ConfigWeapon(), source.Weapon.ToString());
 
+            if (source.Food != null)
+            {
+                Food = new Food(AssemblyID, Name + ".Food", ID);
+                var foodData = new ConfigFood() { EatBuffDescription = "EatBuffDescription" + ID };
+                Food.AddInstatiation(foodData, source.Food.ToString());
+            }
+
             CopyFrom(source);
             Weapon.CopyFrom(source.Weapon);
+            if (Food != null) { Food.CopyFrom(source.Food); }
 
             LanguagePatcher.AddDefault(data.Description, "0");
             LanguagePatcher.AddDefault(data.FunctionDes, "0");
         }
 
         internal void CopyFrom(Item source)
-        { 
-            // var patchInfo = $"{this} = {source}";
+        {
             AddModification("", CopyData);
 
             void CopyData(ConfigItem item)
