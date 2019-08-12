@@ -20,7 +20,8 @@ namespace TranslationModuleTest
             private static Regex Charset { get; }
             private static Regex StringValue { get; }
             private static string CashPath { get; }
-            private static RateLimiter Limiter { get; }          
+            private static RateLimiter Limiter { get; }   
+            private static bool GotTooManyRequests { get; set; }
 
             static WebTranslator()
             {
@@ -63,7 +64,7 @@ namespace TranslationModuleTest
                 // if (!Cash.ContainsKey(languageID)) { Cash[languageID] = new Dictionary<string, string>(); }
                 // if (Cash[languageID].TryGetValue(text, out result)) { return true; }
 
-                if (!Limiter.TryUse()) return false;
+                if (GotTooManyRequests || !Limiter.TryUse()) return false;
 
                 var uri = string.Format(@"https://translate.googleapis.com/translate_a/single?client=gtx&sl={0}&tl={1}&dt=t&q={2}", fromLanguage, toLanguage, text);
 
@@ -72,7 +73,12 @@ namespace TranslationModuleTest
                 {
                     data = Client.DownloadData(uri);
                 }
-                catch (WebException e) { Console.WriteLine(e.Message); return false; }
+                catch (WebException e)
+                {
+                    Console.WriteLine(e.Message);
+                    if ((e.Response as HttpWebResponse).StatusCode == (HttpStatusCode)429) GotTooManyRequests = true;
+                    return false;
+                }
 
                 var encoding = Charset.Match(Client.ResponseHeaders["Content-Type"]).Value;
                 var response = Encoding.GetEncoding(encoding).GetString(data);
