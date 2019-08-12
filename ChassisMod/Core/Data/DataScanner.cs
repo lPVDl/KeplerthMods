@@ -14,6 +14,7 @@ namespace ChassisMod.Core.Data
             CreateFile(folder, "CraftTable", DataDescription.Create(CraftTableDataHelper.Instance));
             CreateFile(folder, "Weapon", DataDescription.Create(WeaponDataHelper.Instance));
             CreateFile(folder, "Food", DataDescription.Create(FoodDataHelper.Instance));
+            CreateFile(folder, "StatusEffect", DataDescription.Create(StatusEffectDataHelper.Instance));
         }
 
         private static void CreateFile(string folder, string className, IEnumerable<DataDescription> data)
