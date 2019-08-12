@@ -11,18 +11,22 @@ namespace TranslationModuleTest
 {
     class Program
     {
-        private static class GoogleTranslate
+        internal static class WebTranslator
         {
-            private static Dictionary<string, Dictionary<string, string>> Cash { get; }
+            public static bool Available => Limiter.CanUseNow;
+
+            private static Dictionary<int, Dictionary<string, string>> Cash { get; }
             private static WebClient Client { get; }
             private static Regex Charset { get; }
             private static Regex StringValue { get; }
-            private static string CashPath { get; } 
+            private static string CashPath { get; }
+            private static RateLimiter Limiter { get; }          
 
-            static GoogleTranslate()
-            {             
-                Cash = new Dictionary<string, Dictionary<string, string>>();
-                CashPath = Path.Combine(Path.GetTempPath(), "GoogleTranslate.cash");
+            static WebTranslator()
+            {
+                Limiter = new RateLimiter(3000, 1);
+                Cash = new Dictionary<int, Dictionary<string, string>>();
+                CashPath = Path.Combine(Path.GetTempPath(), "WebTranslator.cash");
                 if (File.Exists(CashPath))
                 {
                     try
@@ -31,7 +35,7 @@ namespace TranslationModuleTest
                         using (var zipStream = new GZipStream(stream, CompressionMode.Decompress))
                         {
                             var formatter = new BinaryFormatter();
-                            Cash = formatter.Deserialize(zipStream) as Dictionary<string, Dictionary<string, string>>;
+                            Cash = formatter.Deserialize(zipStream) as Dictionary<int, Dictionary<string, string>>;
                         }
                     }
                     catch (Exception) { }
@@ -48,20 +52,34 @@ namespace TranslationModuleTest
 
                 AppDomain.CurrentDomain.ProcessExit += OnProcessExit;
             }
+
+            public static void WaitUntilAvailable() => Limiter.WaitForNextUse();
           
-            public static string Translate(string text, string fromLanguage, string toLanguage)
+            public static bool TryTranslate(string text, string fromLanguage, string toLanguage, out string result)
             {
-                var languageID = fromLanguage + "->" + toLanguage;
-                if (!Cash.ContainsKey(languageID)) { Cash[languageID] = new Dictionary<string, string>(); }
-                if (Cash[languageID].TryGetValue(text, out var translated)) { return translated; }
+                result = null;
+
+                // var languageID = fromLanguage.GetHashCode() + toLanguage.GetHashCode();
+                // if (!Cash.ContainsKey(languageID)) { Cash[languageID] = new Dictionary<string, string>(); }
+                // if (Cash[languageID].TryGetValue(text, out result)) { return true; }
+
+                if (!Limiter.TryUse()) return false;
 
                 var uri = string.Format(@"https://translate.googleapis.com/translate_a/single?client=gtx&sl={0}&tl={1}&dt=t&q={2}", fromLanguage, toLanguage, text);
-                var data = Client.DownloadData(uri);
+
+                byte[] data;
+                try
+                {
+                    data = Client.DownloadData(uri);
+                }
+                catch (WebException e) { Console.WriteLine(e.Message); return false; }
+
                 var encoding = Charset.Match(Client.ResponseHeaders["Content-Type"]).Value;
                 var response = Encoding.GetEncoding(encoding).GetString(data);
-                Cash[languageID][text] = StringValue.Match(response).Value;
+                result = StringValue.Match(response).Value;
+                // Cash[languageID][text] = result;
 
-                return Cash[languageID][text];
+                return true;
             }
 
             private static void OnProcessExit(object sender, EventArgs args)
@@ -79,10 +97,81 @@ namespace TranslationModuleTest
             }
         }
 
+        internal sealed class RateLimiter
+        {
+            public bool CanUseNow
+            {
+                get
+                {
+                    if (_currentUses < _frameUses) return true;
+
+                    var frame = Environment.TickCount / _frameLength;
+                    if (frame != _currentFrame) return true;
+
+                    return false;
+                }
+            }
+
+            private int _frameLength;
+            private int _frameUses;
+            private int _currentFrame;
+            private int _currentUses;
+
+            public RateLimiter(int frameLength, int frameUses)
+            {
+                if (frameLength < 1) throw new ArgumentException("frameLength must be greater than zero");
+                if (frameUses < 1) throw new ArgumentException("frameUses must be greater than zero");
+
+                _frameUses = frameUses;
+                _frameLength = frameLength;
+                _currentFrame = Environment.TickCount / _frameLength;
+            }
+
+            public bool TryUse()
+            {
+                var frame = Environment.TickCount / _frameLength;
+                if (frame != _currentFrame)
+                {
+                    _currentFrame = frame;
+                    _currentUses = 1;
+                    return true;
+                }
+
+                if (_currentUses < _frameUses)
+                {
+                    _currentUses++;
+                    return true;
+                }
+
+                return false;
+            }
+
+            public void WaitForNextUse()
+            {
+                if (_currentUses < _frameUses) return;
+
+                var tickCount = Environment.TickCount;
+                var frame = tickCount / _frameLength;
+                if (frame != _currentFrame) return;
+
+                System.Threading.Thread.Sleep(_frameLength);
+            }
+        }
+
         static void Main(string[] args)
         {
-            var text = GoogleTranslate.Translate("木乃伊刷怪蛋", "zh-CN", "en");
-            Console.WriteLine(text);
+            var j = 0;
+            for (var i = 0; i < 1000; i++)
+            {
+                if (!WebTranslator.Available) WebTranslator.WaitUntilAvailable();
+                if (WebTranslator.TryTranslate("多簇草", "zh-CN", "en", out var translated))
+                {
+                    j++;
+                    Console.WriteLine($"Used {j} times. {translated}");
+                }
+            }
+
+            Console.WriteLine("Press any key to exit...");
             Console.ReadLine();
         }
     }
