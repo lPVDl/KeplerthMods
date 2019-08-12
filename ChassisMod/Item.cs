@@ -23,7 +23,7 @@ namespace ChassisMod
             set => value.Patch(this, "Durability", x => x.Durability, (x, v) => x.Durability = Math.Max(v, 1));
         }
 
-        public PropertyWrapper<int, PropertyIdentity.ID2> ItemType
+        public PropertyWrapper<int, PropertyIdentity.ID2> Category
         {
             get => this;
             set => value.Patch(this, "ItemType", x => x.ItemType, (x, v) => x.ItemType = Math.Max(v, 0));

@@ -29,7 +29,7 @@ namespace ScytheMod
                 Craft[] crafts = new Craft[4];
                 float[] attackSpeeds = { .6f, .8f, 1f, 1.2f };
                 int[] durabilities = { 80, 120, 150, 200 };
-                int[] treeDamageBonuses = { 2, 3, 4, 5 };
+                int[] treeDamageBonuses = { 2, 2, 4, 4 };
 
                 for(var i = 0; i < 4; i++)
                 {
@@ -42,7 +42,7 @@ namespace ScytheMod
                     Scythes[i].WallDamageBonus = 1;
                     Scythes[i].TreeDamageBonus = treeDamageBonuses[i];
                     Scythes[i].SetDefaultTranslation(materials[i] + " Scythe", $"Harvests extra seed with {(int)Math.Round(ExtraYieldChances[i] * 100)}% chance.");
-                    Scythes[i].ItemType = 0;
+                    Scythes[i].Category = 0;
 
                     crafts[i] = new Craft(materials[i] + "Scythe", Scythes[i], 1, Tuple.Create(ingots[i], 6), Tuple.Create(ItemDB.Wood, 1));
                 }

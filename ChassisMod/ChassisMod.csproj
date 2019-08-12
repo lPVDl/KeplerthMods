@@ -97,7 +97,9 @@
     <Compile Include="KeplerthDatabase\CraftDB.cs" />
     <Compile Include="KeplerthDatabase\CraftGroupDB.cs" />
     <Compile Include="KeplerthDatabase\CraftTableDB.cs" />
+    <Compile Include="KeplerthDatabase\FoodDB.cs" />
     <Compile Include="KeplerthDatabase\ItemDB.cs" />
+    <Compile Include="KeplerthDatabase\StatusEffectDB.cs" />
     <Compile Include="KeplerthDatabase\WeaponDB.cs" />
     <Compile Include="StatusEffect.cs" />
     <Compile Include="Weapon.cs" />
