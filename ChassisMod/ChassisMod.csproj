@@ -71,7 +71,6 @@
     <Compile Include="Core\SerializedPropertyWrapper.cs" />
     <Compile Include="Food.cs" />
     <Compile Include="Core\PropertyIdentity.cs" />
-    <Compile Include="Core\PropertyPatcher.cs" />
     <Compile Include="Core\PropertyWrapper.cs" />
     <Compile Include="Core\SpritePatcher.cs" />
     <Compile Include="Core\Data\Util\FormatUtil.cs" />
