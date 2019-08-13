@@ -3,6 +3,7 @@ using Common.Reflection;
 using System.Reflection;
 using ChassisMod.Core;
 using UnityEngine;
+using Keplerth;
 using DataBase;
 using System;
 
@@ -13,10 +14,10 @@ namespace ChassisMod
         public Weapon Weapon { get; }
         public Food Food { get; }
 
-        public PropertyWrapper<string, Sprite, PropertyIdentity.ID0> Icon
+        public SerializedPropertyWrapper<string, Sprite, PropertyIdentity.ID0> Icon
         {
             get => this;
-            set => value.Patch(this, "Icon", x => x.DropTexture, (x, v) => x.DropTexture = v, x => SpritePatcher.FindOrAdd(x));
+            set => value.Patch(this, "Icon", x => x.DropTexture, (x, v) => x.DropTexture = v, x => CustomResources.Load<Sprite>(x), x => SpritePatcher.FindOrAdd(x));
         }
 
         public PropertyWrapper<int, PropertyIdentity.ID1> Durability

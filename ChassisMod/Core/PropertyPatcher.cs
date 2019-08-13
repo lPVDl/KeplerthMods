@@ -8,25 +8,40 @@ namespace ChassisMod.Core
     {
         private static class PropertyPatcher
         {
-            public static void PatchFromSource<TProperty>(DataWrapper<TConfig> source, DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> propertyGet, Action<TConfig, TProperty> propertySet)
+            public static void PatchFromSource<TProperty>(DataWrapper<TConfig> source, DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> get, 
+                Action<TConfig, TProperty> set)
             {
                 var patchInfo = $"{target}.{propertyName} = {source}.{propertyName}";
                 target.AddModification(patchInfo, config =>
                 {
                     var table = ReflectionHelper.GetStaticFieldValue<TConfig>("Table") as Dictionary<int, TConfig>;
-                    var value = propertyGet(table[source.ID]);
-                    propertySet(config, value);
+                    var value = get(table[source.ID]);
+                    set(config, value);
                 });
             }
 
-            public static void PatchFromModification<TProperty>(Func<TProperty, TProperty> modification, DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> propertyGet, Action<TConfig, TProperty> propertySet)
+            public static void PatchFromModification<TProperty>(Func<TProperty, TProperty> modification, 
+                DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> get, Action<TConfig, TProperty> set)
             {
                 var patchInfo = $"{target}.{propertyName} = f(x)";
                 target.AddModification(patchInfo, config =>
                 {
-                    var value = propertyGet(config);
+                    var value = get(config);
                     value = modification(value);
-                    propertySet(config, value);
+                    set(config, value);
+                });
+            }
+
+            public static void PatchFromSerializedModification<TProperty, TSerializedProperty>(Func<TSerializedProperty, TSerializedProperty> modification,
+                DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> get, Action<TConfig, TProperty> set, 
+                 Func<TProperty, TSerializedProperty> serialize, Func<TSerializedProperty, TProperty> deserialize)
+            {
+                var patchInfo = $"{target}.{propertyName} = f(x)";
+                target.AddModification(patchInfo, config =>
+                {
+                    var value = serialize(get(config));
+                    value = modification(value);
+                    set(config, deserialize(value));
                 });
             }
 
@@ -39,13 +54,14 @@ namespace ChassisMod.Core
                 });
             }
 
-            public static void PatchFromConvertedData<TProperty, TConvertFrom>(TConvertFrom data, DataWrapper<TConfig> target, string propertyName, Action<TConfig, TProperty> propertySet, Func<TConvertFrom, TProperty> converter)
+            public static void PatchFromSerializedData<TProperty, TSerialized>(TSerialized data, DataWrapper<TConfig> target, string propertyName, 
+                Action<TConfig, TProperty> set, Func<TSerialized, TProperty> deserialize)
             {
                 var patchInfo = $"{target}.{propertyName} = {data}";
                 target.AddModification(patchInfo, config =>
                 {
-                    var value = converter(data);
-                    propertySet(config, value);
+                    var value = deserialize(data);
+                    set(config, value);
                 });
             }
         }

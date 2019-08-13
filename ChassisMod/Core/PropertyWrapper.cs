@@ -36,57 +36,21 @@ namespace ChassisMod.Core
 
             private PropertyWrapper() { }
 
-            internal void Patch(DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> propertyGet, Action<TConfig, TProperty> propertySet)
+            internal void Patch(DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> get, Action<TConfig, TProperty> set)
             {
                 if (Source != null)
                 {
-                    PropertyPatcher.PatchFromSource(Source, target, propertyName, propertyGet, propertySet);
+                    PropertyPatcher.PatchFromSource(Source, target, propertyName, get, set);
                 }
                 else if (Modification != null)
                 {
-                    PropertyPatcher.PatchFromModification(Modification, target, propertyName, propertyGet, propertySet);
+                    PropertyPatcher.PatchFromModification(Modification, target, propertyName, get, set);
                 }
                 else
                 {
-                    PropertyPatcher.PatchFromData(Data, target, propertyName, propertySet);
+                    PropertyPatcher.PatchFromData(Data, target, propertyName, set);
                 }
             }
-        }
-
-        public sealed class PropertyWrapper<TProperty, TConvertFrom, TPropertyID>
-        {
-            private DataWrapper<TConfig> Source { get; set; }
-            private TConvertFrom Data { get; set; }
-
-            public static implicit operator PropertyWrapper<TProperty, TConvertFrom, TPropertyID>(DataWrapper<TConfig> source)
-            {
-                return new PropertyWrapper<TProperty, TConvertFrom, TPropertyID>()
-                {
-                    Source = source ?? throw new ArgumentNullException("source was null")
-                };
-            }
-
-            public static implicit operator PropertyWrapper<TProperty, TConvertFrom, TPropertyID>(TConvertFrom data)
-            {
-                if (typeof(TConvertFrom).IsClass && data == null)
-                    throw new ArgumentNullException("data was null");
-
-                return new PropertyWrapper<TProperty, TConvertFrom, TPropertyID>() { Data = data };
-            }
-
-            private PropertyWrapper() { }
-
-            internal void Patch(DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> propertyGet, Action<TConfig, TProperty> propertySet, Func<TConvertFrom, TProperty> converter)
-            {
-                if (Source != null)
-                {
-                    PropertyPatcher.PatchFromSource(Source, target, propertyName, propertyGet, propertySet);
-                }
-                else
-                {
-                    PropertyPatcher.PatchFromConvertedData(Data, target, propertyName, propertySet, converter);
-                }
-            }
-        }
+        }  
     }    
 }

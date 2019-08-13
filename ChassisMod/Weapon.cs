@@ -1,6 +1,7 @@
 ﻿using Common.Reflection;
 using ChassisMod.Core;
 using UnityEngine;
+using Keplerth;
 using DataBase;
 using System;
 
@@ -8,10 +9,10 @@ namespace ChassisMod
 {
     public sealed class Weapon : DataWrapper<ConfigWeapon>
     {
-        public PropertyWrapper<string, Sprite, PropertyIdentity.ID0> Icon
+        public SerializedPropertyWrapper<string, Sprite, PropertyIdentity.ID0> Icon
         {
             get => this;
-            set => value.Patch(this, "Icon", x => x.Texture, (x, v) => x.Texture = v, x => SpritePatcher.FindOrAdd(x));
+            set => value.Patch(this, "Icon", x => x.Texture, (x, v) => x.Texture = v, x => CustomResources.Load<Sprite>(x), x => SpritePatcher.FindOrAdd(x));
         }
 
         public PropertyWrapper<float, PropertyIdentity.ID1> AttackSpeed
@@ -28,7 +29,6 @@ namespace ChassisMod
         {
             if (source == null) throw new ArgumentNullException("source was null");
 
-            // var patchInfo = $"{this} = {source}";
             AddModification("", item => 
             {
                 var data = ConfigWeapon.Table[source.ID];
