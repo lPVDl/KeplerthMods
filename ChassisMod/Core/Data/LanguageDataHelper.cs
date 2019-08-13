@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using ChassisMod.Core.Data.Util;
 using UnityEngine;
 using System.Linq;
 using System;
+using Common;
 
 namespace ChassisMod.Core.Data
 {
@@ -9,10 +11,36 @@ namespace ChassisMod.Core.Data
     {
         internal static List<Dictionary<string, string>> Database { get; } = LoadDatabase();
         internal static Dictionary<string, string> English { get; } = Database[1];
+        internal static Dictionary<string, string> Chinese { get; } = Database[0];
 
         private static string[] DefaultText = { "English", "0", "", null };
 
-        public static bool IsDefault(string text) => DefaultText.Any(x => x == text);
+        public static bool TryGetInEnglish(string textID, out string result)
+        {
+            result = null;
+
+            try
+            {
+                var text = English[textID];
+                if (!IsDefault(text))
+                {
+                    result = text;
+                    return true;
+                }
+
+                text = Chinese[textID];
+                if (!IsDefault(text))
+                {
+                    if (!WebTranslator.Available) WebTranslator.WaitUntilAvailable();
+                    if (WebTranslator.TryTranslate(text, "zh-CN", "en", out result)) return true;
+                }
+            }
+            catch (Exception e) { Log.ExceptionOnce(e); }
+
+            return false;
+        }
+
+        public static bool IsDefault(string text) => DefaultText.Any(x => x == text);    
 
         private static List<Dictionary<string, string>> LoadDatabase()
         {

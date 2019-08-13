@@ -65,6 +65,8 @@
     <Compile Include="Core\Data\StatusEffectDataHelper.cs" />
     <Compile Include="Core\Data\CraftTableDataHelper.cs" />
     <Compile Include="Core\Data\FoodDataHelper.cs" />
+    <Compile Include="Core\Data\Util\RateLimiter.cs" />
+    <Compile Include="Core\Data\Util\WebTranslator.cs" />
     <Compile Include="Core\Data\WeaponDataHelper.cs" />
     <Compile Include="Food.cs" />
     <Compile Include="Core\PropertyIdentity.cs" />

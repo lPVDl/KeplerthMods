@@ -19,7 +19,7 @@ namespace ScytheMod
         {
             try
             {
-                // DataScanner.SaveDefinitions(@"T:\KeplerthDatabase\");
+                DataScanner.SaveDefinitions(@"T:\KeplerthDatabase\");
                 // SpriteScanner.ExportAll(@"T:\KeplerthDatabase\Sprites\");
 
                 var assets = AssetBundle.LoadFromMemory(Properties.Resources.Assets);
