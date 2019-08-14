@@ -18,6 +18,16 @@ namespace ChassisMod.Core
 
         internal bool Exists(int configID) => DataHelper<TConfig>.Database.ContainsKey(configID);
 
+        /// <summary>
+        /// Initialize entity at runtime.
+        /// </summary>
+        internal protected DataWrapper(int id)
+        {
+            ID = id;
+            Name = "???";
+            AssemblyID = "???";
+            FullName = CreateFullName(AssemblyID, Name);
+        }
 
         /// <summary>
         /// Initialize Keplerth entity.
@@ -29,7 +39,7 @@ namespace ChassisMod.Core
             ID = id;
             Name = name;
             AssemblyID = "Keplerth";
-            FullName = CreateFullName(AssemblyID, name);
+            FullName = CreateFullName(AssemblyID, Name);
 
             if (!Exists(ID)) throw new InvalidOperationException($"id was not found in the Keplerth database ({FullName})");
         }
@@ -44,7 +54,7 @@ namespace ChassisMod.Core
 
             Name = name;
             AssemblyID = assemblyID;
-            FullName = CreateFullName(assemblyID, name);
+            FullName = CreateFullName(assemblyID, Name);
             ID = IDGenerator.New(FullName);
         }
 
@@ -58,7 +68,7 @@ namespace ChassisMod.Core
 
             Name = name;
             AssemblyID = assemblyID;
-            FullName = CreateFullName(assemblyID, name);
+            FullName = CreateFullName(assemblyID, Name);
             ID = id;
         }
 

@@ -25,6 +25,14 @@ namespace ChassisMod
             AddInstatiation(data, string.Join(", ", craftNames));
         }
 
+        /// <summary>
+        /// Initialize entity at runtime.
+        /// </summary>
+        internal CraftGroup(int id) : base(id) { }
+
+        /// <summary>
+        /// Initialize Keplerth entity.
+        /// </summary>
         internal CraftGroup(string name, int id) : base(name, id) { }
 
         public void SetTranslation(Language language, string name, string description, string materials)
