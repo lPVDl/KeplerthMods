@@ -32,7 +32,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building1 { get; } = new Building("Building1", 1);
+		public static Building OakSeedling { get; } = new Building("OakSeedling", 1);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -63,7 +63,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building2 { get; } = new Building("Building2", 2);
+		public static Building SmallOak { get; } = new Building("SmallOak", 2);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -94,7 +94,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3 { get; } = new Building("Building3", 3);
+		public static Building Oak0 { get; } = new Building("Oak0", 3);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -125,7 +125,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4 { get; } = new Building("Building4", 4);
+		public static Building Oak1 { get; } = new Building("Oak1", 4);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -156,7 +156,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building11 { get; } = new Building("Building11", 11);
+		public static Building PineSeedling { get; } = new Building("PineSeedling", 11);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -187,7 +187,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building12 { get; } = new Building("Building12", 12);
+		public static Building SmallPine { get; } = new Building("SmallPine", 12);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -218,7 +218,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building13 { get; } = new Building("Building13", 13);
+		public static Building Pine { get; } = new Building("Pine", 13);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -249,7 +249,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building21 { get; } = new Building("Building21", 21);
+		public static Building AppleSapling { get; } = new Building("AppleSapling", 21);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -280,7 +280,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building22 { get; } = new Building("Building22", 22);
+		public static Building SmallAppleTree { get; } = new Building("SmallAppleTree", 22);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -311,7 +311,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building23 { get; } = new Building("Building23", 23);
+		public static Building AppleTree0 { get; } = new Building("AppleTree0", 23);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -342,7 +342,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building24 { get; } = new Building("Building24", 24);
+		public static Building AppleTree1 { get; } = new Building("AppleTree1", 24);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 3; IsReplace: 0<para/>
@@ -373,7 +373,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building25 { get; } = new Building("Building25", 25);
+		public static Building AppleTree2 { get; } = new Building("AppleTree2", 25);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 3; IsReplace: 0<para/>
@@ -404,7 +404,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building26 { get; } = new Building("Building26", 26);
+		public static Building AppleTree3 { get; } = new Building("AppleTree3", 26);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -435,7 +435,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building31 { get; } = new Building("Building31", 31);
+		public static Building ShrubSeedling { get; } = new Building("ShrubSeedling", 31);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -466,7 +466,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building32 { get; } = new Building("Building32", 32);
+		public static Building SmallBush { get; } = new Building("SmallBush", 32);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -497,7 +497,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building33 { get; } = new Building("Building33", 33);
+		public static Building Shrub0 { get; } = new Building("Shrub0", 33);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -528,7 +528,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building34 { get; } = new Building("Building34", 34);
+		public static Building Shrub1 { get; } = new Building("Shrub1", 34);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -559,7 +559,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building35 { get; } = new Building("Building35", 35);
+		public static Building WitheredShrub0 { get; } = new Building("WitheredShrub0", 35);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -590,7 +590,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building36 { get; } = new Building("Building36", 36);
+		public static Building WitheredShrub1 { get; } = new Building("WitheredShrub1", 36);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -621,7 +621,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building37 { get; } = new Building("Building37", 37);
+		public static Building WitheredShrub2 { get; } = new Building("WitheredShrub2", 37);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -652,7 +652,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building38 { get; } = new Building("Building38", 38);
+		public static Building WitheredShrub3 { get; } = new Building("WitheredShrub3", 38);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 3; IsReplace: 0<para/>
@@ -683,7 +683,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building39 { get; } = new Building("Building39", 39);
+		public static Building FruityShrub0 { get; } = new Building("FruityShrub0", 39);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 3; IsReplace: 0<para/>
@@ -714,7 +714,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building40 { get; } = new Building("Building40", 40);
+		public static Building FruityShrub1 { get; } = new Building("FruityShrub1", 40);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -745,7 +745,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building41 { get; } = new Building("Building41", 41);
+		public static Building CactusSeedling { get; } = new Building("CactusSeedling", 41);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -776,7 +776,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building42 { get; } = new Building("Building42", 42);
+		public static Building SmallCactus0 { get; } = new Building("SmallCactus0", 42);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -807,7 +807,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building43 { get; } = new Building("Building43", 43);
+		public static Building SmallCactus1 { get; } = new Building("SmallCactus1", 43);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -838,7 +838,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building44 { get; } = new Building("Building44", 44);
+		public static Building SmallCactus2 { get; } = new Building("SmallCactus2", 44);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -869,7 +869,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building45 { get; } = new Building("Building45", 45);
+		public static Building Cactus0 { get; } = new Building("Cactus0", 45);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -900,7 +900,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building46 { get; } = new Building("Building46", 46);
+		public static Building Cactus1 { get; } = new Building("Cactus1", 46);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -931,7 +931,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building47 { get; } = new Building("Building47", 47);
+		public static Building Cactus2 { get; } = new Building("Cactus2", 47);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -962,7 +962,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building48 { get; } = new Building("Building48", 48);
+		public static Building Cactus3 { get; } = new Building("Cactus3", 48);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -993,7 +993,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building49 { get; } = new Building("Building49", 49);
+		public static Building Cactus4 { get; } = new Building("Cactus4", 49);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1024,7 +1024,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building50 { get; } = new Building("Building50", 50);
+		public static Building Cactus5 { get; } = new Building("Cactus5", 50);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1055,7 +1055,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building51 { get; } = new Building("Building51", 51);
+		public static Building Cactus6 { get; } = new Building("Cactus6", 51);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1086,7 +1086,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building52 { get; } = new Building("Building52", 52);
+		public static Building Cactus7 { get; } = new Building("Cactus7", 52);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1117,7 +1117,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building53 { get; } = new Building("Building53", 53);
+		public static Building Cactus8 { get; } = new Building("Cactus8", 53);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1148,7 +1148,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/cactus-seed01-icon"<para/>
 		/// </summary>
-		public static Building Building54 { get; } = new Building("Building54", 54);
+		public static Building UltraSmallCactus { get; } = new Building("UltraSmallCactus", 54);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1179,7 +1179,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building61 { get; } = new Building("Building61", 61);
+		public static Building FirSaplingNoSnow { get; } = new Building("FirSaplingNoSnow", 61);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1210,7 +1210,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building62 { get; } = new Building("Building62", 62);
+		public static Building FirSaplingLightSnow { get; } = new Building("FirSaplingLightSnow", 62);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1241,7 +1241,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building63 { get; } = new Building("Building63", 63);
+		public static Building FirSaplingInTheSnow { get; } = new Building("FirSaplingInTheSnow", 63);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1272,7 +1272,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building64 { get; } = new Building("Building64", 64);
+		public static Building FirSaplingHeavySnow { get; } = new Building("FirSaplingHeavySnow", 64);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1303,7 +1303,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building65 { get; } = new Building("Building65", 65);
+		public static Building SmallFirTreeNoSnow { get; } = new Building("SmallFirTreeNoSnow", 65);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1334,7 +1334,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building66 { get; } = new Building("Building66", 66);
+		public static Building SmallFirTreeLightSnow { get; } = new Building("SmallFirTreeLightSnow", 66);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1365,7 +1365,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building67 { get; } = new Building("Building67", 67);
+		public static Building SmallFirTreeSnow { get; } = new Building("SmallFirTreeSnow", 67);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1396,7 +1396,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building68 { get; } = new Building("Building68", 68);
+		public static Building SmallFirTreeHeavySnow { get; } = new Building("SmallFirTreeHeavySnow", 68);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1427,7 +1427,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building69 { get; } = new Building("Building69", 69);
+		public static Building FirTreesNoSnow0 { get; } = new Building("FirTreesNoSnow0", 69);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1458,7 +1458,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building70 { get; } = new Building("Building70", 70);
+		public static Building FirTreesLightSnow0 { get; } = new Building("FirTreesLightSnow0", 70);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1489,7 +1489,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building71 { get; } = new Building("Building71", 71);
+		public static Building FirTreesInTheSnow0 { get; } = new Building("FirTreesInTheSnow0", 71);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1520,7 +1520,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building72 { get; } = new Building("Building72", 72);
+		public static Building FirTreesHeavySnow0 { get; } = new Building("FirTreesHeavySnow0", 72);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1551,7 +1551,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building73 { get; } = new Building("Building73", 73);
+		public static Building FirTreesNoSnow1 { get; } = new Building("FirTreesNoSnow1", 73);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1582,7 +1582,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building74 { get; } = new Building("Building74", 74);
+		public static Building FirTreesLightSnow1 { get; } = new Building("FirTreesLightSnow1", 74);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1613,7 +1613,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building75 { get; } = new Building("Building75", 75);
+		public static Building FirTreesInTheSnow1 { get; } = new Building("FirTreesInTheSnow1", 75);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1644,7 +1644,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building76 { get; } = new Building("Building76", 76);
+		public static Building FirTreesHeavySnow1 { get; } = new Building("FirTreesHeavySnow1", 76);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1675,7 +1675,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building81 { get; } = new Building("Building81", 81);
+		public static Building LarchSeedlingsNoSnow { get; } = new Building("LarchSeedlingsNoSnow", 81);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1706,7 +1706,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building82 { get; } = new Building("Building82", 82);
+		public static Building LarchSeedlingsLightSnow { get; } = new Building("LarchSeedlingsLightSnow", 82);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1737,7 +1737,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building83 { get; } = new Building("Building83", 83);
+		public static Building LarchSeedlingsMediumSnow { get; } = new Building("LarchSeedlingsMediumSnow", 83);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1768,7 +1768,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building84 { get; } = new Building("Building84", 84);
+		public static Building LarchSeedlingsHeavySnow { get; } = new Building("LarchSeedlingsHeavySnow", 84);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1799,7 +1799,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building85 { get; } = new Building("Building85", 85);
+		public static Building SmallLarchNoSnow { get; } = new Building("SmallLarchNoSnow", 85);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1830,7 +1830,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building86 { get; } = new Building("Building86", 86);
+		public static Building SmallLarchLightSnow { get; } = new Building("SmallLarchLightSnow", 86);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1861,7 +1861,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building87 { get; } = new Building("Building87", 87);
+		public static Building SmallLarchMediumSnow { get; } = new Building("SmallLarchMediumSnow", 87);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -1892,7 +1892,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building88 { get; } = new Building("Building88", 88);
+		public static Building SmallLarchHeavySnow { get; } = new Building("SmallLarchHeavySnow", 88);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1923,7 +1923,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building89 { get; } = new Building("Building89", 89);
+		public static Building LarchNoSnow0 { get; } = new Building("LarchNoSnow0", 89);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1954,7 +1954,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building90 { get; } = new Building("Building90", 90);
+		public static Building LarchLightSnow0 { get; } = new Building("LarchLightSnow0", 90);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -1985,7 +1985,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building91 { get; } = new Building("Building91", 91);
+		public static Building LarchMediumSnow0 { get; } = new Building("LarchMediumSnow0", 91);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -2016,7 +2016,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building92 { get; } = new Building("Building92", 92);
+		public static Building LarchHeavySnow0 { get; } = new Building("LarchHeavySnow0", 92);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -2047,7 +2047,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building93 { get; } = new Building("Building93", 93);
+		public static Building LarchNoSnow1 { get; } = new Building("LarchNoSnow1", 93);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -2078,7 +2078,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building94 { get; } = new Building("Building94", 94);
+		public static Building LarchLightSnow1 { get; } = new Building("LarchLightSnow1", 94);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -2109,7 +2109,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building95 { get; } = new Building("Building95", 95);
+		public static Building LarchMediumSnow1 { get; } = new Building("LarchMediumSnow1", 95);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 1; IsReplace: 0<para/>
@@ -2140,7 +2140,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building96 { get; } = new Building("Building96", 96);
+		public static Building LarchHeavySnow1 { get; } = new Building("LarchHeavySnow1", 96);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -2171,7 +2171,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building101 { get; } = new Building("Building101", 101);
+		public static Building SmallMushroom0 { get; } = new Building("SmallMushroom0", 101);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -2202,7 +2202,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building102 { get; } = new Building("Building102", 102);
+		public static Building Mushroom { get; } = new Building("Mushroom", 102);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -2233,7 +2233,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building103 { get; } = new Building("Building103", 103);
+		public static Building MushroomBig1 { get; } = new Building("MushroomBig1", 103);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -2264,7 +2264,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building104 { get; } = new Building("Building104", 104);
+		public static Building MushroomBig2 { get; } = new Building("MushroomBig2", 104);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -2295,7 +2295,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building105 { get; } = new Building("Building105", 105);
+		public static Building MushroomBig3 { get; } = new Building("MushroomBig3", 105);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -2326,7 +2326,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building106 { get; } = new Building("Building106", 106);
+		public static Building MushroomBig4 { get; } = new Building("MushroomBig4", 106);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -2357,7 +2357,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building107 { get; } = new Building("Building107", 107);
+		public static Building MushroomOversized1 { get; } = new Building("MushroomOversized1", 107);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -2388,7 +2388,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building108 { get; } = new Building("Building108", 108);
+		public static Building MushroomOversized2 { get; } = new Building("MushroomOversized2", 108);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -2419,7 +2419,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building109 { get; } = new Building("Building109", 109);
+		public static Building MushroomOversized3 { get; } = new Building("MushroomOversized3", 109);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -2450,7 +2450,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building110 { get; } = new Building("Building110", 110);
+		public static Building MushroomOversized4 { get; } = new Building("MushroomOversized4", 110);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2481,7 +2481,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building111 { get; } = new Building("Building111", 111);
+		public static Building CommonGrass1 { get; } = new Building("CommonGrass1", 111);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2512,7 +2512,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building112 { get; } = new Building("Building112", 112);
+		public static Building CommonGrass2 { get; } = new Building("CommonGrass2", 112);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2543,7 +2543,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building113 { get; } = new Building("Building113", 113);
+		public static Building CommonGrass3 { get; } = new Building("CommonGrass3", 113);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2574,7 +2574,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building114 { get; } = new Building("Building114", 114);
+		public static Building CommonGrass4 { get; } = new Building("CommonGrass4", 114);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2605,7 +2605,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building115 { get; } = new Building("Building115", 115);
+		public static Building OrdinaryGrass5 { get; } = new Building("OrdinaryGrass5", 115);
 		/// <summary>
 		/// Type: 50; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2636,7 +2636,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/flower-08-icon"<para/>
 		/// </summary>
-		public static Building Building121 { get; } = new Building("Building121", 121);
+		public static Building CommonFlower1 { get; } = new Building("CommonFlower1", 121);
 		/// <summary>
 		/// Type: 50; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2667,7 +2667,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/flower-08-icon"<para/>
 		/// </summary>
-		public static Building Building122 { get; } = new Building("Building122", 122);
+		public static Building CommonFlower2 { get; } = new Building("CommonFlower2", 122);
 		/// <summary>
 		/// Type: 50; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2698,7 +2698,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/flower-08-icon"<para/>
 		/// </summary>
-		public static Building Building123 { get; } = new Building("Building123", 123);
+		public static Building CommonFlower3 { get; } = new Building("CommonFlower3", 123);
 		/// <summary>
 		/// Type: 50; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2729,7 +2729,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/flower-08-icon"<para/>
 		/// </summary>
-		public static Building Building124 { get; } = new Building("Building124", 124);
+		public static Building CommonFlower4 { get; } = new Building("CommonFlower4", 124);
 		/// <summary>
 		/// Type: 50; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2760,7 +2760,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/flower-08-icon"<para/>
 		/// </summary>
-		public static Building Building125 { get; } = new Building("Building125", 125);
+		public static Building CommonFlower5 { get; } = new Building("CommonFlower5", 125);
 		/// <summary>
 		/// Type: 50; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2791,7 +2791,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/flower-08-icon"<para/>
 		/// </summary>
-		public static Building Building126 { get; } = new Building("Building126", 126);
+		public static Building CommonFlower6 { get; } = new Building("CommonFlower6", 126);
 		/// <summary>
 		/// Type: 50; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2822,7 +2822,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/flower-08-icon"<para/>
 		/// </summary>
-		public static Building Building127 { get; } = new Building("Building127", 127);
+		public static Building CommonFlower7 { get; } = new Building("CommonFlower7", 127);
 		/// <summary>
 		/// Type: 50; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2853,7 +2853,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/flower-08-icon"<para/>
 		/// </summary>
-		public static Building Building128 { get; } = new Building("Building128", 128);
+		public static Building OrdinaryFlower8 { get; } = new Building("OrdinaryFlower8", 128);
 		/// <summary>
 		/// Type: 50; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2884,7 +2884,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/flower-08-icon"<para/>
 		/// </summary>
-		public static Building Building129 { get; } = new Building("Building129", 129);
+		public static Building CommonFlower9 { get; } = new Building("CommonFlower9", 129);
 		/// <summary>
 		/// Type: 50; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2915,7 +2915,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/flower-10-icon"<para/>
 		/// </summary>
-		public static Building Building130 { get; } = new Building("Building130", 130);
+		public static Building CommonFlower10 { get; } = new Building("CommonFlower10", 130);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2946,7 +2946,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building141 { get; } = new Building("Building141", 141);
+		public static Building MarshFern1 { get; } = new Building("MarshFern1", 141);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -2977,7 +2977,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building142 { get; } = new Building("Building142", 142);
+		public static Building MarshFern2 { get; } = new Building("MarshFern2", 142);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3008,7 +3008,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building143 { get; } = new Building("Building143", 143);
+		public static Building MarshFern3 { get; } = new Building("MarshFern3", 143);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3039,7 +3039,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building144 { get; } = new Building("Building144", 144);
+		public static Building MarshFern4 { get; } = new Building("MarshFern4", 144);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3070,7 +3070,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building145 { get; } = new Building("Building145", 145);
+		public static Building MarshFern5 { get; } = new Building("MarshFern5", 145);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3101,7 +3101,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building146 { get; } = new Building("Building146", 146);
+		public static Building MarshFern6 { get; } = new Building("MarshFern6", 146);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3132,7 +3132,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building147 { get; } = new Building("Building147", 147);
+		public static Building MarshFern7 { get; } = new Building("MarshFern7", 147);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3163,7 +3163,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building148 { get; } = new Building("Building148", 148);
+		public static Building MarshFern8 { get; } = new Building("MarshFern8", 148);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3194,7 +3194,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building149 { get; } = new Building("Building149", 149);
+		public static Building MarshFern9 { get; } = new Building("MarshFern9", 149);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3225,7 +3225,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building150 { get; } = new Building("Building150", 150);
+		public static Building MarshFern10 { get; } = new Building("MarshFern10", 150);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3256,7 +3256,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building151 { get; } = new Building("Building151", 151);
+		public static Building MarshFern11 { get; } = new Building("MarshFern11", 151);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3287,7 +3287,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building152 { get; } = new Building("Building152", 152);
+		public static Building MarshFern12 { get; } = new Building("MarshFern12", 152);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3318,7 +3318,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building153 { get; } = new Building("Building153", 153);
+		public static Building MarshFern13 { get; } = new Building("MarshFern13", 153);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3349,7 +3349,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building154 { get; } = new Building("Building154", 154);
+		public static Building MarshFern14 { get; } = new Building("MarshFern14", 154);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3380,7 +3380,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building155 { get; } = new Building("Building155", 155);
+		public static Building MarshFern15 { get; } = new Building("MarshFern15", 155);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3411,7 +3411,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building161 { get; } = new Building("Building161", 161);
+		public static Building MultiClusterGrass100 { get; } = new Building("MultiClusterGrass100", 161);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3442,7 +3442,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building162 { get; } = new Building("Building162", 162);
+		public static Building MultiClusterGrass20 { get; } = new Building("MultiClusterGrass20", 162);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3473,7 +3473,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building163 { get; } = new Building("Building163", 163);
+		public static Building MultiClusterGrass30 { get; } = new Building("MultiClusterGrass30", 163);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3504,7 +3504,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building164 { get; } = new Building("Building164", 164);
+		public static Building MultiClusterGrass40 { get; } = new Building("MultiClusterGrass40", 164);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3535,7 +3535,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building165 { get; } = new Building("Building165", 165);
+		public static Building MultiClusterGrass50 { get; } = new Building("MultiClusterGrass50", 165);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3566,7 +3566,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building166 { get; } = new Building("Building166", 166);
+		public static Building MultiClusterGrass60 { get; } = new Building("MultiClusterGrass60", 166);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3597,7 +3597,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building167 { get; } = new Building("Building167", 167);
+		public static Building MultiClusterGrass70 { get; } = new Building("MultiClusterGrass70", 167);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3628,7 +3628,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building168 { get; } = new Building("Building168", 168);
+		public static Building MultiClusterGrass80 { get; } = new Building("MultiClusterGrass80", 168);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3659,7 +3659,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building169 { get; } = new Building("Building169", 169);
+		public static Building MultiClusterGrass90 { get; } = new Building("MultiClusterGrass90", 169);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3690,7 +3690,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building170 { get; } = new Building("Building170", 170);
+		public static Building MultiClusterGrass101 { get; } = new Building("MultiClusterGrass101", 170);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3721,7 +3721,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building171 { get; } = new Building("Building171", 171);
+		public static Building MultiClusterGrass110 { get; } = new Building("MultiClusterGrass110", 171);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3752,7 +3752,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building172 { get; } = new Building("Building172", 172);
+		public static Building MultiClusterGrass120 { get; } = new Building("MultiClusterGrass120", 172);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3783,7 +3783,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building173 { get; } = new Building("Building173", 173);
+		public static Building MultiClusterGrass130 { get; } = new Building("MultiClusterGrass130", 173);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3814,7 +3814,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building174 { get; } = new Building("Building174", 174);
+		public static Building MultiClownGrass140 { get; } = new Building("MultiClownGrass140", 174);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -3845,7 +3845,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building175 { get; } = new Building("Building175", 175);
+		public static Building MultiClusters150 { get; } = new Building("MultiClusters150", 175);
 		/// <summary>
 		/// Type: 24; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -3876,7 +3876,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building181 { get; } = new Building("Building181", 181);
+		public static Building Egg1 { get; } = new Building("Egg1", 181);
 		/// <summary>
 		/// Type: 24; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -3907,7 +3907,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building182 { get; } = new Building("Building182", 182);
+		public static Building Egg2 { get; } = new Building("Egg2", 182);
 		/// <summary>
 		/// Type: 24; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -3938,7 +3938,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building183 { get; } = new Building("Building183", 183);
+		public static Building Egg3 { get; } = new Building("Egg3", 183);
 		/// <summary>
 		/// Type: 24; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -3969,7 +3969,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building184 { get; } = new Building("Building184", 184);
+		public static Building Egg4 { get; } = new Building("Egg4", 184);
 		/// <summary>
 		/// Type: 24; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4000,7 +4000,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building185 { get; } = new Building("Building185", 185);
+		public static Building Egg5 { get; } = new Building("Egg5", 185);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4031,7 +4031,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building191 { get; } = new Building("Building191", 191);
+		public static Building MushroomOversized5 { get; } = new Building("MushroomOversized5", 191);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4062,7 +4062,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/mushroom-icon"<para/>
 		/// </summary>
-		public static Building Building192 { get; } = new Building("Building192", 192);
+		public static Building MushroomOversized6 { get; } = new Building("MushroomOversized6", 192);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4093,7 +4093,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building201 { get; } = new Building("Building201", 201);
+		public static Building DevilTree1 { get; } = new Building("DevilTree1", 201);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4124,7 +4124,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building202 { get; } = new Building("Building202", 202);
+		public static Building DevilTreeFruit1 { get; } = new Building("DevilTreeFruit1", 202);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4155,7 +4155,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building203 { get; } = new Building("Building203", 203);
+		public static Building DevilTree2 { get; } = new Building("DevilTree2", 203);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4186,7 +4186,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building204 { get; } = new Building("Building204", 204);
+		public static Building DevilTreeFruit2 { get; } = new Building("DevilTreeFruit2", 204);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4217,7 +4217,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building205 { get; } = new Building("Building205", 205);
+		public static Building DevilTree3 { get; } = new Building("DevilTree3", 205);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4248,7 +4248,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building206 { get; } = new Building("Building206", 206);
+		public static Building DevilTreeFruit3 { get; } = new Building("DevilTreeFruit3", 206);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4279,7 +4279,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building207 { get; } = new Building("Building207", 207);
+		public static Building DevilTree4 { get; } = new Building("DevilTree4", 207);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4310,7 +4310,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building208 { get; } = new Building("Building208", 208);
+		public static Building DevilTreeFruit4 { get; } = new Building("DevilTreeFruit4", 208);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4341,7 +4341,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building209 { get; } = new Building("Building209", 209);
+		public static Building DevilTree5 { get; } = new Building("DevilTree5", 209);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4372,7 +4372,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building210 { get; } = new Building("Building210", 210);
+		public static Building DevilTreeFruit5 { get; } = new Building("DevilTreeFruit5", 210);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4403,7 +4403,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building211 { get; } = new Building("Building211", 211);
+		public static Building DevilTree6 { get; } = new Building("DevilTree6", 211);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4434,7 +4434,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building212 { get; } = new Building("Building212", 212);
+		public static Building DevilTreeFruit6 { get; } = new Building("DevilTreeFruit6", 212);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4465,7 +4465,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building213 { get; } = new Building("Building213", 213);
+		public static Building DevilTree7 { get; } = new Building("DevilTree7", 213);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4496,7 +4496,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building214 { get; } = new Building("Building214", 214);
+		public static Building DevilTreeFruit7 { get; } = new Building("DevilTreeFruit7", 214);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4527,7 +4527,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building221 { get; } = new Building("Building221", 221);
+		public static Building DevilsEye { get; } = new Building("DevilsEye", 221);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4558,7 +4558,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building222 { get; } = new Building("Building222", 222);
+		public static Building DevilsEyeAdulthood0 { get; } = new Building("DevilsEyeAdulthood0", 222);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4589,7 +4589,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building223 { get; } = new Building("Building223", 223);
+		public static Building DevilsEyeAdulthood1 { get; } = new Building("DevilsEyeAdulthood1", 223);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4620,7 +4620,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building224 { get; } = new Building("Building224", 224);
+		public static Building DevilsEyeAdulthood2 { get; } = new Building("DevilsEyeAdulthood2", 224);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4651,7 +4651,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building225 { get; } = new Building("Building225", 225);
+		public static Building DevilsEyeAdulthood3 { get; } = new Building("DevilsEyeAdulthood3", 225);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4682,7 +4682,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building226 { get; } = new Building("Building226", 226);
+		public static Building InfectedColony0 { get; } = new Building("InfectedColony0", 226);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4713,7 +4713,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building227 { get; } = new Building("Building227", 227);
+		public static Building InfectedColony1 { get; } = new Building("InfectedColony1", 227);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4744,7 +4744,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building228 { get; } = new Building("Building228", 228);
+		public static Building InfectedColonyMature10 { get; } = new Building("InfectedColonyMature10", 228);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4775,7 +4775,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building229 { get; } = new Building("Building229", 229);
+		public static Building InfectedColonyMature20 { get; } = new Building("InfectedColonyMature20", 229);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4806,7 +4806,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building230 { get; } = new Building("Building230", 230);
+		public static Building InfectedColonyMature30 { get; } = new Building("InfectedColonyMature30", 230);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4837,7 +4837,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building231 { get; } = new Building("Building231", 231);
+		public static Building InfectedColonyMature40 { get; } = new Building("InfectedColonyMature40", 231);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4868,7 +4868,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building232 { get; } = new Building("Building232", 232);
+		public static Building InfectedColonyMature50 { get; } = new Building("InfectedColonyMature50", 232);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4899,7 +4899,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building233 { get; } = new Building("Building233", 233);
+		public static Building InfectedColonyMature60 { get; } = new Building("InfectedColonyMature60", 233);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4930,7 +4930,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building234 { get; } = new Building("Building234", 234);
+		public static Building InfectedColonyMature70 { get; } = new Building("InfectedColonyMature70", 234);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4961,7 +4961,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building235 { get; } = new Building("Building235", 235);
+		public static Building InfectedColonyMature80 { get; } = new Building("InfectedColonyMature80", 235);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -4992,7 +4992,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building236 { get; } = new Building("Building236", 236);
+		public static Building SmallGrass { get; } = new Building("SmallGrass", 236);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5023,7 +5023,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building237 { get; } = new Building("Building237", 237);
+		public static Building DifferentGrass { get; } = new Building("DifferentGrass", 237);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5054,7 +5054,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building238 { get; } = new Building("Building238", 238);
+		public static Building MatureGrass { get; } = new Building("MatureGrass", 238);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5085,7 +5085,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building241 { get; } = new Building("Building241", 241);
+		public static Building PlantingGrassSeedlings { get; } = new Building("PlantingGrassSeedlings", 241);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5116,7 +5116,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building242 { get; } = new Building("Building242", 242);
+		public static Building PlantingGrass { get; } = new Building("PlantingGrass", 242);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5147,7 +5147,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building243 { get; } = new Building("Building243", 243);
+		public static Building PlantingGrassMature { get; } = new Building("PlantingGrassMature", 243);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5178,7 +5178,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building251 { get; } = new Building("Building251", 251);
+		public static Building Thorns0 { get; } = new Building("Thorns0", 251);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5209,7 +5209,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building252 { get; } = new Building("Building252", 252);
+		public static Building SmallThorn { get; } = new Building("SmallThorn", 252);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5240,7 +5240,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building253 { get; } = new Building("Building253", 253);
+		public static Building Thorns1 { get; } = new Building("Thorns1", 253);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5271,7 +5271,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building254 { get; } = new Building("Building254", 254);
+		public static Building Thorns2 { get; } = new Building("Thorns2", 254);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5302,7 +5302,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building255 { get; } = new Building("Building255", 255);
+		public static Building Thorns3 { get; } = new Building("Thorns3", 255);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5333,7 +5333,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building256 { get; } = new Building("Building256", 256);
+		public static Building Thorns4 { get; } = new Building("Thorns4", 256);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5364,7 +5364,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bloodmushroom-icon"<para/>
 		/// </summary>
-		public static Building Building261 { get; } = new Building("Building261", 261);
+		public static Building SmallMushroom1 { get; } = new Building("SmallMushroom1", 261);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5395,7 +5395,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bloodmushroom-icon"<para/>
 		/// </summary>
-		public static Building Building262 { get; } = new Building("Building262", 262);
+		public static Building BloodMushroom0 { get; } = new Building("BloodMushroom0", 262);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5426,7 +5426,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bloodmushroom-icon"<para/>
 		/// </summary>
-		public static Building Building263 { get; } = new Building("Building263", 263);
+		public static Building BloodMushroom1 { get; } = new Building("BloodMushroom1", 263);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5457,7 +5457,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bloodmushroom-icon"<para/>
 		/// </summary>
-		public static Building Building264 { get; } = new Building("Building264", 264);
+		public static Building BloodMushroom2 { get; } = new Building("BloodMushroom2", 264);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5488,7 +5488,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bloodmushroom-icon"<para/>
 		/// </summary>
-		public static Building Building265 { get; } = new Building("Building265", 265);
+		public static Building BloodMushroom3 { get; } = new Building("BloodMushroom3", 265);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5519,7 +5519,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bloodmushroom-icon"<para/>
 		/// </summary>
-		public static Building Building266 { get; } = new Building("Building266", 266);
+		public static Building BloodMushroom4 { get; } = new Building("BloodMushroom4", 266);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5550,7 +5550,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bloodmushroom-icon"<para/>
 		/// </summary>
-		public static Building Building267 { get; } = new Building("Building267", 267);
+		public static Building BloodMushroom5 { get; } = new Building("BloodMushroom5", 267);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5581,7 +5581,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bloodmushroom-icon"<para/>
 		/// </summary>
-		public static Building Building268 { get; } = new Building("Building268", 268);
+		public static Building SuperBloodMushroom0 { get; } = new Building("SuperBloodMushroom0", 268);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5612,7 +5612,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bloodmushroom-icon"<para/>
 		/// </summary>
-		public static Building Building269 { get; } = new Building("Building269", 269);
+		public static Building SuperBloodMushroom1 { get; } = new Building("SuperBloodMushroom1", 269);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5643,7 +5643,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building271 { get; } = new Building("Building271", 271);
+		public static Building FluorescentFern0 { get; } = new Building("FluorescentFern0", 271);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5674,7 +5674,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building272 { get; } = new Building("Building272", 272);
+		public static Building FluorescentFern1 { get; } = new Building("FluorescentFern1", 272);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5705,7 +5705,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building273 { get; } = new Building("Building273", 273);
+		public static Building FluorescentFern2 { get; } = new Building("FluorescentFern2", 273);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5736,7 +5736,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building274 { get; } = new Building("Building274", 274);
+		public static Building FluorescentFern3 { get; } = new Building("FluorescentFern3", 274);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5767,7 +5767,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building275 { get; } = new Building("Building275", 275);
+		public static Building FluorescentFern4 { get; } = new Building("FluorescentFern4", 275);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5798,7 +5798,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/amberplant-seed-icon"<para/>
 		/// </summary>
-		public static Building Building281 { get; } = new Building("Building281", 281);
+		public static Building Amber { get; } = new Building("Amber", 281);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5829,7 +5829,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/amberplant-seed-icon"<para/>
 		/// </summary>
-		public static Building Building282 { get; } = new Building("Building282", 282);
+		public static Building SmallAmber { get; } = new Building("SmallAmber", 282);
 		/// <summary>
 		/// Type: 1; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5860,7 +5860,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/amberplant-seed-icon"<para/>
 		/// </summary>
-		public static Building Building283 { get; } = new Building("Building283", 283);
+		public static Building BigAmber { get; } = new Building("BigAmber", 283);
 		/// <summary>
 		/// Type: 4; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5891,7 +5891,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/amberplant-seed-icon"<para/>
 		/// </summary>
-		public static Building Building284 { get; } = new Building("Building284", 284);
+		public static Building BigAmberCanBeCollected { get; } = new Building("BigAmberCanBeCollected", 284);
 		/// <summary>
 		/// Type: 1; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -5922,7 +5922,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building1000 { get; } = new Building("Building1000", 1000);
+		public static Building EmptyPlace { get; } = new Building("EmptyPlace", 1000);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -5953,7 +5953,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building1001 { get; } = new Building("Building1001", 1001);
+		public static Building Soil { get; } = new Building("Soil", 1001);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -5984,7 +5984,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building1002 { get; } = new Building("Building1002", 1002);
+		public static Building FrozenSoil { get; } = new Building("FrozenSoil", 1002);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6015,7 +6015,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building1003 { get; } = new Building("Building1003", 1003);
+		public static Building SandBlock { get; } = new Building("SandBlock", 1003);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6046,7 +6046,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building1004 { get; } = new Building("Building1004", 1004);
+		public static Building Stone { get; } = new Building("Stone", 1004);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6077,7 +6077,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-copper-icon"<para/>
 		/// </summary>
-		public static Building Building1005 { get; } = new Building("Building1005", 1005);
+		public static Building CopperMine { get; } = new Building("CopperMine", 1005);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6108,7 +6108,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-iron-icon"<para/>
 		/// </summary>
-		public static Building Building1006 { get; } = new Building("Building1006", 1006);
+		public static Building IronOre { get; } = new Building("IronOre", 1006);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6139,7 +6139,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-silver-icon"<para/>
 		/// </summary>
-		public static Building Building1007 { get; } = new Building("Building1007", 1007);
+		public static Building SilverMine { get; } = new Building("SilverMine", 1007);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6170,7 +6170,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-gold-icon"<para/>
 		/// </summary>
-		public static Building Building1008 { get; } = new Building("Building1008", 1008);
+		public static Building GoldMine { get; } = new Building("GoldMine", 1008);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6201,7 +6201,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building1009 { get; } = new Building("Building1009", 1009);
+		public static Building DiamondMine { get; } = new Building("DiamondMine", 1009);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6232,7 +6232,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building1010 { get; } = new Building("Building1010", 1010);
+		public static Building SnowBlock { get; } = new Building("SnowBlock", 1010);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6263,7 +6263,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-ice-icon"<para/>
 		/// </summary>
-		public static Building Building1011 { get; } = new Building("Building1011", 1011);
+		public static Building IceCube0 { get; } = new Building("IceCube0", 1011);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6294,7 +6294,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building1012 { get; } = new Building("Building1012", 1012);
+		public static Building Coal { get; } = new Building("Coal", 1012);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6325,7 +6325,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building1013 { get; } = new Building("Building1013", 1013);
+		public static Building ClayNone { get; } = new Building("ClayNone", 1013);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6356,7 +6356,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building1014 { get; } = new Building("Building1014", 1014);
+		public static Building Sulfur { get; } = new Building("Sulfur", 1014);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6387,7 +6387,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building1015 { get; } = new Building("Building1015", 1015);
+		public static Building SaltpeterNone { get; } = new Building("SaltpeterNone", 1015);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6418,7 +6418,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building1016 { get; } = new Building("Building1016", 1016);
+		public static Building DevilsWall { get; } = new Building("DevilsWall", 1016);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -6449,7 +6449,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building1017 { get; } = new Building("Building1017", 1017);
+		public static Building InfectedWall { get; } = new Building("InfectedWall", 1017);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6480,7 +6480,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building2000 { get; } = new Building("Building2000", 2000);
+		public static Building UniversalWall { get; } = new Building("UniversalWall", 2000);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6511,7 +6511,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building2001 { get; } = new Building("Building2001", 2001);
+		public static Building WoodenWall { get; } = new Building("WoodenWall", 2001);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6542,7 +6542,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-earth-icon"<para/>
 		/// </summary>
-		public static Building Building2002 { get; } = new Building("Building2002", 2002);
+		public static Building MudWall0 { get; } = new Building("MudWall0", 2002);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6573,7 +6573,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building2003 { get; } = new Building("Building2003", 2003);
+		public static Building StoneWall { get; } = new Building("StoneWall", 2003);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6604,7 +6604,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building2004 { get; } = new Building("Building2004", 2004);
+		public static Building CopperWall { get; } = new Building("CopperWall", 2004);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6635,7 +6635,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building2005 { get; } = new Building("Building2005", 2005);
+		public static Building IronWall { get; } = new Building("IronWall", 2005);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6666,7 +6666,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building2006 { get; } = new Building("Building2006", 2006);
+		public static Building SilverWall { get; } = new Building("SilverWall", 2006);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6697,7 +6697,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building2007 { get; } = new Building("Building2007", 2007);
+		public static Building GoldWall { get; } = new Building("GoldWall", 2007);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6728,7 +6728,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building2008 { get; } = new Building("Building2008", 2008);
+		public static Building DiamondWall { get; } = new Building("DiamondWall", 2008);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6759,7 +6759,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building2009 { get; } = new Building("Building2009", 2009);
+		public static Building GlassWall { get; } = new Building("GlassWall", 2009);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6790,7 +6790,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-snow-icon"<para/>
 		/// </summary>
-		public static Building Building2010 { get; } = new Building("Building2010", 2010);
+		public static Building SnowBlockWall { get; } = new Building("SnowBlockWall", 2010);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6821,7 +6821,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-ice-icon"<para/>
 		/// </summary>
-		public static Building Building2011 { get; } = new Building("Building2011", 2011);
+		public static Building IceWall { get; } = new Building("IceWall", 2011);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6852,7 +6852,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building2012 { get; } = new Building("Building2012", 2012);
+		public static Building WoodFence { get; } = new Building("WoodFence", 2012);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6883,7 +6883,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building2013 { get; } = new Building("Building2013", 2013);
+		public static Building RoundWoodWall { get; } = new Building("RoundWoodWall", 2013);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6914,7 +6914,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building2014 { get; } = new Building("Building2014", 2014);
+		public static Building CopperFence { get; } = new Building("CopperFence", 2014);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6945,7 +6945,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building2015 { get; } = new Building("Building2015", 2015);
+		public static Building IronFence { get; } = new Building("IronFence", 2015);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -6976,7 +6976,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building2016 { get; } = new Building("Building2016", 2016);
+		public static Building SilverFence { get; } = new Building("SilverFence", 2016);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7007,7 +7007,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building2017 { get; } = new Building("Building2017", 2017);
+		public static Building GoldenFence { get; } = new Building("GoldenFence", 2017);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7038,7 +7038,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building2018 { get; } = new Building("Building2018", 2018);
+		public static Building DiamondFence { get; } = new Building("DiamondFence", 2018);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7069,7 +7069,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building2019 { get; } = new Building("Building2019", 2019);
+		public static Building OldSoil { get; } = new Building("OldSoil", 2019);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7100,7 +7100,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building2020 { get; } = new Building("Building2020", 2020);
+		public static Building OldFrozenSoil { get; } = new Building("OldFrozenSoil", 2020);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7131,7 +7131,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building2021 { get; } = new Building("Building2021", 2021);
+		public static Building OldSand { get; } = new Building("OldSand", 2021);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7162,7 +7162,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building2022 { get; } = new Building("Building2022", 2022);
+		public static Building OldStone { get; } = new Building("OldStone", 2022);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7193,7 +7193,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-copper-icon"<para/>
 		/// </summary>
-		public static Building Building2023 { get; } = new Building("Building2023", 2023);
+		public static Building OldCopperMine { get; } = new Building("OldCopperMine", 2023);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7224,7 +7224,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-iron-icon"<para/>
 		/// </summary>
-		public static Building Building2024 { get; } = new Building("Building2024", 2024);
+		public static Building OldIronOre { get; } = new Building("OldIronOre", 2024);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7255,7 +7255,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-silver-icon"<para/>
 		/// </summary>
-		public static Building Building2025 { get; } = new Building("Building2025", 2025);
+		public static Building OldSilverMine { get; } = new Building("OldSilverMine", 2025);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7286,7 +7286,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-gold-icon"<para/>
 		/// </summary>
-		public static Building Building2026 { get; } = new Building("Building2026", 2026);
+		public static Building OldGoldMine { get; } = new Building("OldGoldMine", 2026);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7317,7 +7317,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building2027 { get; } = new Building("Building2027", 2027);
+		public static Building OldDiamondMine { get; } = new Building("OldDiamondMine", 2027);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7348,7 +7348,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building2028 { get; } = new Building("Building2028", 2028);
+		public static Building OldSnowBlock { get; } = new Building("OldSnowBlock", 2028);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7379,7 +7379,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-ice-icon"<para/>
 		/// </summary>
-		public static Building Building2029 { get; } = new Building("Building2029", 2029);
+		public static Building OldIceCubes { get; } = new Building("OldIceCubes", 2029);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7410,7 +7410,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building2030 { get; } = new Building("Building2030", 2030);
+		public static Building OldCoal { get; } = new Building("OldCoal", 2030);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7441,7 +7441,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building2031 { get; } = new Building("Building2031", 2031);
+		public static Building OldWoodenWall { get; } = new Building("OldWoodenWall", 2031);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7472,7 +7472,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-earth-icon"<para/>
 		/// </summary>
-		public static Building Building2032 { get; } = new Building("Building2032", 2032);
+		public static Building OldMudWall { get; } = new Building("OldMudWall", 2032);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7503,7 +7503,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building2033 { get; } = new Building("Building2033", 2033);
+		public static Building OldStoneWall { get; } = new Building("OldStoneWall", 2033);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7534,7 +7534,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building2034 { get; } = new Building("Building2034", 2034);
+		public static Building OldCopperWall { get; } = new Building("OldCopperWall", 2034);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7565,7 +7565,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building2035 { get; } = new Building("Building2035", 2035);
+		public static Building OldIronWall { get; } = new Building("OldIronWall", 2035);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7596,7 +7596,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building2036 { get; } = new Building("Building2036", 2036);
+		public static Building OldSilverWall { get; } = new Building("OldSilverWall", 2036);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7627,7 +7627,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building2037 { get; } = new Building("Building2037", 2037);
+		public static Building OldGoldWall { get; } = new Building("OldGoldWall", 2037);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7658,7 +7658,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building2038 { get; } = new Building("Building2038", 2038);
+		public static Building OldDiamondWall { get; } = new Building("OldDiamondWall", 2038);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7689,7 +7689,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building2039 { get; } = new Building("Building2039", 2039);
+		public static Building OldGlassWall { get; } = new Building("OldGlassWall", 2039);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7720,7 +7720,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-snow-icon"<para/>
 		/// </summary>
-		public static Building Building2040 { get; } = new Building("Building2040", 2040);
+		public static Building OldSnowBlockWall { get; } = new Building("OldSnowBlockWall", 2040);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -7751,7 +7751,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-ice-icon"<para/>
 		/// </summary>
-		public static Building Building2041 { get; } = new Building("Building2041", 2041);
+		public static Building OldIceWall { get; } = new Building("OldIceWall", 2041);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7782,7 +7782,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building2042 { get; } = new Building("Building2042", 2042);
+		public static Building BrokenSoil { get; } = new Building("BrokenSoil", 2042);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7813,7 +7813,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building2043 { get; } = new Building("Building2043", 2043);
+		public static Building FrozenGround { get; } = new Building("FrozenGround", 2043);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7844,7 +7844,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building2044 { get; } = new Building("Building2044", 2044);
+		public static Building BrokenSand { get; } = new Building("BrokenSand", 2044);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7875,7 +7875,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building2045 { get; } = new Building("Building2045", 2045);
+		public static Building BrokenStone { get; } = new Building("BrokenStone", 2045);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7906,7 +7906,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-copper-icon"<para/>
 		/// </summary>
-		public static Building Building2046 { get; } = new Building("Building2046", 2046);
+		public static Building BrokenCopperMine { get; } = new Building("BrokenCopperMine", 2046);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7937,7 +7937,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-iron-icon"<para/>
 		/// </summary>
-		public static Building Building2047 { get; } = new Building("Building2047", 2047);
+		public static Building BrokenIronOre { get; } = new Building("BrokenIronOre", 2047);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7968,7 +7968,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-silver-icon"<para/>
 		/// </summary>
-		public static Building Building2048 { get; } = new Building("Building2048", 2048);
+		public static Building BrokenSilverMine { get; } = new Building("BrokenSilverMine", 2048);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -7999,7 +7999,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-gold-icon"<para/>
 		/// </summary>
-		public static Building Building2049 { get; } = new Building("Building2049", 2049);
+		public static Building BrokenGoldMine { get; } = new Building("BrokenGoldMine", 2049);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -8030,7 +8030,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building2050 { get; } = new Building("Building2050", 2050);
+		public static Building BrokenDiamondMine { get; } = new Building("BrokenDiamondMine", 2050);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -8061,7 +8061,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building2051 { get; } = new Building("Building2051", 2051);
+		public static Building BrokenSnowBlock { get; } = new Building("BrokenSnowBlock", 2051);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -8092,7 +8092,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-ice-icon"<para/>
 		/// </summary>
-		public static Building Building2052 { get; } = new Building("Building2052", 2052);
+		public static Building IceCube1 { get; } = new Building("IceCube1", 2052);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 2; IsReplace: 0<para/>
@@ -8123,7 +8123,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building2053 { get; } = new Building("Building2053", 2053);
+		public static Building BreakingCoal { get; } = new Building("BreakingCoal", 2053);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8154,7 +8154,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building2054 { get; } = new Building("Building2054", 2054);
+		public static Building BrokenWoodWall { get; } = new Building("BrokenWoodWall", 2054);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8185,7 +8185,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-earth-icon"<para/>
 		/// </summary>
-		public static Building Building2055 { get; } = new Building("Building2055", 2055);
+		public static Building MudWall1 { get; } = new Building("MudWall1", 2055);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8216,7 +8216,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building2056 { get; } = new Building("Building2056", 2056);
+		public static Building BrokenStoneWall { get; } = new Building("BrokenStoneWall", 2056);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8247,7 +8247,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building2057 { get; } = new Building("Building2057", 2057);
+		public static Building BrokenCopperWall { get; } = new Building("BrokenCopperWall", 2057);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8278,7 +8278,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building2058 { get; } = new Building("Building2058", 2058);
+		public static Building BrokenIronWall { get; } = new Building("BrokenIronWall", 2058);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8309,7 +8309,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building2059 { get; } = new Building("Building2059", 2059);
+		public static Building BrokenSilverWall { get; } = new Building("BrokenSilverWall", 2059);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8340,7 +8340,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building2060 { get; } = new Building("Building2060", 2060);
+		public static Building BrokenGoldWall { get; } = new Building("BrokenGoldWall", 2060);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8371,7 +8371,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building2061 { get; } = new Building("Building2061", 2061);
+		public static Building BrokenDiamondWall { get; } = new Building("BrokenDiamondWall", 2061);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8402,7 +8402,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building2062 { get; } = new Building("Building2062", 2062);
+		public static Building BrokenGlassWall { get; } = new Building("BrokenGlassWall", 2062);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8433,7 +8433,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-snow-icon"<para/>
 		/// </summary>
-		public static Building Building2063 { get; } = new Building("Building2063", 2063);
+		public static Building BrokenSnowWall { get; } = new Building("BrokenSnowWall", 2063);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8464,7 +8464,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-ice-icon"<para/>
 		/// </summary>
-		public static Building Building2064 { get; } = new Building("Building2064", 2064);
+		public static Building IcebreakerWall { get; } = new Building("IcebreakerWall", 2064);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8495,7 +8495,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building2065 { get; } = new Building("Building2065", 2065);
+		public static Building OldMecoWallBlue { get; } = new Building("OldMecoWallBlue", 2065);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8526,7 +8526,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building2066 { get; } = new Building("Building2066", 2066);
+		public static Building BrokenMecoWallBlue { get; } = new Building("BrokenMecoWallBlue", 2066);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8557,7 +8557,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building2067 { get; } = new Building("Building2067", 2067);
+		public static Building DamageToMecoWallBlue { get; } = new Building("DamageToMecoWallBlue", 2067);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8588,7 +8588,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building2068 { get; } = new Building("Building2068", 2068);
+		public static Building OldWoodenFence { get; } = new Building("OldWoodenFence", 2068);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8619,7 +8619,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/tree-wood-icon"<para/>
 		/// </summary>
-		public static Building Building2069 { get; } = new Building("Building2069", 2069);
+		public static Building OldRoundWoodenWall { get; } = new Building("OldRoundWoodenWall", 2069);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8650,7 +8650,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building2070 { get; } = new Building("Building2070", 2070);
+		public static Building OldCopperFence { get; } = new Building("OldCopperFence", 2070);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8681,7 +8681,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building2071 { get; } = new Building("Building2071", 2071);
+		public static Building OldIronFence { get; } = new Building("OldIronFence", 2071);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8712,7 +8712,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building2072 { get; } = new Building("Building2072", 2072);
+		public static Building OldSilverFence { get; } = new Building("OldSilverFence", 2072);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8743,7 +8743,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building2073 { get; } = new Building("Building2073", 2073);
+		public static Building OldGoldFence { get; } = new Building("OldGoldFence", 2073);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8774,7 +8774,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building2074 { get; } = new Building("Building2074", 2074);
+		public static Building OldDiamondFence { get; } = new Building("OldDiamondFence", 2074);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8805,7 +8805,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building2076 { get; } = new Building("Building2076", 2076);
+		public static Building BoneFence { get; } = new Building("BoneFence", 2076);
 		/// <summary>
 		/// Type: 15; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8836,7 +8836,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building2077 { get; } = new Building("Building2077", 2077);
+		public static Building OldBoneFence { get; } = new Building("OldBoneFence", 2077);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8867,7 +8867,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-earth-icon"<para/>
 		/// </summary>
-		public static Building Building2078 { get; } = new Building("Building2078", 2078);
+		public static Building BoneWall { get; } = new Building("BoneWall", 2078);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8898,7 +8898,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-earth-icon"<para/>
 		/// </summary>
-		public static Building Building2079 { get; } = new Building("Building2079", 2079);
+		public static Building OldBoneWall { get; } = new Building("OldBoneWall", 2079);
 		/// <summary>
 		/// Type: 35; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -8991,7 +8991,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building2082 { get; } = new Building("Building2082", 2082);
+		public static Building MecoWallBlue { get; } = new Building("MecoWallBlue", 2082);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9022,7 +9022,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco2-icon"<para/>
 		/// </summary>
-		public static Building Building2083 { get; } = new Building("Building2083", 2083);
+		public static Building MecoWallRed { get; } = new Building("MecoWallRed", 2083);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9053,7 +9053,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco3-icon"<para/>
 		/// </summary>
-		public static Building Building2084 { get; } = new Building("Building2084", 2084);
+		public static Building InfectedBioMecoWall { get; } = new Building("InfectedBioMecoWall", 2084);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9084,7 +9084,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco2-icon"<para/>
 		/// </summary>
-		public static Building Building2085 { get; } = new Building("Building2085", 2085);
+		public static Building OldMecoWallRed { get; } = new Building("OldMecoWallRed", 2085);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9115,7 +9115,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco2-icon"<para/>
 		/// </summary>
-		public static Building Building2086 { get; } = new Building("Building2086", 2086);
+		public static Building BrokenMecoWallRed { get; } = new Building("BrokenMecoWallRed", 2086);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9146,7 +9146,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco2-icon"<para/>
 		/// </summary>
-		public static Building Building2087 { get; } = new Building("Building2087", 2087);
+		public static Building DamagedMecoWallRed { get; } = new Building("DamagedMecoWallRed", 2087);
 		/// <summary>
 		/// Type: 2; SubType: 2<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9177,7 +9177,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building2088 { get; } = new Building("Building2088", 2088);
+		public static Building CrystalSandWall { get; } = new Building("CrystalSandWall", 2088);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9208,7 +9208,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3001 { get; } = new Building("Building3001", 3001);
+		public static Building Torch { get; } = new Building("Torch", 3001);
 		/// <summary>
 		/// Type: 18; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9270,7 +9270,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3003 { get; } = new Building("Building3003", 3003);
+		public static Building WoodenHandle { get; } = new Building("WoodenHandle", 3003);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9301,7 +9301,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3004 { get; } = new Building("Building3004", 3004);
+		public static Building GoblinTikiTorch { get; } = new Building("GoblinTikiTorch", 3004);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9332,7 +9332,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building3005 { get; } = new Building("Building3005", 3005);
+		public static Building StoneHandle { get; } = new Building("StoneHandle", 3005);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9363,7 +9363,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building3006 { get; } = new Building("Building3006", 3006);
+		public static Building CopperHandleBaseTorch { get; } = new Building("CopperHandleBaseTorch", 3006);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9394,7 +9394,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building3007 { get; } = new Building("Building3007", 3007);
+		public static Building IronHandle { get; } = new Building("IronHandle", 3007);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9425,7 +9425,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3008 { get; } = new Building("Building3008", 3008);
+		public static Building SilverHandleTikiTorch { get; } = new Building("SilverHandleTikiTorch", 3008);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -9456,7 +9456,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3009 { get; } = new Building("Building3009", 3009);
+		public static Building GoldHandle { get; } = new Building("GoldHandle", 3009);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -10541,7 +10541,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building3044 { get; } = new Building("Building3044", 3044);
+		public static Building StoneCraft { get; } = new Building("StoneCraft", 3044);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -10572,7 +10572,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building3045 { get; } = new Building("Building3045", 3045);
+		public static Building CopperCraftTable { get; } = new Building("CopperCraftTable", 3045);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -10603,7 +10603,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building3046 { get; } = new Building("Building3046", 3046);
+		public static Building IronCraftTable { get; } = new Building("IronCraftTable", 3046);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -10634,7 +10634,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3047 { get; } = new Building("Building3047", 3047);
+		public static Building SilverCraftTable { get; } = new Building("SilverCraftTable", 3047);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -10665,7 +10665,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3048 { get; } = new Building("Building3048", 3048);
+		public static Building GoldCraftTable { get; } = new Building("GoldCraftTable", 3048);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -10696,7 +10696,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building3049 { get; } = new Building("Building3049", 3049);
+		public static Building DiamondCraftTable { get; } = new Building("DiamondCraftTable", 3049);
 		/// <summary>
 		/// Type: 20; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -10944,7 +10944,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building3057 { get; } = new Building("Building3057", 3057);
+		public static Building StoneDigester { get; } = new Building("StoneDigester", 3057);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -10975,7 +10975,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building3058 { get; } = new Building("Building3058", 3058);
+		public static Building CopperBiogasTank { get; } = new Building("CopperBiogasTank", 3058);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11006,7 +11006,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building3059 { get; } = new Building("Building3059", 3059);
+		public static Building IronDigester { get; } = new Building("IronDigester", 3059);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11037,7 +11037,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3060 { get; } = new Building("Building3060", 3060);
+		public static Building SilverBiogasPool { get; } = new Building("SilverBiogasPool", 3060);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11068,7 +11068,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3061 { get; } = new Building("Building3061", 3061);
+		public static Building GoldBiogasPool { get; } = new Building("GoldBiogasPool", 3061);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11099,7 +11099,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building3062 { get; } = new Building("Building3062", 3062);
+		public static Building DiamondBiogasTank { get; } = new Building("DiamondBiogasTank", 3062);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11130,7 +11130,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3063 { get; } = new Building("Building3063", 3063);
+		public static Building GoblinWorkbench { get; } = new Building("GoblinWorkbench", 3063);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11161,7 +11161,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building3064 { get; } = new Building("Building3064", 3064);
+		public static Building WormFusionPool { get; } = new Building("WormFusionPool", 3064);
 		/// <summary>
 		/// Type: 45; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11440,7 +11440,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3101 { get; } = new Building("Building3101", 3101);
+		public static Building WoodenDoor { get; } = new Building("WoodenDoor", 3101);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11471,7 +11471,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorStoneClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building3102 { get; } = new Building("Building3102", 3102);
+		public static Building Shimen { get; } = new Building("Shimen", 3102);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11502,7 +11502,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorMetalClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building3103 { get; } = new Building("Building3103", 3103);
+		public static Building CopperGate0 { get; } = new Building("CopperGate0", 3103);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11533,7 +11533,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorMetalClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building3104 { get; } = new Building("Building3104", 3104);
+		public static Building IronGate0 { get; } = new Building("IronGate0", 3104);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11564,7 +11564,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorMetalClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3105 { get; } = new Building("Building3105", 3105);
+		public static Building SilverGate0 { get; } = new Building("SilverGate0", 3105);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11595,7 +11595,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorMetalClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3106 { get; } = new Building("Building3106", 3106);
+		public static Building GoldenGate { get; } = new Building("GoldenGate", 3106);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11626,7 +11626,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorSandClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building3107 { get; } = new Building("Building3107", 3107);
+		public static Building Shamen { get; } = new Building("Shamen", 3107);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11657,7 +11657,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorStoneClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-ice-icon"<para/>
 		/// </summary>
-		public static Building Building3108 { get; } = new Building("Building3108", 3108);
+		public static Building IceGate { get; } = new Building("IceGate", 3108);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11688,7 +11688,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorSandClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building3109 { get; } = new Building("Building3109", 3109);
+		public static Building SnowGate { get; } = new Building("SnowGate", 3109);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11719,7 +11719,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building3110 { get; } = new Building("Building3110", 3110);
+		public static Building GlassDoor { get; } = new Building("GlassDoor", 3110);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11750,7 +11750,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3111 { get; } = new Building("Building3111", 3111);
+		public static Building WoodenRoundTable0 { get; } = new Building("WoodenRoundTable0", 3111);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11781,7 +11781,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building3112 { get; } = new Building("Building3112", 3112);
+		public static Building StoneRoundTable { get; } = new Building("StoneRoundTable", 3112);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11812,7 +11812,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building3113 { get; } = new Building("Building3113", 3113);
+		public static Building CopperRoundTable { get; } = new Building("CopperRoundTable", 3113);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11843,7 +11843,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building3114 { get; } = new Building("Building3114", 3114);
+		public static Building IronRoundTable { get; } = new Building("IronRoundTable", 3114);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11874,7 +11874,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3115 { get; } = new Building("Building3115", 3115);
+		public static Building SilverRoundTable { get; } = new Building("SilverRoundTable", 3115);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11905,7 +11905,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3116 { get; } = new Building("Building3116", 3116);
+		public static Building GoldenRoundTable { get; } = new Building("GoldenRoundTable", 3116);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11936,7 +11936,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3117 { get; } = new Building("Building3117", 3117);
+		public static Building EarthRoundTable { get; } = new Building("EarthRoundTable", 3117);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11967,7 +11967,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building3118 { get; } = new Building("Building3118", 3118);
+		public static Building SnowRoundTable { get; } = new Building("SnowRoundTable", 3118);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -11998,7 +11998,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3119 { get; } = new Building("Building3119", 3119);
+		public static Building BrokenBoneRoundTable { get; } = new Building("BrokenBoneRoundTable", 3119);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12029,7 +12029,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3120 { get; } = new Building("Building3120", 3120);
+		public static Building MecoRoundTable0 { get; } = new Building("MecoRoundTable0", 3120);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12060,7 +12060,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3121 { get; } = new Building("Building3121", 3121);
+		public static Building WoodenStool0 { get; } = new Building("WoodenStool0", 3121);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12091,7 +12091,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building3122 { get; } = new Building("Building3122", 3122);
+		public static Building StoneStool { get; } = new Building("StoneStool", 3122);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12122,7 +12122,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building3123 { get; } = new Building("Building3123", 3123);
+		public static Building CopperStool { get; } = new Building("CopperStool", 3123);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12153,7 +12153,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building3124 { get; } = new Building("Building3124", 3124);
+		public static Building IronStool { get; } = new Building("IronStool", 3124);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12184,7 +12184,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3125 { get; } = new Building("Building3125", 3125);
+		public static Building SilverStool { get; } = new Building("SilverStool", 3125);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12215,7 +12215,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3126 { get; } = new Building("Building3126", 3126);
+		public static Building GoldenStool { get; } = new Building("GoldenStool", 3126);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12246,7 +12246,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3127 { get; } = new Building("Building3127", 3127);
+		public static Building EarthStool { get; } = new Building("EarthStool", 3127);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12277,7 +12277,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building3128 { get; } = new Building("Building3128", 3128);
+		public static Building SnowStool { get; } = new Building("SnowStool", 3128);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12308,7 +12308,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3129 { get; } = new Building("Building3129", 3129);
+		public static Building BoneChair { get; } = new Building("BoneChair", 3129);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12339,7 +12339,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building3130 { get; } = new Building("Building3130", 3130);
+		public static Building MecoChair0 { get; } = new Building("MecoChair0", 3130);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12370,7 +12370,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3131 { get; } = new Building("Building3131", 3131);
+		public static Building WoodenBox { get; } = new Building("WoodenBox", 3131);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12401,7 +12401,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building3132 { get; } = new Building("Building3132", 3132);
+		public static Building BrassBox { get; } = new Building("BrassBox", 3132);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12432,7 +12432,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building3133 { get; } = new Building("Building3133", 3133);
+		public static Building IronBox { get; } = new Building("IronBox", 3133);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12463,7 +12463,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3134 { get; } = new Building("Building3134", 3134);
+		public static Building SilverBox { get; } = new Building("SilverBox", 3134);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12494,7 +12494,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3135 { get; } = new Building("Building3135", 3135);
+		public static Building GoldBox { get; } = new Building("GoldBox", 3135);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12525,7 +12525,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3136 { get; } = new Building("Building3136", 3136);
+		public static Building CopperWoodenBox { get; } = new Building("CopperWoodenBox", 3136);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12556,7 +12556,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3137 { get; } = new Building("Building3137", 3137);
+		public static Building IronWoodenBox { get; } = new Building("IronWoodenBox", 3137);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12587,7 +12587,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3138 { get; } = new Building("Building3138", 3138);
+		public static Building SilverSideWoodenBox { get; } = new Building("SilverSideWoodenBox", 3138);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12618,7 +12618,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3139 { get; } = new Building("Building3139", 3139);
+		public static Building BlueBox { get; } = new Building("BlueBox", 3139);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12649,7 +12649,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3140 { get; } = new Building("Building3140", 3140);
+		public static Building GreenBox { get; } = new Building("GreenBox", 3140);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12680,7 +12680,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3141 { get; } = new Building("Building3141", 3141);
+		public static Building PurpleBox { get; } = new Building("PurpleBox", 3141);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12711,7 +12711,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3142 { get; } = new Building("Building3142", 3142);
+		public static Building RedBox { get; } = new Building("RedBox", 3142);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12742,7 +12742,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3143 { get; } = new Building("Building3143", 3143);
+		public static Building SilverSideGoldBox { get; } = new Building("SilverSideGoldBox", 3143);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12773,7 +12773,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3144 { get; } = new Building("Building3144", 3144);
+		public static Building BoneBox { get; } = new Building("BoneBox", 3144);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12804,7 +12804,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building3146 { get; } = new Building("Building3146", 3146);
+		public static Building DemonBox { get; } = new Building("DemonBox", 3146);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12835,7 +12835,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building3147 { get; } = new Building("Building3147", 3147);
+		public static Building CrystalSandBox { get; } = new Building("CrystalSandBox", 3147);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12866,7 +12866,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3151 { get; } = new Building("Building3151", 3151);
+		public static Building WoodenBed0 { get; } = new Building("WoodenBed0", 3151);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12897,7 +12897,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building3152 { get; } = new Building("Building3152", 3152);
+		public static Building OrcStoneBed { get; } = new Building("OrcStoneBed", 3152);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12928,7 +12928,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building3153 { get; } = new Building("Building3153", 3153);
+		public static Building CopperBed { get; } = new Building("CopperBed", 3153);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12959,7 +12959,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building3154 { get; } = new Building("Building3154", 3154);
+		public static Building IronBed { get; } = new Building("IronBed", 3154);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -12990,7 +12990,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3155 { get; } = new Building("Building3155", 3155);
+		public static Building SilverBed { get; } = new Building("SilverBed", 3155);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13021,7 +13021,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3156 { get; } = new Building("Building3156", 3156);
+		public static Building GoldBed { get; } = new Building("GoldBed", 3156);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13052,7 +13052,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building3157 { get; } = new Building("Building3157", 3157);
+		public static Building DormantWarehouse { get; } = new Building("DormantWarehouse", 3157);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13083,7 +13083,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3158 { get; } = new Building("Building3158", 3158);
+		public static Building OrcSoilBed { get; } = new Building("OrcSoilBed", 3158);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13114,7 +13114,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building3159 { get; } = new Building("Building3159", 3159);
+		public static Building OrcSnowBed { get; } = new Building("OrcSnowBed", 3159);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13145,7 +13145,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3160 { get; } = new Building("Building3160", 3160);
+		public static Building GoblinBoneBed { get; } = new Building("GoblinBoneBed", 3160);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13176,7 +13176,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3161 { get; } = new Building("Building3161", 3161);
+		public static Building CopperGate1 { get; } = new Building("CopperGate1", 3161);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13207,7 +13207,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3162 { get; } = new Building("Building3162", 3162);
+		public static Building IronGate1 { get; } = new Building("IronGate1", 3162);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13238,7 +13238,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3163 { get; } = new Building("Building3163", 3163);
+		public static Building SilverGate1 { get; } = new Building("SilverGate1", 3163);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13269,7 +13269,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3164 { get; } = new Building("Building3164", 3164);
+		public static Building GoldBarDoor { get; } = new Building("GoldBarDoor", 3164);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13300,7 +13300,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorStoneClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3165 { get; } = new Building("Building3165", 3165);
+		public static Building DirtDoor { get; } = new Building("DirtDoor", 3165);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13331,7 +13331,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorElectricClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building3166 { get; } = new Building("Building3166", 3166);
+		public static Building OldMecoAlloyDoor { get; } = new Building("OldMecoAlloyDoor", 3166);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13362,7 +13362,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3167 { get; } = new Building("Building3167", 3167);
+		public static Building BoneGate { get; } = new Building("BoneGate", 3167);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13393,7 +13393,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorElectricClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building3168 { get; } = new Building("Building3168", 3168);
+		public static Building MecoAlloyDoor { get; } = new Building("MecoAlloyDoor", 3168);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13424,7 +13424,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorSandClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building3169 { get; } = new Building("Building3169", 3169);
+		public static Building CrystalSandDoor { get; } = new Building("CrystalSandDoor", 3169);
 		/// <summary>
 		/// Type: 22; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13455,7 +13455,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3171 { get; } = new Building("Building3171", 3171);
+		public static Building Stairs0 { get; } = new Building("Stairs0", 3171);
 		/// <summary>
 		/// Type: 22; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13486,7 +13486,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building3172 { get; } = new Building("Building3172", 3172);
+		public static Building Stairs1 { get; } = new Building("Stairs1", 3172);
 		/// <summary>
 		/// Type: 22; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13517,7 +13517,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building3173 { get; } = new Building("Building3173", 3173);
+		public static Building Stairs2 { get; } = new Building("Stairs2", 3173);
 		/// <summary>
 		/// Type: 22; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13548,7 +13548,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building3174 { get; } = new Building("Building3174", 3174);
+		public static Building Stairs3 { get; } = new Building("Stairs3", 3174);
 		/// <summary>
 		/// Type: 22; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13579,7 +13579,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3175 { get; } = new Building("Building3175", 3175);
+		public static Building Stairs4 { get; } = new Building("Stairs4", 3175);
 		/// <summary>
 		/// Type: 22; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13610,7 +13610,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3176 { get; } = new Building("Building3176", 3176);
+		public static Building Stairs5 { get; } = new Building("Stairs5", 3176);
 		/// <summary>
 		/// Type: 22; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -13641,7 +13641,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building3177 { get; } = new Building("Building3177", 3177);
+		public static Building Stairs6 { get; } = new Building("Stairs6", 3177);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13672,7 +13672,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3178 { get; } = new Building("Building3178", 3178);
+		public static Building SpiderWeb1 { get; } = new Building("SpiderWeb1", 3178);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13703,7 +13703,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3179 { get; } = new Building("Building3179", 3179);
+		public static Building SpiderWeb2 { get; } = new Building("SpiderWeb2", 3179);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13734,7 +13734,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3180 { get; } = new Building("Building3180", 3180);
+		public static Building SpiderWeb3 { get; } = new Building("SpiderWeb3", 3180);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13765,7 +13765,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3181 { get; } = new Building("Building3181", 3181);
+		public static Building SpiderWeb4 { get; } = new Building("SpiderWeb4", 3181);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13796,7 +13796,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3182 { get; } = new Building("Building3182", 3182);
+		public static Building SpiderWeb5 { get; } = new Building("SpiderWeb5", 3182);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13827,7 +13827,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3183 { get; } = new Building("Building3183", 3183);
+		public static Building SpiderWeb6 { get; } = new Building("SpiderWeb6", 3183);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13858,7 +13858,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3184 { get; } = new Building("Building3184", 3184);
+		public static Building SpiderWeb7 { get; } = new Building("SpiderWeb7", 3184);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13889,7 +13889,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3185 { get; } = new Building("Building3185", 3185);
+		public static Building SpiderWeb8 { get; } = new Building("SpiderWeb8", 3185);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13920,7 +13920,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3186 { get; } = new Building("Building3186", 3186);
+		public static Building SpiderWeb9 { get; } = new Building("SpiderWeb9", 3186);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13951,7 +13951,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3187 { get; } = new Building("Building3187", 3187);
+		public static Building SpiderWeb10 { get; } = new Building("SpiderWeb10", 3187);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -13982,7 +13982,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3188 { get; } = new Building("Building3188", 3188);
+		public static Building SpiderWeb11 { get; } = new Building("SpiderWeb11", 3188);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -14013,7 +14013,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3189 { get; } = new Building("Building3189", 3189);
+		public static Building SpiderWeb12 { get; } = new Building("SpiderWeb12", 3189);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -14044,7 +14044,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3190 { get; } = new Building("Building3190", 3190);
+		public static Building SpiderWeb13 { get; } = new Building("SpiderWeb13", 3190);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -14075,7 +14075,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building3191 { get; } = new Building("Building3191", 3191);
+		public static Building SpiderWeb14 { get; } = new Building("SpiderWeb14", 3191);
 		/// <summary>
 		/// Type: 25; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14106,7 +14106,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building3201 { get; } = new Building("Building3201", 3201);
+		public static Building Snowman1 { get; } = new Building("Snowman1", 3201);
 		/// <summary>
 		/// Type: 25; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14137,7 +14137,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building3202 { get; } = new Building("Building3202", 3202);
+		public static Building Snowman2 { get; } = new Building("Snowman2", 3202);
 		/// <summary>
 		/// Type: 25; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14168,7 +14168,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building3203 { get; } = new Building("Building3203", 3203);
+		public static Building Snowman3 { get; } = new Building("Snowman3", 3203);
 		/// <summary>
 		/// Type: 25; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14199,7 +14199,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building3204 { get; } = new Building("Building3204", 3204);
+		public static Building Snowman4 { get; } = new Building("Snowman4", 3204);
 		/// <summary>
 		/// Type: 25; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14230,7 +14230,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building3205 { get; } = new Building("Building3205", 3205);
+		public static Building Snowman5 { get; } = new Building("Snowman5", 3205);
 		/// <summary>
 		/// Type: 27; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14261,7 +14261,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3211 { get; } = new Building("Building3211", 3211);
+		public static Building ClayFlowerPot { get; } = new Building("ClayFlowerPot", 3211);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14292,7 +14292,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3212 { get; } = new Building("Building3212", 3212);
+		public static Building ClayBottle { get; } = new Building("ClayBottle", 3212);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14323,7 +14323,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3213 { get; } = new Building("Building3213", 3213);
+		public static Building ClayPot { get; } = new Building("ClayPot", 3213);
 		/// <summary>
 		/// Type: 27; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14354,7 +14354,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building3214 { get; } = new Building("Building3214", 3214);
+		public static Building GlassFlowerPot { get; } = new Building("GlassFlowerPot", 3214);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14385,7 +14385,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building3215 { get; } = new Building("Building3215", 3215);
+		public static Building GlassBottle { get; } = new Building("GlassBottle", 3215);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14416,7 +14416,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building3216 { get; } = new Building("Building3216", 3216);
+		public static Building GlassJar { get; } = new Building("GlassJar", 3216);
 		/// <summary>
 		/// Type: 27; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14447,7 +14447,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building3217 { get; } = new Building("Building3217", 3217);
+		public static Building CeramicFlowerPot { get; } = new Building("CeramicFlowerPot", 3217);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14478,7 +14478,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building3218 { get; } = new Building("Building3218", 3218);
+		public static Building CeramicBottle { get; } = new Building("CeramicBottle", 3218);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14509,7 +14509,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building3219 { get; } = new Building("Building3219", 3219);
+		public static Building CeramicPot { get; } = new Building("CeramicPot", 3219);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14540,7 +14540,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building3220 { get; } = new Building("Building3220", 3220);
+		public static Building ClayStatue { get; } = new Building("ClayStatue", 3220);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14571,7 +14571,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3221 { get; } = new Building("Building3221", 3221);
+		public static Building GlassStatue { get; } = new Building("GlassStatue", 3221);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14602,7 +14602,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building3222 { get; } = new Building("Building3222", 3222);
+		public static Building CeramicStatue { get; } = new Building("CeramicStatue", 3222);
 		/// <summary>
 		/// Type: 27; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14633,7 +14633,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3223 { get; } = new Building("Building3223", 3223);
+		public static Building EarthenFlowerPot { get; } = new Building("EarthenFlowerPot", 3223);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14664,7 +14664,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3224 { get; } = new Building("Building3224", 3224);
+		public static Building MudJar { get; } = new Building("MudJar", 3224);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14695,7 +14695,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3225 { get; } = new Building("Building3225", 3225);
+		public static Building MudBottle { get; } = new Building("MudBottle", 3225);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14726,7 +14726,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3226 { get; } = new Building("Building3226", 3226);
+		public static Building ClaySculpture { get; } = new Building("ClaySculpture", 3226);
 		/// <summary>
 		/// Type: 29; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14757,7 +14757,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3231 { get; } = new Building("Building3231", 3231);
+		public static Building WoodenMannequin { get; } = new Building("WoodenMannequin", 3231);
 		/// <summary>
 		/// Type: 27; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14788,7 +14788,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building3241 { get; } = new Building("Building3241", 3241);
+		public static Building BoneFlowerPot { get; } = new Building("BoneFlowerPot", 3241);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14819,7 +14819,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3251 { get; } = new Building("Building3251", 3251);
+		public static Building OpenedIronBarrel { get; } = new Building("OpenedIronBarrel", 3251);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14850,7 +14850,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3252 { get; } = new Building("Building3252", 3252);
+		public static Building IronBarrel { get; } = new Building("IronBarrel", 3252);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14881,7 +14881,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3253 { get; } = new Building("Building3253", 3253);
+		public static Building WoodenBarrel { get; } = new Building("WoodenBarrel", 3253);
 		/// <summary>
 		/// Type: 26; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14912,7 +14912,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3261 { get; } = new Building("Building3261", 3261);
+		public static Building WoodenSquareTable0 { get; } = new Building("WoodenSquareTable0", 3261);
 		/// <summary>
 		/// Type: 26; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14943,7 +14943,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building3262 { get; } = new Building("Building3262", 3262);
+		public static Building StoneTable { get; } = new Building("StoneTable", 3262);
 		/// <summary>
 		/// Type: 26; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -14974,7 +14974,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building3263 { get; } = new Building("Building3263", 3263);
+		public static Building CopperSquareTable { get; } = new Building("CopperSquareTable", 3263);
 		/// <summary>
 		/// Type: 26; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15005,7 +15005,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building3264 { get; } = new Building("Building3264", 3264);
+		public static Building IronSquareTable { get; } = new Building("IronSquareTable", 3264);
 		/// <summary>
 		/// Type: 26; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15036,7 +15036,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building3265 { get; } = new Building("Building3265", 3265);
+		public static Building SilverSquareTable { get; } = new Building("SilverSquareTable", 3265);
 		/// <summary>
 		/// Type: 26; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15067,7 +15067,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building3266 { get; } = new Building("Building3266", 3266);
+		public static Building GoldenSquareTable { get; } = new Building("GoldenSquareTable", 3266);
 		/// <summary>
 		/// Type: 26; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15098,7 +15098,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building3267 { get; } = new Building("Building3267", 3267);
+		public static Building MecoSquareTable0 { get; } = new Building("MecoSquareTable0", 3267);
 		/// <summary>
 		/// Type: 30; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15129,7 +15129,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3271 { get; } = new Building("Building3271", 3271);
+		public static Building Explosive { get; } = new Building("Explosive", 3271);
 		/// <summary>
 		/// Type: 32; SubType: 3<para/>
 		/// AiActionType: 4; IsReplace: 0<para/>
@@ -15346,7 +15346,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3291 { get; } = new Building("Building3291", 3291);
+		public static Building NPCSalesTableMiscellaneous { get; } = new Building("NPCSalesTableMiscellaneous", 3291);
 		/// <summary>
 		/// Type: 34; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15377,7 +15377,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3292 { get; } = new Building("Building3292", 3292);
+		public static Building NPCSellsModels { get; } = new Building("NPCSellsModels", 3292);
 		/// <summary>
 		/// Type: 33; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15408,7 +15408,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building3293 { get; } = new Building("Building3293", 3293);
+		public static Building MecoSalesTable { get; } = new Building("MecoSalesTable", 3293);
 		/// <summary>
 		/// Type: 301; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15439,7 +15439,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3294 { get; } = new Building("Building3294", 3294);
+		public static Building NPCSalesTableAgriculture { get; } = new Building("NPCSalesTableAgriculture", 3294);
 		/// <summary>
 		/// Type: 302; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15470,7 +15470,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3295 { get; } = new Building("Building3295", 3295);
+		public static Building NPCSalesTableAnimalHusbandry { get; } = new Building("NPCSalesTableAnimalHusbandry", 3295);
 		/// <summary>
 		/// Type: 303; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15501,7 +15501,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3296 { get; } = new Building("Building3296", 3296);
+		public static Building NPCSalesTableMine { get; } = new Building("NPCSalesTableMine", 3296);
 		/// <summary>
 		/// Type: 304; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15532,7 +15532,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3297 { get; } = new Building("Building3297", 3297);
+		public static Building NPCSalesTableMedicine { get; } = new Building("NPCSalesTableMedicine", 3297);
 		/// <summary>
 		/// Type: 305; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15563,7 +15563,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3298 { get; } = new Building("Building3298", 3298);
+		public static Building NPCSalesTableBigMeal { get; } = new Building("NPCSalesTableBigMeal", 3298);
 		/// <summary>
 		/// Type: 306; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15594,7 +15594,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3299 { get; } = new Building("Building3299", 3299);
+		public static Building NPCSalesTableWeapons { get; } = new Building("NPCSalesTableWeapons", 3299);
 		/// <summary>
 		/// Type: 307; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15625,7 +15625,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3300 { get; } = new Building("Building3300", 3300);
+		public static Building NPCSalesTableArmor { get; } = new Building("NPCSalesTableArmor", 3300);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15656,7 +15656,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building3301 { get; } = new Building("Building3301", 3301);
+		public static Building MecoSleepCabin0 { get; } = new Building("MecoSleepCabin0", 3301);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15687,7 +15687,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building3311 { get; } = new Building("Building3311", 3311);
+		public static Building MecoLamp { get; } = new Building("MecoLamp", 3311);
 		/// <summary>
 		/// Type: 41; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15780,7 +15780,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building3331 { get; } = new Building("Building3331", 3331);
+		public static Building CrystalSandBed { get; } = new Building("CrystalSandBed", 3331);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15811,7 +15811,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bed-grounder-icon"<para/>
 		/// </summary>
-		public static Building Building3332 { get; } = new Building("Building3332", 3332);
+		public static Building Tent { get; } = new Building("Tent", 3332);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15842,7 +15842,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building3341 { get; } = new Building("Building3341", 3341);
+		public static Building CrystalSandStool { get; } = new Building("CrystalSandStool", 3341);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15873,7 +15873,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building3351 { get; } = new Building("Building3351", 3351);
+		public static Building CrystalSandRoundTable { get; } = new Building("CrystalSandRoundTable", 3351);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -15904,7 +15904,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building3361 { get; } = new Building("Building3361", 3361);
+		public static Building CrystalSandBaseTorch { get; } = new Building("CrystalSandBaseTorch", 3361);
 		/// <summary>
 		/// Type: 46; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16214,7 +16214,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3401 { get; } = new Building("Building3401", 3401);
+		public static Building NPCSalesTableArrow { get; } = new Building("NPCSalesTableArrow", 3401);
 		/// <summary>
 		/// Type: 309; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16245,7 +16245,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3402 { get; } = new Building("Building3402", 3402);
+		public static Building NPCSalesTableBullets { get; } = new Building("NPCSalesTableBullets", 3402);
 		/// <summary>
 		/// Type: 310; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16276,7 +16276,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building3403 { get; } = new Building("Building3403", 3403);
+		public static Building NPCSalesTableFurniture { get; } = new Building("NPCSalesTableFurniture", 3403);
 		/// <summary>
 		/// Type: 49; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16338,7 +16338,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4001 { get; } = new Building("Building4001", 4001);
+		public static Building OldTorch { get; } = new Building("OldTorch", 4001);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16369,7 +16369,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4002 { get; } = new Building("Building4002", 4002);
+		public static Building OldBonfire { get; } = new Building("OldBonfire", 4002);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16400,7 +16400,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building4003 { get; } = new Building("Building4003", 4003);
+		public static Building ExtinguishedGoblinTikiTorch { get; } = new Building("ExtinguishedGoblinTikiTorch", 4003);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16431,7 +16431,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4010 { get; } = new Building("Building4010", 4010);
+		public static Building OldWoodProductionDesk { get; } = new Building("OldWoodProductionDesk", 4010);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16462,7 +16462,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4011 { get; } = new Building("Building4011", 4011);
+		public static Building OldStoneProductionPlatform { get; } = new Building("OldStoneProductionPlatform", 4011);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16493,7 +16493,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4012 { get; } = new Building("Building4012", 4012);
+		public static Building OldCopperMakingTable { get; } = new Building("OldCopperMakingTable", 4012);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16524,7 +16524,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4013 { get; } = new Building("Building4013", 4013);
+		public static Building OldIronMakingTable { get; } = new Building("OldIronMakingTable", 4013);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16555,7 +16555,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4014 { get; } = new Building("Building4014", 4014);
+		public static Building OldSilverProductionDesk { get; } = new Building("OldSilverProductionDesk", 4014);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16586,7 +16586,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4015 { get; } = new Building("Building4015", 4015);
+		public static Building OldGoldProductionDesk { get; } = new Building("OldGoldProductionDesk", 4015);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16617,7 +16617,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building4016 { get; } = new Building("Building4016", 4016);
+		public static Building OldDiamondMakingTable { get; } = new Building("OldDiamondMakingTable", 4016);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16648,7 +16648,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4017 { get; } = new Building("Building4017", 4017);
+		public static Building OldStoneCookingStation { get; } = new Building("OldStoneCookingStation", 4017);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16679,7 +16679,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4018 { get; } = new Building("Building4018", 4018);
+		public static Building OldCopperCookingStation { get; } = new Building("OldCopperCookingStation", 4018);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16710,7 +16710,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4019 { get; } = new Building("Building4019", 4019);
+		public static Building OldIronCookingStation { get; } = new Building("OldIronCookingStation", 4019);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16741,7 +16741,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4020 { get; } = new Building("Building4020", 4020);
+		public static Building OldSilverCookingStation { get; } = new Building("OldSilverCookingStation", 4020);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16772,7 +16772,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4021 { get; } = new Building("Building4021", 4021);
+		public static Building OldGoldCookingStation { get; } = new Building("OldGoldCookingStation", 4021);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16803,7 +16803,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building4022 { get; } = new Building("Building4022", 4022);
+		public static Building OldDiamondCookingStation { get; } = new Building("OldDiamondCookingStation", 4022);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16834,7 +16834,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4023 { get; } = new Building("Building4023", 4023);
+		public static Building OldFurnace { get; } = new Building("OldFurnace", 4023);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16865,7 +16865,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4024 { get; } = new Building("Building4024", 4024);
+		public static Building OldCopperForgingTable { get; } = new Building("OldCopperForgingTable", 4024);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16896,7 +16896,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4025 { get; } = new Building("Building4025", 4025);
+		public static Building OldIronForgingTable { get; } = new Building("OldIronForgingTable", 4025);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16927,7 +16927,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4026 { get; } = new Building("Building4026", 4026);
+		public static Building OldSilverForgingTable { get; } = new Building("OldSilverForgingTable", 4026);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16958,7 +16958,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4027 { get; } = new Building("Building4027", 4027);
+		public static Building OldGoldForgingTable { get; } = new Building("OldGoldForgingTable", 4027);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -16989,7 +16989,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building4028 { get; } = new Building("Building4028", 4028);
+		public static Building OldDiamondForgingTable { get; } = new Building("OldDiamondForgingTable", 4028);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17020,7 +17020,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4029 { get; } = new Building("Building4029", 4029);
+		public static Building OldWoodenBrewingBarrel { get; } = new Building("OldWoodenBrewingBarrel", 4029);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17051,7 +17051,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4030 { get; } = new Building("Building4030", 4030);
+		public static Building OldStoneBrewingBarrel { get; } = new Building("OldStoneBrewingBarrel", 4030);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17082,7 +17082,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4031 { get; } = new Building("Building4031", 4031);
+		public static Building OldCopperBrewingBarrel { get; } = new Building("OldCopperBrewingBarrel", 4031);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17113,7 +17113,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4032 { get; } = new Building("Building4032", 4032);
+		public static Building OldIronBrewingBarrel { get; } = new Building("OldIronBrewingBarrel", 4032);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17144,7 +17144,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4033 { get; } = new Building("Building4033", 4033);
+		public static Building OldSilverBrewingBarrel { get; } = new Building("OldSilverBrewingBarrel", 4033);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17175,7 +17175,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4034 { get; } = new Building("Building4034", 4034);
+		public static Building OldGoldBrewingBarrel { get; } = new Building("OldGoldBrewingBarrel", 4034);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17206,7 +17206,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building4035 { get; } = new Building("Building4035", 4035);
+		public static Building OldDiamondBrewingBarrel { get; } = new Building("OldDiamondBrewingBarrel", 4035);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17237,7 +17237,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4036 { get; } = new Building("Building4036", 4036);
+		public static Building OldWoodenMedicineTable { get; } = new Building("OldWoodenMedicineTable", 4036);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17268,7 +17268,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4037 { get; } = new Building("Building4037", 4037);
+		public static Building OldStonePharmaceuticalTable { get; } = new Building("OldStonePharmaceuticalTable", 4037);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17299,7 +17299,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4038 { get; } = new Building("Building4038", 4038);
+		public static Building OldCopperPharmaceuticalTable { get; } = new Building("OldCopperPharmaceuticalTable", 4038);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17330,7 +17330,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4039 { get; } = new Building("Building4039", 4039);
+		public static Building OldIronPharmaceuticalTable { get; } = new Building("OldIronPharmaceuticalTable", 4039);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17361,7 +17361,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4040 { get; } = new Building("Building4040", 4040);
+		public static Building OldSilverPharmaceuticalTable { get; } = new Building("OldSilverPharmaceuticalTable", 4040);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17392,7 +17392,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4041 { get; } = new Building("Building4041", 4041);
+		public static Building OldGoldPharmaceuticalTable { get; } = new Building("OldGoldPharmaceuticalTable", 4041);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17423,7 +17423,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building4042 { get; } = new Building("Building4042", 4042);
+		public static Building OldDiamondPharmaceuticalTable { get; } = new Building("OldDiamondPharmaceuticalTable", 4042);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17454,7 +17454,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4043 { get; } = new Building("Building4043", 4043);
+		public static Building OldWoodCraftBench { get; } = new Building("OldWoodCraftBench", 4043);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17485,7 +17485,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4044 { get; } = new Building("Building4044", 4044);
+		public static Building OldStoneCraft { get; } = new Building("OldStoneCraft", 4044);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17516,7 +17516,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4045 { get; } = new Building("Building4045", 4045);
+		public static Building OldCopperCraftTable { get; } = new Building("OldCopperCraftTable", 4045);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17547,7 +17547,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4046 { get; } = new Building("Building4046", 4046);
+		public static Building OldIronCraftTable { get; } = new Building("OldIronCraftTable", 4046);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17578,7 +17578,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4047 { get; } = new Building("Building4047", 4047);
+		public static Building OldSilverCraftTable { get; } = new Building("OldSilverCraftTable", 4047);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17609,7 +17609,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4048 { get; } = new Building("Building4048", 4048);
+		public static Building OldGoldCraft { get; } = new Building("OldGoldCraft", 4048);
 		/// <summary>
 		/// Type: 19; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17640,7 +17640,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building4049 { get; } = new Building("Building4049", 4049);
+		public static Building OldDiamondCraftTable { get; } = new Building("OldDiamondCraftTable", 4049);
 		/// <summary>
 		/// Type: 20; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17671,7 +17671,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4050 { get; } = new Building("Building4050", 4050);
+		public static Building OldWoodGunpowderProcessingStation { get; } = new Building("OldWoodGunpowderProcessingStation", 4050);
 		/// <summary>
 		/// Type: 20; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17702,7 +17702,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4051 { get; } = new Building("Building4051", 4051);
+		public static Building OldStoneGunpowderProcessingStation { get; } = new Building("OldStoneGunpowderProcessingStation", 4051);
 		/// <summary>
 		/// Type: 20; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17733,7 +17733,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4052 { get; } = new Building("Building4052", 4052);
+		public static Building OldCopperPowderProcessingStation { get; } = new Building("OldCopperPowderProcessingStation", 4052);
 		/// <summary>
 		/// Type: 20; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17764,7 +17764,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4053 { get; } = new Building("Building4053", 4053);
+		public static Building OldIronPowderProcessingStation { get; } = new Building("OldIronPowderProcessingStation", 4053);
 		/// <summary>
 		/// Type: 20; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17795,7 +17795,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4054 { get; } = new Building("Building4054", 4054);
+		public static Building OldSilverPowderProcessingStation { get; } = new Building("OldSilverPowderProcessingStation", 4054);
 		/// <summary>
 		/// Type: 20; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17826,7 +17826,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4055 { get; } = new Building("Building4055", 4055);
+		public static Building OldGoldPowderProcessingStation { get; } = new Building("OldGoldPowderProcessingStation", 4055);
 		/// <summary>
 		/// Type: 20; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17857,7 +17857,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building4056 { get; } = new Building("Building4056", 4056);
+		public static Building OldDiamondGunpowderProcessingStation { get; } = new Building("OldDiamondGunpowderProcessingStation", 4056);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17888,7 +17888,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4057 { get; } = new Building("Building4057", 4057);
+		public static Building OldStoneGasPool { get; } = new Building("OldStoneGasPool", 4057);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17919,7 +17919,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4058 { get; } = new Building("Building4058", 4058);
+		public static Building OldCopperBiogasTank { get; } = new Building("OldCopperBiogasTank", 4058);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17950,7 +17950,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4059 { get; } = new Building("Building4059", 4059);
+		public static Building OldIronGasPool { get; } = new Building("OldIronGasPool", 4059);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -17981,7 +17981,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4060 { get; } = new Building("Building4060", 4060);
+		public static Building OldSilverGasPool { get; } = new Building("OldSilverGasPool", 4060);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18012,7 +18012,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4061 { get; } = new Building("Building4061", 4061);
+		public static Building OldGoldGasPool { get; } = new Building("OldGoldGasPool", 4061);
 		/// <summary>
 		/// Type: 21; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18043,7 +18043,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-diamond-icon"<para/>
 		/// </summary>
-		public static Building Building4062 { get; } = new Building("Building4062", 4062);
+		public static Building OldDiamondBiogasDigester { get; } = new Building("OldDiamondBiogasDigester", 4062);
 		/// <summary>
 		/// Type: 9; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18074,7 +18074,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building4063 { get; } = new Building("Building4063", 4063);
+		public static Building BloodStainedGoblinProcessingStation { get; } = new Building("BloodStainedGoblinProcessingStation", 4063);
 		/// <summary>
 		/// Type: 18; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18136,7 +18136,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4101 { get; } = new Building("Building4101", 4101);
+		public static Building OldWoodenDoor { get; } = new Building("OldWoodenDoor", 4101);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18167,7 +18167,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorStoneClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4102 { get; } = new Building("Building4102", 4102);
+		public static Building OldStoneGate { get; } = new Building("OldStoneGate", 4102);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18198,7 +18198,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorMetalClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4103 { get; } = new Building("Building4103", 4103);
+		public static Building OldCopperDoor0 { get; } = new Building("OldCopperDoor0", 4103);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18229,7 +18229,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorMetalClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4104 { get; } = new Building("Building4104", 4104);
+		public static Building OldIronGate0 { get; } = new Building("OldIronGate0", 4104);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18260,7 +18260,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorMetalClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4105 { get; } = new Building("Building4105", 4105);
+		public static Building OldSilverDoor0 { get; } = new Building("OldSilverDoor0", 4105);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18291,7 +18291,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorMetalClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4106 { get; } = new Building("Building4106", 4106);
+		public static Building OldGoldenGate { get; } = new Building("OldGoldenGate", 4106);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18322,7 +18322,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorSandClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building4107 { get; } = new Building("Building4107", 4107);
+		public static Building OldSandGate { get; } = new Building("OldSandGate", 4107);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18353,7 +18353,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorStoneClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-ice-icon"<para/>
 		/// </summary>
-		public static Building Building4108 { get; } = new Building("Building4108", 4108);
+		public static Building OldIceDoor { get; } = new Building("OldIceDoor", 4108);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18384,7 +18384,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorSandClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building4109 { get; } = new Building("Building4109", 4109);
+		public static Building OldSnowDoor { get; } = new Building("OldSnowDoor", 4109);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18415,7 +18415,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building4110 { get; } = new Building("Building4110", 4110);
+		public static Building OldGlassDoor { get; } = new Building("OldGlassDoor", 4110);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18446,7 +18446,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4111 { get; } = new Building("Building4111", 4111);
+		public static Building OldWoodenTable { get; } = new Building("OldWoodenTable", 4111);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18477,7 +18477,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4112 { get; } = new Building("Building4112", 4112);
+		public static Building OldStoneRoundTable { get; } = new Building("OldStoneRoundTable", 4112);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18508,7 +18508,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4113 { get; } = new Building("Building4113", 4113);
+		public static Building OldCopperRoundTable { get; } = new Building("OldCopperRoundTable", 4113);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18539,7 +18539,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4114 { get; } = new Building("Building4114", 4114);
+		public static Building OldIronRoundTable { get; } = new Building("OldIronRoundTable", 4114);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18570,7 +18570,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4115 { get; } = new Building("Building4115", 4115);
+		public static Building OldSilverRoundTable { get; } = new Building("OldSilverRoundTable", 4115);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18601,7 +18601,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4116 { get; } = new Building("Building4116", 4116);
+		public static Building OldGoldRoundTable { get; } = new Building("OldGoldRoundTable", 4116);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18632,7 +18632,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4117 { get; } = new Building("Building4117", 4117);
+		public static Building OldEarthenRoundTable { get; } = new Building("OldEarthenRoundTable", 4117);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18663,7 +18663,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building4118 { get; } = new Building("Building4118", 4118);
+		public static Building OldSnowRoundTable { get; } = new Building("OldSnowRoundTable", 4118);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18694,7 +18694,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4119 { get; } = new Building("Building4119", 4119);
+		public static Building OldBrokenBoneRoundTable { get; } = new Building("OldBrokenBoneRoundTable", 4119);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18725,7 +18725,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building4120 { get; } = new Building("Building4120", 4120);
+		public static Building OldMecoRoundTable { get; } = new Building("OldMecoRoundTable", 4120);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18756,7 +18756,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4121 { get; } = new Building("Building4121", 4121);
+		public static Building OldWoodenBench { get; } = new Building("OldWoodenBench", 4121);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18787,7 +18787,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4122 { get; } = new Building("Building4122", 4122);
+		public static Building OldStoneStool { get; } = new Building("OldStoneStool", 4122);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18818,7 +18818,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4123 { get; } = new Building("Building4123", 4123);
+		public static Building OldCopperStool { get; } = new Building("OldCopperStool", 4123);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18849,7 +18849,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4124 { get; } = new Building("Building4124", 4124);
+		public static Building OldIronStool { get; } = new Building("OldIronStool", 4124);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18880,7 +18880,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4125 { get; } = new Building("Building4125", 4125);
+		public static Building OldSilverStool { get; } = new Building("OldSilverStool", 4125);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18911,7 +18911,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4126 { get; } = new Building("Building4126", 4126);
+		public static Building OldGoldStool { get; } = new Building("OldGoldStool", 4126);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18942,7 +18942,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4127 { get; } = new Building("Building4127", 4127);
+		public static Building OldEarthenStool { get; } = new Building("OldEarthenStool", 4127);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -18973,7 +18973,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building4128 { get; } = new Building("Building4128", 4128);
+		public static Building OldSnowStool { get; } = new Building("OldSnowStool", 4128);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19004,7 +19004,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building4129 { get; } = new Building("Building4129", 4129);
+		public static Building OldBoneChair { get; } = new Building("OldBoneChair", 4129);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19035,7 +19035,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building4130 { get; } = new Building("Building4130", 4130);
+		public static Building OldMecoChair { get; } = new Building("OldMecoChair", 4130);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19066,7 +19066,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4131 { get; } = new Building("Building4131", 4131);
+		public static Building OldWoodenBox { get; } = new Building("OldWoodenBox", 4131);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19097,7 +19097,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4132 { get; } = new Building("Building4132", 4132);
+		public static Building OldBrassBox { get; } = new Building("OldBrassBox", 4132);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19128,7 +19128,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4133 { get; } = new Building("Building4133", 4133);
+		public static Building OldIronBox { get; } = new Building("OldIronBox", 4133);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19159,7 +19159,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4134 { get; } = new Building("Building4134", 4134);
+		public static Building OldSilverBox { get; } = new Building("OldSilverBox", 4134);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19190,7 +19190,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4135 { get; } = new Building("Building4135", 4135);
+		public static Building OldGoldBox { get; } = new Building("OldGoldBox", 4135);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19221,7 +19221,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4136 { get; } = new Building("Building4136", 4136);
+		public static Building OldCopperWoodenBox { get; } = new Building("OldCopperWoodenBox", 4136);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19252,7 +19252,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4137 { get; } = new Building("Building4137", 4137);
+		public static Building OldIronWoodenBox { get; } = new Building("OldIronWoodenBox", 4137);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19283,7 +19283,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4138 { get; } = new Building("Building4138", 4138);
+		public static Building OldSilverSideWoodenBox { get; } = new Building("OldSilverSideWoodenBox", 4138);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19314,7 +19314,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4139 { get; } = new Building("Building4139", 4139);
+		public static Building OldBlueBox { get; } = new Building("OldBlueBox", 4139);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19345,7 +19345,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4140 { get; } = new Building("Building4140", 4140);
+		public static Building OldGreenBox { get; } = new Building("OldGreenBox", 4140);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19376,7 +19376,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4141 { get; } = new Building("Building4141", 4141);
+		public static Building OldPurpleBox { get; } = new Building("OldPurpleBox", 4141);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19407,7 +19407,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4142 { get; } = new Building("Building4142", 4142);
+		public static Building OldRedBox { get; } = new Building("OldRedBox", 4142);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19438,7 +19438,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4143 { get; } = new Building("Building4143", 4143);
+		public static Building OldSilverSideGoldBox { get; } = new Building("OldSilverSideGoldBox", 4143);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19469,7 +19469,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building4144 { get; } = new Building("Building4144", 4144);
+		public static Building OldBoneBox { get; } = new Building("OldBoneBox", 4144);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19500,7 +19500,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building4147 { get; } = new Building("Building4147", 4147);
+		public static Building OldCrystalFlask { get; } = new Building("OldCrystalFlask", 4147);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19531,7 +19531,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4151 { get; } = new Building("Building4151", 4151);
+		public static Building OldWoodenBed { get; } = new Building("OldWoodenBed", 4151);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19562,7 +19562,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-stone-icon"<para/>
 		/// </summary>
-		public static Building Building4152 { get; } = new Building("Building4152", 4152);
+		public static Building OldOrcStoneBed { get; } = new Building("OldOrcStoneBed", 4152);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19593,7 +19593,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-copper-icon"<para/>
 		/// </summary>
-		public static Building Building4153 { get; } = new Building("Building4153", 4153);
+		public static Building OldCopperBed { get; } = new Building("OldCopperBed", 4153);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19624,7 +19624,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building4154 { get; } = new Building("Building4154", 4154);
+		public static Building OldIronBed { get; } = new Building("OldIronBed", 4154);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19655,7 +19655,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building4155 { get; } = new Building("Building4155", 4155);
+		public static Building OldSilverBed { get; } = new Building("OldSilverBed", 4155);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19686,7 +19686,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-gold-icon"<para/>
 		/// </summary>
-		public static Building Building4156 { get; } = new Building("Building4156", 4156);
+		public static Building OldGoldBed { get; } = new Building("OldGoldBed", 4156);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19717,7 +19717,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4158 { get; } = new Building("Building4158", 4158);
+		public static Building OldOrcSoilBed { get; } = new Building("OldOrcSoilBed", 4158);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19748,7 +19748,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building4159 { get; } = new Building("Building4159", 4159);
+		public static Building OldOrcSnowBed { get; } = new Building("OldOrcSnowBed", 4159);
 		/// <summary>
 		/// Type: 16; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19779,7 +19779,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4160 { get; } = new Building("Building4160", 4160);
+		public static Building OldGoblinBoneBed { get; } = new Building("OldGoblinBoneBed", 4160);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19810,7 +19810,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4161 { get; } = new Building("Building4161", 4161);
+		public static Building OldCopperDoor1 { get; } = new Building("OldCopperDoor1", 4161);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19841,7 +19841,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4162 { get; } = new Building("Building4162", 4162);
+		public static Building OldIronGate1 { get; } = new Building("OldIronGate1", 4162);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19872,7 +19872,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4163 { get; } = new Building("Building4163", 4163);
+		public static Building OldSilverDoor1 { get; } = new Building("OldSilverDoor1", 4163);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19903,7 +19903,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4164 { get; } = new Building("Building4164", 4164);
+		public static Building OldGoldBarDoor { get; } = new Building("OldGoldBarDoor", 4164);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19934,7 +19934,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorStoneClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4165 { get; } = new Building("Building4165", 4165);
+		public static Building OldDirtDoor { get; } = new Building("OldDirtDoor", 4165);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19965,7 +19965,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorElectricClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building4166 { get; } = new Building("Building4166", 4166);
+		public static Building BadMecoAlloyDoor { get; } = new Building("BadMecoAlloyDoor", 4166);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -19996,7 +19996,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorWoodClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building4167 { get; } = new Building("Building4167", 4167);
+		public static Building OldBoneDoor { get; } = new Building("OldBoneDoor", 4167);
 		/// <summary>
 		/// Type: 17; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20027,7 +20027,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorSandClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building4169 { get; } = new Building("Building4169", 4169);
+		public static Building OldCrystalSandDoor { get; } = new Building("OldCrystalSandDoor", 4169);
 		/// <summary>
 		/// Type: 27; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20089,7 +20089,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4212 { get; } = new Building("Building4212", 4212);
+		public static Building OldClayBottle { get; } = new Building("OldClayBottle", 4212);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20120,7 +20120,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4213 { get; } = new Building("Building4213", 4213);
+		public static Building OldClayPot { get; } = new Building("OldClayPot", 4213);
 		/// <summary>
 		/// Type: 27; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20182,7 +20182,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building4215 { get; } = new Building("Building4215", 4215);
+		public static Building OldGlassBottle { get; } = new Building("OldGlassBottle", 4215);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20213,7 +20213,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building4216 { get; } = new Building("Building4216", 4216);
+		public static Building OldGlassJar { get; } = new Building("OldGlassJar", 4216);
 		/// <summary>
 		/// Type: 27; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20244,7 +20244,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building4217 { get; } = new Building("Building4217", 4217);
+		public static Building OldCeramicFlowerPot { get; } = new Building("OldCeramicFlowerPot", 4217);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20275,7 +20275,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building4218 { get; } = new Building("Building4218", 4218);
+		public static Building OldCeramicBottle { get; } = new Building("OldCeramicBottle", 4218);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20306,7 +20306,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building4219 { get; } = new Building("Building4219", 4219);
+		public static Building OldCeramicPot { get; } = new Building("OldCeramicPot", 4219);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20337,7 +20337,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building4220 { get; } = new Building("Building4220", 4220);
+		public static Building OldClayStatue { get; } = new Building("OldClayStatue", 4220);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20368,7 +20368,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4221 { get; } = new Building("Building4221", 4221);
+		public static Building OldGlassStatue { get; } = new Building("OldGlassStatue", 4221);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20399,7 +20399,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-glass-icon"<para/>
 		/// </summary>
-		public static Building Building4222 { get; } = new Building("Building4222", 4222);
+		public static Building OldCeramicStatue { get; } = new Building("OldCeramicStatue", 4222);
 		/// <summary>
 		/// Type: 27; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20430,7 +20430,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4223 { get; } = new Building("Building4223", 4223);
+		public static Building OldEarthenFlowerPot { get; } = new Building("OldEarthenFlowerPot", 4223);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20461,7 +20461,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4224 { get; } = new Building("Building4224", 4224);
+		public static Building OldClayJar { get; } = new Building("OldClayJar", 4224);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20492,7 +20492,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4225 { get; } = new Building("Building4225", 4225);
+		public static Building OldEarthBottle { get; } = new Building("OldEarthBottle", 4225);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20523,7 +20523,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4226 { get; } = new Building("Building4226", 4226);
+		public static Building OldClaySculpture { get; } = new Building("OldClaySculpture", 4226);
 		/// <summary>
 		/// Type: 27; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20554,7 +20554,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-earth-icon"<para/>
 		/// </summary>
-		public static Building Building4241 { get; } = new Building("Building4241", 4241);
+		public static Building OldBoneFlowerPot { get; } = new Building("OldBoneFlowerPot", 4241);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20585,7 +20585,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4251 { get; } = new Building("Building4251", 4251);
+		public static Building OldOpenIronBar { get; } = new Building("OldOpenIronBar", 4251);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20616,7 +20616,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4252 { get; } = new Building("Building4252", 4252);
+		public static Building OldIronBarrel { get; } = new Building("OldIronBarrel", 4252);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20647,7 +20647,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building4253 { get; } = new Building("Building4253", 4253);
+		public static Building OldWoodenBarrel { get; } = new Building("OldWoodenBarrel", 4253);
 		/// <summary>
 		/// Type: 41; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20740,7 +20740,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building4331 { get; } = new Building("Building4331", 4331);
+		public static Building OldCrystalSandBed { get; } = new Building("OldCrystalSandBed", 4331);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20771,7 +20771,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bed-grounder-icon"<para/>
 		/// </summary>
-		public static Building Building4332 { get; } = new Building("Building4332", 4332);
+		public static Building OldTent { get; } = new Building("OldTent", 4332);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20802,7 +20802,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building4341 { get; } = new Building("Building4341", 4341);
+		public static Building OldCrystalSandStool { get; } = new Building("OldCrystalSandStool", 4341);
 		/// <summary>
 		/// Type: 28; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20833,7 +20833,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building4351 { get; } = new Building("Building4351", 4351);
+		public static Building OldCrystalSandRoundTable { get; } = new Building("OldCrystalSandRoundTable", 4351);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20864,7 +20864,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5000 { get; } = new Building("Building5000", 5000);
+		public static Building UniversalFloor { get; } = new Building("UniversalFloor", 5000);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20895,7 +20895,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5001 { get; } = new Building("Building5001", 5001);
+		public static Building WoodenFloor { get; } = new Building("WoodenFloor", 5001);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20926,7 +20926,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5002 { get; } = new Building("Building5002", 5002);
+		public static Building WoodenFloor2 { get; } = new Building("WoodenFloor2", 5002);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20957,7 +20957,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5003 { get; } = new Building("Building5003", 5003);
+		public static Building WoodenFloor3 { get; } = new Building("WoodenFloor3", 5003);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -20988,7 +20988,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5004 { get; } = new Building("Building5004", 5004);
+		public static Building WoodenFloor4 { get; } = new Building("WoodenFloor4", 5004);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21019,7 +21019,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5005 { get; } = new Building("Building5005", 5005);
+		public static Building MudFloor { get; } = new Building("MudFloor", 5005);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21050,7 +21050,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5006 { get; } = new Building("Building5006", 5006);
+		public static Building MudFloor2 { get; } = new Building("MudFloor2", 5006);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21081,7 +21081,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5007 { get; } = new Building("Building5007", 5007);
+		public static Building StoneFloor { get; } = new Building("StoneFloor", 5007);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21112,7 +21112,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5008 { get; } = new Building("Building5008", 5008);
+		public static Building StoneFloor2 { get; } = new Building("StoneFloor2", 5008);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21143,7 +21143,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5009 { get; } = new Building("Building5009", 5009);
+		public static Building StoneFloor3 { get; } = new Building("StoneFloor3", 5009);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21174,7 +21174,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5010 { get; } = new Building("Building5010", 5010);
+		public static Building StoneFloor4 { get; } = new Building("StoneFloor4", 5010);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21205,7 +21205,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5011 { get; } = new Building("Building5011", 5011);
+		public static Building StoneFloor5 { get; } = new Building("StoneFloor5", 5011);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21236,7 +21236,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5012 { get; } = new Building("Building5012", 5012);
+		public static Building CopperFloor { get; } = new Building("CopperFloor", 5012);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21267,7 +21267,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5013 { get; } = new Building("Building5013", 5013);
+		public static Building CopperFloor2 { get; } = new Building("CopperFloor2", 5013);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21298,7 +21298,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5014 { get; } = new Building("Building5014", 5014);
+		public static Building IronFloor { get; } = new Building("IronFloor", 5014);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21329,7 +21329,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5015 { get; } = new Building("Building5015", 5015);
+		public static Building IronFloor2 { get; } = new Building("IronFloor2", 5015);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21360,7 +21360,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5016 { get; } = new Building("Building5016", 5016);
+		public static Building IronFloor3 { get; } = new Building("IronFloor3", 5016);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21391,7 +21391,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5017 { get; } = new Building("Building5017", 5017);
+		public static Building IronFloor4 { get; } = new Building("IronFloor4", 5017);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21422,7 +21422,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5018 { get; } = new Building("Building5018", 5018);
+		public static Building SilverFloor { get; } = new Building("SilverFloor", 5018);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21453,7 +21453,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5019 { get; } = new Building("Building5019", 5019);
+		public static Building SilverFloor2 { get; } = new Building("SilverFloor2", 5019);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21484,7 +21484,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5020 { get; } = new Building("Building5020", 5020);
+		public static Building GoldFloor { get; } = new Building("GoldFloor", 5020);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21515,7 +21515,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5021 { get; } = new Building("Building5021", 5021);
+		public static Building GoldFloor2 { get; } = new Building("GoldFloor2", 5021);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21546,7 +21546,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5022 { get; } = new Building("Building5022", 5022);
+		public static Building GoldFloor3 { get; } = new Building("GoldFloor3", 5022);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21577,7 +21577,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5023 { get; } = new Building("Building5023", 5023);
+		public static Building GoldFloor4 { get; } = new Building("GoldFloor4", 5023);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21608,7 +21608,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5024 { get; } = new Building("Building5024", 5024);
+		public static Building GlassFloor { get; } = new Building("GlassFloor", 5024);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21639,7 +21639,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5025 { get; } = new Building("Building5025", 5025);
+		public static Building SnowFloor { get; } = new Building("SnowFloor", 5025);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21670,7 +21670,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5026 { get; } = new Building("Building5026", 5026);
+		public static Building IceFloor { get; } = new Building("IceFloor", 5026);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21701,7 +21701,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5027 { get; } = new Building("Building5027", 5027);
+		public static Building SandFloor { get; } = new Building("SandFloor", 5027);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21732,7 +21732,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5028 { get; } = new Building("Building5028", 5028);
+		public static Building TestStoneFloor { get; } = new Building("TestStoneFloor", 5028);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21763,7 +21763,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5029 { get; } = new Building("Building5029", 5029);
+		public static Building BiomecoFloor { get; } = new Building("BiomecoFloor", 5029);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21794,7 +21794,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5501 { get; } = new Building("Building5501", 5501);
+		public static Building OldWoodenFloor { get; } = new Building("OldWoodenFloor", 5501);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21825,7 +21825,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5502 { get; } = new Building("Building5502", 5502);
+		public static Building OldWoodenFloor2 { get; } = new Building("OldWoodenFloor2", 5502);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21856,7 +21856,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5503 { get; } = new Building("Building5503", 5503);
+		public static Building OldWoodenFloor3 { get; } = new Building("OldWoodenFloor3", 5503);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21887,7 +21887,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5504 { get; } = new Building("Building5504", 5504);
+		public static Building OldWoodenFloor4 { get; } = new Building("OldWoodenFloor4", 5504);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21918,7 +21918,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5505 { get; } = new Building("Building5505", 5505);
+		public static Building OldMudFloor { get; } = new Building("OldMudFloor", 5505);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21949,7 +21949,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5506 { get; } = new Building("Building5506", 5506);
+		public static Building OldMudFloor2 { get; } = new Building("OldMudFloor2", 5506);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -21980,7 +21980,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5507 { get; } = new Building("Building5507", 5507);
+		public static Building OldStoneFloor { get; } = new Building("OldStoneFloor", 5507);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22011,7 +22011,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5508 { get; } = new Building("Building5508", 5508);
+		public static Building OldStoneFloor2 { get; } = new Building("OldStoneFloor2", 5508);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22042,7 +22042,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5509 { get; } = new Building("Building5509", 5509);
+		public static Building OldStoneFloor3 { get; } = new Building("OldStoneFloor3", 5509);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22073,7 +22073,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5510 { get; } = new Building("Building5510", 5510);
+		public static Building OldStoneFloor4 { get; } = new Building("OldStoneFloor4", 5510);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22104,7 +22104,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5511 { get; } = new Building("Building5511", 5511);
+		public static Building OldStoneFloor5 { get; } = new Building("OldStoneFloor5", 5511);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22135,7 +22135,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5512 { get; } = new Building("Building5512", 5512);
+		public static Building OldCopperFloor { get; } = new Building("OldCopperFloor", 5512);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22166,7 +22166,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5513 { get; } = new Building("Building5513", 5513);
+		public static Building OldCopperFloor2 { get; } = new Building("OldCopperFloor2", 5513);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22197,7 +22197,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5514 { get; } = new Building("Building5514", 5514);
+		public static Building OldIronFloor { get; } = new Building("OldIronFloor", 5514);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22228,7 +22228,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5515 { get; } = new Building("Building5515", 5515);
+		public static Building OldIronFloor2 { get; } = new Building("OldIronFloor2", 5515);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22259,7 +22259,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5516 { get; } = new Building("Building5516", 5516);
+		public static Building OldIronFloor3 { get; } = new Building("OldIronFloor3", 5516);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22290,7 +22290,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5517 { get; } = new Building("Building5517", 5517);
+		public static Building OldIronFloor4 { get; } = new Building("OldIronFloor4", 5517);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22321,7 +22321,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5518 { get; } = new Building("Building5518", 5518);
+		public static Building OldSilverFloor { get; } = new Building("OldSilverFloor", 5518);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22352,7 +22352,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5519 { get; } = new Building("Building5519", 5519);
+		public static Building OldSilverFloor2 { get; } = new Building("OldSilverFloor2", 5519);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22383,7 +22383,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5520 { get; } = new Building("Building5520", 5520);
+		public static Building OldGoldFloor { get; } = new Building("OldGoldFloor", 5520);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22414,7 +22414,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5521 { get; } = new Building("Building5521", 5521);
+		public static Building OldGoldenFloor2 { get; } = new Building("OldGoldenFloor2", 5521);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22445,7 +22445,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5522 { get; } = new Building("Building5522", 5522);
+		public static Building OldGoldFloor3 { get; } = new Building("OldGoldFloor3", 5522);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22476,7 +22476,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5523 { get; } = new Building("Building5523", 5523);
+		public static Building OldGoldFloor4 { get; } = new Building("OldGoldFloor4", 5523);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22507,7 +22507,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5524 { get; } = new Building("Building5524", 5524);
+		public static Building OldGlassFloor { get; } = new Building("OldGlassFloor", 5524);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22538,7 +22538,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5525 { get; } = new Building("Building5525", 5525);
+		public static Building OldSnowFloor { get; } = new Building("OldSnowFloor", 5525);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22569,7 +22569,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5526 { get; } = new Building("Building5526", 5526);
+		public static Building OldIceFloor { get; } = new Building("OldIceFloor", 5526);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22600,7 +22600,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5527 { get; } = new Building("Building5527", 5527);
+		public static Building OldSandFloor { get; } = new Building("OldSandFloor", 5527);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22631,7 +22631,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5528 { get; } = new Building("Building5528", 5528);
+		public static Building TitaniumAlloyFloor1 { get; } = new Building("TitaniumAlloyFloor1", 5528);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22662,7 +22662,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5529 { get; } = new Building("Building5529", 5529);
+		public static Building TitaniumFlooring2 { get; } = new Building("TitaniumFlooring2", 5529);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22693,7 +22693,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5530 { get; } = new Building("Building5530", 5530);
+		public static Building TitaniumFlooring3 { get; } = new Building("TitaniumFlooring3", 5530);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22724,7 +22724,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5531 { get; } = new Building("Building5531", 5531);
+		public static Building TitaniumFlooring4 { get; } = new Building("TitaniumFlooring4", 5531);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22755,7 +22755,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5532 { get; } = new Building("Building5532", 5532);
+		public static Building TitaniumFlooring5 { get; } = new Building("TitaniumFlooring5", 5532);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22786,7 +22786,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5533 { get; } = new Building("Building5533", 5533);
+		public static Building TitaniumAlloyFloor6 { get; } = new Building("TitaniumAlloyFloor6", 5533);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22817,7 +22817,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5534 { get; } = new Building("Building5534", 5534);
+		public static Building TitaniumFlooring7 { get; } = new Building("TitaniumFlooring7", 5534);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22848,7 +22848,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5535 { get; } = new Building("Building5535", 5535);
+		public static Building TitaniumFloor8 { get; } = new Building("TitaniumFloor8", 5535);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22879,7 +22879,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5536 { get; } = new Building("Building5536", 5536);
+		public static Building OldBioMecoFloor1 { get; } = new Building("OldBioMecoFloor1", 5536);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22910,7 +22910,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5537 { get; } = new Building("Building5537", 5537);
+		public static Building OldBioMecoFloor2 { get; } = new Building("OldBioMecoFloor2", 5537);
 		/// <summary>
 		/// Type: 6; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22941,7 +22941,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building5538 { get; } = new Building("Building5538", 5538);
+		public static Building OldBioMecoFloor3 { get; } = new Building("OldBioMecoFloor3", 5538);
 		/// <summary>
 		/// Type: 4; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -22972,7 +22972,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-iron-icon"<para/>
 		/// </summary>
-		public static Building Building6001 { get; } = new Building("Building6001", 6001);
+		public static Building MedicineBox { get; } = new Building("MedicineBox", 6001);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23003,7 +23003,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6031 { get; } = new Building("Building6031", 6031);
+		public static Building Tibia1 { get; } = new Building("Tibia1", 6031);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23034,7 +23034,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6032 { get; } = new Building("Building6032", 6032);
+		public static Building Tibia2 { get; } = new Building("Tibia2", 6032);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23065,7 +23065,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6033 { get; } = new Building("Building6033", 6033);
+		public static Building Tibia3 { get; } = new Building("Tibia3", 6033);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23096,7 +23096,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6034 { get; } = new Building("Building6034", 6034);
+		public static Building Humerus4 { get; } = new Building("Humerus4", 6034);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23127,7 +23127,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6035 { get; } = new Building("Building6035", 6035);
+		public static Building Tibia5 { get; } = new Building("Tibia5", 6035);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23158,7 +23158,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6036 { get; } = new Building("Building6036", 6036);
+		public static Building Tibia6 { get; } = new Building("Tibia6", 6036);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23189,7 +23189,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6037 { get; } = new Building("Building6037", 6037);
+		public static Building Humerus7 { get; } = new Building("Humerus7", 6037);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23220,7 +23220,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6038 { get; } = new Building("Building6038", 6038);
+		public static Building Tibia8 { get; } = new Building("Tibia8", 6038);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23251,7 +23251,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6039 { get; } = new Building("Building6039", 6039);
+		public static Building Tibia9 { get; } = new Building("Tibia9", 6039);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23282,7 +23282,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6040 { get; } = new Building("Building6040", 6040);
+		public static Building Tibia10 { get; } = new Building("Tibia10", 6040);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23313,7 +23313,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6041 { get; } = new Building("Building6041", 6041);
+		public static Building Humerus11 { get; } = new Building("Humerus11", 6041);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23344,7 +23344,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building6042 { get; } = new Building("Building6042", 6042);
+		public static Building Tibia12 { get; } = new Building("Tibia12", 6042);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23375,7 +23375,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-sand-icon"<para/>
 		/// </summary>
-		public static Building Building6043 { get; } = new Building("Building6043", 6043);
+		public static Building SmallSandPile { get; } = new Building("SmallSandPile", 6043);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23406,7 +23406,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building6044 { get; } = new Building("Building6044", 6044);
+		public static Building SmallStone10 { get; } = new Building("SmallStone10", 6044);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23437,7 +23437,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building6045 { get; } = new Building("Building6045", 6045);
+		public static Building SmallStone20 { get; } = new Building("SmallStone20", 6045);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23468,7 +23468,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building6046 { get; } = new Building("Building6046", 6046);
+		public static Building SmallStone30 { get; } = new Building("SmallStone30", 6046);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23499,7 +23499,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building6047 { get; } = new Building("Building6047", 6047);
+		public static Building MiddleStone10 { get; } = new Building("MiddleStone10", 6047);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23530,7 +23530,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building6048 { get; } = new Building("Building6048", 6048);
+		public static Building MiddleStone20 { get; } = new Building("MiddleStone20", 6048);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23561,7 +23561,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building6049 { get; } = new Building("Building6049", 6049);
+		public static Building MiddleStone30 { get; } = new Building("MiddleStone30", 6049);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23592,7 +23592,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building6050 { get; } = new Building("Building6050", 6050);
+		public static Building BigStone10 { get; } = new Building("BigStone10", 6050);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23623,7 +23623,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building6051 { get; } = new Building("Building6051", 6051);
+		public static Building StoneSnow0 { get; } = new Building("StoneSnow0", 6051);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23654,7 +23654,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building6052 { get; } = new Building("Building6052", 6052);
+		public static Building StoneSnow1 { get; } = new Building("StoneSnow1", 6052);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23685,7 +23685,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building6053 { get; } = new Building("Building6053", 6053);
+		public static Building StoneSnow2 { get; } = new Building("StoneSnow2", 6053);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23716,7 +23716,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building6054 { get; } = new Building("Building6054", 6054);
+		public static Building SnowPile { get; } = new Building("SnowPile", 6054);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23747,7 +23747,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building6055 { get; } = new Building("Building6055", 6055);
+		public static Building SnowBlock1 { get; } = new Building("SnowBlock1", 6055);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23778,7 +23778,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building6056 { get; } = new Building("Building6056", 6056);
+		public static Building SnowBlock2 { get; } = new Building("SnowBlock2", 6056);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23809,7 +23809,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building6057 { get; } = new Building("Building6057", 6057);
+		public static Building SnowBlock3 { get; } = new Building("SnowBlock3", 6057);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23840,7 +23840,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-snow-icon"<para/>
 		/// </summary>
-		public static Building Building6058 { get; } = new Building("Building6058", 6058);
+		public static Building SnowBlock4 { get; } = new Building("SnowBlock4", 6058);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23871,7 +23871,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6059 { get; } = new Building("Building6059", 6059);
+		public static Building OldMecoSafe { get; } = new Building("OldMecoSafe", 6059);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23902,7 +23902,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6060 { get; } = new Building("Building6060", 6060);
+		public static Building DamagedMecoSafe { get; } = new Building("DamagedMecoSafe", 6060);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23933,7 +23933,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6061 { get; } = new Building("Building6061", 6061);
+		public static Building TitaniumAlloyTestTable { get; } = new Building("TitaniumAlloyTestTable", 6061);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23964,7 +23964,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6062 { get; } = new Building("Building6062", 6062);
+		public static Building BirthplaceServer { get; } = new Building("BirthplaceServer", 6062);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -23995,7 +23995,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6063 { get; } = new Building("Building6063", 6063);
+		public static Building BirthplaceServerBroken { get; } = new Building("BirthplaceServerBroken", 6063);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24026,7 +24026,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6064 { get; } = new Building("Building6064", 6064);
+		public static Building BirthplaceServerStop { get; } = new Building("BirthplaceServerStop", 6064);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24057,7 +24057,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6065 { get; } = new Building("Building6065", 6065);
+		public static Building TitaniumComputerTable { get; } = new Building("TitaniumComputerTable", 6065);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24398,7 +24398,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6076 { get; } = new Building("Building6076", 6076);
+		public static Building OldMecoLamp { get; } = new Building("OldMecoLamp", 6076);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24429,7 +24429,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6077 { get; } = new Building("Building6077", 6077);
+		public static Building BadMecoLamp { get; } = new Building("BadMecoLamp", 6077);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24460,7 +24460,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6078 { get; } = new Building("Building6078", 6078);
+		public static Building ScatteredWoodenBox10 { get; } = new Building("ScatteredWoodenBox10", 6078);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24491,7 +24491,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6079 { get; } = new Building("Building6079", 6079);
+		public static Building ScatteredWoodenBox20 { get; } = new Building("ScatteredWoodenBox20", 6079);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24522,7 +24522,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6080 { get; } = new Building("Building6080", 6080);
+		public static Building ScatteredWoodenBox30 { get; } = new Building("ScatteredWoodenBox30", 6080);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24553,7 +24553,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6081 { get; } = new Building("Building6081", 6081);
+		public static Building ScatteredWoodenBox40 { get; } = new Building("ScatteredWoodenBox40", 6081);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24584,7 +24584,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6082 { get; } = new Building("Building6082", 6082);
+		public static Building ScatteredWoodenBox50 { get; } = new Building("ScatteredWoodenBox50", 6082);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24615,7 +24615,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6083 { get; } = new Building("Building6083", 6083);
+		public static Building ScatteredWoodenBox1Broken0 { get; } = new Building("ScatteredWoodenBox1Broken0", 6083);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24646,7 +24646,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6084 { get; } = new Building("Building6084", 6084);
+		public static Building ScatteredWoodenBox2Broken0 { get; } = new Building("ScatteredWoodenBox2Broken0", 6084);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24677,7 +24677,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6085 { get; } = new Building("Building6085", 6085);
+		public static Building ScatteredWoodenBox3Broken0 { get; } = new Building("ScatteredWoodenBox3Broken0", 6085);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24708,7 +24708,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6086 { get; } = new Building("Building6086", 6086);
+		public static Building ScatteredWoodenBox4Broken0 { get; } = new Building("ScatteredWoodenBox4Broken0", 6086);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24739,7 +24739,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6087 { get; } = new Building("Building6087", 6087);
+		public static Building ScatteredWoodenBox5Broken0 { get; } = new Building("ScatteredWoodenBox5Broken0", 6087);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24770,7 +24770,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building6088 { get; } = new Building("Building6088", 6088);
+		public static Building GoblinDecoration10 { get; } = new Building("GoblinDecoration10", 6088);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24801,7 +24801,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building6089 { get; } = new Building("Building6089", 6089);
+		public static Building GoblinDecoration20 { get; } = new Building("GoblinDecoration20", 6089);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24832,7 +24832,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building6090 { get; } = new Building("Building6090", 6090);
+		public static Building GoblinDecoration30 { get; } = new Building("GoblinDecoration30", 6090);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24863,7 +24863,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building6091 { get; } = new Building("Building6091", 6091);
+		public static Building GoblinDecoration40 { get; } = new Building("GoblinDecoration40", 6091);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24894,7 +24894,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building6092 { get; } = new Building("Building6092", 6092);
+		public static Building GoblinDecoration50 { get; } = new Building("GoblinDecoration50", 6092);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24925,7 +24925,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building6093 { get; } = new Building("Building6093", 6093);
+		public static Building GoblinDecoration60 { get; } = new Building("GoblinDecoration60", 6093);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24956,7 +24956,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building6094 { get; } = new Building("Building6094", 6094);
+		public static Building GoblinDecoration70 { get; } = new Building("GoblinDecoration70", 6094);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -24987,7 +24987,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building6095 { get; } = new Building("Building6095", 6095);
+		public static Building GoblinDecoration80 { get; } = new Building("GoblinDecoration80", 6095);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25018,7 +25018,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building6096 { get; } = new Building("Building6096", 6096);
+		public static Building GoblinDecoration90 { get; } = new Building("GoblinDecoration90", 6096);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25080,7 +25080,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6098 { get; } = new Building("Building6098", 6098);
+		public static Building ColorJar10 { get; } = new Building("ColorJar10", 6098);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25111,7 +25111,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6099 { get; } = new Building("Building6099", 6099);
+		public static Building ColorJar200 { get; } = new Building("ColorJar200", 6099);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25142,7 +25142,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6100 { get; } = new Building("Building6100", 6100);
+		public static Building ColorJar30 { get; } = new Building("ColorJar30", 6100);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25173,7 +25173,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6101 { get; } = new Building("Building6101", 6101);
+		public static Building ColorJar40 { get; } = new Building("ColorJar40", 6101);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25204,7 +25204,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6102 { get; } = new Building("Building6102", 6102);
+		public static Building ColoredCans50 { get; } = new Building("ColoredCans50", 6102);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25235,7 +25235,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6103 { get; } = new Building("Building6103", 6103);
+		public static Building ColorJar60 { get; } = new Building("ColorJar60", 6103);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25266,7 +25266,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6104 { get; } = new Building("Building6104", 6104);
+		public static Building ColorJar70 { get; } = new Building("ColorJar70", 6104);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25297,7 +25297,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6105 { get; } = new Building("Building6105", 6105);
+		public static Building ColorJar80 { get; } = new Building("ColorJar80", 6105);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25328,7 +25328,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6106 { get; } = new Building("Building6106", 6106);
+		public static Building ColorJar90 { get; } = new Building("ColorJar90", 6106);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25359,7 +25359,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6107 { get; } = new Building("Building6107", 6107);
+		public static Building ColoredCans100 { get; } = new Building("ColoredCans100", 6107);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25390,7 +25390,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6108 { get; } = new Building("Building6108", 6108);
+		public static Building ColorJar110 { get; } = new Building("ColorJar110", 6108);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25421,7 +25421,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6109 { get; } = new Building("Building6109", 6109);
+		public static Building ColorJar120 { get; } = new Building("ColorJar120", 6109);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25452,7 +25452,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6110 { get; } = new Building("Building6110", 6110);
+		public static Building ColoredCans130 { get; } = new Building("ColoredCans130", 6110);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25483,7 +25483,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6111 { get; } = new Building("Building6111", 6111);
+		public static Building ColorJar140 { get; } = new Building("ColorJar140", 6111);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25514,7 +25514,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6112 { get; } = new Building("Building6112", 6112);
+		public static Building ColoredCans150 { get; } = new Building("ColoredCans150", 6112);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25545,7 +25545,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6113 { get; } = new Building("Building6113", 6113);
+		public static Building ColoredCans160 { get; } = new Building("ColoredCans160", 6113);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25576,7 +25576,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6114 { get; } = new Building("Building6114", 6114);
+		public static Building ColoredCans170 { get; } = new Building("ColoredCans170", 6114);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25607,7 +25607,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6115 { get; } = new Building("Building6115", 6115);
+		public static Building ColorJar180 { get; } = new Building("ColorJar180", 6115);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25638,7 +25638,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6116 { get; } = new Building("Building6116", 6116);
+		public static Building ColoredCans190 { get; } = new Building("ColoredCans190", 6116);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25669,7 +25669,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6117 { get; } = new Building("Building6117", 6117);
+		public static Building ColorJar201 { get; } = new Building("ColorJar201", 6117);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25700,7 +25700,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6118 { get; } = new Building("Building6118", 6118);
+		public static Building OldColoredCans100 { get; } = new Building("OldColoredCans100", 6118);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25731,7 +25731,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6119 { get; } = new Building("Building6119", 6119);
+		public static Building OldColoredCans200 { get; } = new Building("OldColoredCans200", 6119);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25762,7 +25762,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6120 { get; } = new Building("Building6120", 6120);
+		public static Building OldColoredCans30 { get; } = new Building("OldColoredCans30", 6120);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25793,7 +25793,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6121 { get; } = new Building("Building6121", 6121);
+		public static Building OldColoredCans40 { get; } = new Building("OldColoredCans40", 6121);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25824,7 +25824,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6122 { get; } = new Building("Building6122", 6122);
+		public static Building OldColoredCans50 { get; } = new Building("OldColoredCans50", 6122);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25855,7 +25855,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6123 { get; } = new Building("Building6123", 6123);
+		public static Building OldColoredCans60 { get; } = new Building("OldColoredCans60", 6123);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25886,7 +25886,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6124 { get; } = new Building("Building6124", 6124);
+		public static Building OldColoredCans70 { get; } = new Building("OldColoredCans70", 6124);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25917,7 +25917,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6125 { get; } = new Building("Building6125", 6125);
+		public static Building OldColoredCans80 { get; } = new Building("OldColoredCans80", 6125);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25948,7 +25948,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6126 { get; } = new Building("Building6126", 6126);
+		public static Building OldColoredCans90 { get; } = new Building("OldColoredCans90", 6126);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -25979,7 +25979,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6127 { get; } = new Building("Building6127", 6127);
+		public static Building OldColoredCans101 { get; } = new Building("OldColoredCans101", 6127);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26010,7 +26010,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6128 { get; } = new Building("Building6128", 6128);
+		public static Building OldColoredCans110 { get; } = new Building("OldColoredCans110", 6128);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26041,7 +26041,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6129 { get; } = new Building("Building6129", 6129);
+		public static Building OldColoredCans120 { get; } = new Building("OldColoredCans120", 6129);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26072,7 +26072,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6130 { get; } = new Building("Building6130", 6130);
+		public static Building OldColoredCans130 { get; } = new Building("OldColoredCans130", 6130);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26103,7 +26103,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6131 { get; } = new Building("Building6131", 6131);
+		public static Building OldColoredCans140 { get; } = new Building("OldColoredCans140", 6131);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26134,7 +26134,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6132 { get; } = new Building("Building6132", 6132);
+		public static Building OldColoredCans150 { get; } = new Building("OldColoredCans150", 6132);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26165,7 +26165,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6133 { get; } = new Building("Building6133", 6133);
+		public static Building OldColoredCans160 { get; } = new Building("OldColoredCans160", 6133);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26196,7 +26196,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6134 { get; } = new Building("Building6134", 6134);
+		public static Building OldColoredCans170 { get; } = new Building("OldColoredCans170", 6134);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26227,7 +26227,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6135 { get; } = new Building("Building6135", 6135);
+		public static Building OldColoredCans180 { get; } = new Building("OldColoredCans180", 6135);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26258,7 +26258,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6136 { get; } = new Building("Building6136", 6136);
+		public static Building OldColoredCans190 { get; } = new Building("OldColoredCans190", 6136);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26289,7 +26289,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6137 { get; } = new Building("Building6137", 6137);
+		public static Building OldColoredCans201 { get; } = new Building("OldColoredCans201", 6137);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26320,7 +26320,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6138 { get; } = new Building("Building6138", 6138);
+		public static Building MecoPipe1 { get; } = new Building("MecoPipe1", 6138);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26351,7 +26351,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6139 { get; } = new Building("Building6139", 6139);
+		public static Building MecoPipe2 { get; } = new Building("MecoPipe2", 6139);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26382,7 +26382,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6140 { get; } = new Building("Building6140", 6140);
+		public static Building MecoPipe3 { get; } = new Building("MecoPipe3", 6140);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26413,7 +26413,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6141 { get; } = new Building("Building6141", 6141);
+		public static Building MecoPipe4 { get; } = new Building("MecoPipe4", 6141);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26444,7 +26444,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6142 { get; } = new Building("Building6142", 6142);
+		public static Building MecoPipe5 { get; } = new Building("MecoPipe5", 6142);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26475,7 +26475,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6143 { get; } = new Building("Building6143", 6143);
+		public static Building MecoPipe6 { get; } = new Building("MecoPipe6", 6143);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26506,7 +26506,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6144 { get; } = new Building("Building6144", 6144);
+		public static Building MecoPipe7 { get; } = new Building("MecoPipe7", 6144);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26537,7 +26537,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6145 { get; } = new Building("Building6145", 6145);
+		public static Building MecoPipe8 { get; } = new Building("MecoPipe8", 6145);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26568,7 +26568,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6146 { get; } = new Building("Building6146", 6146);
+		public static Building MecoPipe9 { get; } = new Building("MecoPipe9", 6146);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26599,7 +26599,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6147 { get; } = new Building("Building6147", 6147);
+		public static Building MecoPipe10 { get; } = new Building("MecoPipe10", 6147);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26630,7 +26630,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6148 { get; } = new Building("Building6148", 6148);
+		public static Building MecoPipe11 { get; } = new Building("MecoPipe11", 6148);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26661,7 +26661,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6149 { get; } = new Building("Building6149", 6149);
+		public static Building MecoPipe12 { get; } = new Building("MecoPipe12", 6149);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26692,7 +26692,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6150 { get; } = new Building("Building6150", 6150);
+		public static Building MecoPipe13 { get; } = new Building("MecoPipe13", 6150);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26723,7 +26723,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6151 { get; } = new Building("Building6151", 6151);
+		public static Building MecoPipe14 { get; } = new Building("MecoPipe14", 6151);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26754,7 +26754,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6152 { get; } = new Building("Building6152", 6152);
+		public static Building MecoPipe15 { get; } = new Building("MecoPipe15", 6152);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26785,7 +26785,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6153 { get; } = new Building("Building6153", 6153);
+		public static Building MecoPipe16 { get; } = new Building("MecoPipe16", 6153);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26816,7 +26816,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6154 { get; } = new Building("Building6154", 6154);
+		public static Building OldMecoPipe1 { get; } = new Building("OldMecoPipe1", 6154);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26847,7 +26847,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6155 { get; } = new Building("Building6155", 6155);
+		public static Building OldMecoPipe2 { get; } = new Building("OldMecoPipe2", 6155);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26878,7 +26878,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6156 { get; } = new Building("Building6156", 6156);
+		public static Building OldMecoPipe3 { get; } = new Building("OldMecoPipe3", 6156);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26909,7 +26909,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6157 { get; } = new Building("Building6157", 6157);
+		public static Building OldMecoPipe4 { get; } = new Building("OldMecoPipe4", 6157);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26940,7 +26940,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6158 { get; } = new Building("Building6158", 6158);
+		public static Building OldMecoPipe5 { get; } = new Building("OldMecoPipe5", 6158);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -26971,7 +26971,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6159 { get; } = new Building("Building6159", 6159);
+		public static Building OldMecoPipe6 { get; } = new Building("OldMecoPipe6", 6159);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27002,7 +27002,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6160 { get; } = new Building("Building6160", 6160);
+		public static Building OldMecoPipe7 { get; } = new Building("OldMecoPipe7", 6160);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27033,7 +27033,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6161 { get; } = new Building("Building6161", 6161);
+		public static Building OldMecoPipe8 { get; } = new Building("OldMecoPipe8", 6161);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27064,7 +27064,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6162 { get; } = new Building("Building6162", 6162);
+		public static Building OldMecoPipe9 { get; } = new Building("OldMecoPipe9", 6162);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27095,7 +27095,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6163 { get; } = new Building("Building6163", 6163);
+		public static Building OldMecoPipe10 { get; } = new Building("OldMecoPipe10", 6163);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27126,7 +27126,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6164 { get; } = new Building("Building6164", 6164);
+		public static Building OldMecoPipe11 { get; } = new Building("OldMecoPipe11", 6164);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27157,7 +27157,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6165 { get; } = new Building("Building6165", 6165);
+		public static Building OldMecoPipe12 { get; } = new Building("OldMecoPipe12", 6165);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27188,7 +27188,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6166 { get; } = new Building("Building6166", 6166);
+		public static Building OldMecoPipe13 { get; } = new Building("OldMecoPipe13", 6166);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27219,7 +27219,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6167 { get; } = new Building("Building6167", 6167);
+		public static Building OldMecoPipe14 { get; } = new Building("OldMecoPipe14", 6167);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27250,7 +27250,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6168 { get; } = new Building("Building6168", 6168);
+		public static Building OldMecoPipe15 { get; } = new Building("OldMecoPipe15", 6168);
 		/// <summary>
 		/// Type: 7; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27281,7 +27281,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6169 { get; } = new Building("Building6169", 6169);
+		public static Building OldMecoPipe16 { get; } = new Building("OldMecoPipe16", 6169);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27312,7 +27312,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building6170 { get; } = new Building("Building6170", 6170);
+		public static Building InfectedBioMecoMeatPie1 { get; } = new Building("InfectedBioMecoMeatPie1", 6170);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27343,7 +27343,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building6171 { get; } = new Building("Building6171", 6171);
+		public static Building InfectedBioMecoMeatPieces2 { get; } = new Building("InfectedBioMecoMeatPieces2", 6171);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27374,7 +27374,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building6172 { get; } = new Building("Building6172", 6172);
+		public static Building InfectedBioMecoMeatPieces3 { get; } = new Building("InfectedBioMecoMeatPieces3", 6172);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27405,7 +27405,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building6173 { get; } = new Building("Building6173", 6173);
+		public static Building InfectedBioMecoMeatPieces4 { get; } = new Building("InfectedBioMecoMeatPieces4", 6173);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27436,7 +27436,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building6174 { get; } = new Building("Building6174", 6174);
+		public static Building InfectedBioMecoMeatPieces5 { get; } = new Building("InfectedBioMecoMeatPieces5", 6174);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27467,7 +27467,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building6175 { get; } = new Building("Building6175", 6175);
+		public static Building InfectedBioMecoMeatPieces6 { get; } = new Building("InfectedBioMecoMeatPieces6", 6175);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27498,7 +27498,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-copper-icon"<para/>
 		/// </summary>
-		public static Building Building6181 { get; } = new Building("Building6181", 6181);
+		public static Building BrokenCopper1 { get; } = new Building("BrokenCopper1", 6181);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27529,7 +27529,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-copper-icon"<para/>
 		/// </summary>
-		public static Building Building6182 { get; } = new Building("Building6182", 6182);
+		public static Building BrokenCopper2 { get; } = new Building("BrokenCopper2", 6182);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27560,7 +27560,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-copper-icon"<para/>
 		/// </summary>
-		public static Building Building6183 { get; } = new Building("Building6183", 6183);
+		public static Building BrokenCopper3 { get; } = new Building("BrokenCopper3", 6183);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27591,7 +27591,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-copper-icon"<para/>
 		/// </summary>
-		public static Building Building6184 { get; } = new Building("Building6184", 6184);
+		public static Building BrokenCopper4 { get; } = new Building("BrokenCopper4", 6184);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27622,7 +27622,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-copper-icon"<para/>
 		/// </summary>
-		public static Building Building6185 { get; } = new Building("Building6185", 6185);
+		public static Building BrokenCopper5 { get; } = new Building("BrokenCopper5", 6185);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27653,7 +27653,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-copper-icon"<para/>
 		/// </summary>
-		public static Building Building6186 { get; } = new Building("Building6186", 6186);
+		public static Building BrokenCopper6 { get; } = new Building("BrokenCopper6", 6186);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27684,7 +27684,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-iron-icon"<para/>
 		/// </summary>
-		public static Building Building6191 { get; } = new Building("Building6191", 6191);
+		public static Building BrokenIron1 { get; } = new Building("BrokenIron1", 6191);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27715,7 +27715,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-iron-icon"<para/>
 		/// </summary>
-		public static Building Building6192 { get; } = new Building("Building6192", 6192);
+		public static Building BrokenIron2 { get; } = new Building("BrokenIron2", 6192);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27746,7 +27746,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-iron-icon"<para/>
 		/// </summary>
-		public static Building Building6193 { get; } = new Building("Building6193", 6193);
+		public static Building BrokenIron3 { get; } = new Building("BrokenIron3", 6193);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27777,7 +27777,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-iron-icon"<para/>
 		/// </summary>
-		public static Building Building6194 { get; } = new Building("Building6194", 6194);
+		public static Building BrokenIron4 { get; } = new Building("BrokenIron4", 6194);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27808,7 +27808,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-iron-icon"<para/>
 		/// </summary>
-		public static Building Building6195 { get; } = new Building("Building6195", 6195);
+		public static Building BrokenIron5 { get; } = new Building("BrokenIron5", 6195);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27839,7 +27839,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-iron-icon"<para/>
 		/// </summary>
-		public static Building Building6196 { get; } = new Building("Building6196", 6196);
+		public static Building BrokenIron6 { get; } = new Building("BrokenIron6", 6196);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27870,7 +27870,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-silver-icon"<para/>
 		/// </summary>
-		public static Building Building6201 { get; } = new Building("Building6201", 6201);
+		public static Building BrokenSilver1 { get; } = new Building("BrokenSilver1", 6201);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27901,7 +27901,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-silver-icon"<para/>
 		/// </summary>
-		public static Building Building6202 { get; } = new Building("Building6202", 6202);
+		public static Building BrokenSilver2 { get; } = new Building("BrokenSilver2", 6202);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27932,7 +27932,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-silver-icon"<para/>
 		/// </summary>
-		public static Building Building6203 { get; } = new Building("Building6203", 6203);
+		public static Building BrokenSilver3 { get; } = new Building("BrokenSilver3", 6203);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27963,7 +27963,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-silver-icon"<para/>
 		/// </summary>
-		public static Building Building6204 { get; } = new Building("Building6204", 6204);
+		public static Building BrokenSilver4 { get; } = new Building("BrokenSilver4", 6204);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -27994,7 +27994,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-silver-icon"<para/>
 		/// </summary>
-		public static Building Building6205 { get; } = new Building("Building6205", 6205);
+		public static Building BrokenSilver5 { get; } = new Building("BrokenSilver5", 6205);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28025,7 +28025,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-silver-icon"<para/>
 		/// </summary>
-		public static Building Building6206 { get; } = new Building("Building6206", 6206);
+		public static Building BrokenSilver6 { get; } = new Building("BrokenSilver6", 6206);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28056,7 +28056,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-gold-icon"<para/>
 		/// </summary>
-		public static Building Building6211 { get; } = new Building("Building6211", 6211);
+		public static Building BrokenGold1 { get; } = new Building("BrokenGold1", 6211);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28087,7 +28087,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-gold-icon"<para/>
 		/// </summary>
-		public static Building Building6212 { get; } = new Building("Building6212", 6212);
+		public static Building BrokenGold2 { get; } = new Building("BrokenGold2", 6212);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28118,7 +28118,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-gold-icon"<para/>
 		/// </summary>
-		public static Building Building6213 { get; } = new Building("Building6213", 6213);
+		public static Building BrokenGold3 { get; } = new Building("BrokenGold3", 6213);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28149,7 +28149,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-gold-icon"<para/>
 		/// </summary>
-		public static Building Building6214 { get; } = new Building("Building6214", 6214);
+		public static Building BrokenGold4 { get; } = new Building("BrokenGold4", 6214);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28180,7 +28180,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-gold-icon"<para/>
 		/// </summary>
-		public static Building Building6215 { get; } = new Building("Building6215", 6215);
+		public static Building BrokenGold5 { get; } = new Building("BrokenGold5", 6215);
 		/// <summary>
 		/// Type: 5; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28211,7 +28211,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-gold-icon"<para/>
 		/// </summary>
-		public static Building Building6216 { get; } = new Building("Building6216", 6216);
+		public static Building BrokenGold6 { get; } = new Building("BrokenGold6", 6216);
 		/// <summary>
 		/// Type: 31; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28242,7 +28242,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building6302 { get; } = new Building("Building6302", 6302);
+		public static Building BoneCage { get; } = new Building("BoneCage", 6302);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28273,7 +28273,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6996 { get; } = new Building("Building6996", 6996);
+		public static Building Spaceship { get; } = new Building("Spaceship", 6996);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28304,7 +28304,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building6997 { get; } = new Building("Building6997", 6997);
+		public static Building NonFunctionalSleepingCabin { get; } = new Building("NonFunctionalSleepingCabin", 6997);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28397,7 +28397,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7001 { get; } = new Building("Building7001", 7001);
+		public static Building HumanBrushingStrangeEggs { get; } = new Building("HumanBrushingStrangeEggs", 7001);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28428,7 +28428,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7002 { get; } = new Building("Building7002", 7002);
+		public static Building ElfBrushStrangeEgg { get; } = new Building("ElfBrushStrangeEgg", 7002);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28459,7 +28459,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7003 { get; } = new Building("Building7003", 7003);
+		public static Building OrcBrushStrangeEgg { get; } = new Building("OrcBrushStrangeEgg", 7003);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28490,7 +28490,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7004 { get; } = new Building("Building7004", 7004);
+		public static Building MummyBrushingStrangeEggs { get; } = new Building("MummyBrushingStrangeEggs", 7004);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28521,7 +28521,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7005 { get; } = new Building("Building7005", 7005);
+		public static Building WildBoarManBrushingStrangeEggs { get; } = new Building("WildBoarManBrushingStrangeEggs", 7005);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28583,7 +28583,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7100 { get; } = new Building("Building7100", 7100);
+		public static Building GoblinEliteAssassinBrushingStrangeEggs { get; } = new Building("GoblinEliteAssassinBrushingStrangeEggs", 7100);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28614,7 +28614,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7101 { get; } = new Building("Building7101", 7101);
+		public static Building GoblinEliteBowHandBrushStrangeEgg { get; } = new Building("GoblinEliteBowHandBrushStrangeEgg", 7101);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28645,7 +28645,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7102 { get; } = new Building("Building7102", 7102);
+		public static Building GoblinAssassinBrushingStrangeEggs { get; } = new Building("GoblinAssassinBrushingStrangeEggs", 7102);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28676,7 +28676,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7103 { get; } = new Building("Building7103", 7103);
+		public static Building GoblinArcherBrushStrangeEgg { get; } = new Building("GoblinArcherBrushStrangeEgg", 7103);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28707,7 +28707,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7104 { get; } = new Building("Building7104", 7104);
+		public static Building GoblinVillagersBrushStrangeEggs0 { get; } = new Building("GoblinVillagersBrushStrangeEggs0", 7104);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28738,7 +28738,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7105 { get; } = new Building("Building7105", 7105);
+		public static Building GoblinVillagersBrushStrangeEggs1 { get; } = new Building("GoblinVillagersBrushStrangeEggs1", 7105);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28769,7 +28769,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7106 { get; } = new Building("Building7106", 7106);
+		public static Building OgreBlame { get; } = new Building("OgreBlame", 7106);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28800,7 +28800,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7107 { get; } = new Building("Building7107", 7107);
+		public static Building BigOgresBrushStrangeEggs { get; } = new Building("BigOgresBrushStrangeEggs", 7107);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28831,7 +28831,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7108 { get; } = new Building("Building7108", 7108);
+		public static Building ZombieDogBrushingStrangeEggs { get; } = new Building("ZombieDogBrushingStrangeEggs", 7108);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28893,7 +28893,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7110 { get; } = new Building("Building7110", 7110);
+		public static Building SnowRabbitBlame { get; } = new Building("SnowRabbitBlame", 7110);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28924,7 +28924,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7111 { get; } = new Building("Building7111", 7111);
+		public static Building SandRabbitBlame { get; } = new Building("SandRabbitBlame", 7111);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28955,7 +28955,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7112 { get; } = new Building("Building7112", 7112);
+		public static Building ForestWormBrushingStrangeEggs { get; } = new Building("ForestWormBrushingStrangeEggs", 7112);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -28986,7 +28986,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7113 { get; } = new Building("Building7113", 7113);
+		public static Building SandWorm { get; } = new Building("SandWorm", 7113);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29017,7 +29017,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7114 { get; } = new Building("Building7114", 7114);
+		public static Building SwampWormBlame { get; } = new Building("SwampWormBlame", 7114);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29048,7 +29048,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7115 { get; } = new Building("Building7115", 7115);
+		public static Building RageWildBoarBrushStrangeEgg { get; } = new Building("RageWildBoarBrushStrangeEgg", 7115);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29079,7 +29079,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7116 { get; } = new Building("Building7116", 7116);
+		public static Building BloodthirstyPigBrushStrangeEgg { get; } = new Building("BloodthirstyPigBrushStrangeEgg", 7116);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29110,7 +29110,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7117 { get; } = new Building("Building7117", 7117);
+		public static Building WildBoarKingBrushingStrangeEggs { get; } = new Building("WildBoarKingBrushingStrangeEggs", 7117);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29141,7 +29141,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building7301 { get; } = new Building("Building7301", 7301);
+		public static Building DevilsNest { get; } = new Building("DevilsNest", 7301);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29172,7 +29172,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building7302 { get; } = new Building("Building7302", 7302);
+		public static Building DevilsNest2 { get; } = new Building("DevilsNest2", 7302);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29203,7 +29203,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building7303 { get; } = new Building("Building7303", 7303);
+		public static Building DevilsNest3 { get; } = new Building("DevilsNest3", 7303);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29234,7 +29234,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building7304 { get; } = new Building("Building7304", 7304);
+		public static Building BOSSDevilsNest { get; } = new Building("BOSSDevilsNest", 7304);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29265,7 +29265,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bed-grounder-icon"<para/>
 		/// </summary>
-		public static Building Building7305 { get; } = new Building("Building7305", 7305);
+		public static Building BrushingTent { get; } = new Building("BrushingTent", 7305);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29296,7 +29296,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7501 { get; } = new Building("Building7501", 7501);
+		public static Building DogBrushingStrangeEgg0 { get; } = new Building("DogBrushingStrangeEgg0", 7501);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29327,7 +29327,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7502 { get; } = new Building("Building7502", 7502);
+		public static Building DogBrushingStrangeEgg1 { get; } = new Building("DogBrushingStrangeEgg1", 7502);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29358,7 +29358,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7503 { get; } = new Building("Building7503", 7503);
+		public static Building ChickenBrushStrangeEgg0 { get; } = new Building("ChickenBrushStrangeEgg0", 7503);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29389,7 +29389,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7504 { get; } = new Building("Building7504", 7504);
+		public static Building ChickenBrushStrangeEgg1 { get; } = new Building("ChickenBrushStrangeEgg1", 7504);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29420,7 +29420,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7505 { get; } = new Building("Building7505", 7505);
+		public static Building SheepBrushingEggs { get; } = new Building("SheepBrushingEggs", 7505);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29451,7 +29451,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7506 { get; } = new Building("Building7506", 7506);
+		public static Building PigBrushingStrangeEgg { get; } = new Building("PigBrushingStrangeEgg", 7506);
 		/// <summary>
 		/// Type: 23; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29482,7 +29482,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "0"<para/>
 		/// ParticleHitTexture: "0"<para/>
 		/// </summary>
-		public static Building Building7507 { get; } = new Building("Building7507", 7507);
+		public static Building CowBrushingStrangeEgg { get; } = new Building("CowBrushingStrangeEgg", 7507);
 		/// <summary>
 		/// Type: 1001; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29513,7 +29513,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7601 { get; } = new Building("Building7601", 7601);
+		public static Building CrossLaserTrap { get; } = new Building("CrossLaserTrap", 7601);
 		/// <summary>
 		/// Type: 1002; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29544,7 +29544,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7602 { get; } = new Building("Building7602", 7602);
+		public static Building SpikedTrap { get; } = new Building("SpikedTrap", 7602);
 		/// <summary>
 		/// Type: 1003; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29575,7 +29575,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7603 { get; } = new Building("Building7603", 7603);
+		public static Building GridFlytrapTrap { get; } = new Building("GridFlytrapTrap", 7603);
 		/// <summary>
 		/// Type: 1004; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29606,7 +29606,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7604 { get; } = new Building("Building7604", 7604);
+		public static Building HairTrap { get; } = new Building("HairTrap", 7604);
 		/// <summary>
 		/// Type: 1005; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29637,7 +29637,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7605 { get; } = new Building("Building7605", 7605);
+		public static Building Fort { get; } = new Building("Fort", 7605);
 		/// <summary>
 		/// Type: 1006; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29668,7 +29668,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7606 { get; } = new Building("Building7606", 7606);
+		public static Building GridFlybladeTrap { get; } = new Building("GridFlybladeTrap", 7606);
 		/// <summary>
 		/// Type: 1007; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29699,7 +29699,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7607 { get; } = new Building("Building7607", 7607);
+		public static Building WildCrossLaserTrap { get; } = new Building("WildCrossLaserTrap", 7607);
 		/// <summary>
 		/// Type: 1008; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29730,7 +29730,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7608 { get; } = new Building("Building7608", 7608);
+		public static Building WildSpikeTrap { get; } = new Building("WildSpikeTrap", 7608);
 		/// <summary>
 		/// Type: 1009; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29761,7 +29761,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7609 { get; } = new Building("Building7609", 7609);
+		public static Building Wild0FlyingEdgeTrap { get; } = new Building("Wild0FlyingEdgeTrap", 7609);
 		/// <summary>
 		/// Type: 1010; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29792,7 +29792,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7610 { get; } = new Building("Building7610", 7610);
+		public static Building WildBlowTrap { get; } = new Building("WildBlowTrap", 7610);
 		/// <summary>
 		/// Type: 1011; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29823,7 +29823,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7611 { get; } = new Building("Building7611", 7611);
+		public static Building WildFort { get; } = new Building("WildFort", 7611);
 		/// <summary>
 		/// Type: 1012; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29854,7 +29854,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7612 { get; } = new Building("Building7612", 7612);
+		public static Building Wild1FlyingBladeTrap { get; } = new Building("Wild1FlyingBladeTrap", 7612);
 		/// <summary>
 		/// Type: 1013; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29885,7 +29885,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7613 { get; } = new Building("Building7613", 7613);
+		public static Building CrossFlameTrap { get; } = new Building("CrossFlameTrap", 7613);
 		/// <summary>
 		/// Type: 1014; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29916,7 +29916,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7614 { get; } = new Building("Building7614", 7614);
+		public static Building WildCrossFlameTrap { get; } = new Building("WildCrossFlameTrap", 7614);
 		/// <summary>
 		/// Type: 1015; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29947,7 +29947,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7615 { get; } = new Building("Building7615", 7615);
+		public static Building Wild2GridFlytrapTrap { get; } = new Building("Wild2GridFlytrapTrap", 7615);
 		/// <summary>
 		/// Type: 1016; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -29978,7 +29978,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7616 { get; } = new Building("Building7616", 7616);
+		public static Building Wild3GridFlytrapTrap { get; } = new Building("Wild3GridFlytrapTrap", 7616);
 		/// <summary>
 		/// Type: 1017; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30009,7 +30009,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7617 { get; } = new Building("Building7617", 7617);
+		public static Building Wild4GridFlybladeTrap { get; } = new Building("Wild4GridFlybladeTrap", 7617);
 		/// <summary>
 		/// Type: 1018; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30040,7 +30040,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7618 { get; } = new Building("Building7618", 7618);
+		public static Building Wild5GridFlybladeTrap { get; } = new Building("Wild5GridFlybladeTrap", 7618);
 		/// <summary>
 		/// Type: 1019; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30071,7 +30071,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7619 { get; } = new Building("Building7619", 7619);
+		public static Building Wild6GridFlytrapTrap { get; } = new Building("Wild6GridFlytrapTrap", 7619);
 		/// <summary>
 		/// Type: 38; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30102,7 +30102,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7621 { get; } = new Building("Building7621", 7621);
+		public static Building PowerStation { get; } = new Building("PowerStation", 7621);
 		/// <summary>
 		/// Type: 1020; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30133,7 +30133,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building7631 { get; } = new Building("Building7631", 7631);
+		public static Building WoodThornTrap { get; } = new Building("WoodThornTrap", 7631);
 		/// <summary>
 		/// Type: 1021; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30164,7 +30164,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/bones-icon"<para/>
 		/// </summary>
-		public static Building Building7632 { get; } = new Building("Building7632", 7632);
+		public static Building Catcher { get; } = new Building("Catcher", 7632);
 		/// <summary>
 		/// Type: 1022; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30195,7 +30195,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building7633 { get; } = new Building("Building7633", 7633);
+		public static Building PoisonousFogTrap { get; } = new Building("PoisonousFogTrap", 7633);
 		/// <summary>
 		/// Type: 1023; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30226,7 +30226,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7634 { get; } = new Building("Building7634", 7634);
+		public static Building Mine { get; } = new Building("Mine", 7634);
 		/// <summary>
 		/// Type: 1024; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30257,7 +30257,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building7635 { get; } = new Building("Building7635", 7635);
+		public static Building BlameMine { get; } = new Building("BlameMine", 7635);
 		/// <summary>
 		/// Type: 36; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30319,7 +30319,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/demon-icon"<para/>
 		/// </summary>
-		public static Building Building8002 { get; } = new Building("Building8002", 8002);
+		public static Building DeathWormNest { get; } = new Building("DeathWormNest", 8002);
 		/// <summary>
 		/// Type: 101; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30350,7 +30350,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8003 { get; } = new Building("Building8003", 8003);
+		public static Building DamagedWM69 { get; } = new Building("DamagedWM69", 8003);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30381,7 +30381,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8012 { get; } = new Building("Building8012", 8012);
+		public static Building MecoStructureComputer0 { get; } = new Building("MecoStructureComputer0", 8012);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30412,7 +30412,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8013 { get; } = new Building("Building8013", 8013);
+		public static Building MecoStructureComputerOblique0 { get; } = new Building("MecoStructureComputerOblique0", 8013);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30443,7 +30443,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco2-icon"<para/>
 		/// </summary>
-		public static Building Building8014 { get; } = new Building("Building8014", 8014);
+		public static Building MecoBiologicalResearchSample0 { get; } = new Building("MecoBiologicalResearchSample0", 8014);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30474,7 +30474,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco2-icon"<para/>
 		/// </summary>
-		public static Building Building8015 { get; } = new Building("Building8015", 8015);
+		public static Building MecoBiologicalResearchSampleBroken { get; } = new Building("MecoBiologicalResearchSampleBroken", 8015);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30505,7 +30505,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8017 { get; } = new Building("Building8017", 8017);
+		public static Building Server0 { get; } = new Building("Server0", 8017);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30536,7 +30536,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8018 { get; } = new Building("Building8018", 8018);
+		public static Building ServerStop { get; } = new Building("ServerStop", 8018);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30567,7 +30567,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8019 { get; } = new Building("Building8019", 8019);
+		public static Building TestTube10 { get; } = new Building("TestTube10", 8019);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30598,7 +30598,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8020 { get; } = new Building("Building8020", 8020);
+		public static Building TestTubeTable20 { get; } = new Building("TestTubeTable20", 8020);
 		/// <summary>
 		/// Type: 8; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30629,7 +30629,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8021 { get; } = new Building("Building8021", 8021);
+		public static Building MecoSafe { get; } = new Building("MecoSafe", 8021);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30660,7 +30660,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8022 { get; } = new Building("Building8022", 8022);
+		public static Building MecoStructureComputerIsBad0 { get; } = new Building("MecoStructureComputerIsBad0", 8022);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30691,7 +30691,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8023 { get; } = new Building("Building8023", 8023);
+		public static Building MecoStructureComputerOblique1 { get; } = new Building("MecoStructureComputerOblique1", 8023);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30722,7 +30722,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8024 { get; } = new Building("Building8024", 8024);
+		public static Building MecoFurnaceIsBad { get; } = new Building("MecoFurnaceIsBad", 8024);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30753,7 +30753,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8025 { get; } = new Building("Building8025", 8025);
+		public static Building DamagedSleepingCabin1 { get; } = new Building("DamagedSleepingCabin1", 8025);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30784,7 +30784,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8026 { get; } = new Building("Building8026", 8026);
+		public static Building DamagedSleepingCabin2 { get; } = new Building("DamagedSleepingCabin2", 8026);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30815,7 +30815,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8027 { get; } = new Building("Building8027", 8027);
+		public static Building DamagedSleepingCabin3 { get; } = new Building("DamagedSleepingCabin3", 8027);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30846,7 +30846,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8028 { get; } = new Building("Building8028", 8028);
+		public static Building DamagedSleepCapsule4 { get; } = new Building("DamagedSleepCapsule4", 8028);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30877,7 +30877,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8029 { get; } = new Building("Building8029", 8029);
+		public static Building ServerOld { get; } = new Building("ServerOld", 8029);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30908,7 +30908,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8030 { get; } = new Building("Building8030", 8030);
+		public static Building ServerBroken { get; } = new Building("ServerBroken", 8030);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30939,7 +30939,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8031 { get; } = new Building("Building8031", 8031);
+		public static Building MecoHost10 { get; } = new Building("MecoHost10", 8031);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -30970,7 +30970,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8032 { get; } = new Building("Building8032", 8032);
+		public static Building MecoHost20 { get; } = new Building("MecoHost20", 8032);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -31001,7 +31001,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8033 { get; } = new Building("Building8033", 8033);
+		public static Building MecoHost3Off0 { get; } = new Building("MecoHost3Off0", 8033);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -31032,7 +31032,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8034 { get; } = new Building("Building8034", 8034);
+		public static Building MecoHost3Open0 { get; } = new Building("MecoHost3Open0", 8034);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -31063,7 +31063,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8035 { get; } = new Building("Building8035", 8035);
+		public static Building MecoHost1Broken0 { get; } = new Building("MecoHost1Broken0", 8035);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -31094,7 +31094,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8036 { get; } = new Building("Building8036", 8036);
+		public static Building MecoHost2Broken0 { get; } = new Building("MecoHost2Broken0", 8036);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -31125,7 +31125,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8037 { get; } = new Building("Building8037", 8037);
+		public static Building MecoHost3Broken0 { get; } = new Building("MecoHost3Broken0", 8037);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -31249,7 +31249,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8041 { get; } = new Building("Building8041", 8041);
+		public static Building GeminiBOSSPeripheralDoor1 { get; } = new Building("GeminiBOSSPeripheralDoor1", 8041);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -31280,7 +31280,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8042 { get; } = new Building("Building8042", 8042);
+		public static Building GeminiBOSSPeripheralDoor2 { get; } = new Building("GeminiBOSSPeripheralDoor2", 8042);
 		/// <summary>
 		/// Type: 103; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -31311,7 +31311,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorElectricClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8043 { get; } = new Building("Building8043", 8043);
+		public static Building GreenOrcRoomStoryDoor { get; } = new Building("GreenOrcRoomStoryDoor", 8043);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -31342,7 +31342,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "Sounds/ActionDoorElectricClose"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building8044 { get; } = new Building("Building8044", 8044);
+		public static Building GreenOrcRoomBlockingDoor { get; } = new Building("GreenOrcRoomBlockingDoor", 8044);
 		/// <summary>
 		/// Type: 3; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33233,7 +33233,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15001 { get; } = new Building("Building15001", 15001);
+		public static Building MultiClusterGrass111 { get; } = new Building("MultiClusterGrass111", 15001);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33264,7 +33264,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15002 { get; } = new Building("Building15002", 15002);
+		public static Building MultiClusterGrass21 { get; } = new Building("MultiClusterGrass21", 15002);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33295,7 +33295,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15003 { get; } = new Building("Building15003", 15003);
+		public static Building MultiClusterGrass31 { get; } = new Building("MultiClusterGrass31", 15003);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33326,7 +33326,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15004 { get; } = new Building("Building15004", 15004);
+		public static Building MultiClusterGrass41 { get; } = new Building("MultiClusterGrass41", 15004);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33357,7 +33357,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15005 { get; } = new Building("Building15005", 15005);
+		public static Building MultiClusterGrass51 { get; } = new Building("MultiClusterGrass51", 15005);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33388,7 +33388,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15006 { get; } = new Building("Building15006", 15006);
+		public static Building MultiClusterGrass61 { get; } = new Building("MultiClusterGrass61", 15006);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33419,7 +33419,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15007 { get; } = new Building("Building15007", 15007);
+		public static Building MultiClusterGrass71 { get; } = new Building("MultiClusterGrass71", 15007);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33450,7 +33450,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15008 { get; } = new Building("Building15008", 15008);
+		public static Building MultiClusterGrass81 { get; } = new Building("MultiClusterGrass81", 15008);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33481,7 +33481,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15009 { get; } = new Building("Building15009", 15009);
+		public static Building MultiClusterGrass91 { get; } = new Building("MultiClusterGrass91", 15009);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33512,7 +33512,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15010 { get; } = new Building("Building15010", 15010);
+		public static Building MultiClusterGrass102 { get; } = new Building("MultiClusterGrass102", 15010);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33543,7 +33543,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15011 { get; } = new Building("Building15011", 15011);
+		public static Building MultiClusterGrass112 { get; } = new Building("MultiClusterGrass112", 15011);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33574,7 +33574,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15012 { get; } = new Building("Building15012", 15012);
+		public static Building MultiClusterGrass121 { get; } = new Building("MultiClusterGrass121", 15012);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33605,7 +33605,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15013 { get; } = new Building("Building15013", 15013);
+		public static Building MultiClusterGrass131 { get; } = new Building("MultiClusterGrass131", 15013);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33636,7 +33636,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15014 { get; } = new Building("Building15014", 15014);
+		public static Building MultiClownGrass141 { get; } = new Building("MultiClownGrass141", 15014);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 1<para/>
@@ -33667,7 +33667,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/grass-icon"<para/>
 		/// </summary>
-		public static Building Building15015 { get; } = new Building("Building15015", 15015);
+		public static Building MultiClusters151 { get; } = new Building("MultiClusters151", 15015);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33698,7 +33698,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building15016 { get; } = new Building("Building15016", 15016);
+		public static Building SmallStone11 { get; } = new Building("SmallStone11", 15016);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33729,7 +33729,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building15017 { get; } = new Building("Building15017", 15017);
+		public static Building SmallStone21 { get; } = new Building("SmallStone21", 15017);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33760,7 +33760,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building15018 { get; } = new Building("Building15018", 15018);
+		public static Building SmallStone31 { get; } = new Building("SmallStone31", 15018);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33791,7 +33791,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building15019 { get; } = new Building("Building15019", 15019);
+		public static Building MiddleStone11 { get; } = new Building("MiddleStone11", 15019);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33822,7 +33822,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building15020 { get; } = new Building("Building15020", 15020);
+		public static Building MiddleStone21 { get; } = new Building("MiddleStone21", 15020);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33853,7 +33853,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building15021 { get; } = new Building("Building15021", 15021);
+		public static Building MiddleStone31 { get; } = new Building("MiddleStone31", 15021);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33884,7 +33884,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building15022 { get; } = new Building("Building15022", 15022);
+		public static Building BigStone11 { get; } = new Building("BigStone11", 15022);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33915,7 +33915,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building15023 { get; } = new Building("Building15023", 15023);
+		public static Building StoneSnow3 { get; } = new Building("StoneSnow3", 15023);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33946,7 +33946,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building15024 { get; } = new Building("Building15024", 15024);
+		public static Building StoneSnow4 { get; } = new Building("StoneSnow4", 15024);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -33977,7 +33977,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/hill-stone-icon"<para/>
 		/// </summary>
-		public static Building Building15025 { get; } = new Building("Building15025", 15025);
+		public static Building StoneSnow5 { get; } = new Building("StoneSnow5", 15025);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34008,7 +34008,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15026 { get; } = new Building("Building15026", 15026);
+		public static Building ColorJar111 { get; } = new Building("ColorJar111", 15026);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34039,7 +34039,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15027 { get; } = new Building("Building15027", 15027);
+		public static Building ColorJar21 { get; } = new Building("ColorJar21", 15027);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34070,7 +34070,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15028 { get; } = new Building("Building15028", 15028);
+		public static Building ColorJar31 { get; } = new Building("ColorJar31", 15028);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34101,7 +34101,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15029 { get; } = new Building("Building15029", 15029);
+		public static Building ColorJar41 { get; } = new Building("ColorJar41", 15029);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34132,7 +34132,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15030 { get; } = new Building("Building15030", 15030);
+		public static Building ColoredCans51 { get; } = new Building("ColoredCans51", 15030);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34163,7 +34163,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15031 { get; } = new Building("Building15031", 15031);
+		public static Building ColorJar61 { get; } = new Building("ColorJar61", 15031);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34194,7 +34194,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15032 { get; } = new Building("Building15032", 15032);
+		public static Building ColorJar71 { get; } = new Building("ColorJar71", 15032);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34225,7 +34225,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15033 { get; } = new Building("Building15033", 15033);
+		public static Building ColorJar81 { get; } = new Building("ColorJar81", 15033);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34256,7 +34256,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15034 { get; } = new Building("Building15034", 15034);
+		public static Building ColorJar91 { get; } = new Building("ColorJar91", 15034);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34287,7 +34287,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15035 { get; } = new Building("Building15035", 15035);
+		public static Building ColoredCans101 { get; } = new Building("ColoredCans101", 15035);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34318,7 +34318,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15036 { get; } = new Building("Building15036", 15036);
+		public static Building ColorJar112 { get; } = new Building("ColorJar112", 15036);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34349,7 +34349,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15037 { get; } = new Building("Building15037", 15037);
+		public static Building ColorJar121 { get; } = new Building("ColorJar121", 15037);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34380,7 +34380,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15038 { get; } = new Building("Building15038", 15038);
+		public static Building ColoredCans131 { get; } = new Building("ColoredCans131", 15038);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34411,7 +34411,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15039 { get; } = new Building("Building15039", 15039);
+		public static Building ColorJar141 { get; } = new Building("ColorJar141", 15039);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34442,7 +34442,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15040 { get; } = new Building("Building15040", 15040);
+		public static Building ColoredCans151 { get; } = new Building("ColoredCans151", 15040);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34473,7 +34473,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15041 { get; } = new Building("Building15041", 15041);
+		public static Building ColoredCans161 { get; } = new Building("ColoredCans161", 15041);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34504,7 +34504,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15042 { get; } = new Building("Building15042", 15042);
+		public static Building ColoredCans171 { get; } = new Building("ColoredCans171", 15042);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34535,7 +34535,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15043 { get; } = new Building("Building15043", 15043);
+		public static Building ColorJar181 { get; } = new Building("ColorJar181", 15043);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34566,7 +34566,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15044 { get; } = new Building("Building15044", 15044);
+		public static Building ColoredCans191 { get; } = new Building("ColoredCans191", 15044);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34597,7 +34597,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15045 { get; } = new Building("Building15045", 15045);
+		public static Building ColorJar202 { get; } = new Building("ColorJar202", 15045);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34628,7 +34628,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15046 { get; } = new Building("Building15046", 15046);
+		public static Building OldColoredCans111 { get; } = new Building("OldColoredCans111", 15046);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34659,7 +34659,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15047 { get; } = new Building("Building15047", 15047);
+		public static Building OldColoredCans21 { get; } = new Building("OldColoredCans21", 15047);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34690,7 +34690,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15048 { get; } = new Building("Building15048", 15048);
+		public static Building OldColoredCans31 { get; } = new Building("OldColoredCans31", 15048);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34721,7 +34721,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15049 { get; } = new Building("Building15049", 15049);
+		public static Building OldColoredCans41 { get; } = new Building("OldColoredCans41", 15049);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34752,7 +34752,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15050 { get; } = new Building("Building15050", 15050);
+		public static Building OldColoredCans51 { get; } = new Building("OldColoredCans51", 15050);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34783,7 +34783,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15051 { get; } = new Building("Building15051", 15051);
+		public static Building OldColoredCans61 { get; } = new Building("OldColoredCans61", 15051);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34814,7 +34814,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15052 { get; } = new Building("Building15052", 15052);
+		public static Building OldColoredCans71 { get; } = new Building("OldColoredCans71", 15052);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34845,7 +34845,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15053 { get; } = new Building("Building15053", 15053);
+		public static Building OldColoredCans81 { get; } = new Building("OldColoredCans81", 15053);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34876,7 +34876,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15054 { get; } = new Building("Building15054", 15054);
+		public static Building OldColoredCans91 { get; } = new Building("OldColoredCans91", 15054);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34907,7 +34907,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15055 { get; } = new Building("Building15055", 15055);
+		public static Building OldColoredCans102 { get; } = new Building("OldColoredCans102", 15055);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34938,7 +34938,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15056 { get; } = new Building("Building15056", 15056);
+		public static Building OldColoredCans112 { get; } = new Building("OldColoredCans112", 15056);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -34969,7 +34969,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15057 { get; } = new Building("Building15057", 15057);
+		public static Building OldColoredCans121 { get; } = new Building("OldColoredCans121", 15057);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35000,7 +35000,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15058 { get; } = new Building("Building15058", 15058);
+		public static Building OldColoredCans131 { get; } = new Building("OldColoredCans131", 15058);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35031,7 +35031,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15059 { get; } = new Building("Building15059", 15059);
+		public static Building OldColoredCans141 { get; } = new Building("OldColoredCans141", 15059);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35062,7 +35062,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15060 { get; } = new Building("Building15060", 15060);
+		public static Building OldColoredCans151 { get; } = new Building("OldColoredCans151", 15060);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35093,7 +35093,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15061 { get; } = new Building("Building15061", 15061);
+		public static Building OldColoredCans161 { get; } = new Building("OldColoredCans161", 15061);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35124,7 +35124,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15062 { get; } = new Building("Building15062", 15062);
+		public static Building OldColoredCans171 { get; } = new Building("OldColoredCans171", 15062);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35155,7 +35155,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15063 { get; } = new Building("Building15063", 15063);
+		public static Building OldColoredCans181 { get; } = new Building("OldColoredCans181", 15063);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35186,7 +35186,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15064 { get; } = new Building("Building15064", 15064);
+		public static Building OldColoredCans191 { get; } = new Building("OldColoredCans191", 15064);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35217,7 +35217,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15065 { get; } = new Building("Building15065", 15065);
+		public static Building OldColoredCans202 { get; } = new Building("OldColoredCans202", 15065);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35248,7 +35248,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15066 { get; } = new Building("Building15066", 15066);
+		public static Building ScatteredWoodenBox11 { get; } = new Building("ScatteredWoodenBox11", 15066);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35279,7 +35279,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15067 { get; } = new Building("Building15067", 15067);
+		public static Building ScatteredWoodenBox21 { get; } = new Building("ScatteredWoodenBox21", 15067);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35310,7 +35310,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15068 { get; } = new Building("Building15068", 15068);
+		public static Building ScatteredWoodenBox31 { get; } = new Building("ScatteredWoodenBox31", 15068);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35341,7 +35341,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15069 { get; } = new Building("Building15069", 15069);
+		public static Building ScatteredWoodenBox41 { get; } = new Building("ScatteredWoodenBox41", 15069);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35372,7 +35372,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15070 { get; } = new Building("Building15070", 15070);
+		public static Building ScatteredWoodenBox51 { get; } = new Building("ScatteredWoodenBox51", 15070);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35403,7 +35403,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15071 { get; } = new Building("Building15071", 15071);
+		public static Building ScatteredWoodenBox1Broken1 { get; } = new Building("ScatteredWoodenBox1Broken1", 15071);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35434,7 +35434,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15072 { get; } = new Building("Building15072", 15072);
+		public static Building ScatteredWoodenBox2Broken1 { get; } = new Building("ScatteredWoodenBox2Broken1", 15072);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35465,7 +35465,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15073 { get; } = new Building("Building15073", 15073);
+		public static Building ScatteredWoodenBox3Broken1 { get; } = new Building("ScatteredWoodenBox3Broken1", 15073);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35496,7 +35496,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15074 { get; } = new Building("Building15074", 15074);
+		public static Building ScatteredWoodenBox4Broken1 { get; } = new Building("ScatteredWoodenBox4Broken1", 15074);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35527,7 +35527,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15075 { get; } = new Building("Building15075", 15075);
+		public static Building ScatteredWoodenBox5Broken1 { get; } = new Building("ScatteredWoodenBox5Broken1", 15075);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35558,7 +35558,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building15076 { get; } = new Building("Building15076", 15076);
+		public static Building InfectedColonyMature11 { get; } = new Building("InfectedColonyMature11", 15076);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35589,7 +35589,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building15077 { get; } = new Building("Building15077", 15077);
+		public static Building InfectedColonyMature21 { get; } = new Building("InfectedColonyMature21", 15077);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35620,7 +35620,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building15078 { get; } = new Building("Building15078", 15078);
+		public static Building InfectedColonyMature31 { get; } = new Building("InfectedColonyMature31", 15078);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35651,7 +35651,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building15079 { get; } = new Building("Building15079", 15079);
+		public static Building InfectedColonyMature41 { get; } = new Building("InfectedColonyMature41", 15079);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35682,7 +35682,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building15080 { get; } = new Building("Building15080", 15080);
+		public static Building InfectedColonyMature51 { get; } = new Building("InfectedColonyMature51", 15080);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35713,7 +35713,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building15081 { get; } = new Building("Building15081", 15081);
+		public static Building InfectedColonyMature61 { get; } = new Building("InfectedColonyMature61", 15081);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35744,7 +35744,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building15082 { get; } = new Building("Building15082", 15082);
+		public static Building InfectedColonyMature71 { get; } = new Building("InfectedColonyMature71", 15082);
 		/// <summary>
 		/// Type: 102; SubType: 1<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35775,7 +35775,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/missile-icon"<para/>
 		/// </summary>
-		public static Building Building15083 { get; } = new Building("Building15083", 15083);
+		public static Building InfectedColonyMature81 { get; } = new Building("InfectedColonyMature81", 15083);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35806,7 +35806,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building15084 { get; } = new Building("Building15084", 15084);
+		public static Building GoblinDecoration11 { get; } = new Building("GoblinDecoration11", 15084);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35837,7 +35837,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building15085 { get; } = new Building("Building15085", 15085);
+		public static Building GoblinDecoration21 { get; } = new Building("GoblinDecoration21", 15085);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35868,7 +35868,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building15086 { get; } = new Building("Building15086", 15086);
+		public static Building GoblinDecoration31 { get; } = new Building("GoblinDecoration31", 15086);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35899,7 +35899,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building15087 { get; } = new Building("Building15087", 15087);
+		public static Building GoblinDecoration41 { get; } = new Building("GoblinDecoration41", 15087);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35930,7 +35930,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building15088 { get; } = new Building("Building15088", 15088);
+		public static Building GoblinDecoration51 { get; } = new Building("GoblinDecoration51", 15088);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35961,7 +35961,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building15089 { get; } = new Building("Building15089", 15089);
+		public static Building GoblinDecoration61 { get; } = new Building("GoblinDecoration61", 15089);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -35992,7 +35992,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building15090 { get; } = new Building("Building15090", 15090);
+		public static Building GoblinDecoration71 { get; } = new Building("GoblinDecoration71", 15090);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36023,7 +36023,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building15091 { get; } = new Building("Building15091", 15091);
+		public static Building GoblinDecoration81 { get; } = new Building("GoblinDecoration81", 15091);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36054,7 +36054,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/meat-cattle-icon"<para/>
 		/// </summary>
-		public static Building Building15092 { get; } = new Building("Building15092", 15092);
+		public static Building GoblinDecoration91 { get; } = new Building("GoblinDecoration91", 15092);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36085,7 +36085,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15093 { get; } = new Building("Building15093", 15093);
+		public static Building MecoStructureComputer1 { get; } = new Building("MecoStructureComputer1", 15093);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36116,7 +36116,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15094 { get; } = new Building("Building15094", 15094);
+		public static Building MecoStructureComputerIsBad1 { get; } = new Building("MecoStructureComputerIsBad1", 15094);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36147,7 +36147,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15095 { get; } = new Building("Building15095", 15095);
+		public static Building MecoHost11 { get; } = new Building("MecoHost11", 15095);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36178,7 +36178,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15096 { get; } = new Building("Building15096", 15096);
+		public static Building MecoHost21 { get; } = new Building("MecoHost21", 15096);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36209,7 +36209,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15097 { get; } = new Building("Building15097", 15097);
+		public static Building MecoHost3Off1 { get; } = new Building("MecoHost3Off1", 15097);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36240,7 +36240,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15098 { get; } = new Building("Building15098", 15098);
+		public static Building MecoHost3Open1 { get; } = new Building("MecoHost3Open1", 15098);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36271,7 +36271,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15099 { get; } = new Building("Building15099", 15099);
+		public static Building MecoHost1Broken1 { get; } = new Building("MecoHost1Broken1", 15099);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36302,7 +36302,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15100 { get; } = new Building("Building15100", 15100);
+		public static Building MecoHost2Broken1 { get; } = new Building("MecoHost2Broken1", 15100);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36333,7 +36333,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15101 { get; } = new Building("Building15101", 15101);
+		public static Building MecoHost3Broken1 { get; } = new Building("MecoHost3Broken1", 15101);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36364,7 +36364,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco2-icon"<para/>
 		/// </summary>
-		public static Building Building15102 { get; } = new Building("Building15102", 15102);
+		public static Building MecoBiologicalResearchSample1 { get; } = new Building("MecoBiologicalResearchSample1", 15102);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36395,7 +36395,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-silver-icon"<para/>
 		/// </summary>
-		public static Building Building15103 { get; } = new Building("Building15103", 15103);
+		public static Building MecoRoundTable1 { get; } = new Building("MecoRoundTable1", 15103);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36426,7 +36426,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15104 { get; } = new Building("Building15104", 15104);
+		public static Building MecoChair1 { get; } = new Building("MecoChair1", 15104);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36457,7 +36457,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15105 { get; } = new Building("Building15105", 15105);
+		public static Building MecoSquareTable1 { get; } = new Building("MecoSquareTable1", 15105);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36488,7 +36488,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15106 { get; } = new Building("Building15106", 15106);
+		public static Building MecoSleepCabin1 { get; } = new Building("MecoSleepCabin1", 15106);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36519,7 +36519,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15107 { get; } = new Building("Building15107", 15107);
+		public static Building Server1 { get; } = new Building("Server1", 15107);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36550,7 +36550,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15108 { get; } = new Building("Building15108", 15108);
+		public static Building TestTube11 { get; } = new Building("TestTube11", 15108);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36581,7 +36581,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-meco1-icon"<para/>
 		/// </summary>
-		public static Building Building15109 { get; } = new Building("Building15109", 15109);
+		public static Building TestTubeTable21 { get; } = new Building("TestTubeTable21", 15109);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36612,7 +36612,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15110 { get; } = new Building("Building15110", 15110);
+		public static Building WoodenRoundTable1 { get; } = new Building("WoodenRoundTable1", 15110);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36643,7 +36643,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15111 { get; } = new Building("Building15111", 15111);
+		public static Building WoodenStool1 { get; } = new Building("WoodenStool1", 15111);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36674,7 +36674,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15112 { get; } = new Building("Building15112", 15112);
+		public static Building WoodenBed1 { get; } = new Building("WoodenBed1", 15112);
 		/// <summary>
 		/// Type: 102; SubType: 3<para/>
 		/// AiActionType: 0; IsReplace: 0<para/>
@@ -36705,6 +36705,6 @@ namespace ChassisMod.KeplerthDatabase
 		/// SoundTriggerOff: "0"; ParticleHit: "OnHit"<para/>
 		/// ParticleHitTexture: "Particle/wall-wood-icon"<para/>
 		/// </summary>
-		public static Building Building15113 { get; } = new Building("Building15113", 15113);
+		public static Building WoodenSquareTable1 { get; } = new Building("WoodenSquareTable1", 15113);
 	}
 }

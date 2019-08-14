@@ -361,7 +361,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food605 { get; } = new Food("Food605", 605);
+		public static Food LifeAgentV { get; } = new Food("LifeAgentV", 605);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -374,7 +374,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food606 { get; } = new Food("Food606", 606);
+		public static Food HealingAgentI { get; } = new Food("HealingAgentI", 606);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -387,7 +387,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food607 { get; } = new Food("Food607", 607);
+		public static Food HealingAgentII { get; } = new Food("HealingAgentII", 607);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -400,7 +400,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food608 { get; } = new Food("Food608", 608);
+		public static Food HealingAgentIII { get; } = new Food("HealingAgentIII", 608);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -413,7 +413,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food609 { get; } = new Food("Food609", 609);
+		public static Food HealingAgentIV { get; } = new Food("HealingAgentIV", 609);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -426,7 +426,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food610 { get; } = new Food("Food610", 610);
+		public static Food HealingAgentV { get; } = new Food("HealingAgentV", 610);
 		/// <summary>
 		/// EffectHp: 2000<para/>
 		/// EffectHunger: 0<para/>
@@ -439,7 +439,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food611 { get; } = new Food("Food611", 611);
+		public static Food RecoveryAgentI { get; } = new Food("RecoveryAgentI", 611);
 		/// <summary>
 		/// EffectHp: 3000<para/>
 		/// EffectHunger: 0<para/>
@@ -452,7 +452,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food612 { get; } = new Food("Food612", 612);
+		public static Food RecoveryAgentII { get; } = new Food("RecoveryAgentII", 612);
 		/// <summary>
 		/// EffectHp: 4000<para/>
 		/// EffectHunger: 0<para/>
@@ -465,7 +465,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food613 { get; } = new Food("Food613", 613);
+		public static Food RecoveryAgentIII { get; } = new Food("RecoveryAgentIII", 613);
 		/// <summary>
 		/// EffectHp: 5000<para/>
 		/// EffectHunger: 0<para/>
@@ -478,7 +478,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food614 { get; } = new Food("Food614", 614);
+		public static Food RecoveryAgentIV { get; } = new Food("RecoveryAgentIV", 614);
 		/// <summary>
 		/// EffectHp: 6000<para/>
 		/// EffectHunger: 0<para/>
@@ -491,7 +491,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food615 { get; } = new Food("Food615", 615);
+		public static Food RecoveryAgentV { get; } = new Food("RecoveryAgentV", 615);
 		/// <summary>
 		/// Use: increase attack speed and walking speed by 20%, hunger speed will also be increased. Lasts for 1 minitue.<para/>
 		/// EffectHp: 0<para/>
@@ -546,7 +546,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food619 { get; } = new Food("Food619", 619);
+		public static Food StimulantIV { get; } = new Food("StimulantIV", 619);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -559,7 +559,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food620 { get; } = new Food("Food620", 620);
+		public static Food StimulantV { get; } = new Food("StimulantV", 620);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -572,7 +572,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food621 { get; } = new Food("Food621", 621);
+		public static Food NightVisionAgent { get; } = new Food("NightVisionAgent", 621);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -585,7 +585,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food622 { get; } = new Food("Food622", 622);
+		public static Food StealthPotion { get; } = new Food("StealthPotion", 622);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -598,7 +598,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food623 { get; } = new Food("Food623", 623);
+		public static Food Hallucinogenic { get; } = new Food("Hallucinogenic", 623);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -611,7 +611,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food624 { get; } = new Food("Food624", 624);
+		public static Food XXMedicine0 { get; } = new Food("XXMedicine0", 624);
 		/// <summary>
 		/// EffectHp: 0<para/>
 		/// EffectHunger: 0<para/>
@@ -624,7 +624,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// ExEffect: 0<para/>
 		/// UseCD: 0<para/>
 		/// </summary>
-		public static Food Food625 { get; } = new Food("Food625", 625);
+		public static Food XXMedicine1 { get; } = new Food("XXMedicine1", 625);
 		/// <summary>
 		/// Use: increase attack by 2 points, lasts for 10 minutes.<para/>
 		/// EffectHp: 0<para/>

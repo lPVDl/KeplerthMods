@@ -2115,6 +2115,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static StatusEffect Tasty { get; } = new StatusEffect("Tasty", 103);
 		/// <summary>
+		/// If you don't eat something, you will starve to death!<para/>
 		/// EffectType: 0<para/>
 		/// Type: 28<para/>
 		/// Level: 1<para/>
@@ -2136,7 +2137,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect104 { get; } = new StatusEffect("Effect104", 104);
+		public static StatusEffect HungerDiscarded { get; } = new StatusEffect("HungerDiscarded", 104);
 		/// <summary>
 		/// Lose 1 HP for every second.<para/>
 		/// EffectType: 4<para/>
@@ -3026,6 +3027,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static StatusEffect RecoveryIV0 { get; } = new StatusEffect("RecoveryIV0", 141);
 		/// <summary>
+		/// Goblin accelerates to escape<para/>
 		/// EffectType: 0<para/>
 		/// Type: 501<para/>
 		/// Level: 1<para/>
@@ -3049,6 +3051,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static StatusEffect RecoveryIV1 { get; } = new StatusEffect("RecoveryIV1", 501);
 		/// <summary>
+		/// Test BUFF<para/>
 		/// EffectType: 0<para/>
 		/// Type: 45<para/>
 		/// Level: 1<para/>
@@ -3070,8 +3073,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect1001 { get; } = new StatusEffect("Effect1001", 1001);
+		public static StatusEffect TestTheAttackToTheTargetBUFF { get; } = new StatusEffect("TestTheAttackToTheTargetBUFF", 1001);
 		/// <summary>
+		/// Test BUFF<para/>
 		/// EffectType: 0<para/>
 		/// Type: 46<para/>
 		/// Level: 1<para/>
@@ -3093,8 +3097,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect1002 { get; } = new StatusEffect("Effect1002", 1002);
+		public static StatusEffect TestTheAttackToYourselfBUFF { get; } = new StatusEffect("TestTheAttackToYourselfBUFF", 1002);
 		/// <summary>
+		/// Test BUFF<para/>
 		/// EffectType: 0<para/>
 		/// Type: 47<para/>
 		/// Level: 1<para/>
@@ -3116,8 +3121,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect1003 { get; } = new StatusEffect("Effect1003", 1003);
+		public static StatusEffect TestDoesNotDisplayBUFF { get; } = new StatusEffect("TestDoesNotDisplayBUFF", 1003);
 		/// <summary>
+		/// Test BUFF<para/>
 		/// EffectType: 0<para/>
 		/// Type: 48<para/>
 		/// Level: 1<para/>
@@ -3139,8 +3145,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect1004 { get; } = new StatusEffect("Effect1004", 1004);
+		public static StatusEffect TestDoesNotClearBUFF { get; } = new StatusEffect("TestDoesNotClearBUFF", 1004);
 		/// <summary>
+		/// Test BUFF<para/>
 		/// EffectType: 0<para/>
 		/// Type: 49<para/>
 		/// Level: 1<para/>
@@ -3162,8 +3169,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect1005 { get; } = new StatusEffect("Effect1005", 1005);
+		public static StatusEffect TestUnlimitedBUFF { get; } = new StatusEffect("TestUnlimitedBUFF", 1005);
 		/// <summary>
+		/// Remote weapon limit DEBUFF<para/>
 		/// EffectType: 0<para/>
 		/// Type: 2001<para/>
 		/// Level: 1<para/>
@@ -3185,7 +3193,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect2001 { get; } = new StatusEffect("Effect2001", 2001);
+		public static StatusEffect LongRangeWeaponAttackSlowdown { get; } = new StatusEffect("LongRangeWeaponAttackSlowdown", 2001);
 		/// <summary>
 		/// Defense decrease by 5 points.<para/>
 		/// EffectType: 0<para/>
@@ -3235,6 +3243,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static StatusEffect Weak { get; } = new StatusEffect("Weak", 2003);
 		/// <summary>
+		/// Remote weapon limit DEBUFF<para/>
 		/// EffectType: 0<para/>
 		/// Type: 2004<para/>
 		/// Level: 1<para/>
@@ -3256,7 +3265,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect2004 { get; } = new StatusEffect("Effect2004", 2004);
+		public static StatusEffect GatlinCompletelySlowsDown { get; } = new StatusEffect("GatlinCompletelySlowsDown", 2004);
 		/// <summary>
 		/// Restore 1 HP for every two seconds.<para/>
 		/// EffectType: 0<para/>
@@ -3280,7 +3289,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect2005 { get; } = new StatusEffect("Effect2005", 2005);
+		public static StatusEffect SlowReturnOfPets { get; } = new StatusEffect("SlowReturnOfPets", 2005);
 		/// <summary>
 		/// Equip: gathering speed increase by 50%.<para/>
 		/// EffectType: 0<para/>
@@ -3304,7 +3313,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5001 { get; } = new StatusEffect("Effect5001", 5001);
+		public static StatusEffect IncreaseCollectionEfficiencyBy50 { get; } = new StatusEffect("IncreaseCollectionEfficiencyBy50", 5001);
 		/// <summary>
 		/// Equip: gathering speed increase by 100%.<para/>
 		/// EffectType: 0<para/>
@@ -3328,7 +3337,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5002 { get; } = new StatusEffect("Effect5002", 5002);
+		public static StatusEffect IncreaseCollectionEfficiencyBy100 { get; } = new StatusEffect("IncreaseCollectionEfficiencyBy100", 5002);
 		/// <summary>
 		/// Equip: gathering speed increase by 200%.<para/>
 		/// EffectType: 0<para/>
@@ -3352,7 +3361,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5003 { get; } = new StatusEffect("Effect5003", 5003);
+		public static StatusEffect IncreaseCollectionEfficiencyBy200 { get; } = new StatusEffect("IncreaseCollectionEfficiencyBy200", 5003);
 		/// <summary>
 		/// Equip: eating speed increase by 50%.<para/>
 		/// EffectType: 0<para/>
@@ -3376,7 +3385,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5011 { get; } = new StatusEffect("Effect5011", 5011);
+		public static StatusEffect FasterEating0 { get; } = new StatusEffect("FasterEating0", 5011);
 		/// <summary>
 		/// Equip: eating speed increase by 100%.<para/>
 		/// EffectType: 0<para/>
@@ -3400,7 +3409,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5012 { get; } = new StatusEffect("Effect5012", 5012);
+		public static StatusEffect FasterEating1 { get; } = new StatusEffect("FasterEating1", 5012);
 		/// <summary>
 		/// Equip: eating speed increase by 200%.<para/>
 		/// EffectType: 0<para/>
@@ -3424,7 +3433,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5013 { get; } = new StatusEffect("Effect5013", 5013);
+		public static StatusEffect FasterEating2 { get; } = new StatusEffect("FasterEating2", 5013);
 		/// <summary>
 		/// Equip: become stealth if no attack or injury occurred within 5 seconds.<para/>
 		/// EffectType: 0<para/>
@@ -3448,7 +3457,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5021 { get; } = new StatusEffect("Effect5021", 5021);
+		public static StatusEffect IfYouAreNotAttackedOrInjuredWithin5SecondsYouWillEnterStealth { get; } = new StatusEffect("IfYouAreNotAttackedOrInjuredWithin5SecondsYouWillEnterStealth", 5021);
 		/// <summary>
 		/// Equip: melee knockback increase by 50%.<para/>
 		/// EffectType: 0<para/>
@@ -3472,7 +3481,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5031 { get; } = new StatusEffect("Effect5031", 5031);
+		public static StatusEffect IncreaseTheRepellingAbilityOfMeleeAttacksBy50 { get; } = new StatusEffect("IncreaseTheRepellingAbilityOfMeleeAttacksBy50", 5031);
 		/// <summary>
 		/// Equip: walking speed increase by 10%<para/>
 		/// EffectType: 0<para/>
@@ -3496,7 +3505,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5041 { get; } = new StatusEffect("Effect5041", 5041);
+		public static StatusEffect FasterMovement0 { get; } = new StatusEffect("FasterMovement0", 5041);
 		/// <summary>
 		/// Equip: walking speed increase by 15%<para/>
 		/// EffectType: 0<para/>
@@ -3520,7 +3529,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5042 { get; } = new StatusEffect("Effect5042", 5042);
+		public static StatusEffect IncreasedMovementSpeedBy15 { get; } = new StatusEffect("IncreasedMovementSpeedBy15", 5042);
 		/// <summary>
 		/// Equip: walking speed increase by 20%<para/>
 		/// EffectType: 0<para/>
@@ -3544,7 +3553,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5043 { get; } = new StatusEffect("Effect5043", 5043);
+		public static StatusEffect FasterMovement1 { get; } = new StatusEffect("FasterMovement1", 5043);
 		/// <summary>
 		/// Equip: walking speed increase by 25%<para/>
 		/// EffectType: 0<para/>
@@ -3568,7 +3577,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5044 { get; } = new StatusEffect("Effect5044", 5044);
+		public static StatusEffect FasterMovement2 { get; } = new StatusEffect("FasterMovement2", 5044);
 		/// <summary>
 		/// Equip: walking speed increase by 30%<para/>
 		/// EffectType: 0<para/>
@@ -3592,7 +3601,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5045 { get; } = new StatusEffect("Effect5045", 5045);
+		public static StatusEffect FasterMovement3 { get; } = new StatusEffect("FasterMovement3", 5045);
 		/// <summary>
 		/// Equip: double tap a direction to dash.<para/>
 		/// EffectType: 0<para/>
@@ -3616,7 +3625,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5051 { get; } = new StatusEffect("Effect5051", 5051);
+		public static StatusEffect PressTheArrowKeysContinuouslyToSprintAShortDistance { get; } = new StatusEffect("PressTheArrowKeysContinuouslyToSprintAShortDistance", 5051);
 		/// <summary>
 		/// Equip: your attack will poison your target.<para/>
 		/// EffectType: 0<para/>
@@ -3640,7 +3649,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5061 { get; } = new StatusEffect("Effect5061", 5061);
+		public static StatusEffect YourAttackPoisonsTheEnemy { get; } = new StatusEffect("YourAttackPoisonsTheEnemy", 5061);
 		/// <summary>
 		/// Equip: illuminate your vision.<para/>
 		/// EffectType: 0<para/>
@@ -3664,7 +3673,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5071 { get; } = new StatusEffect("Effect5071", 5071);
+		public static StatusEffect IlluminateTheFrontConeView { get; } = new StatusEffect("IlluminateTheFrontConeView", 5071);
 		/// <summary>
 		/// Equip: damage received from ranged attacks decrease by 15%.<para/>
 		/// EffectType: 0<para/>
@@ -3688,7 +3697,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5081 { get; } = new StatusEffect("Effect5081", 5081);
+		public static StatusEffect Reduces15OfRemoteDamage { get; } = new StatusEffect("Reduces15OfRemoteDamage", 5081);
 		/// <summary>
 		/// Equip: damage received from ranged attacks decrease by 20%.<para/>
 		/// EffectType: 0<para/>
@@ -3712,7 +3721,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5082 { get; } = new StatusEffect("Effect5082", 5082);
+		public static StatusEffect Reduce20OfRemoteDamage { get; } = new StatusEffect("Reduce20OfRemoteDamage", 5082);
 		/// <summary>
 		/// Equip: damage received from ranged attacks decrease by 25%.<para/>
 		/// EffectType: 0<para/>
@@ -3736,7 +3745,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5083 { get; } = new StatusEffect("Effect5083", 5083);
+		public static StatusEffect Reduces25OfRemoteDamage { get; } = new StatusEffect("Reduces25OfRemoteDamage", 5083);
 		/// <summary>
 		/// Equip: damage received from ranged attacks decrease by 30%.<para/>
 		/// EffectType: 0<para/>
@@ -3760,7 +3769,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5084 { get; } = new StatusEffect("Effect5084", 5084);
+		public static StatusEffect Reduce30OfRemoteDamage { get; } = new StatusEffect("Reduce30OfRemoteDamage", 5084);
 		/// <summary>
 		/// Equip: chance to scare target away on hit for 2 seconds<para/>
 		/// EffectType: 0<para/>
@@ -3784,7 +3793,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5091 { get; } = new StatusEffect("Effect5091", 5091);
+		public static StatusEffect TheCreatureBeingHitHasAChanceToEscapeFor2Seconds { get; } = new StatusEffect("TheCreatureBeingHitHasAChanceToEscapeFor2Seconds", 5091);
 		/// <summary>
 		/// Equip: defense increase by 2 points.<para/>
 		/// EffectType: 0<para/>
@@ -3808,7 +3817,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5101 { get; } = new StatusEffect("Effect5101", 5101);
+		public static StatusEffect DefenseIncrease2 { get; } = new StatusEffect("DefenseIncrease2", 5101);
 		/// <summary>
 		/// Equip: defense increase by 4 points.<para/>
 		/// EffectType: 0<para/>
@@ -3832,7 +3841,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5102 { get; } = new StatusEffect("Effect5102", 5102);
+		public static StatusEffect DefenseIncrease4 { get; } = new StatusEffect("DefenseIncrease4", 5102);
 		/// <summary>
 		/// Equip: defense increase by 6 points.<para/>
 		/// EffectType: 0<para/>
@@ -3856,7 +3865,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5103 { get; } = new StatusEffect("Effect5103", 5103);
+		public static StatusEffect DefenseIncrease6 { get; } = new StatusEffect("DefenseIncrease6", 5103);
 		/// <summary>
 		/// Equip: defense increase by 8 points.<para/>
 		/// EffectType: 0<para/>
@@ -3880,7 +3889,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5104 { get; } = new StatusEffect("Effect5104", 5104);
+		public static StatusEffect DefenseIncreased8 { get; } = new StatusEffect("DefenseIncreased8", 5104);
 		/// <summary>
 		/// Equip: defense increase by 10 points.<para/>
 		/// EffectType: 0<para/>
@@ -3904,7 +3913,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5105 { get; } = new StatusEffect("Effect5105", 5105);
+		public static StatusEffect DefenseIncreasedBy10 { get; } = new StatusEffect("DefenseIncreasedBy10", 5105);
 		/// <summary>
 		/// Equip: chance to confuse target on hit for 3 seconds.<para/>
 		/// EffectType: 0<para/>
@@ -3928,7 +3937,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5111 { get; } = new StatusEffect("Effect5111", 5111);
+		public static StatusEffect HitTheProbabilityToConfuseTheEnemyAndFightForYouFor3Seconds { get; } = new StatusEffect("HitTheProbabilityToConfuseTheEnemyAndFightForYouFor3Seconds", 5111);
 		/// <summary>
 		/// Equip: duration of poisoned effect decrease by 50%.<para/>
 		/// EffectType: 0<para/>
@@ -3952,7 +3961,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5121 { get; } = new StatusEffect("Effect5121", 5121);
+		public static StatusEffect ReducePoisoningDurationBy50 { get; } = new StatusEffect("ReducePoisoningDurationBy50", 5121);
 		/// <summary>
 		/// Equip: duration of bleeding effect decrease by 50%.<para/>
 		/// EffectType: 0<para/>
@@ -3976,7 +3985,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5131 { get; } = new StatusEffect("Effect5131", 5131);
+		public static StatusEffect ReduceBleedingDurationBy50 { get; } = new StatusEffect("ReduceBleedingDurationBy50", 5131);
 		/// <summary>
 		/// Equip: when death occurs, this will be destroyed to protect items in your bag from dropping off.<para/>
 		/// EffectType: 0<para/>
@@ -4000,7 +4009,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5141 { get; } = new StatusEffect("Effect5141", 5141);
+		public static StatusEffect DoNotDropItemsWhenYouDieConsumeAfterDeath { get; } = new StatusEffect("DoNotDropItemsWhenYouDieConsumeAfterDeath", 5141);
 		/// <summary>
 		/// Equip: when lethal damage occurs, you will be restored to 30% of your health and invincible for 5 seconds.<para/>
 		/// EffectType: 0<para/>
@@ -4024,7 +4033,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5151 { get; } = new StatusEffect("Effect5151", 5151);
+		public static StatusEffect RestoresYourBloodTo30And5SecondsInvincibleWhenYouAreDealtLethalDamage { get; } = new StatusEffect("RestoresYourBloodTo30And5SecondsInvincibleWhenYouAreDealtLethalDamage", 5151);
 		/// <summary>
 		/// Equip: Tenergy may not be consumed when using the Tenergy weapons.<para/>
 		/// EffectType: 0<para/>
@@ -4048,7 +4057,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5161 { get; } = new StatusEffect("Effect5161", 5161);
+		public static StatusEffect ProbabilityDoesNotConsumeEnergyWhenUsingEnergyWeapons { get; } = new StatusEffect("ProbabilityDoesNotConsumeEnergyWhenUsingEnergyWeapons", 5161);
 		/// <summary>
 		/// Equip: restore 1 HP for every second.<para/>
 		/// EffectType: 0<para/>
@@ -4072,7 +4081,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5171 { get; } = new StatusEffect("Effect5171", 5171);
+		public static StatusEffect Restore1LifePerSecond { get; } = new StatusEffect("Restore1LifePerSecond", 5171);
 		/// <summary>
 		/// Equip: restore 2 HP for every second.<para/>
 		/// EffectType: 0<para/>
@@ -4096,7 +4105,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5172 { get; } = new StatusEffect("Effect5172", 5172);
+		public static StatusEffect Restore2LivesPerSecond { get; } = new StatusEffect("Restore2LivesPerSecond", 5172);
 		/// <summary>
 		/// Equip: releasing a firefly that slightly illuminates the area around you.<para/>
 		/// EffectType: 0<para/>
@@ -4120,7 +4129,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5181 { get; } = new StatusEffect("Effect5181", 5181);
+		public static StatusEffect ReleaseAFireflyThatSlightlyIlluminatesTheAreaAroundYou { get; } = new StatusEffect("ReleaseAFireflyThatSlightlyIlluminatesTheAreaAroundYou", 5181);
 		/// <summary>
 		/// Equip: attack speed increase by 10%.<para/>
 		/// EffectType: 0<para/>
@@ -4144,7 +4153,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5191 { get; } = new StatusEffect("Effect5191", 5191);
+		public static StatusEffect IncreaseAttackSpeedBy10 { get; } = new StatusEffect("IncreaseAttackSpeedBy10", 5191);
 		/// <summary>
 		/// Equip: attack speed increase by 15%.<para/>
 		/// EffectType: 0<para/>
@@ -4168,7 +4177,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5192 { get; } = new StatusEffect("Effect5192", 5192);
+		public static StatusEffect IncreaseAttackSpeedBy15 { get; } = new StatusEffect("IncreaseAttackSpeedBy15", 5192);
 		/// <summary>
 		/// Equip: attack speed increase by 20%.<para/>
 		/// EffectType: 0<para/>
@@ -4192,7 +4201,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5193 { get; } = new StatusEffect("Effect5193", 5193);
+		public static StatusEffect IncreaseAttackSpeedBy20 { get; } = new StatusEffect("IncreaseAttackSpeedBy20", 5193);
 		/// <summary>
 		/// Equip: attack speed increase by 25%.<para/>
 		/// EffectType: 0<para/>
@@ -4216,7 +4225,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5194 { get; } = new StatusEffect("Effect5194", 5194);
+		public static StatusEffect IncreaseAttackSpeedBy25 { get; } = new StatusEffect("IncreaseAttackSpeedBy25", 5194);
 		/// <summary>
 		/// Equip: attack speed increase by 30%.<para/>
 		/// EffectType: 0<para/>
@@ -4240,7 +4249,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5195 { get; } = new StatusEffect("Effect5195", 5195);
+		public static StatusEffect IncreaseAttackSpeedBy30 { get; } = new StatusEffect("IncreaseAttackSpeedBy30", 5195);
 		/// <summary>
 		/// Equip: melee attack increase by 1 point.<para/>
 		/// EffectType: 0<para/>
@@ -4264,7 +4273,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5201 { get; } = new StatusEffect("Effect5201", 5201);
+		public static StatusEffect ImproveMeleeAttackDamage1 { get; } = new StatusEffect("ImproveMeleeAttackDamage1", 5201);
 		/// <summary>
 		/// Equip: melee attack increase by 3 points.<para/>
 		/// EffectType: 0<para/>
@@ -4288,7 +4297,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5202 { get; } = new StatusEffect("Effect5202", 5202);
+		public static StatusEffect ImproveMeleeAttackDamage3 { get; } = new StatusEffect("ImproveMeleeAttackDamage3", 5202);
 		/// <summary>
 		/// Equip: melee attack increase by 5 points.<para/>
 		/// EffectType: 0<para/>
@@ -4312,7 +4321,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5203 { get; } = new StatusEffect("Effect5203", 5203);
+		public static StatusEffect ImproveMeleeAttackDamage5 { get; } = new StatusEffect("ImproveMeleeAttackDamage5", 5203);
 		/// <summary>
 		/// Equip: melee attack increase by 7 points.<para/>
 		/// EffectType: 0<para/>
@@ -4336,7 +4345,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5204 { get; } = new StatusEffect("Effect5204", 5204);
+		public static StatusEffect ImproveMeleeAttackDamage7 { get; } = new StatusEffect("ImproveMeleeAttackDamage7", 5204);
 		/// <summary>
 		/// Equip: melee attack increase by 10 points.<para/>
 		/// EffectType: 0<para/>
@@ -4360,7 +4369,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5205 { get; } = new StatusEffect("Effect5205", 5205);
+		public static StatusEffect ImproveMeleeAttackDamage10 { get; } = new StatusEffect("ImproveMeleeAttackDamage10", 5205);
 		/// <summary>
 		/// Equip: attack increase by 10%.<para/>
 		/// EffectType: 0<para/>
@@ -4384,7 +4393,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5211 { get; } = new StatusEffect("Effect5211", 5211);
+		public static StatusEffect AttackDamageIncreasedBy10 { get; } = new StatusEffect("AttackDamageIncreasedBy10", 5211);
 		/// <summary>
 		/// Equip: attack increase by 15%.<para/>
 		/// EffectType: 0<para/>
@@ -4408,7 +4417,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5212 { get; } = new StatusEffect("Effect5212", 5212);
+		public static StatusEffect AttackDamageIncreasedBy15 { get; } = new StatusEffect("AttackDamageIncreasedBy15", 5212);
 		/// <summary>
 		/// Equip: attack increase by 20%.<para/>
 		/// EffectType: 0<para/>
@@ -4432,7 +4441,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5213 { get; } = new StatusEffect("Effect5213", 5213);
+		public static StatusEffect AttackDamageIncreasedBy20 { get; } = new StatusEffect("AttackDamageIncreasedBy20", 5213);
 		/// <summary>
 		/// Equip: attack increase by 25%.<para/>
 		/// EffectType: 0<para/>
@@ -4456,7 +4465,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5214 { get; } = new StatusEffect("Effect5214", 5214);
+		public static StatusEffect AttackDamageIncreasedBy25 { get; } = new StatusEffect("AttackDamageIncreasedBy25", 5214);
 		/// <summary>
 		/// Equip: attack increase by 30%.<para/>
 		/// EffectType: 0<para/>
@@ -4480,7 +4489,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5215 { get; } = new StatusEffect("Effect5215", 5215);
+		public static StatusEffect AttackDamageIncreasedBy30 { get; } = new StatusEffect("AttackDamageIncreasedBy30", 5215);
 		/// <summary>
 		/// Equip: slower durability loss on armor by 20%.<para/>
 		/// EffectType: 0<para/>
@@ -4504,7 +4513,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5216 { get; } = new StatusEffect("Effect5216", 5216);
+		public static StatusEffect DurableProtection20 { get; } = new StatusEffect("DurableProtection20", 5216);
 		/// <summary>
 		/// Equip: slower durability loss on armor by 25%.<para/>
 		/// EffectType: 0<para/>
@@ -4528,7 +4537,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5217 { get; } = new StatusEffect("Effect5217", 5217);
+		public static StatusEffect DurableProtection25 { get; } = new StatusEffect("DurableProtection25", 5217);
 		/// <summary>
 		/// Equip: slower durability loss on armor by 30%.<para/>
 		/// EffectType: 0<para/>
@@ -4552,7 +4561,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5218 { get; } = new StatusEffect("Effect5218", 5218);
+		public static StatusEffect DurableProtection30 { get; } = new StatusEffect("DurableProtection30", 5218);
 		/// <summary>
 		/// Equip: slower durability loss on armor by 35%.<para/>
 		/// EffectType: 0<para/>
@@ -4576,7 +4585,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5219 { get; } = new StatusEffect("Effect5219", 5219);
+		public static StatusEffect DurableProtection35 { get; } = new StatusEffect("DurableProtection35", 5219);
 		/// <summary>
 		/// Equip: slower durability loss on armor by 40%.<para/>
 		/// EffectType: 0<para/>
@@ -4600,7 +4609,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5220 { get; } = new StatusEffect("Effect5220", 5220);
+		public static StatusEffect DurableProtection40 { get; } = new StatusEffect("DurableProtection40", 5220);
 		/// <summary>
 		/// Equip: hunger speed decrease by 20%.<para/>
 		/// EffectType: 0<para/>
@@ -4624,7 +4633,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5221 { get; } = new StatusEffect("Effect5221", 5221);
+		public static StatusEffect ReduceHungerConsumptionBy20 { get; } = new StatusEffect("ReduceHungerConsumptionBy20", 5221);
 		/// <summary>
 		/// Equip: hunger speed decrease by 25%.<para/>
 		/// EffectType: 0<para/>
@@ -4648,7 +4657,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5222 { get; } = new StatusEffect("Effect5222", 5222);
+		public static StatusEffect HungerConsumptionReducedBy25 { get; } = new StatusEffect("HungerConsumptionReducedBy25", 5222);
 		/// <summary>
 		/// Equip: hunger speed decrease by 30%.<para/>
 		/// EffectType: 0<para/>
@@ -4672,7 +4681,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5223 { get; } = new StatusEffect("Effect5223", 5223);
+		public static StatusEffect ReduceHungerConsumptionBy30 { get; } = new StatusEffect("ReduceHungerConsumptionBy30", 5223);
 		/// <summary>
 		/// Equip: hunger speed decrease by 35%.<para/>
 		/// EffectType: 0<para/>
@@ -4696,7 +4705,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5224 { get; } = new StatusEffect("Effect5224", 5224);
+		public static StatusEffect ReducedHungerConsumptionBy35 { get; } = new StatusEffect("ReducedHungerConsumptionBy35", 5224);
 		/// <summary>
 		/// Equip: hunger speed decrease by 40%.<para/>
 		/// EffectType: 0<para/>
@@ -4720,7 +4729,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5225 { get; } = new StatusEffect("Effect5225", 5225);
+		public static StatusEffect ReducedHungerConsumptionBy40 { get; } = new StatusEffect("ReducedHungerConsumptionBy40", 5225);
 		/// <summary>
 		/// Equip: build distance increase by 3.<para/>
 		/// EffectType: 0<para/>
@@ -4744,7 +4753,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5226 { get; } = new StatusEffect("Effect5226", 5226);
+		public static StatusEffect ConstructionDistance3 { get; } = new StatusEffect("ConstructionDistance3", 5226);
 		/// <summary>
 		/// Equip: build distance increase by 4.<para/>
 		/// EffectType: 0<para/>
@@ -4768,7 +4777,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5227 { get; } = new StatusEffect("Effect5227", 5227);
+		public static StatusEffect ConstructionDistance4 { get; } = new StatusEffect("ConstructionDistance4", 5227);
 		/// <summary>
 		/// Equip: build distance increase by 5.<para/>
 		/// EffectType: 0<para/>
@@ -4792,7 +4801,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5228 { get; } = new StatusEffect("Effect5228", 5228);
+		public static StatusEffect ConstructionDistance5 { get; } = new StatusEffect("ConstructionDistance5", 5228);
 		/// <summary>
 		/// Equip: build distance increase by 6.<para/>
 		/// EffectType: 0<para/>
@@ -4816,7 +4825,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5229 { get; } = new StatusEffect("Effect5229", 5229);
+		public static StatusEffect ConstructionDistance6 { get; } = new StatusEffect("ConstructionDistance6", 5229);
 		/// <summary>
 		/// Equip: build distance increase by 7.<para/>
 		/// EffectType: 0<para/>
@@ -4840,7 +4849,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5230 { get; } = new StatusEffect("Effect5230", 5230);
+		public static StatusEffect ConstructionDistance7 { get; } = new StatusEffect("ConstructionDistance7", 5230);
 		/// <summary>
 		/// Equip: restore a certain amount of HP when you kill a creature.<para/>
 		/// EffectType: 0<para/>
@@ -4864,7 +4873,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5231 { get; } = new StatusEffect("Effect5231", 5231);
+		public static StatusEffect WormNestBloodsuckingJewelry { get; } = new StatusEffect("WormNestBloodsuckingJewelry", 5231);
 		/// <summary>
 		/// Equip: generate a poisonous spore that follows you around. The spore will cause poisonous gas once it explodes, and the gas will poison the enemies and cause them a decrease in walking speed by 25% and lose 3 HP for every second, lasts for 10 seconds.<para/>
 		/// EffectType: 0<para/>
@@ -4888,7 +4897,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5232 { get; } = new StatusEffect("Effect5232", 5232);
+		public static StatusEffect WormNestPufferfish { get; } = new StatusEffect("WormNestPufferfish", 5232);
 		/// <summary>
 		/// Equip: can illuminate a certain range in front.<para/>
 		/// EffectType: 0<para/>
@@ -4912,7 +4921,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5241 { get; } = new StatusEffect("Effect5241", 5241);
+		public static StatusEffect Flashlight { get; } = new StatusEffect("Flashlight", 5241);
 		/// <summary>
 		/// Equip: can detect metals.<para/>
 		/// EffectType: 0<para/>
@@ -4936,7 +4945,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5242 { get; } = new StatusEffect("Effect5242", 5242);
+		public static StatusEffect MinersLamp { get; } = new StatusEffect("MinersLamp", 5242);
 		/// <summary>
 		/// Equip: restore 1 HP for every two seconds.<para/>
 		/// EffectType: 0<para/>
@@ -5248,7 +5257,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5255 { get; } = new StatusEffect("Effect5255", 5255);
+		public static StatusEffect UndergroundManShield { get; } = new StatusEffect("UndergroundManShield", 5255);
 		/// <summary>
 		/// Equip: summon a modified detector that will follow you and help you to pick up items on the ground around you.<para/>
 		/// EffectType: 0<para/>
@@ -5272,7 +5281,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5256 { get; } = new StatusEffect("Effect5256", 5256);
+		public static StatusEffect UndergroundMan { get; } = new StatusEffect("UndergroundMan", 5256);
 		/// <summary>
 		/// Equip: can detect metals.<para/>
 		/// EffectType: 0<para/>
@@ -5296,7 +5305,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect5257 { get; } = new StatusEffect("Effect5257", 5257);
+		public static StatusEffect BuriedDrone { get; } = new StatusEffect("BuriedDrone", 5257);
 		/// <summary>
 		/// ImmuneStun<para/>
 		/// EffectType: 0<para/>
@@ -5632,7 +5641,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect10001 { get; } = new StatusEffect("Effect10001", 10001);
+		public static StatusEffect HumanAdaptation { get; } = new StatusEffect("HumanAdaptation", 10001);
 		/// <summary>
 		/// Attack increase by 1 points and attack increase by 10%.<para/>
 		/// EffectType: 0<para/>
@@ -5656,7 +5665,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect10002 { get; } = new StatusEffect("Effect10002", 10002);
+		public static StatusEffect BarbarianAnger { get; } = new StatusEffect("BarbarianAnger", 10002);
 		/// <summary>
 		/// Walking speed increase by 10% and attack speed increase by 6%.<para/>
 		/// EffectType: 0<para/>
@@ -5680,7 +5689,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect10003 { get; } = new StatusEffect("Effect10003", 10003);
+		public static StatusEffect HalfElfSixthSense { get; } = new StatusEffect("HalfElfSixthSense", 10003);
 		/// <summary>
 		/// Walking speed increase by 15%.<para/>
 		/// EffectType: 0<para/>
@@ -5704,7 +5713,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect10004 { get; } = new StatusEffect("Effect10004", 10004);
+		public static StatusEffect ElfLight { get; } = new StatusEffect("ElfLight", 10004);
 		/// <summary>
 		/// Attack speed increase by 10%.<para/>
 		/// EffectType: 0<para/>
@@ -5728,7 +5737,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect10005 { get; } = new StatusEffect("Effect10005", 10005);
+		public static StatusEffect BlackElfSwift { get; } = new StatusEffect("BlackElfSwift", 10005);
 		/// <summary>
 		/// Attack increase by 7% and defense increase by 14%.<para/>
 		/// EffectType: 0<para/>
@@ -5752,7 +5761,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect10006 { get; } = new StatusEffect("Effect10006", 10006);
+		public static StatusEffect HalfOrcStrong { get; } = new StatusEffect("HalfOrcStrong", 10006);
 		/// <summary>
 		/// Restore 1 HP for every two seconds.<para/>
 		/// EffectType: 0<para/>
@@ -5776,7 +5785,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect10007 { get; } = new StatusEffect("Effect10007", 10007);
+		public static StatusEffect MummyResurrection { get; } = new StatusEffect("MummyResurrection", 10007);
 		/// <summary>
 		/// Defense increase by 3 points and defense increase by 20%.<para/>
 		/// EffectType: 0<para/>
@@ -5800,8 +5809,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect10008 { get; } = new StatusEffect("Effect10008", 10008);
+		public static StatusEffect WildBoarThickSkin { get; } = new StatusEffect("WildBoarThickSkin", 10008);
 		/// <summary>
+		/// Weapon - attack 5%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20001<para/>
 		/// Level: 1<para/>
@@ -5823,8 +5833,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20001 { get; } = new StatusEffect("Effect20001", 20001);
+		public static StatusEffect WeaponAttack50 { get; } = new StatusEffect("WeaponAttack50", 20001);
 		/// <summary>
+		/// Weapon - attack 10%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20001<para/>
 		/// Level: 2<para/>
@@ -5846,8 +5857,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20002 { get; } = new StatusEffect("Effect20002", 20002);
+		public static StatusEffect WeaponAttack10 { get; } = new StatusEffect("WeaponAttack10", 20002);
 		/// <summary>
+		/// Weapon - attack 15%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20001<para/>
 		/// Level: 3<para/>
@@ -5869,8 +5881,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20003 { get; } = new StatusEffect("Effect20003", 20003);
+		public static StatusEffect WeaponAttack15 { get; } = new StatusEffect("WeaponAttack15", 20003);
 		/// <summary>
+		/// Weapon - attack 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20001<para/>
 		/// Level: 4<para/>
@@ -5892,8 +5905,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20004 { get; } = new StatusEffect("Effect20004", 20004);
+		public static StatusEffect WeaponAttack20 { get; } = new StatusEffect("WeaponAttack20", 20004);
 		/// <summary>
+		/// Weapon - attack 2<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20005<para/>
 		/// Level: 1<para/>
@@ -5915,8 +5929,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20005 { get; } = new StatusEffect("Effect20005", 20005);
+		public static StatusEffect WeaponAttack2 { get; } = new StatusEffect("WeaponAttack2", 20005);
 		/// <summary>
+		/// Weapon - attack 3<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20005<para/>
 		/// Level: 2<para/>
@@ -5938,8 +5953,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20006 { get; } = new StatusEffect("Effect20006", 20006);
+		public static StatusEffect WeaponAttack3 { get; } = new StatusEffect("WeaponAttack3", 20006);
 		/// <summary>
+		/// Weapon - attack 5<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20005<para/>
 		/// Level: 3<para/>
@@ -5961,8 +5977,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20007 { get; } = new StatusEffect("Effect20007", 20007);
+		public static StatusEffect WeaponAttack51 { get; } = new StatusEffect("WeaponAttack51", 20007);
 		/// <summary>
+		/// Weapon - attack 7<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20005<para/>
 		/// Level: 4<para/>
@@ -5984,8 +6001,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20008 { get; } = new StatusEffect("Effect20008", 20008);
+		public static StatusEffect WeaponAttack7 { get; } = new StatusEffect("WeaponAttack7", 20008);
 		/// <summary>
+		/// Weapon - Durable consumption reduced by 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20009<para/>
 		/// Level: 1<para/>
@@ -6007,8 +6025,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20009 { get; } = new StatusEffect("Effect20009", 20009);
+		public static StatusEffect WeaponDurableConsumptionReducedBy20 { get; } = new StatusEffect("WeaponDurableConsumptionReducedBy20", 20009);
 		/// <summary>
+		/// Weapon - Durable consumption reduced by 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20009<para/>
 		/// Level: 2<para/>
@@ -6030,8 +6049,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20010 { get; } = new StatusEffect("Effect20010", 20010);
+		public static StatusEffect WeaponDurableConsumptionReducedBy30 { get; } = new StatusEffect("WeaponDurableConsumptionReducedBy30", 20010);
 		/// <summary>
+		/// Weapon - Durable consumption reduced by 40%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20009<para/>
 		/// Level: 3<para/>
@@ -6053,8 +6073,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20011 { get; } = new StatusEffect("Effect20011", 20011);
+		public static StatusEffect WeaponDurableConsumptionReducedBy40 { get; } = new StatusEffect("WeaponDurableConsumptionReducedBy40", 20011);
 		/// <summary>
+		/// Weapon - Durable consumption reduced by 50%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20009<para/>
 		/// Level: 4<para/>
@@ -6076,8 +6097,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20012 { get; } = new StatusEffect("Effect20012", 20012);
+		public static StatusEffect WeaponDurableConsumptionReducedBy50 { get; } = new StatusEffect("WeaponDurableConsumptionReducedBy50", 20012);
 		/// <summary>
+		/// Weapons - Kill Monsters Drop 10%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20013<para/>
 		/// Level: 1<para/>
@@ -6099,8 +6121,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20013 { get; } = new StatusEffect("Effect20013", 20013);
+		public static StatusEffect WeaponsKillMonstersDrop10 { get; } = new StatusEffect("WeaponsKillMonstersDrop10", 20013);
 		/// <summary>
+		/// Weapon - kill monsters drop 15%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20013<para/>
 		/// Level: 2<para/>
@@ -6122,8 +6145,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20014 { get; } = new StatusEffect("Effect20014", 20014);
+		public static StatusEffect WeaponKillMonstersDrop15 { get; } = new StatusEffect("WeaponKillMonstersDrop15", 20014);
 		/// <summary>
+		/// Weapons - Kill monsters drop 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20013<para/>
 		/// Level: 3<para/>
@@ -6145,8 +6169,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20015 { get; } = new StatusEffect("Effect20015", 20015);
+		public static StatusEffect WeaponsKillMonstersDrop20 { get; } = new StatusEffect("WeaponsKillMonstersDrop20", 20015);
 		/// <summary>
+		/// Weapon - kill monsters drop 25%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20013<para/>
 		/// Level: 4<para/>
@@ -6168,8 +6193,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20016 { get; } = new StatusEffect("Effect20016", 20016);
+		public static StatusEffect WeaponKillMonstersDrop25 { get; } = new StatusEffect("WeaponKillMonstersDrop25", 20016);
 		/// <summary>
+		/// Weapon - mineral drops 10%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20017<para/>
 		/// Level: 4<para/>
@@ -6191,8 +6217,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20017 { get; } = new StatusEffect("Effect20017", 20017);
+		public static StatusEffect WeaponMineralDrops10 { get; } = new StatusEffect("WeaponMineralDrops10", 20017);
 		/// <summary>
+		/// Weapon - mineral drop 15%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20017<para/>
 		/// Level: 4<para/>
@@ -6214,8 +6241,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20018 { get; } = new StatusEffect("Effect20018", 20018);
+		public static StatusEffect WeaponMineralDrop15 { get; } = new StatusEffect("WeaponMineralDrop15", 20018);
 		/// <summary>
+		/// Weapon - mineral drop 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20017<para/>
 		/// Level: 4<para/>
@@ -6237,8 +6265,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20019 { get; } = new StatusEffect("Effect20019", 20019);
+		public static StatusEffect WeaponMineralDrop20 { get; } = new StatusEffect("WeaponMineralDrop20", 20019);
 		/// <summary>
+		/// Weapons - mineral drops 25%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20017<para/>
 		/// Level: 4<para/>
@@ -6260,8 +6289,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20020 { get; } = new StatusEffect("Effect20020", 20020);
+		public static StatusEffect WeaponsMineralDrops25 { get; } = new StatusEffect("WeaponsMineralDrops25", 20020);
 		/// <summary>
+		/// Melee - ignore target defense 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20021<para/>
 		/// Level: 1<para/>
@@ -6283,8 +6313,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20021 { get; } = new StatusEffect("Effect20021", 20021);
+		public static StatusEffect MeleeIgnoreTargetDefense20 { get; } = new StatusEffect("MeleeIgnoreTargetDefense20", 20021);
 		/// <summary>
+		/// Melee - ignore target defense 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20021<para/>
 		/// Level: 2<para/>
@@ -6306,8 +6337,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20022 { get; } = new StatusEffect("Effect20022", 20022);
+		public static StatusEffect MeleeIgnoreTargetDefense30 { get; } = new StatusEffect("MeleeIgnoreTargetDefense30", 20022);
 		/// <summary>
+		/// Melee - ignore target defense 40%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20021<para/>
 		/// Level: 3<para/>
@@ -6329,8 +6361,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20023 { get; } = new StatusEffect("Effect20023", 20023);
+		public static StatusEffect MeleeIgnoreTargetDefense40 { get; } = new StatusEffect("MeleeIgnoreTargetDefense40", 20023);
 		/// <summary>
+		/// Melee - ignore target defense 50%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20021<para/>
 		/// Level: 4<para/>
@@ -6352,8 +6385,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20024 { get; } = new StatusEffect("Effect20024", 20024);
+		public static StatusEffect MeleeIgnoreTargetDefense50 { get; } = new StatusEffect("MeleeIgnoreTargetDefense50", 20024);
 		/// <summary>
+		/// Remote-probability penetration 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20025<para/>
 		/// Level: 1<para/>
@@ -6375,8 +6409,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20025 { get; } = new StatusEffect("Effect20025", 20025);
+		public static StatusEffect RemoteProbabilityPenetration20 { get; } = new StatusEffect("RemoteProbabilityPenetration20", 20025);
 		/// <summary>
+		/// Remote-probability penetration 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20025<para/>
 		/// Level: 2<para/>
@@ -6398,8 +6433,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20026 { get; } = new StatusEffect("Effect20026", 20026);
+		public static StatusEffect RemoteProbabilityPenetration30 { get; } = new StatusEffect("RemoteProbabilityPenetration30", 20026);
 		/// <summary>
+		/// Remote-probability penetration 40%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20025<para/>
 		/// Level: 3<para/>
@@ -6421,8 +6457,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20027 { get; } = new StatusEffect("Effect20027", 20027);
+		public static StatusEffect RemoteProbabilityPenetration40 { get; } = new StatusEffect("RemoteProbabilityPenetration40", 20027);
 		/// <summary>
+		/// Remote-probability penetration 50%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20025<para/>
 		/// Level: 4<para/>
@@ -6444,8 +6481,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20028 { get; } = new StatusEffect("Effect20028", 20028);
+		public static StatusEffect RemoteProbabilityPenetration50 { get; } = new StatusEffect("RemoteProbabilityPenetration50", 20028);
 		/// <summary>
+		/// Remote - Repel 100<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20029<para/>
 		/// Level: 1<para/>
@@ -6467,8 +6505,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20029 { get; } = new StatusEffect("Effect20029", 20029);
+		public static StatusEffect RemoteRepel80 { get; } = new StatusEffect("RemoteRepel80", 20029);
 		/// <summary>
+		/// Remote - Repel 130<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20029<para/>
 		/// Level: 2<para/>
@@ -6490,8 +6529,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20030 { get; } = new StatusEffect("Effect20030", 20030);
+		public static StatusEffect RemoteRepel100 { get; } = new StatusEffect("RemoteRepel100", 20030);
 		/// <summary>
+		/// Remote - Repel 160<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20029<para/>
 		/// Level: 3<para/>
@@ -6513,8 +6553,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20031 { get; } = new StatusEffect("Effect20031", 20031);
+		public static StatusEffect RemoteRepel120 { get; } = new StatusEffect("RemoteRepel120", 20031);
 		/// <summary>
+		/// Remote - Repel 190<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20029<para/>
 		/// Level: 4<para/>
@@ -6536,8 +6577,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20032 { get; } = new StatusEffect("Effect20032", 20032);
+		public static StatusEffect RemoteRepel140 { get; } = new StatusEffect("RemoteRepel140", 20032);
 		/// <summary>
+		/// Bow Gun - Probability does not consume 20% of ammunition<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20033<para/>
 		/// Level: 1<para/>
@@ -6559,8 +6601,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20033 { get; } = new StatusEffect("Effect20033", 20033);
+		public static StatusEffect BowGunProbabilityDoesNotConsume20OfAmmunition { get; } = new StatusEffect("BowGunProbabilityDoesNotConsume20OfAmmunition", 20033);
 		/// <summary>
+		/// Bow Gun - Probability does not consume 25% of ammunition<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20033<para/>
 		/// Level: 2<para/>
@@ -6582,8 +6625,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20034 { get; } = new StatusEffect("Effect20034", 20034);
+		public static StatusEffect BowGunProbabilityDoesNotConsume25OfAmmunition { get; } = new StatusEffect("BowGunProbabilityDoesNotConsume25OfAmmunition", 20034);
 		/// <summary>
+		/// Bow Gun - Probability does not consume ammunition 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20033<para/>
 		/// Level: 3<para/>
@@ -6605,8 +6649,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20035 { get; } = new StatusEffect("Effect20035", 20035);
+		public static StatusEffect BowGunProbabilityDoesNotConsumeAmmunition30 { get; } = new StatusEffect("BowGunProbabilityDoesNotConsumeAmmunition30", 20035);
 		/// <summary>
+		/// Bow Gun - Probability does not consume 35% of ammunition<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20033<para/>
 		/// Level: 4<para/>
@@ -6628,8 +6673,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20036 { get; } = new StatusEffect("Effect20036", 20036);
+		public static StatusEffect BowGunProbabilityDoesNotConsume35OfAmmunition { get; } = new StatusEffect("BowGunProbabilityDoesNotConsume35OfAmmunition", 20036);
 		/// <summary>
+		/// Armor - Defense 2<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20037<para/>
 		/// Level: 1<para/>
@@ -6651,8 +6697,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20037 { get; } = new StatusEffect("Effect20037", 20037);
+		public static StatusEffect ArmorDefense2 { get; } = new StatusEffect("ArmorDefense2", 20037);
 		/// <summary>
+		/// Armor - Defense 4<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20037<para/>
 		/// Level: 2<para/>
@@ -6674,8 +6721,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20038 { get; } = new StatusEffect("Effect20038", 20038);
+		public static StatusEffect ArmorDefense4 { get; } = new StatusEffect("ArmorDefense4", 20038);
 		/// <summary>
+		/// Armor - Defense 6<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20037<para/>
 		/// Level: 3<para/>
@@ -6697,8 +6745,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20039 { get; } = new StatusEffect("Effect20039", 20039);
+		public static StatusEffect ArmorDefense6 { get; } = new StatusEffect("ArmorDefense6", 20039);
 		/// <summary>
+		/// Armor - Defense 8<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20037<para/>
 		/// Level: 4<para/>
@@ -6720,8 +6769,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20040 { get; } = new StatusEffect("Effect20040", 20040);
+		public static StatusEffect ArmorDefense8 { get; } = new StatusEffect("ArmorDefense8", 20040);
 		/// <summary>
+		/// Armor - damage reduced by 6%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20041<para/>
 		/// Level: 1<para/>
@@ -6743,8 +6793,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20041 { get; } = new StatusEffect("Effect20041", 20041);
+		public static StatusEffect ArmorDamageReducedBy6 { get; } = new StatusEffect("ArmorDamageReducedBy6", 20041);
 		/// <summary>
+		/// Armor - damage reduced by 9%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20041<para/>
 		/// Level: 2<para/>
@@ -6766,8 +6817,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20042 { get; } = new StatusEffect("Effect20042", 20042);
+		public static StatusEffect ArmorDamageReducedBy9 { get; } = new StatusEffect("ArmorDamageReducedBy9", 20042);
 		/// <summary>
+		/// Armor - Damage reduced by 12%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20041<para/>
 		/// Level: 3<para/>
@@ -6789,8 +6841,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20043 { get; } = new StatusEffect("Effect20043", 20043);
+		public static StatusEffect ArmorDamageReducedBy12 { get; } = new StatusEffect("ArmorDamageReducedBy12", 20043);
 		/// <summary>
+		/// Armor - damage reduced by 15%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20041<para/>
 		/// Level: 4<para/>
@@ -6812,8 +6865,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20044 { get; } = new StatusEffect("Effect20044", 20044);
+		public static StatusEffect ArmorDamageReducedBy15 { get; } = new StatusEffect("ArmorDamageReducedBy15", 20044);
 		/// <summary>
+		/// Clothes - slow down the endurance consumption by 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 1<para/>
@@ -6835,8 +6889,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20045 { get; } = new StatusEffect("Effect20045", 20045);
+		public static StatusEffect ClothesSlowDownTheEnduranceConsumptionBy20 { get; } = new StatusEffect("ClothesSlowDownTheEnduranceConsumptionBy20", 20045);
 		/// <summary>
+		/// Clothes - 30% reduction in endurance consumption<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 2<para/>
@@ -6858,8 +6913,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20046 { get; } = new StatusEffect("Effect20046", 20046);
+		public static StatusEffect Clothes30ReductionInEnduranceConsumption { get; } = new StatusEffect("Clothes30ReductionInEnduranceConsumption", 20046);
 		/// <summary>
+		/// Clothes - 40% reduction in endurance consumption<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 3<para/>
@@ -6881,8 +6937,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20047 { get; } = new StatusEffect("Effect20047", 20047);
+		public static StatusEffect Clothes40ReductionInEnduranceConsumption { get; } = new StatusEffect("Clothes40ReductionInEnduranceConsumption", 20047);
 		/// <summary>
+		/// Clothes - slow down the endurance consumption by 50%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 4<para/>
@@ -6904,8 +6961,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20048 { get; } = new StatusEffect("Effect20048", 20048);
+		public static StatusEffect ClothesSlowDownTheEnduranceConsumptionBy50 { get; } = new StatusEffect("ClothesSlowDownTheEnduranceConsumptionBy50", 20048);
 		/// <summary>
+		/// Clothes - Defense increased by 15%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20049<para/>
 		/// Level: 1<para/>
@@ -6927,8 +6985,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20049 { get; } = new StatusEffect("Effect20049", 20049);
+		public static StatusEffect ClothesDefenseIncreasedBy15 { get; } = new StatusEffect("ClothesDefenseIncreasedBy15", 20049);
 		/// <summary>
+		/// Clothes - defense increased by 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20049<para/>
 		/// Level: 2<para/>
@@ -6950,8 +7009,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20050 { get; } = new StatusEffect("Effect20050", 20050);
+		public static StatusEffect ClothesDefenseIncreasedBy20 { get; } = new StatusEffect("ClothesDefenseIncreasedBy20", 20050);
 		/// <summary>
+		/// Clothes - Defense increased by 25%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20049<para/>
 		/// Level: 3<para/>
@@ -6973,8 +7033,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20051 { get; } = new StatusEffect("Effect20051", 20051);
+		public static StatusEffect ClothesDefenseIncreasedBy25 { get; } = new StatusEffect("ClothesDefenseIncreasedBy25", 20051);
 		/// <summary>
+		/// Clothes - defense increased by 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20049<para/>
 		/// Level: 4<para/>
@@ -6996,8 +7057,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20052 { get; } = new StatusEffect("Effect20052", 20052);
+		public static StatusEffect ClothesDefenseIncreasedBy30 { get; } = new StatusEffect("ClothesDefenseIncreasedBy30", 20052);
 		/// <summary>
+		/// Clothes - 25% protection<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20053<para/>
 		/// Level: 1<para/>
@@ -7019,8 +7081,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20053 { get; } = new StatusEffect("Effect20053", 20053);
+		public static StatusEffect Clothes25Protection { get; } = new StatusEffect("Clothes25Protection", 20053);
 		/// <summary>
+		/// Clothes - 50% protection<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20053<para/>
 		/// Level: 2<para/>
@@ -7042,8 +7105,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20054 { get; } = new StatusEffect("Effect20054", 20054);
+		public static StatusEffect Clothes50Protection { get; } = new StatusEffect("Clothes50Protection", 20054);
 		/// <summary>
+		/// Clothes - Repel protection 75%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20053<para/>
 		/// Level: 3<para/>
@@ -7065,8 +7129,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20055 { get; } = new StatusEffect("Effect20055", 20055);
+		public static StatusEffect ClothesRepelProtection75 { get; } = new StatusEffect("ClothesRepelProtection75", 20055);
 		/// <summary>
+		/// Clothes - Repel protection 100%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20053<para/>
 		/// Level: 4<para/>
@@ -7088,8 +7153,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20056 { get; } = new StatusEffect("Effect20056", 20056);
+		public static StatusEffect ClothesRepelProtection100 { get; } = new StatusEffect("ClothesRepelProtection100", 20056);
 		/// <summary>
+		/// Clothes - Explosive damage reduced by 15%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20057<para/>
 		/// Level: 1<para/>
@@ -7111,8 +7177,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20057 { get; } = new StatusEffect("Effect20057", 20057);
+		public static StatusEffect ClothesExplosiveDamageReducedBy15 { get; } = new StatusEffect("ClothesExplosiveDamageReducedBy15", 20057);
 		/// <summary>
+		/// Clothes - Explosive damage reduced by 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20057<para/>
 		/// Level: 2<para/>
@@ -7134,8 +7201,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20058 { get; } = new StatusEffect("Effect20058", 20058);
+		public static StatusEffect ClothesExplosiveDamageReducedBy20 { get; } = new StatusEffect("ClothesExplosiveDamageReducedBy20", 20058);
 		/// <summary>
+		/// Clothes - Explosive damage reduced by 25%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20057<para/>
 		/// Level: 3<para/>
@@ -7157,8 +7225,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20059 { get; } = new StatusEffect("Effect20059", 20059);
+		public static StatusEffect ClothesExplosiveDamageReducedBy25 { get; } = new StatusEffect("ClothesExplosiveDamageReducedBy25", 20059);
 		/// <summary>
+		/// Clothes - Explosive damage reduced by 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20057<para/>
 		/// Level: 4<para/>
@@ -7180,8 +7249,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20060 { get; } = new StatusEffect("Effect20060", 20060);
+		public static StatusEffect ClothesExplosiveDamageReducedBy30 { get; } = new StatusEffect("ClothesExplosiveDamageReducedBy30", 20060);
 		/// <summary>
+		/// Clothes - Remote Damage reduced by 15%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20061<para/>
 		/// Level: 1<para/>
@@ -7203,8 +7273,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20061 { get; } = new StatusEffect("Effect20061", 20061);
+		public static StatusEffect ClothesRemoteDamageReducedBy15 { get; } = new StatusEffect("ClothesRemoteDamageReducedBy15", 20061);
 		/// <summary>
+		/// Clothes - 20% reduction in range damage<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20061<para/>
 		/// Level: 2<para/>
@@ -7226,8 +7297,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20062 { get; } = new StatusEffect("Effect20062", 20062);
+		public static StatusEffect Clothes20ReductionInRangeDamage { get; } = new StatusEffect("Clothes20ReductionInRangeDamage", 20062);
 		/// <summary>
+		/// Clothes - Remote damage reduced by 25%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20061<para/>
 		/// Level: 3<para/>
@@ -7249,8 +7321,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20063 { get; } = new StatusEffect("Effect20063", 20063);
+		public static StatusEffect ClothesRemoteDamageReducedBy25 { get; } = new StatusEffect("ClothesRemoteDamageReducedBy25", 20063);
 		/// <summary>
+		/// Clothes - Remote damage reduced by 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20061<para/>
 		/// Level: 4<para/>
@@ -7272,8 +7345,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20064 { get; } = new StatusEffect("Effect20064", 20064);
+		public static StatusEffect ClothesRemoteDamageReducedBy30 { get; } = new StatusEffect("ClothesRemoteDamageReducedBy30", 20064);
 		/// <summary>
+		/// Gloves - Reduces endurance consumption by 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 1<para/>
@@ -7295,8 +7369,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20065 { get; } = new StatusEffect("Effect20065", 20065);
+		public static StatusEffect GlovesReducesEnduranceConsumptionBy20 { get; } = new StatusEffect("GlovesReducesEnduranceConsumptionBy20", 20065);
 		/// <summary>
+		/// Gloves - Reduces endurance consumption by 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 2<para/>
@@ -7318,8 +7393,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20066 { get; } = new StatusEffect("Effect20066", 20066);
+		public static StatusEffect GlovesReducesEnduranceConsumptionBy30 { get; } = new StatusEffect("GlovesReducesEnduranceConsumptionBy30", 20066);
 		/// <summary>
+		/// Gloves - Reduces endurance consumption by 40%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 3<para/>
@@ -7341,8 +7417,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20067 { get; } = new StatusEffect("Effect20067", 20067);
+		public static StatusEffect GlovesReducesEnduranceConsumptionBy40 { get; } = new StatusEffect("GlovesReducesEnduranceConsumptionBy40", 20067);
 		/// <summary>
+		/// Gloves - Reduces endurance consumption by 50%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 4<para/>
@@ -7364,8 +7441,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20068 { get; } = new StatusEffect("Effect20068", 20068);
+		public static StatusEffect GlovesReducesEnduranceConsumptionBy50 { get; } = new StatusEffect("GlovesReducesEnduranceConsumptionBy50", 20068);
 		/// <summary>
+		/// Gloves - eating up to 40% faster<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20065<para/>
 		/// Level: 1<para/>
@@ -7387,8 +7465,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20069 { get; } = new StatusEffect("Effect20069", 20069);
+		public static StatusEffect GlovesEatingUpTo40Faster { get; } = new StatusEffect("GlovesEatingUpTo40Faster", 20069);
 		/// <summary>
+		/// Gloves - 60% faster eating<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20065<para/>
 		/// Level: 2<para/>
@@ -7410,8 +7489,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20070 { get; } = new StatusEffect("Effect20070", 20070);
+		public static StatusEffect Gloves60FasterEating { get; } = new StatusEffect("Gloves60FasterEating", 20070);
 		/// <summary>
+		/// Gloves - Eat 80% faster<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20065<para/>
 		/// Level: 3<para/>
@@ -7433,8 +7513,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20071 { get; } = new StatusEffect("Effect20071", 20071);
+		public static StatusEffect GlovesEat80Faster { get; } = new StatusEffect("GlovesEat80Faster", 20071);
 		/// <summary>
+		/// Gloves - Eat 100% faster<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20065<para/>
 		/// Level: 4<para/>
@@ -7456,8 +7537,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20072 { get; } = new StatusEffect("Effect20072", 20072);
+		public static StatusEffect GlovesEat100Faster { get; } = new StatusEffect("GlovesEat100Faster", 20072);
 		/// <summary>
+		/// Gloves - Acquisition Acceleration 40%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20069<para/>
 		/// Level: 1<para/>
@@ -7479,8 +7561,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20073 { get; } = new StatusEffect("Effect20073", 20073);
+		public static StatusEffect GlovesAcquisitionAcceleration40 { get; } = new StatusEffect("GlovesAcquisitionAcceleration40", 20073);
 		/// <summary>
+		/// Gloves - Acquisition Acceleration 60%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20069<para/>
 		/// Level: 2<para/>
@@ -7502,8 +7585,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20074 { get; } = new StatusEffect("Effect20074", 20074);
+		public static StatusEffect GlovesAcquisitionAcceleration60 { get; } = new StatusEffect("GlovesAcquisitionAcceleration60", 20074);
 		/// <summary>
+		/// Gloves - Acquisition Acceleration 80%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20069<para/>
 		/// Level: 3<para/>
@@ -7525,8 +7609,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20075 { get; } = new StatusEffect("Effect20075", 20075);
+		public static StatusEffect GlovesAcquisitionAcceleration80 { get; } = new StatusEffect("GlovesAcquisitionAcceleration80", 20075);
 		/// <summary>
+		/// Gloves - Acquisition Acceleration 100%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20069<para/>
 		/// Level: 4<para/>
@@ -7548,8 +7633,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20076 { get; } = new StatusEffect("Effect20076", 20076);
+		public static StatusEffect GlovesAcquisitionAcceleration100 { get; } = new StatusEffect("GlovesAcquisitionAcceleration100", 20076);
 		/// <summary>
+		/// Gloves - Axe, 镐 attack speed increased by 15%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20073<para/>
 		/// Level: 1<para/>
@@ -7571,8 +7657,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20077 { get; } = new StatusEffect("Effect20077", 20077);
+		public static StatusEffect GlovesAxeAttackSpeedIncreasedBy15 { get; } = new StatusEffect("GlovesAxeAttackSpeedIncreasedBy15", 20077);
 		/// <summary>
+		/// Gloves - Axe, 镐 attack speed increased by 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20073<para/>
 		/// Level: 2<para/>
@@ -7594,8 +7681,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20078 { get; } = new StatusEffect("Effect20078", 20078);
+		public static StatusEffect GlovesAxeAttackSpeedIncreasedBy20 { get; } = new StatusEffect("GlovesAxeAttackSpeedIncreasedBy20", 20078);
 		/// <summary>
+		/// Gloves - Axe, 镐 attack speed increased by 25%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20073<para/>
 		/// Level: 3<para/>
@@ -7617,8 +7705,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20079 { get; } = new StatusEffect("Effect20079", 20079);
+		public static StatusEffect GlovesAxeAttackSpeedIncreasedBy25 { get; } = new StatusEffect("GlovesAxeAttackSpeedIncreasedBy25", 20079);
 		/// <summary>
+		/// Gloves - Axe, 镐 attack speed increased by 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20073<para/>
 		/// Level: 4<para/>
@@ -7640,8 +7729,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20080 { get; } = new StatusEffect("Effect20080", 20080);
+		public static StatusEffect GlovesAxeAttackSpeedIncreasedBy30 { get; } = new StatusEffect("GlovesAxeAttackSpeedIncreasedBy30", 20080);
 		/// <summary>
+		/// Shoes - slow down endurance consumption by 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 1<para/>
@@ -7663,8 +7753,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20081 { get; } = new StatusEffect("Effect20081", 20081);
+		public static StatusEffect ShoesSlowDownEnduranceConsumptionBy20 { get; } = new StatusEffect("ShoesSlowDownEnduranceConsumptionBy20", 20081);
 		/// <summary>
+		/// Shoes - Reduces endurance consumption by 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 2<para/>
@@ -7686,8 +7777,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20082 { get; } = new StatusEffect("Effect20082", 20082);
+		public static StatusEffect ShoesReducesEnduranceConsumptionBy30 { get; } = new StatusEffect("ShoesReducesEnduranceConsumptionBy30", 20082);
 		/// <summary>
+		/// Shoes - 40% reduction in endurance consumption<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 3<para/>
@@ -7709,8 +7801,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20083 { get; } = new StatusEffect("Effect20083", 20083);
+		public static StatusEffect Shoes40ReductionInEnduranceConsumption { get; } = new StatusEffect("Shoes40ReductionInEnduranceConsumption", 20083);
 		/// <summary>
+		/// Shoes - slow down the endurance consumption by 50%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20045<para/>
 		/// Level: 4<para/>
@@ -7732,8 +7825,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20084 { get; } = new StatusEffect("Effect20084", 20084);
+		public static StatusEffect ShoesSlowDownTheEnduranceConsumptionBy50 { get; } = new StatusEffect("ShoesSlowDownTheEnduranceConsumptionBy50", 20084);
 		/// <summary>
+		/// Shoes - move up 10%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20077<para/>
 		/// Level: 1<para/>
@@ -7755,8 +7849,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20085 { get; } = new StatusEffect("Effect20085", 20085);
+		public static StatusEffect ShoesMoveUp10 { get; } = new StatusEffect("ShoesMoveUp10", 20085);
 		/// <summary>
+		/// Shoes - move up 15%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20077<para/>
 		/// Level: 2<para/>
@@ -7778,8 +7873,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20086 { get; } = new StatusEffect("Effect20086", 20086);
+		public static StatusEffect ShoesMoveUp15 { get; } = new StatusEffect("ShoesMoveUp15", 20086);
 		/// <summary>
+		/// Shoes - move up 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20077<para/>
 		/// Level: 3<para/>
@@ -7801,8 +7897,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20087 { get; } = new StatusEffect("Effect20087", 20087);
+		public static StatusEffect ShoesMoveUp20 { get; } = new StatusEffect("ShoesMoveUp20", 20087);
 		/// <summary>
+		/// Shoes - move up 25%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20077<para/>
 		/// Level: 4<para/>
@@ -7824,8 +7921,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20088 { get; } = new StatusEffect("Effect20088", 20088);
+		public static StatusEffect ShoesMoveUp25 { get; } = new StatusEffect("ShoesMoveUp25", 20088);
 		/// <summary>
+		/// Shoes - reduce hunger by 10%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20081<para/>
 		/// Level: 1<para/>
@@ -7847,8 +7945,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20089 { get; } = new StatusEffect("Effect20089", 20089);
+		public static StatusEffect ShoesReduceHungerBy10 { get; } = new StatusEffect("ShoesReduceHungerBy10", 20089);
 		/// <summary>
+		/// Shoes - reduce hunger by 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20081<para/>
 		/// Level: 2<para/>
@@ -7870,8 +7969,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20090 { get; } = new StatusEffect("Effect20090", 20090);
+		public static StatusEffect ShoesReduceHungerBy20 { get; } = new StatusEffect("ShoesReduceHungerBy20", 20090);
 		/// <summary>
+		/// Shoes - reduce hunger by 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20081<para/>
 		/// Level: 3<para/>
@@ -7893,8 +7993,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20091 { get; } = new StatusEffect("Effect20091", 20091);
+		public static StatusEffect ShoesReduceHungerBy30 { get; } = new StatusEffect("ShoesReduceHungerBy30", 20091);
 		/// <summary>
+		/// Shoes - reduce hunger by 40%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20081<para/>
 		/// Level: 4<para/>
@@ -7916,8 +8017,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20092 { get; } = new StatusEffect("Effect20092", 20092);
+		public static StatusEffect ShoesReduceHungerBy40 { get; } = new StatusEffect("ShoesReduceHungerBy40", 20092);
 		/// <summary>
+		/// Shoes - reduce trap damage by 20%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20085<para/>
 		/// Level: 1<para/>
@@ -7939,8 +8041,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20093 { get; } = new StatusEffect("Effect20093", 20093);
+		public static StatusEffect ShoesReduceTrapDamageBy20 { get; } = new StatusEffect("ShoesReduceTrapDamageBy20", 20093);
 		/// <summary>
+		/// Shoes - reduce trap damage by 30%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20085<para/>
 		/// Level: 2<para/>
@@ -7962,8 +8065,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20094 { get; } = new StatusEffect("Effect20094", 20094);
+		public static StatusEffect ShoesReduceTrapDamageBy30 { get; } = new StatusEffect("ShoesReduceTrapDamageBy30", 20094);
 		/// <summary>
+		/// Shoes - reduce trap damage by 40%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20085<para/>
 		/// Level: 3<para/>
@@ -7985,8 +8089,9 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20095 { get; } = new StatusEffect("Effect20095", 20095);
+		public static StatusEffect ShoesReduceTrapDamageBy40 { get; } = new StatusEffect("ShoesReduceTrapDamageBy40", 20095);
 		/// <summary>
+		/// Shoes - reduce trap damage by 50%<para/>
 		/// EffectType: 0<para/>
 		/// Type: 20085<para/>
 		/// Level: 4<para/>
@@ -8008,6 +8113,6 @@ namespace ChassisMod.KeplerthDatabase
 		/// BuffParticle: "0"<para/>
 		/// BuffParticleTexture: "0"<para/>
 		/// </summary>
-		public static StatusEffect Effect20096 { get; } = new StatusEffect("Effect20096", 20096);
+		public static StatusEffect ShoesReduceTrapDamageBy50 { get; } = new StatusEffect("ShoesReduceTrapDamageBy50", 20096);
 	}
 }

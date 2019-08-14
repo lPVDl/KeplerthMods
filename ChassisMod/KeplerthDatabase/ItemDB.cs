@@ -551,7 +551,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item503 { get; } = new Item("Item503", 503);
+		public static Item ScarletFlower { get; } = new Item("ScarletFlower", 503);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 24<para/>
@@ -573,7 +573,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item504 { get; } = new Item("Item504", 504);
+		public static Item LuminousGrass { get; } = new Item("LuminousGrass", 504);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 24<para/>
@@ -595,7 +595,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item505 { get; } = new Item("Item505", 505);
+		public static Item PearlLeaf { get; } = new Item("PearlLeaf", 505);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 24<para/>
@@ -639,7 +639,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item507 { get; } = new Item("Item507", 507);
+		public static Item Bezoar { get; } = new Item("Bezoar", 507);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -749,7 +749,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item605 { get; } = new Item("Item605", 605);
+		public static Item LifeAgentV { get; } = new Item("LifeAgentV", 605);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -771,7 +771,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item606 { get; } = new Item("Item606", 606);
+		public static Item HealingAgentI { get; } = new Item("HealingAgentI", 606);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -793,7 +793,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item607 { get; } = new Item("Item607", 607);
+		public static Item HealingAgentII { get; } = new Item("HealingAgentII", 607);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -815,7 +815,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item608 { get; } = new Item("Item608", 608);
+		public static Item HealingAgentIII { get; } = new Item("HealingAgentIII", 608);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -837,7 +837,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item609 { get; } = new Item("Item609", 609);
+		public static Item HealingAgentIV { get; } = new Item("HealingAgentIV", 609);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -859,7 +859,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item610 { get; } = new Item("Item610", 610);
+		public static Item HealingAgentV { get; } = new Item("HealingAgentV", 610);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -881,7 +881,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item611 { get; } = new Item("Item611", 611);
+		public static Item RecoveryAgentI { get; } = new Item("RecoveryAgentI", 611);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -903,7 +903,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item612 { get; } = new Item("Item612", 612);
+		public static Item RecoveryAgentII { get; } = new Item("RecoveryAgentII", 612);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -925,7 +925,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item613 { get; } = new Item("Item613", 613);
+		public static Item RecoveryAgentIII { get; } = new Item("RecoveryAgentIII", 613);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -947,7 +947,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item614 { get; } = new Item("Item614", 614);
+		public static Item RecoveryAgentIV { get; } = new Item("RecoveryAgentIV", 614);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -969,7 +969,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item615 { get; } = new Item("Item615", 615);
+		public static Item RecoveryAgentV { get; } = new Item("RecoveryAgentV", 615);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -1057,7 +1057,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item619 { get; } = new Item("Item619", 619);
+		public static Item StimulantIV { get; } = new Item("StimulantIV", 619);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -1079,7 +1079,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item620 { get; } = new Item("Item620", 620);
+		public static Item StimulantV { get; } = new Item("StimulantV", 620);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -1101,7 +1101,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item621 { get; } = new Item("Item621", 621);
+		public static Item NightVisionAgent { get; } = new Item("NightVisionAgent", 621);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -1123,7 +1123,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item622 { get; } = new Item("Item622", 622);
+		public static Item StealthPotion { get; } = new Item("StealthPotion", 622);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -1145,7 +1145,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item623 { get; } = new Item("Item623", 623);
+		public static Item Hallucinogenic { get; } = new Item("Hallucinogenic", 623);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -1167,7 +1167,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item624 { get; } = new Item("Item624", 624);
+		public static Item XXMedicine0 { get; } = new Item("XXMedicine0", 624);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -1189,7 +1189,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item625 { get; } = new Item("Item625", 625);
+		public static Item XXMedicine1 { get; } = new Item("XXMedicine1", 625);
 		/// <summary>
 		/// Type: 1<para/>
 		/// ItemType: 104<para/>
@@ -2729,7 +2729,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1351 { get; } = new Item("Item1351", 1351);
+		public static Item BlameLaserBlue { get; } = new Item("BlameLaserBlue", 1351);
 		/// <summary>
 		/// Type: 2<para/>
 		/// ItemType: 10<para/>
@@ -2751,7 +2751,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1352 { get; } = new Item("Item1352", 1352);
+		public static Item BlameLaserRed { get; } = new Item("BlameLaserRed", 1352);
 		/// <summary>
 		/// Type: 2<para/>
 		/// ItemType: 10<para/>
@@ -2773,7 +2773,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1353 { get; } = new Item("Item1353", 1353);
+		public static Item BlameTheLaserBlue0 { get; } = new Item("BlameTheLaserBlue0", 1353);
 		/// <summary>
 		/// Type: 2<para/>
 		/// ItemType: 10<para/>
@@ -2795,7 +2795,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1354 { get; } = new Item("Item1354", 1354);
+		public static Item BlameTheLaserCannonRed0 { get; } = new Item("BlameTheLaserCannonRed0", 1354);
 		/// <summary>
 		/// Type: 2<para/>
 		/// ItemType: 10<para/>
@@ -3477,7 +3477,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1607 { get; } = new Item("Item1607", 1607);
+		public static Item BlameGoblinBOSSArrow { get; } = new Item("BlameGoblinBOSSArrow", 1607);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 102<para/>
@@ -3653,7 +3653,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1617 { get; } = new Item("Item1617", 1617);
+		public static Item ExplosionBlameGoblinBOSSArrow { get; } = new Item("ExplosionBlameGoblinBOSSArrow", 1617);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 103<para/>
@@ -3785,7 +3785,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1656 { get; } = new Item("Item1656", 1656);
+		public static Item BlameTheLaserBlue1 { get; } = new Item("BlameTheLaserBlue1", 1656);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 20<para/>
@@ -3807,7 +3807,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1657 { get; } = new Item("Item1657", 1657);
+		public static Item BlameTheLaserRed { get; } = new Item("BlameTheLaserRed", 1657);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 20<para/>
@@ -3829,7 +3829,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1658 { get; } = new Item("Item1658", 1658);
+		public static Item BlameTheLaserBlue2 { get; } = new Item("BlameTheLaserBlue2", 1658);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 20<para/>
@@ -3851,7 +3851,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1659 { get; } = new Item("Item1659", 1659);
+		public static Item BlameTheLaserCannonRed1 { get; } = new Item("BlameTheLaserCannonRed1", 1659);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 20<para/>
@@ -3873,7 +3873,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1660 { get; } = new Item("Item1660", 1660);
+		public static Item BlameTheEnergyBomb { get; } = new Item("BlameTheEnergyBomb", 1660);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 20<para/>
@@ -3895,7 +3895,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1661 { get; } = new Item("Item1661", 1661);
+		public static Item WormNestBarrage { get; } = new Item("WormNestBarrage", 1661);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 20<para/>
@@ -3917,7 +3917,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1662 { get; } = new Item("Item1662", 1662);
+		public static Item BatteryBullet { get; } = new Item("BatteryBullet", 1662);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 103<para/>
@@ -3961,7 +3961,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1664 { get; } = new Item("Item1664", 1664);
+		public static Item BlackBOSSBullet { get; } = new Item("BlackBOSSBullet", 1664);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 103<para/>
@@ -4005,7 +4005,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1666 { get; } = new Item("Item1666", 1666);
+		public static Item BiomecoLaserBomb { get; } = new Item("BiomecoLaserBomb", 1666);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 20<para/>
@@ -4027,7 +4027,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1667 { get; } = new Item("Item1667", 1667);
+		public static Item PlayersUseBlackBOSSGunBullets { get; } = new Item("PlayersUseBlackBOSSGunBullets", 1667);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 20<para/>
@@ -4049,7 +4049,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1668 { get; } = new Item("Item1668", 1668);
+		public static Item BiologicalMachineGunBullet { get; } = new Item("BiologicalMachineGunBullet", 1668);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 103<para/>
@@ -4071,7 +4071,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1669 { get; } = new Item("Item1669", 1669);
+		public static Item BlameTheUseOfResearchPistolBullets { get; } = new Item("BlameTheUseOfResearchPistolBullets", 1669);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 103<para/>
@@ -4093,7 +4093,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1670 { get; } = new Item("Item1670", 1670);
+		public static Item BlameTheMecoRedBullet { get; } = new Item("BlameTheMecoRedBullet", 1670);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 20<para/>
@@ -4115,7 +4115,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1671 { get; } = new Item("Item1671", 1671);
+		public static Item PhantomBlackBOSSBullets { get; } = new Item("PhantomBlackBOSSBullets", 1671);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 20<para/>
@@ -4137,7 +4137,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1672 { get; } = new Item("Item1672", 1672);
+		public static Item GatlinAppearanceBullet { get; } = new Item("GatlinAppearanceBullet", 1672);
 		/// <summary>
 		/// Type: 2<para/>
 		/// ItemType: 20<para/>
@@ -4357,7 +4357,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1801 { get; } = new Item("Item1801", 1801);
+		public static Item SnowballThrowingEntity { get; } = new Item("SnowballThrowingEntity", 1801);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 30<para/>
@@ -4379,7 +4379,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1802 { get; } = new Item("Item1802", 1802);
+		public static Item SmallStoneThrowingBody { get; } = new Item("SmallStoneThrowingBody", 1802);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 30<para/>
@@ -4401,7 +4401,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1803 { get; } = new Item("Item1803", 1803);
+		public static Item DaxianHumanBallThrowingBody { get; } = new Item("DaxianHumanBallThrowingBody", 1803);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 30<para/>
@@ -4423,7 +4423,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1804 { get; } = new Item("Item1804", 1804);
+		public static Item BoneBallThrowingBody { get; } = new Item("BoneBallThrowingBody", 1804);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 30<para/>
@@ -4445,7 +4445,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1805 { get; } = new Item("Item1805", 1805);
+		public static Item MucusThrowingBody { get; } = new Item("MucusThrowingBody", 1805);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 30<para/>
@@ -4467,7 +4467,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1806 { get; } = new Item("Item1806", 1806);
+		public static Item MalignantSoreBody { get; } = new Item("MalignantSoreBody", 1806);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 30<para/>
@@ -4489,7 +4489,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1807 { get; } = new Item("Item1807", 1807);
+		public static Item BlameTheSoreMucusThrowingBody { get; } = new Item("BlameTheSoreMucusThrowingBody", 1807);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 30<para/>
@@ -4511,7 +4511,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1808 { get; } = new Item("Item1808", 1808);
+		public static Item GrenadeThrowingBody { get; } = new Item("GrenadeThrowingBody", 1808);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 30<para/>
@@ -4533,7 +4533,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item1809 { get; } = new Item("Item1809", 1809);
+		public static Item BOSSGrenadeThrowingBody { get; } = new Item("BOSSGrenadeThrowingBody", 1809);
 		/// <summary>
 		/// Type: 2<para/>
 		/// ItemType: 58<para/>
@@ -5127,7 +5127,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item2028 { get; } = new Item("Item2028", 2028);
+		public static Item InfectedBiologicalArmor { get; } = new Item("InfectedBiologicalArmor", 2028);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 16<para/>
@@ -5193,7 +5193,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item2031 { get; } = new Item("Item2031", 2031);
+		public static Item MatthewSchippersCostume { get; } = new Item("MatthewSchippersCostume", 2031);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 16<para/>
@@ -5215,7 +5215,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item2032 { get; } = new Item("Item2032", 2032);
+		public static Item DannysCostume { get; } = new Item("DannysCostume", 2032);
 		/// <summary>
 		/// Type: 5<para/>
 		/// ItemType: 16<para/>
@@ -7811,7 +7811,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Diamond { get; } = new Item("Diamond", 3009);
+		public static Item Diamond0 { get; } = new Item("Diamond0", 3009);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 41<para/>
@@ -8867,7 +8867,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3208 { get; } = new Item("Item3208", 3208);
+		public static Item Unused { get; } = new Item("Unused", 3208);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 43<para/>
@@ -10209,7 +10209,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3543 { get; } = new Item("Item3543", 3543);
+		public static Item WoodCraftTable { get; } = new Item("WoodCraftTable", 3543);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10231,7 +10231,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3544 { get; } = new Item("Item3544", 3544);
+		public static Item StoneCraft { get; } = new Item("StoneCraft", 3544);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10253,7 +10253,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3545 { get; } = new Item("Item3545", 3545);
+		public static Item CopperCraftTable { get; } = new Item("CopperCraftTable", 3545);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10275,7 +10275,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3546 { get; } = new Item("Item3546", 3546);
+		public static Item IronCraftTable { get; } = new Item("IronCraftTable", 3546);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10297,7 +10297,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3547 { get; } = new Item("Item3547", 3547);
+		public static Item SilverCraftTable { get; } = new Item("SilverCraftTable", 3547);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10319,7 +10319,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3548 { get; } = new Item("Item3548", 3548);
+		public static Item GoldCraftTable { get; } = new Item("GoldCraftTable", 3548);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10341,7 +10341,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3549 { get; } = new Item("Item3549", 3549);
+		public static Item DiamondCraftTable { get; } = new Item("DiamondCraftTable", 3549);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10517,7 +10517,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3557 { get; } = new Item("Item3557", 3557);
+		public static Item StoneDigester { get; } = new Item("StoneDigester", 3557);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10539,7 +10539,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3558 { get; } = new Item("Item3558", 3558);
+		public static Item CopperBiogasTank { get; } = new Item("CopperBiogasTank", 3558);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10561,7 +10561,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3559 { get; } = new Item("Item3559", 3559);
+		public static Item IronDigester { get; } = new Item("IronDigester", 3559);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10583,7 +10583,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3560 { get; } = new Item("Item3560", 3560);
+		public static Item SilverBiogasPool { get; } = new Item("SilverBiogasPool", 3560);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10605,7 +10605,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3561 { get; } = new Item("Item3561", 3561);
+		public static Item GoldBiogasPool { get; } = new Item("GoldBiogasPool", 3561);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -10627,7 +10627,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3562 { get; } = new Item("Item3562", 3562);
+		public static Item DiamondBiogasTank { get; } = new Item("DiamondBiogasTank", 3562);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -13377,7 +13377,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3831 { get; } = new Item("Item3831", 3831);
+		public static Item CrystalSandBed { get; } = new Item("CrystalSandBed", 3831);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -13421,7 +13421,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3841 { get; } = new Item("Item3841", 3841);
+		public static Item CrystalSandStool { get; } = new Item("CrystalSandStool", 3841);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -13443,7 +13443,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3851 { get; } = new Item("Item3851", 3851);
+		public static Item CrystalSandRoundTable { get; } = new Item("CrystalSandRoundTable", 3851);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -13465,7 +13465,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item3861 { get; } = new Item("Item3861", 3861);
+		public static Item CrystalSandBaseTorch { get; } = new Item("CrystalSandBaseTorch", 3861);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -15203,7 +15203,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item6007 { get; } = new Item("Item6007", 6007);
+		public static Item DiamondAxe { get; } = new Item("DiamondAxe", 6007);
 		/// <summary>
 		/// Type: 2<para/>
 		/// ItemType: 51<para/>
@@ -15225,7 +15225,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item6008 { get; } = new Item("Item6008", 6008);
+		public static Item GoblinNoAttackStoneAxe { get; } = new Item("GoblinNoAttackStoneAxe", 6008);
 		/// <summary>
 		/// Type: 2<para/>
 		/// ItemType: 52<para/>
@@ -15379,7 +15379,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item6107 { get; } = new Item("Item6107", 6107);
+		public static Item Diamond1 { get; } = new Item("Diamond1", 6107);
 		/// <summary>
 		/// Type: 2<para/>
 		/// ItemType: 52<para/>
@@ -15401,7 +15401,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item6108 { get; } = new Item("Item6108", 6108);
+		public static Item GoblinNoAttackStone { get; } = new Item("GoblinNoAttackStone", 6108);
 		/// <summary>
 		/// Type: 2<para/>
 		/// ItemType: 52<para/>
@@ -15599,7 +15599,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item6207 { get; } = new Item("Item6207", 6207);
+		public static Item DiamondShovel { get; } = new Item("DiamondShovel", 6207);
 		/// <summary>
 		/// Type: 7<para/>
 		/// ItemType: 54<para/>
@@ -16303,7 +16303,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8001 { get; } = new Item("Item8001", 8001);
+		public static Item GoblinDecoration0 { get; } = new Item("GoblinDecoration0", 8001);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16325,7 +16325,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8002 { get; } = new Item("Item8002", 8002);
+		public static Item GoblinDecoration1 { get; } = new Item("GoblinDecoration1", 8002);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16347,7 +16347,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8003 { get; } = new Item("Item8003", 8003);
+		public static Item GoblinDecoration2 { get; } = new Item("GoblinDecoration2", 8003);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16369,7 +16369,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8004 { get; } = new Item("Item8004", 8004);
+		public static Item GoblinDecoration3 { get; } = new Item("GoblinDecoration3", 8004);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16391,7 +16391,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8005 { get; } = new Item("Item8005", 8005);
+		public static Item GoblinDecoration4 { get; } = new Item("GoblinDecoration4", 8005);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16413,7 +16413,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8006 { get; } = new Item("Item8006", 8006);
+		public static Item GoblinDecoration5 { get; } = new Item("GoblinDecoration5", 8006);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16435,7 +16435,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8007 { get; } = new Item("Item8007", 8007);
+		public static Item GoblinDecoration6 { get; } = new Item("GoblinDecoration6", 8007);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16457,7 +16457,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8008 { get; } = new Item("Item8008", 8008);
+		public static Item GoblinDecoration7 { get; } = new Item("GoblinDecoration7", 8008);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16479,7 +16479,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8009 { get; } = new Item("Item8009", 8009);
+		public static Item GoblinDecoration8 { get; } = new Item("GoblinDecoration8", 8009);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16501,7 +16501,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8010 { get; } = new Item("Item8010", 8010);
+		public static Item GoblinDecoration9 { get; } = new Item("GoblinDecoration9", 8010);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16523,7 +16523,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8011 { get; } = new Item("Item8011", 8011);
+		public static Item WormNestBOSS { get; } = new Item("WormNestBOSS", 8011);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16545,7 +16545,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8012 { get; } = new Item("Item8012", 8012);
+		public static Item MecoStructureComputer { get; } = new Item("MecoStructureComputer", 8012);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16567,7 +16567,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8013 { get; } = new Item("Item8013", 8013);
+		public static Item MecoStructureComputerOblique { get; } = new Item("MecoStructureComputerOblique", 8013);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16589,7 +16589,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8014 { get; } = new Item("Item8014", 8014);
+		public static Item MecoBiologicalResearchSample { get; } = new Item("MecoBiologicalResearchSample", 8014);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16611,7 +16611,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8015 { get; } = new Item("Item8015", 8015);
+		public static Item MecoBiologicalResearchSampleBroken { get; } = new Item("MecoBiologicalResearchSampleBroken", 8015);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16633,7 +16633,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8017 { get; } = new Item("Item8017", 8017);
+		public static Item MecoPipeline1 { get; } = new Item("MecoPipeline1", 8017);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16655,7 +16655,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8018 { get; } = new Item("Item8018", 8018);
+		public static Item MecoPipeline2 { get; } = new Item("MecoPipeline2", 8018);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16677,7 +16677,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8019 { get; } = new Item("Item8019", 8019);
+		public static Item MecoPipeline3 { get; } = new Item("MecoPipeline3", 8019);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16699,7 +16699,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8020 { get; } = new Item("Item8020", 8020);
+		public static Item MecoPipeline4 { get; } = new Item("MecoPipeline4", 8020);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16721,7 +16721,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8021 { get; } = new Item("Item8021", 8021);
+		public static Item MecoPipeline5 { get; } = new Item("MecoPipeline5", 8021);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16743,7 +16743,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8022 { get; } = new Item("Item8022", 8022);
+		public static Item MecoPipeline6 { get; } = new Item("MecoPipeline6", 8022);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16765,7 +16765,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8023 { get; } = new Item("Item8023", 8023);
+		public static Item MecoPipeline7 { get; } = new Item("MecoPipeline7", 8023);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16787,7 +16787,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8024 { get; } = new Item("Item8024", 8024);
+		public static Item MecoPipeline8 { get; } = new Item("MecoPipeline8", 8024);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16809,7 +16809,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8025 { get; } = new Item("Item8025", 8025);
+		public static Item MecoPipeline9 { get; } = new Item("MecoPipeline9", 8025);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16831,7 +16831,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8026 { get; } = new Item("Item8026", 8026);
+		public static Item MecoPipeline10 { get; } = new Item("MecoPipeline10", 8026);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16853,7 +16853,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8027 { get; } = new Item("Item8027", 8027);
+		public static Item MecoPipeline11 { get; } = new Item("MecoPipeline11", 8027);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16875,7 +16875,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8028 { get; } = new Item("Item8028", 8028);
+		public static Item MecoPipeline12 { get; } = new Item("MecoPipeline12", 8028);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16897,7 +16897,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8029 { get; } = new Item("Item8029", 8029);
+		public static Item MecoPipeline13 { get; } = new Item("MecoPipeline13", 8029);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16919,7 +16919,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8030 { get; } = new Item("Item8030", 8030);
+		public static Item MecoPipeline14 { get; } = new Item("MecoPipeline14", 8030);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16941,7 +16941,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8031 { get; } = new Item("Item8031", 8031);
+		public static Item MecoPipeline15 { get; } = new Item("MecoPipeline15", 8031);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16963,7 +16963,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8032 { get; } = new Item("Item8032", 8032);
+		public static Item MecoPipeline16 { get; } = new Item("MecoPipeline16", 8032);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -16985,7 +16985,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8033 { get; } = new Item("Item8033", 8033);
+		public static Item Server { get; } = new Item("Server", 8033);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17007,7 +17007,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8034 { get; } = new Item("Item8034", 8034);
+		public static Item ServerStop { get; } = new Item("ServerStop", 8034);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17029,7 +17029,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8035 { get; } = new Item("Item8035", 8035);
+		public static Item TestTube1 { get; } = new Item("TestTube1", 8035);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17051,7 +17051,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8036 { get; } = new Item("Item8036", 8036);
+		public static Item TestTubeTable2 { get; } = new Item("TestTubeTable2", 8036);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17073,7 +17073,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8037 { get; } = new Item("Item8037", 8037);
+		public static Item MecoHost1 { get; } = new Item("MecoHost1", 8037);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17095,7 +17095,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8038 { get; } = new Item("Item8038", 8038);
+		public static Item MecoHost2 { get; } = new Item("MecoHost2", 8038);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17117,7 +17117,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8039 { get; } = new Item("Item8039", 8039);
+		public static Item MecoHost3Off { get; } = new Item("MecoHost3Off", 8039);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17139,7 +17139,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8040 { get; } = new Item("Item8040", 8040);
+		public static Item MecoHost3Open { get; } = new Item("MecoHost3Open", 8040);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17161,7 +17161,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8041 { get; } = new Item("Item8041", 8041);
+		public static Item MecoHost1Broken { get; } = new Item("MecoHost1Broken", 8041);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17183,7 +17183,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8042 { get; } = new Item("Item8042", 8042);
+		public static Item MecoHost2Broken { get; } = new Item("MecoHost2Broken", 8042);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17205,7 +17205,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8043 { get; } = new Item("Item8043", 8043);
+		public static Item MecoHost3Broken { get; } = new Item("MecoHost3Broken", 8043);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17227,7 +17227,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8044 { get; } = new Item("Item8044", 8044);
+		public static Item InfectedBioMecoMeatPie1 { get; } = new Item("InfectedBioMecoMeatPie1", 8044);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17249,7 +17249,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8045 { get; } = new Item("Item8045", 8045);
+		public static Item InfectedBioMecoMeatPieces2 { get; } = new Item("InfectedBioMecoMeatPieces2", 8045);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17271,7 +17271,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8046 { get; } = new Item("Item8046", 8046);
+		public static Item InfectedBioMecoMeatPieces3 { get; } = new Item("InfectedBioMecoMeatPieces3", 8046);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17293,7 +17293,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8047 { get; } = new Item("Item8047", 8047);
+		public static Item InfectedBioMecoMeatPieces4 { get; } = new Item("InfectedBioMecoMeatPieces4", 8047);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17315,7 +17315,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8048 { get; } = new Item("Item8048", 8048);
+		public static Item InfectedBioMecoMeatPieces5 { get; } = new Item("InfectedBioMecoMeatPieces5", 8048);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -17337,7 +17337,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item8049 { get; } = new Item("Item8049", 8049);
+		public static Item InfectedBioMecoMeatPieces6 { get; } = new Item("InfectedBioMecoMeatPieces6", 8049);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -19383,7 +19383,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item9501 { get; } = new Item("Item9501", 9501);
+		public static Item MyHome { get; } = new Item("MyHome", 9501);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 61<para/>
@@ -20043,7 +20043,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12010 { get; } = new Item("Item12010", 12010);
+		public static Item Clue1 { get; } = new Item("Clue1", 12010);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20065,7 +20065,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12020 { get; } = new Item("Item12020", 12020);
+		public static Item Clue2 { get; } = new Item("Clue2", 12020);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20087,7 +20087,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12030 { get; } = new Item("Item12030", 12030);
+		public static Item Clue3 { get; } = new Item("Clue3", 12030);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20109,7 +20109,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12040 { get; } = new Item("Item12040", 12040);
+		public static Item Clue4 { get; } = new Item("Clue4", 12040);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20131,7 +20131,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12050 { get; } = new Item("Item12050", 12050);
+		public static Item Clue5 { get; } = new Item("Clue5", 12050);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20153,7 +20153,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12060 { get; } = new Item("Item12060", 12060);
+		public static Item Clue6 { get; } = new Item("Clue6", 12060);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20175,7 +20175,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12070 { get; } = new Item("Item12070", 12070);
+		public static Item Clue7 { get; } = new Item("Clue7", 12070);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20197,7 +20197,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12080 { get; } = new Item("Item12080", 12080);
+		public static Item Clue8 { get; } = new Item("Clue8", 12080);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20219,7 +20219,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12090 { get; } = new Item("Item12090", 12090);
+		public static Item Clue9 { get; } = new Item("Clue9", 12090);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20241,7 +20241,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12100 { get; } = new Item("Item12100", 12100);
+		public static Item Clue10 { get; } = new Item("Clue10", 12100);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20263,7 +20263,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12110 { get; } = new Item("Item12110", 12110);
+		public static Item Clue11 { get; } = new Item("Clue11", 12110);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20285,7 +20285,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12120 { get; } = new Item("Item12120", 12120);
+		public static Item Clue12 { get; } = new Item("Clue12", 12120);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20307,7 +20307,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12130 { get; } = new Item("Item12130", 12130);
+		public static Item Clue13 { get; } = new Item("Clue13", 12130);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20329,7 +20329,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12140 { get; } = new Item("Item12140", 12140);
+		public static Item Clue14 { get; } = new Item("Clue14", 12140);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20351,7 +20351,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12150 { get; } = new Item("Item12150", 12150);
+		public static Item Clue15 { get; } = new Item("Clue15", 12150);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20373,7 +20373,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12160 { get; } = new Item("Item12160", 12160);
+		public static Item Clue16 { get; } = new Item("Clue16", 12160);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20395,7 +20395,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12170 { get; } = new Item("Item12170", 12170);
+		public static Item Clue17 { get; } = new Item("Clue17", 12170);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20417,7 +20417,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12180 { get; } = new Item("Item12180", 12180);
+		public static Item Clue18 { get; } = new Item("Clue18", 12180);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20439,7 +20439,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12190 { get; } = new Item("Item12190", 12190);
+		public static Item Clue19 { get; } = new Item("Clue19", 12190);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20461,7 +20461,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12200 { get; } = new Item("Item12200", 12200);
+		public static Item Clue20 { get; } = new Item("Clue20", 12200);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20483,7 +20483,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12210 { get; } = new Item("Item12210", 12210);
+		public static Item Clue21 { get; } = new Item("Clue21", 12210);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20505,7 +20505,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12220 { get; } = new Item("Item12220", 12220);
+		public static Item Clue22 { get; } = new Item("Clue22", 12220);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20527,7 +20527,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12230 { get; } = new Item("Item12230", 12230);
+		public static Item Clue23 { get; } = new Item("Clue23", 12230);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20549,7 +20549,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12240 { get; } = new Item("Item12240", 12240);
+		public static Item Clue24 { get; } = new Item("Clue24", 12240);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20571,7 +20571,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12250 { get; } = new Item("Item12250", 12250);
+		public static Item Clue25 { get; } = new Item("Clue25", 12250);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20593,7 +20593,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12260 { get; } = new Item("Item12260", 12260);
+		public static Item Clue26 { get; } = new Item("Clue26", 12260);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20615,7 +20615,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12270 { get; } = new Item("Item12270", 12270);
+		public static Item Clue27 { get; } = new Item("Clue27", 12270);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20637,7 +20637,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12280 { get; } = new Item("Item12280", 12280);
+		public static Item Clue28 { get; } = new Item("Clue28", 12280);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20659,7 +20659,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12290 { get; } = new Item("Item12290", 12290);
+		public static Item Clue29 { get; } = new Item("Clue29", 12290);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20681,7 +20681,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12300 { get; } = new Item("Item12300", 12300);
+		public static Item Clue30 { get; } = new Item("Clue30", 12300);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20703,7 +20703,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12310 { get; } = new Item("Item12310", 12310);
+		public static Item Clue31 { get; } = new Item("Clue31", 12310);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20725,7 +20725,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12320 { get; } = new Item("Item12320", 12320);
+		public static Item Clue32 { get; } = new Item("Clue32", 12320);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20747,7 +20747,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12330 { get; } = new Item("Item12330", 12330);
+		public static Item Clue33 { get; } = new Item("Clue33", 12330);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20769,7 +20769,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12340 { get; } = new Item("Item12340", 12340);
+		public static Item Clue34 { get; } = new Item("Clue34", 12340);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20791,7 +20791,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12350 { get; } = new Item("Item12350", 12350);
+		public static Item Clue35 { get; } = new Item("Clue35", 12350);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20813,7 +20813,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item12360 { get; } = new Item("Item12360", 12360);
+		public static Item Clue36 { get; } = new Item("Clue36", 12360);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20835,7 +20835,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13000 { get; } = new Item("Item13000", 13000);
+		public static Item Clue37 { get; } = new Item("Clue37", 13000);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20857,7 +20857,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13001 { get; } = new Item("Item13001", 13001);
+		public static Item Clue38 { get; } = new Item("Clue38", 13001);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20879,7 +20879,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13002 { get; } = new Item("Item13002", 13002);
+		public static Item Clue39 { get; } = new Item("Clue39", 13002);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20901,7 +20901,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13003 { get; } = new Item("Item13003", 13003);
+		public static Item Clue40 { get; } = new Item("Clue40", 13003);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20923,7 +20923,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13004 { get; } = new Item("Item13004", 13004);
+		public static Item Clue41 { get; } = new Item("Clue41", 13004);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20945,7 +20945,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13005 { get; } = new Item("Item13005", 13005);
+		public static Item Clue42 { get; } = new Item("Clue42", 13005);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20967,7 +20967,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13006 { get; } = new Item("Item13006", 13006);
+		public static Item Clue43 { get; } = new Item("Clue43", 13006);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -20989,7 +20989,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13007 { get; } = new Item("Item13007", 13007);
+		public static Item Clue44 { get; } = new Item("Clue44", 13007);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -21011,7 +21011,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13008 { get; } = new Item("Item13008", 13008);
+		public static Item Clue45 { get; } = new Item("Clue45", 13008);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -21033,7 +21033,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13009 { get; } = new Item("Item13009", 13009);
+		public static Item Clue46 { get; } = new Item("Clue46", 13009);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -21055,7 +21055,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13010 { get; } = new Item("Item13010", 13010);
+		public static Item Clue47 { get; } = new Item("Clue47", 13010);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -21077,7 +21077,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13011 { get; } = new Item("Item13011", 13011);
+		public static Item Clue48 { get; } = new Item("Clue48", 13011);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -21099,7 +21099,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13012 { get; } = new Item("Item13012", 13012);
+		public static Item Clue49 { get; } = new Item("Clue49", 13012);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -21121,7 +21121,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13013 { get; } = new Item("Item13013", 13013);
+		public static Item Clue50 { get; } = new Item("Clue50", 13013);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -21143,7 +21143,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13014 { get; } = new Item("Item13014", 13014);
+		public static Item Clue51 { get; } = new Item("Clue51", 13014);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -21165,7 +21165,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13015 { get; } = new Item("Item13015", 13015);
+		public static Item Clue52 { get; } = new Item("Clue52", 13015);
 		/// <summary>
 		/// Type: 0<para/>
 		/// ItemType: 998<para/>
@@ -21187,7 +21187,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item13016 { get; } = new Item("Item13016", 13016);
+		public static Item Clue53 { get; } = new Item("Clue53", 13016);
 		/// <summary>
 		/// Type: 4<para/>
 		/// ItemType: 44<para/>
@@ -21209,6 +21209,6 @@ namespace ChassisMod.KeplerthDatabase
 		/// Keyboard: "0"<para/>
 		/// KeyboardInfo: "0"<para/>
 		/// </summary>
-		public static Item Item99999 { get; } = new Item("Item99999", 99999);
+		public static Item TestLeadPlacement { get; } = new Item("TestLeadPlacement", 99999);
 	}
 }
