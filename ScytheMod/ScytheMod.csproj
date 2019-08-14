@@ -100,10 +100,7 @@
   <PropertyGroup>
     <PostBuildEvent>rmdir /s/q $(ProjectDir)\mod\Assemblies
 mkdir $(ProjectDir)\mod\Assemblies
-
 copy $(TargetPath) $(ProjectDir)\mod\Assemblies\$(TargetFileName)
-copy $(SolutionDir)\ChassisMod\bin\debug\ChassisMod.dll $(ProjectDir)\mod\Assemblies\!Chassis.dll
-
 rmdir /s/q G:\Steam\steamapps\common\KEPLERTH\Keplerth_Data\StreamingAssets\Mods\$(ProjectName)
 mkdir G:\Steam\steamapps\common\KEPLERTH\Keplerth_Data\StreamingAssets\Mods\$(ProjectName)
 xcopy /s $(ProjectDir)\mod G:\Steam\steamapps\common\KEPLERTH\Keplerth_Data\StreamingAssets\Mods\$(ProjectName)</PostBuildEvent>
