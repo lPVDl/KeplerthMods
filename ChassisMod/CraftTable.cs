@@ -1,34 +1,41 @@
-﻿using ChassisMod.Core;
+﻿using System.Collections.Generic;
+using ChassisMod.Core;
 using System.Linq;
 using DataBase;
-using System;
 
 namespace ChassisMod
 {
     public sealed class CraftTable : DataWrapper<ConfigCraftTable>
     {
-        internal CraftTable(string name, int id) : base(name, id) { }
-
-        public void Insert(CraftGroup toInsert, CraftGroup insertAt, int indexDelta)
+        public sealed class CraftsWrapper : CollectionWrapper<CraftGroup, CraftGroup>
         {
-            if (toInsert == null) throw new ArgumentNullException("toInsert was null");
-            if (insertAt == null) throw new ArgumentNullException("insertAt was null");
+            internal CraftsWrapper(string name, CraftTable owner) : base(name, owner) { }
 
-            var patchInfo = $"{Name}.Crafts = ";
-            if (indexDelta <= 0)
-                patchInfo += $"[... >{toInsert}<, {insertAt} ...]";
-            else
-                patchInfo += $"[... {insertAt}, >{toInsert}< ...]";
-
-            AddModification(patchInfo, Insert);
-
-            void Insert(ConfigCraftTable table)
+            protected override IEnumerable<CraftGroup> GetCollection(ConfigCraftTable config)
             {
-                var crafts = table.CraftBaseList.ToList();
-                var targetIndex = crafts.IndexOf(insertAt.ID);
-                crafts.Insert(targetIndex + indexDelta, toInsert.ID);
-                table.CraftBaseList = crafts.ToArray();
+                if (config.CraftBaseList.Length == 1 && config.CraftBaseList[0] == 0)
+                    return new CraftGroup[] { };
+
+                return config.CraftBaseList.Select(x => new CraftGroup(x));
+            }
+
+            protected override void SetCollection(ConfigCraftTable config, IEnumerable<CraftGroup> collection)
+            {
+                if (collection.Count() == 0)
+                {
+                    config.CraftBaseList = new int[] { 0 };
+                    return;
+                }
+
+                config.CraftBaseList = collection.Select(x => x.ID).ToArray();
             }
         }
+
+        public CraftsWrapper Crafts { get; }
+
+        internal CraftTable(string name, int id) : base(name, id)
+        {
+            Crafts = new CraftsWrapper(nameof(Crafts), this);
+        }       
     }
 }

@@ -49,7 +49,7 @@ namespace ScytheMod
 
                 var scytheGroup = new CraftGroup("Scythe", crafts);
                 CraftTable[] anvils = { CraftTableDB.CopperAnvil, CraftTableDB.IronAnvil, CraftTableDB.SilverAnvil, CraftTableDB.GoldenAnvil };
-                anvils.Do(a => a.Insert(scytheGroup, CraftGroupDB.Shovel, 1));
+                anvils.Do(a => a.Crafts.Insert(scytheGroup, CraftGroupDB.Shovel, InsertFlags.After));
 
                 scytheGroup.SetDefaultTranslation("Scythe", "An cutting-edge sharp tool which obviously your grass would not like to deal with.", "Materials: Metal Bar + Wood");
             }
