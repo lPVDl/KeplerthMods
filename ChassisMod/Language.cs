@@ -13,6 +13,7 @@ namespace ChassisMod
         public static IEnumerable<Language> All { get; } = new Language[]{ Russian, English, SimplifiedChinese };
 
         private static Regex BadCharacters { get; } = new Regex("[^a-zA-Z0-9]", RegexOptions.Compiled);
+        private static Regex FirstNumber { get; } = new Regex("^[0-9]{1,}", RegexOptions.Compiled);
         private static CultureInfo CultureUS { get; } = new CultureInfo("en-US", false);
 
         internal string Name { get; private set; }
@@ -20,8 +21,13 @@ namespace ChassisMod
 
         internal static string Normalize(string name)
         {
-            name = CultureUS.TextInfo.ToTitleCase(name);
-            return BadCharacters.Replace(name, "");
+            var normalized = CultureUS.TextInfo.ToTitleCase(name);
+            normalized = BadCharacters.Replace(normalized, "");
+            normalized = FirstNumber.Replace(normalized, "");
+
+            if (normalized == "") throw new System.FormatException($"'{name}' can not be used as entity name");
+
+            return normalized;
         }
 
         internal static string Normalize(int id)

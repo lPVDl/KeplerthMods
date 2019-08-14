@@ -25,7 +25,7 @@ namespace ChassisMod.Core.Data.Util
 
         static WebTranslator()
         {
-            Limiter = new RateLimiter(3000, 1);
+            Limiter = new RateLimiter(8000, 1);
             Cash = new Dictionary<int, Dictionary<string, string>>();
             CashPath = Path.Combine(Path.GetDirectoryName(Application.consoleLogPath), "WebTranslator.cash");
             if (File.Exists(CashPath))
