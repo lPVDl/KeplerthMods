@@ -88,8 +88,6 @@
     <Compile Include="Core\Data\ItemDataHelper.cs" />
     <Compile Include="Core\Data\LanguageDataHelper.cs" />
     <Compile Include="Core\Data\DataScanner.cs" />
-    <Compile Include="Core\DataModification.cs" />
-    <Compile Include="Core\DataReplacement.cs" />
     <Compile Include="Core\DataWrapper.cs" />
     <Compile Include="Core\LanguagePatcher.cs" />
     <Compile Include="Core\DataPatch.cs" />
