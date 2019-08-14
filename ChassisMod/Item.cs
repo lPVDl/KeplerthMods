@@ -14,10 +14,10 @@ namespace ChassisMod
         public Weapon Weapon { get; }
         public Food Food { get; }
 
-        public SerializedPropertyWrapper<string, Sprite, PropertyIdentity.ID0> Icon
+        public PropertyWrapper<Sprite, PropertyIdentity.ID0> Icon
         {
             get => this;
-            set => value.Patch(this, "Icon", x => x.DropTexture, (x, v) => x.DropTexture = v, x => CustomResources.Load<Sprite>(x), x => SpritePatcher.FindOrAdd(x));
+            set => value.Patch(this, "Icon", x => CustomResources.Load<Sprite>(x.DropTexture), (x, v) => x.DropTexture = SpritePatcher.FindOrAdd(v));
         }
 
         public PropertyWrapper<int, PropertyIdentity.ID1> Durability

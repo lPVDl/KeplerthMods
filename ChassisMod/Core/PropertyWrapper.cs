@@ -24,38 +24,6 @@ namespace ChassisMod.Core
                 }
             }
 
-            private sealed class WithModification : PropertyWrapper<TProperty, TPropertyID>
-            {
-                public Func<TProperty, TProperty> Modification { get; set; }
-
-                internal override void Patch(DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> get, Action<TConfig, TProperty> set)
-                {
-                    var patchInfo = $"{target}.{propertyName} = f(x)";
-                    target.AddModification(patchInfo, config =>
-                    {
-                        var value = get(config);
-                        value = Modification(value);
-                        set(config, value);
-                    });
-                }
-            }
-
-            private sealed class WithAction : PropertyWrapper<TProperty, TPropertyID>
-            {
-                public Action<TProperty> Action { get; set; }
-
-                internal override void Patch(DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> get, Action<TConfig, TProperty> set)
-                {
-                    var patchInfo = $"{target}.{propertyName} = f(x)";
-                    target.AddModification(patchInfo, config =>
-                    {
-                        var value = get(config);
-                        Action(value);
-                        set(config, value);
-                    });
-                }
-            }
-
             private sealed class WithData : PropertyWrapper<TProperty, TPropertyID>
             {
                 public TProperty Data { get; set; }
@@ -78,19 +46,9 @@ namespace ChassisMod.Core
                 return new WithData() { Data = data };
             }
 
-            public static implicit operator PropertyWrapper<TProperty, TPropertyID>(Func<TProperty, TProperty> modification)
-            {
-                return new WithModification() { Modification = modification ?? throw new ArgumentNullException("modification was null") };
-            }
-
             public static implicit operator PropertyWrapper<TProperty, TPropertyID>(DataWrapper<TConfig> source)
             {
                 return new WithSource() { Source = source ?? throw new ArgumentNullException("source was null") };
-            }
-
-            public static implicit operator PropertyWrapper<TProperty, TPropertyID>(Action<TProperty> action)
-            {
-                return new WithAction() { Action = action ?? throw new ArgumentNullException("action was null") };
             }
 
             internal abstract void Patch(DataWrapper<TConfig> target, string propertyName, Func<TConfig, TProperty> get, Action<TConfig, TProperty> set);
