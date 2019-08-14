@@ -29,7 +29,7 @@ namespace ChassisMod
         public PropertyWrapper<int, PropertyIdentity.ID2> Category
         {
             get => this;
-            set => value.Patch(this, "ItemType", x => x.ItemType, (x, v) => x.ItemType = Math.Max(v, 0));
+            set => value.Patch(this, "Category", x => x.ItemType, (x, v) => x.ItemType = Math.Max(v, 0));
         }
 
         public PropertyWrapper<int, PropertyIdentity.ID3> WallDamageBonus
