@@ -10,8 +10,9 @@ namespace ChassisMod.Core.Data
     internal static class LanguageDataHelper
     {
         internal static List<Dictionary<string, string>> Database { get; } = LoadDatabase();
-        internal static Dictionary<string, string> English { get; } = Database[1];
-        internal static Dictionary<string, string> Chinese { get; } = Database[0];
+
+        private static Dictionary<string, string> English { get; } = Database[1];
+        private static Dictionary<string, string> Chinese { get; } = Database[0];
 
         private static string[] DefaultText = { "English", "0", "", null };
 

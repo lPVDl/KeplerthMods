@@ -18,8 +18,8 @@ namespace ChassisMod.Core.Data
             try
             {
                 var item = Database[entityID];
-                var name = LanguageDataHelper.English[item.Name];
-                if (!LanguageDataHelper.IsDefault(name)) return Language.Normalize(name);
+
+                if (LanguageDataHelper.TryGetInEnglish(item.Name, out var name)) { return Language.Normalize(name); }
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 

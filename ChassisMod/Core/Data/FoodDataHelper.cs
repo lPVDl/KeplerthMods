@@ -17,9 +17,8 @@ namespace ChassisMod.Core.Data
             try
             {
                 var item = ItemDataHelper.Database[entityID];
-                var name = LanguageDataHelper.English[item.Name];
 
-                if (!LanguageDataHelper.IsDefault(name)) return Language.Normalize(name);
+                if (LanguageDataHelper.TryGetInEnglish(item.Name, out var name)) { return Language.Normalize(name); }
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 
@@ -33,8 +32,7 @@ namespace ChassisMod.Core.Data
                 var result = new List<string>();
                 var food = Database[entityID];
 
-                var info = LanguageDataHelper.English[food.EatBuffDescription];
-                if (!LanguageDataHelper.IsDefault(info)) { result.Add(info); }
+                if (LanguageDataHelper.TryGetInEnglish(food.EatBuffDescription, out var info)) { result.Add(info); }
 
                 var props = FormatUtil.GetPropertiesWithValues(food, nameof(food.EatBuffDescription));
                 result.AddRange(props);

@@ -17,8 +17,8 @@ namespace ChassisMod.Core.Data
             try
             {
                 var effect = Database[entityID];
-                var name = LanguageDataHelper.English[effect.Name];
-                if (!LanguageDataHelper.IsDefault(name)) return Language.Normalize(name);
+
+                if (LanguageDataHelper.TryGetInEnglish(effect.Name, out var name)) { return Language.Normalize(name); }
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 
@@ -32,8 +32,7 @@ namespace ChassisMod.Core.Data
                 var result = new List<string>();
                 var effect = Database[entityID];
 
-                var info = LanguageDataHelper.English[effect.Description];
-                if (!LanguageDataHelper.IsDefault(info)) result.Add(info);
+                if (LanguageDataHelper.TryGetInEnglish(effect.Description, out var info)) { result.Add(info); }
 
                 var props = FormatUtil.GetPropertiesWithValues(effect, nameof(effect.Name), nameof(effect.Description));
                 result.AddRange(props);
