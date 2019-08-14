@@ -90,6 +90,16 @@ namespace ChassisMod.Core
             DataPatcher.Add(patch);
         }
 
+        public override bool Equals(object obj)
+        {
+            if (obj == null || obj.GetType() != GetType())
+                return false;
+
+            return (obj as DataWrapper<TConfig>).ID == ID;
+        }
+
+        public override int GetHashCode() => ID;
+
         public override string ToString() => Name;
 
         private static string CreateFullName(string assemblyID, string name) => string.Join(".", typeof(TConfig).Name, assemblyID, name);
