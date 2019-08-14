@@ -2,9 +2,9 @@
 
 namespace ChassisMod.Core
 {
-    internal abstract class DataPatch
+    internal sealed class DataPatch
     {
-        public string Description { get; protected set; }
-        public Action PatchAction { get; protected set; }
+        public string Description { get; set; }
+        public Action PatchAction { get; set; }
     }
 }

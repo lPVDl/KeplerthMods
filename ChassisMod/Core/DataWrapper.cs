@@ -1,4 +1,6 @@
-﻿using ChassisMod.Core.Data;
+﻿using System.Collections.Generic;
+using ChassisMod.Core.Data;
+using Common.Reflection;
 using DataBase;
 using System;
 
@@ -62,13 +64,29 @@ namespace ChassisMod.Core
 
         internal void AddInstatiation(TConfig data, string dataInfo = "")
         {
-            var patch = new DataReplacement<TConfig>($"new {ToString()}({dataInfo})", ID, data);
+            var patch = new DataPatch()
+            {
+                Description = $"new {ToString()}({dataInfo})",
+                PatchAction = () =>
+                {
+                    var table = ReflectionHelper.GetStaticFieldValue<TConfig>("Table") as Dictionary<int, TConfig>;
+                    table[ID] = data;
+                }
+            };
             DataPatcher.Add(patch);
         }
 
         internal void AddModification(string description, Action<TConfig> modification)
         {
-            var patch = new DataModification<TConfig>(description, ID, modification);
+            var patch = new DataPatch()
+            {
+                Description = description,
+                PatchAction = () =>
+                {
+                    var table = ReflectionHelper.GetStaticFieldValue<TConfig>("Table") as Dictionary<int, TConfig>;
+                    modification(table[ID]);
+                }
+            };
             DataPatcher.Add(patch);
         }
 
