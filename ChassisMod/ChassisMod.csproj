@@ -103,6 +103,7 @@
     <Compile Include="KeplerthDatabase\StatusEffectDB.cs" />
     <Compile Include="KeplerthDatabase\WeaponDB.cs" />
     <Compile Include="StatusEffect.cs" />
+    <Compile Include="StatusEffect_Modifiers.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Craft.cs" />

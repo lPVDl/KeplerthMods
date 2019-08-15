@@ -60,7 +60,7 @@ namespace Common.Reflection
             return properties;
         }
 
-        /*public static object GetInstancePropertyValue<T>(this T obj, string propertyName)
+        public static object GetInstancePropertyValue<T>(this T obj, string propertyName)
         {
             var cash = Storage<T, PropertyInfo>.instanceItems;
             if (cash.TryGetValue(propertyName, out var property))
@@ -72,7 +72,7 @@ namespace Common.Reflection
                 cash[propertyName] = typeof(T).GetProperty(propertyName, instanceFlags);
                 return cash[propertyName].GetValue(obj);
             }
-        }*/
+        }
 
         public static object GetInstanceFieldValue<T>(this T obj, string fieldName)
         {
