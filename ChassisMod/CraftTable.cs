@@ -7,7 +7,7 @@ namespace ChassisMod
 {
     public sealed class CraftTable : DataWrapper<ConfigCraftTable>
     {
-        public sealed class CraftsWrapper : CollectionWrapper<CraftGroup, CraftGroup>
+        public sealed class CraftsWrapper : CollectionWrapper<CraftGroup>
         {
             internal CraftsWrapper(string name, CraftTable owner) : base(name, owner) { }
 

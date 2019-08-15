@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace ChassisMod.Core
 {
@@ -25,7 +23,7 @@ namespace ChassisMod.Core
                 if (!ValidateIdentifier(insertAt)) throw new ArgumentException("insertAt was invalid");
 
                 var patchInfo = $"{Owner}.{Name} = ";
-                if (delta == ChassisMod.InsertFlags.Before)
+                if (delta == InsertFlags.Before)
                     patchInfo += $"[... >{data}<, {insertAt} ...]";
                 else
                     patchInfo += $"[... {insertAt}, >{data}< ...]";
@@ -33,8 +31,22 @@ namespace ChassisMod.Core
                 Owner.AddModification(patchInfo, config =>
                 {
                     var cells = GetCollection(config).ToList();
-                    var target = cells.Find(x => GetIdentifier(x).Equals(insertAt));
-                    cells.Insert(cells.IndexOf(target) + (int)delta, data);
+                    var target = cells.FindIndex(x => GetIdentifier(x).Equals(insertAt));
+                    cells.Insert(target + (int)delta, data);
+                    SetCollection(config, cells);
+                });
+            }
+
+            public void Replace<T>(TData data) where T : TData
+            {
+                ValidateData(data);
+
+                var patchInfo = $"{Owner}.{Name}.Replace<{typeof(T)}>({data})";
+                Owner.AddModification(patchInfo, config => 
+                {
+                    var cells = GetCollection(config).ToList();
+                    var target = cells.FindIndex(x => x is T);
+                    cells[target] = data;
                     SetCollection(config, cells);
                 });
             }
@@ -43,16 +55,18 @@ namespace ChassisMod.Core
 
             protected virtual bool ValidateIdentifier(TDataIdentifier identifier) => identifier != null;
 
-            protected virtual TDataIdentifier GetIdentifier(TData data)
-            {
-                if (typeof(TData) == typeof(TDataIdentifier)) return data as TDataIdentifier;
-
-                throw new NotImplementedException($"{GetType()}({nameof(CollectionWrapper<TData, TDataIdentifier>)}.GetIdentifier() is not implemented");
-            }
+            protected abstract TDataIdentifier GetIdentifier(TData data);
 
             protected abstract IEnumerable<TData> GetCollection(TConfig config);
 
             protected abstract void SetCollection(TConfig config, IEnumerable<TData> collection);
+        }
+
+        public abstract class CollectionWrapper<TData> : CollectionWrapper<TData, TData> where TData : class
+        {
+            internal CollectionWrapper(string name, DataWrapper<TConfig> owner) : base(name, owner) { }
+
+            protected override TData GetIdentifier(TData data) => data;
         }
     }
 }

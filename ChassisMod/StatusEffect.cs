@@ -7,7 +7,16 @@ namespace ChassisMod
 {
     public sealed partial class StatusEffect : DataWrapper<ConfigBuff>
     {
-        internal StatusEffect(string name, int id) : base(name, id) { }
+        public sealed class ModifiersWrapper : CollectionWrapper<PropertyModifier>
+        {
+            internal ModifiersWrapper(string name, StatusEffect owner) : base(name, owner) { }
+
+            protected override IEnumerable<PropertyModifier> GetCollection(ConfigBuff config) => ReadModifiers(config);
+
+            protected override void SetCollection(ConfigBuff config, IEnumerable<PropertyModifier> collection) => WriteModifiers(config, collection);
+        }
+
+        public ModifiersWrapper Modifiers { get; }
 
         internal static PropertyModifier[] KnownModifiers { get; } = 
         {
@@ -52,6 +61,11 @@ namespace ChassisMod
             new RangedKnockback(0),
         };
 
+        internal StatusEffect(string name, int id) : base(name, id)
+        {
+            Modifiers = new ModifiersWrapper("Modifiers", this);
+        }
+
         internal static IEnumerable<PropertyModifier> ReadModifiers(ConfigBuff config)
         {
             var result = new List<PropertyModifier>();
@@ -61,6 +75,22 @@ namespace ChassisMod
             if (config.EffectId2 != 0) { result.Add(CreateModifier(config.Target2, config.EffectValue2)); }
 
             return result;
+        }
+
+        internal static void WriteModifiers(ConfigBuff config, IEnumerable<PropertyModifier> modifiers)
+        {
+            var mods = modifiers.ToList();
+
+            if (mods.Count > 3) throw new System.ArgumentException("Can not set more than 3 modifiers.");
+            
+            if (mods.Count > 0) { config.EffectId0 = 1; config.Target0 = mods[0].Name; config.EffectValue0 = mods[0].Value; }
+            else { config.EffectId0 = 0; config.Target0 = ""; config.EffectValue0 = 0; }
+
+            if (mods.Count > 1) { config.EffectId1 = 1; config.Target1 = mods[1].Name; config.EffectValue1 = mods[1].Value; }
+            else { config.EffectId1 = 0; config.Target1 = ""; config.EffectValue1 = 0; }
+
+            if (mods.Count > 2) { config.EffectId2 = 1; config.Target2 = mods[2].Name; config.EffectValue2 = mods[2].Value; }
+            else { config.EffectId2 = 0; config.Target2 = ""; config.EffectValue2 = 0; }
         }
 
         private static PropertyModifier CreateModifier(string propertyName, float propertyValue)
