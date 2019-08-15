@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using ChassisMod.Core.Data.Util;
+using System.Linq;
 using DataBase;
 using System;
 using Common;
@@ -34,8 +35,12 @@ namespace ChassisMod.Core.Data
 
                 if (LanguageDataHelper.TryGetInEnglish(effect.Description, out var info)) { result.Add(info); }
 
-                var props = FormatUtil.GetPropertiesWithValues(effect, nameof(effect.Name), nameof(effect.Description));
-                result.AddRange(props);
+                var modifiers = StatusEffect.ReadModifiers(effect).Select(x => x.ToString());
+
+                if (modifiers.Count() > 0) result.Add($"Modifiers: [ {string.Join(", ", modifiers)} ]");
+
+                result.Add($"Tier: {effect.Level}");
+                result.Add($"Duration: {(effect.DurationTime != -1 ? effect.DurationTime + "s" : "∞")}");
 
                 return result;
                         
