@@ -69,6 +69,7 @@
     <Compile Include="Core\Data\Util\RateLimiter.cs" />
     <Compile Include="Core\Data\Util\WebTranslator.cs" />
     <Compile Include="Core\Data\WeaponDataHelper.cs" />
+    <Compile Include="Core\SmartProperty.cs" />
     <Compile Include="InsertFlags.cs" />
     <Compile Include="Food.cs" />
     <Compile Include="Core\PropertyIdentity.cs" />

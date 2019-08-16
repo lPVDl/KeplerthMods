@@ -8,10 +8,11 @@ namespace ChassisMod.Core
 {
     public abstract partial class DataWrapper<TConfig> where TConfig: DBBase
     {
-        protected static int[] EmptyArray = new int[] { 0 };
+        internal static Dictionary<int, TConfig> Table => ReflectionHelper.GetStaticFieldValue<TConfig>("Table") as Dictionary<int, TConfig>;
+
+        internal TConfig Config => Table[ID];
 
         public int ID { get; private set; }
-
         internal string AssemblyID { get; private set; }
         internal string Name { get; private set; }
         internal string FullName { get; private set; }
@@ -79,8 +80,7 @@ namespace ChassisMod.Core
                 Description = $"new {ToString()}({dataInfo})",
                 PatchAction = () =>
                 {
-                    var table = ReflectionHelper.GetStaticFieldValue<TConfig>("Table") as Dictionary<int, TConfig>;
-                    table[ID] = data;
+                    Table[ID] = data;
                 }
             };
             DataPatcher.Add(patch);
@@ -93,8 +93,7 @@ namespace ChassisMod.Core
                 Description = description,
                 PatchAction = () =>
                 {
-                    var table = ReflectionHelper.GetStaticFieldValue<TConfig>("Table") as Dictionary<int, TConfig>;
-                    modification(table[ID]);
+                    modification(Table[ID]);
                 }
             };
             DataPatcher.Add(patch);

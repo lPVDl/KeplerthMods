@@ -16,6 +16,11 @@ namespace ChassisMod.Core
             patches.Add(patch);
         }
 
+        public static void Add(Action patch, string description)
+        {
+            patches.Add(new DataPatch() { PatchAction = patch, Description = description });
+        }
+
         private static void Postfix()
         {
             foreach(var patch in patches)

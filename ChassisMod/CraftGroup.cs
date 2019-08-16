@@ -14,7 +14,7 @@ namespace ChassisMod
 
             var data = new ConfigCraftBase()
             {
-                CraftCellList = (crafts.Length == 0) ? EmptyArray : Array.ConvertAll(crafts, x => x.ID),
+                CraftCellList = (crafts.Length == 0) ? new int[] { 0 } : Array.ConvertAll(crafts, x => x.ID),
                 Name = "CraftBaseName" + ID,
                 Tips = "CraftBaseTips" + ID,
                 Introduce = "CraftBaseIntroduce" + ID
