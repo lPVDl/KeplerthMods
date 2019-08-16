@@ -2,22 +2,22 @@
 
 namespace ChassisMod
 {
-    partial class StatusEffect
+    partial class Effect
     {
-        public class PropertyModifier
+        public class Modifier
         {
             internal string Name { get; set; }
             internal float Value { get; set; }
 
-            internal PropertyModifier() { }
-            internal PropertyModifier Clone() => MemberwiseClone() as PropertyModifier;
+            internal Modifier() { }
+            internal Modifier Clone() => MemberwiseClone() as Modifier;
 
             public override string ToString() => $"{Value} {Name}";
         }
 
-        public sealed class HealthGenerationModifier : PropertyModifier
+        public sealed class HealthGenerationMod : Modifier
         {
-            public HealthGenerationModifier(float healthPerSecond)
+            public HealthGenerationMod(float healthPerSecond)
             {
                 Name = "Hp";
                 Value = healthPerSecond * 10000;
@@ -26,130 +26,131 @@ namespace ChassisMod
             public override string ToString() => $"{(Value > 0 ? "+" : "")}{Value / 100} HP/s";
         }
 
-        public abstract class PropertyMultiplier : PropertyModifier
+        public abstract class Multiplier : Modifier
         {
-            internal PropertyMultiplier(float multiplier)
+            internal Multiplier(float multiplier)
             {
-                if (multiplier < 0) throw new ArgumentException("multiplier must be greater than zero");
-                Value = multiplier - 1;
+                if (multiplier < -1) throw new ArgumentException("multiplier must be greater than -1");
+
+                Value = multiplier;
             }
         }
 
-        public sealed class MovementSpeedMultiplier : PropertyMultiplier
+        public sealed class MovementSpeedMul : Multiplier
         {
-            public MovementSpeedMultiplier(float multiplier) : base(multiplier) => Name = "MoveSpeedMultiplierVaule";
+            public MovementSpeedMul(float multiplier) : base(multiplier) => Name = "MoveSpeedMultiplierVaule";
 
             public override string ToString() => FormatMultiplier(Value) + " MovementSpeed";
         }
 
-        public sealed class AttackSpeedMultiplier : PropertyMultiplier
+        public sealed class AttackSpeedMul : Multiplier
         {
-            public AttackSpeedMultiplier(float multiplier) : base(multiplier) => Name = "AttackSpeedMultiplierVaule";
+            public AttackSpeedMul(float multiplier) : base(multiplier) => Name = "AttackSpeedMultiplierVaule";
 
             public override string ToString() =>  FormatMultiplier(Value) + " AttackSpeed";
         }
 
-        public sealed class HungerSpeedMultiplier : PropertyMultiplier
+        public sealed class HungerSpeedMul : Multiplier
         {
-            public HungerSpeedMultiplier(float multiplier) : base(multiplier) => Name = "HungerDecMultiplierVaule";
+            public HungerSpeedMul(float multiplier) : base(multiplier) => Name = "HungerDecMultiplierVaule";
 
             public override string ToString() => FormatMultiplier(Value) + " HungerSpeed";
         }
 
-        public sealed class GatheringSpeedMultiplier : PropertyMultiplier
+        public sealed class GatheringSpeedMul : Multiplier
         {
-            public GatheringSpeedMultiplier(float multiplier) : base(multiplier) => Name = "GatheringSpeed2";
+            public GatheringSpeedMul(float multiplier) : base(multiplier) => Name = "GatheringSpeed2";
 
             public override string ToString() => FormatMultiplier(Value) + " GatheringSpeed";
         }
 
-        public sealed class EatingSpeedMultiplier : PropertyMultiplier
+        public sealed class EatingSpeedMul : Multiplier
         {
-            public EatingSpeedMultiplier(float multiplier) : base(multiplier) => Name = "EatingSpeed2";
+            public EatingSpeedMul(float multiplier) : base(multiplier) => Name = "EatingSpeed2";
 
             public override string ToString() => FormatMultiplier(Value) + " EatingSpeed";
         }
 
-        public sealed class AttackMultiplier : PropertyMultiplier
+        public sealed class AttackMul : Multiplier
         {
-            public AttackMultiplier(float multiplier) : base(multiplier) => Name = "AttackMultiplierVaule";
+            public AttackMul(float multiplier) : base(multiplier) => Name = "AttackMultiplierVaule";
 
             public override string ToString() => FormatMultiplier(Value) + " Attack";
         }
 
-        public sealed class DefenceMultiplier : PropertyMultiplier
+        public sealed class DefenceMul : Multiplier
         {
-            public DefenceMultiplier(float multiplier) : base(multiplier) => Name = "DefenceMultiplierVaule";
+            public DefenceMul(float multiplier) : base(multiplier) => Name = "DefenceMultiplierVaule";
 
             public override string ToString() => FormatMultiplier(Value) + " Defence";
         }
 
-        public sealed class EquipmentWearSpeedMultiplier : PropertyMultiplier
+        public sealed class EquipmentWearSpeedMul : Multiplier
         {
-            public EquipmentWearSpeedMultiplier(float multiplier) : base(multiplier) => Name = "EquipmentDecDurability";
+            public EquipmentWearSpeedMul(float multiplier) : base(multiplier) => Name = "EquipmentDecDurability";
 
             public override string ToString() => FormatMultiplier(Value) + " EquipmentWearSpeed";
         }
 
-        public sealed class ArmorWearSpeedMultiplier : PropertyMultiplier
+        public sealed class ArmorWearSpeedMul : Multiplier
         {
-            public ArmorWearSpeedMultiplier(float multiplier) : base(multiplier) => Name = "ArmourDecDurability";
+            public ArmorWearSpeedMul(float multiplier) : base(multiplier) => Name = "ArmourDecDurability";
 
             public override string ToString() => FormatMultiplier(Value) + " ArmorWearSpeed";
         }
 
-        public sealed class ShoesWearSpeedMultiplier : PropertyMultiplier
+        public sealed class ShoesWearSpeedMul : Multiplier
         {
-            public ShoesWearSpeedMultiplier(float multiplier) : base(multiplier) => Name = "ShoesDecDurability";
+            public ShoesWearSpeedMul(float multiplier) : base(multiplier) => Name = "ShoesDecDurability";
 
             public override string ToString() => FormatMultiplier(Value) + " ShoesWearSpeed";
         }
 
-        public sealed class GlovesWearSpeedMultiplier : PropertyMultiplier
+        public sealed class GlovesWearSpeedMul : Multiplier
         {
-            public GlovesWearSpeedMultiplier(float multiplier) : base(multiplier) => Name = "HandDecDurability";
+            public GlovesWearSpeedMul(float multiplier) : base(multiplier) => Name = "HandDecDurability";
 
             public override string ToString() => FormatMultiplier(Value) + " GlovesWearSpeed";
         }
 
-        public sealed class AxeSpeedMultiplier : PropertyMultiplier
+        public sealed class AxeSwingSpeedMul : Multiplier
         {
-            public AxeSpeedMultiplier(float multiplier) : base(multiplier) => Name = "AxeAttackSpeedMultiplierVaule";
+            public AxeSwingSpeedMul(float multiplier) : base(multiplier) => Name = "AxeAttackSpeedMultiplierVaule";
 
             public override string ToString() => FormatMultiplier(Value) + " AxeSpeed";
         }
 
-        public sealed class PickaxeSpeedMultiplier : PropertyMultiplier
+        public sealed class PickaxeSwingSpeedMul : Multiplier
         {
-            public PickaxeSpeedMultiplier(float multiplier) : base(multiplier) => Name = "PickaxeAttackSpeedMultiplierVaule";
+            public PickaxeSwingSpeedMul(float multiplier) : base(multiplier) => Name = "PickaxeAttackSpeedMultiplierVaule";
 
             public override string ToString() => FormatMultiplier(Value) + " PickaxeSpeed";
         }
 
-        public sealed class WeaponWearSpeedMultiplier : PropertyMultiplier
+        public sealed class WeaponWearSpeedMul : Multiplier
         {
-            public WeaponWearSpeedMultiplier(float multiplier) : base(multiplier) => Name = "WeaponDecDurability";
+            public WeaponWearSpeedMul(float multiplier) : base(multiplier) => Name = "WeaponDecDurability";
 
             public override string ToString() => FormatMultiplier(Value) + " WeaponWearSpeed";
         }
 
-        public sealed class LootDropMultiplier : PropertyMultiplier
+        public sealed class LootDropAmountMul : Multiplier
         {
-            public LootDropMultiplier(float multiplier) : base(multiplier) => Name = "MoreDropFromMonster";
+            public LootDropAmountMul(float multiplier) : base(multiplier) => Name = "MoreDropFromMonster";
 
             public override string ToString() => FormatMultiplier(Value) + " LootDrop";
         }
 
-        public sealed class OreDropMultiplier : PropertyMultiplier
+        public sealed class OreDropAmountMul : Multiplier
         {
-            public OreDropMultiplier(float multiplier) : base(multiplier) => Name = "MoreDropFromMine";
+            public OreDropAmountMul(float multiplier) : base(multiplier) => Name = "MoreDropFromMine";
 
             public override string ToString() => FormatMultiplier(Value) + " OreDrop";
         }     
 
-        public sealed class AttackModifier : PropertyModifier
+        public sealed class AttackMod : Modifier
         {
-            public AttackModifier(int modifier)
+            public AttackMod(int modifier)
             {
                 Name = "AttackAddValue";
                 Value = modifier;
@@ -158,9 +159,9 @@ namespace ChassisMod
             public override string ToString() => FormatModifier(Value) + " Attack";
         }
 
-        public sealed class DefenceModifier : PropertyModifier
+        public sealed class DefenceMod : Modifier
         {
-            public DefenceModifier(int modifier)
+            public DefenceMod(int modifier)
             {
                 Name = "DefenceAddValue";
                 Value = modifier;
@@ -169,9 +170,9 @@ namespace ChassisMod
             public override string ToString() => FormatModifier(Value) + " Defence";
         }
 
-        public sealed class BuildRangeModifier : PropertyModifier
+        public sealed class BuildRangeMod : Modifier
         {
-            public BuildRangeModifier(float modifier)
+            public BuildRangeMod(float modifier)
             {
                 Name = "PlacedDistance";
                 Value = modifier;
@@ -180,72 +181,72 @@ namespace ChassisMod
             public override string ToString() => FormatModifier(Value) + " BuildRange";
         }       
 
-        public abstract class RateModifier : PropertyModifier
+        public abstract class Rate : Modifier
         {
-            internal RateModifier(float rate)
+            internal Rate(float rate)
             {
                 if (rate < 0 || rate > 1) throw new ArgumentException("rate must be in range [0, 1]");
                 Value = rate;
             }
         }
 
-        public sealed class IgnoreDefence : RateModifier
+        public sealed class IgnoreDefence : Rate
         {
             public IgnoreDefence(float rate) : base(rate) => Name = "IgnoreDefence";
 
             public override string ToString() => $"{Value * 100}% IgnoreDefence";
         }
 
-        public sealed class DamageResistance: RateModifier
+        public sealed class DamageResistance: Rate
         {
             public DamageResistance(float rate) : base(rate) => Name = "ExDamageResistance";
 
             public override string ToString() => $"{Value * 100}% DamageResistance";
         }
 
-        public sealed class ExplosiveDamageResistance : RateModifier
+        public sealed class ExplosiveDamageResistance : Rate
         {
             public ExplosiveDamageResistance(float rate) : base(rate) => Name = "ExploedProtect";
 
             public override string ToString() => $"{Value * 100}% ExplosiveDamageResistance";
         }
 
-        public sealed class RangeDamageResistance : RateModifier
+        public sealed class RangeDamageResistance : Rate
         {
             public RangeDamageResistance(float rate) : base(rate) => Name = "RemoteProtect";
 
             public override string ToString() => $"{Value * 100}% RangeDamageResistance";
         }
 
-        public sealed class TrapDamageResistance : RateModifier
+        public sealed class TrapDamageResistance : Rate
         {
             public TrapDamageResistance(float rate) : base(rate) => Name = "TrapProtect";
 
             public override string ToString() => $"{Value * 100}% TrapDamageResistance";
         }
 
-        public sealed class KnockbackResistance : RateModifier
+        public sealed class KnockbackResistance : Rate
         {
             public KnockbackResistance(float rate) : base(rate) => Name = "ExResKnockBack";
 
             public override string ToString() => $"{Value * 100}% KnockbackResistance";
         }
 
-        public sealed class PenetrationChance : RateModifier
+        public sealed class PenetrationChance : Rate
         {
             public PenetrationChance(float rate) : base(rate) => Name = "ExPenetrate";
 
             public override string ToString() => $"{Value * 100}% PenetrationChance";
         }
 
-        public sealed class AmmoSaveChance : RateModifier
+        public sealed class AmmoSaveChance : Rate
         {
             public AmmoSaveChance(float rate) : base(rate) => Name = "SaveBulletRate";
 
             public override string ToString() => $"{Value * 100}% AmmoSaveChance";
         }
 
-        public sealed class HungerChange : PropertyModifier
+        public sealed class HungerChange : Modifier
         {
             public HungerChange(int delta)
             {
@@ -256,106 +257,75 @@ namespace ChassisMod
             public override string ToString() => $"Hunger {(Value >= 0 ? "+" : "-")}= {Math.Abs(Value)}";
         }
 
-        public sealed class Stunned : PropertyModifier
+        public abstract class Special : Modifier
         {
-            public Stunned()
-            {
-                Name = "Stun";
-                Value = 1;
-            }
+            internal Special() => Value = 1;
+        }
+
+        public sealed class Stunned : Special
+        {
+            public Stunned() => Name = "Stun";
 
             public override string ToString() => "Stunned";
         }
 
-        public sealed class Stuck : PropertyModifier
+        public sealed class Stuck : Special
         {
-            public Stuck()
-            {
-                Name = "Freeze";
-                Value = 1;
-            }
+            public Stuck() => Name = "Freeze";
 
             public override string ToString() => "Stuck";
         }
 
-        public sealed class LightOrb : PropertyModifier
+        public sealed class LightOrb : Special
         {
-            public LightOrb()
-            {
-                Name = "PlayerInfo.FlyLight";
-                Value = 1;
-            }
+            public LightOrb() => Name = "PlayerInfo.FlyLight";
 
             public override string ToString() => "LightOrb";
         }
 
-        public sealed class Vampirism : PropertyModifier
+        public sealed class Vampirism : Special
         {
-            public Vampirism()
-            {
-                Name = "PlayerInfo.EatBody";
-                Value = 1;
-            }
+            public Vampirism() => Name = "PlayerInfo.EatBody";
 
             public override string ToString() => "Vampirism";
         }
 
-        public sealed class FlashLight : PropertyModifier
+        public sealed class FlashLight : Special
         {
-            public FlashLight()
-            {
-                Name = "PlayerInfo.FlashLight";
-                Value = 1;
-            }
+            public FlashLight() => Name = "PlayerInfo.FlashLight";
 
             public override string ToString() => "Flashlight";
         }
 
-        public sealed class PoisonOrb : PropertyModifier
+        public sealed class PoisonOrb : Special
         {
-            public PoisonOrb()
-            {
-                Name = "PlayerInfo.PosionPet";
-                Value = 1;
-            }
+            public PoisonOrb() => Name = "PlayerInfo.PosionPet";
 
             public override string ToString() => "PoisonOrb";
         }
 
-        public sealed class MetalDetector : PropertyModifier
+        public sealed class MetalDetector : Special
         {
-            public MetalDetector()
-            {
-                Name = "PlayerInfo.MineLight";
-                Value = 1;
-            }
+            public MetalDetector() => Name = "PlayerInfo.MineLight";
 
             public override string ToString() => "MetalDetector";
         }
 
-        public sealed class AmberShield : PropertyModifier
+        public sealed class AmberShield : Special
         {
-            public AmberShield()
-            {
-                Name = "AmberShield";
-                Value = 1;
-            }
+            public AmberShield() => Name = "AmberShield";
 
             public override string ToString() => "AmberShield";
         }
 
-        public sealed class CollectorDrone : PropertyModifier
+        public sealed class CollectorDrone : Special
         {
-            public CollectorDrone()
-            {
-                Name = "PlayerInfo.CollectionDrone";
-                Value = 1;
-            }
+            public CollectorDrone() => Name = "PlayerInfo.CollectionDrone";
 
             public override string ToString() => "CollectorDrone";
         }
 
-        public sealed class RangedKnockback : PropertyModifier
+        public sealed class RangedKnockback : Modifier
         {
             public RangedKnockback(int amount)
             {

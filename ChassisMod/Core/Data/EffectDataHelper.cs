@@ -7,11 +7,11 @@ using Common;
 
 namespace ChassisMod.Core.Data
 {
-    internal sealed class StatusEffectDataHelper : DataHelper<ConfigBuff>
+    internal sealed class EffectDataHelper : DataHelper<ConfigBuff>
     {
-        public static StatusEffectDataHelper Instance { get; } = new StatusEffectDataHelper();
+        public static EffectDataHelper Instance { get; } = new EffectDataHelper();
 
-        private StatusEffectDataHelper() { }
+        private EffectDataHelper() { }
 
         public override string NameFor(int entityID)
         {
@@ -35,7 +35,7 @@ namespace ChassisMod.Core.Data
 
                 if (LanguageDataHelper.TryGetInEnglish(effect.Description, out var info)) { result.Add(info); }
 
-                var modifiers = StatusEffect.ReadModifiers(effect).Select(x => x.ToString());
+                var modifiers = Effect.ReadModifiers(effect).Select(x => x.ToString());
 
                 if (modifiers.Count() > 0) result.Add($"Modifiers: [ {string.Join(", ", modifiers)} ]");
 

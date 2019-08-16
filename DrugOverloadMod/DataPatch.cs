@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ChassisMod.KeplerthDatabase;
+using ChassisMod;
 using Keplerth;
 using Common;
-using ChassisMod;
-using ChassisMod.KeplerthDatabase;
+using System;
 
 namespace DrugOverloadMod
 {
@@ -17,9 +13,9 @@ namespace DrugOverloadMod
         {
             try
             {
-                StatusEffectDB.SpeedIII.Modifiers.Replace<StatusEffect.MovementSpeedMultiplier>(new StatusEffect.MovementSpeedMultiplier(3));
+                EffectDB.SpeedIII.Modifiers.Replace<Effect.MovementSpeedMul>(new Effect.MovementSpeedMul(2));
             }
-            catch(Exception e) { Log.Exception(e); }
+            catch (Exception e) { Log.Exception(e); }
         }
     }
 }

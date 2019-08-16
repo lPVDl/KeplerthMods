@@ -37,13 +37,13 @@ namespace ChassisMod.Core.Data
 
                 if (food.Buff.Length > 0 && food.Buff[0] != 0)
                 {
-                    var effects = food.Buff.Select(x => StatusEffectDataHelper.Instance.NameFor(x));
+                    var effects = food.Buff.Select(x => EffectDataHelper.Instance.NameFor(x));
                     result.Add($"Effect: [ {string.Join(", ", effects)} ]");
                 }
 
                 if (food.BuffRandomOne.Length > 0 && food.BuffRandomOne[0] != 0 && food.RandomTimes > 0)
                 {
-                    var effects = food.BuffRandomOne.Select(x => StatusEffectDataHelper.Instance.NameFor(x));
+                    var effects = food.BuffRandomOne.Select(x => EffectDataHelper.Instance.NameFor(x));
                     result.Add($"RandomEffect: {food.RandomTimes} -> [ {string.Join(", ", effects)} ]");
                 }
 
