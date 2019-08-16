@@ -33,7 +33,7 @@ namespace ChassisMod.Core.Data
                 var result = new List<string>();
                 var food = Database[entityID];
 
-                if (LanguageDataHelper.TryGetInEnglish(food.EatBuffDescription, out var info)) { result.Add(info); }
+                if (LanguageDataHelper.TryGetInEnglish(food.EatBuffDescription, out var info)) { result.Add($"Description: \"{info}\""); }
 
                 if (food.Buff.Length > 0 && food.Buff[0] != 0)
                 {

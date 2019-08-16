@@ -25,7 +25,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food CompressedCookie { get; } = new Food("CompressedCookie", 3);
 		/// <summary>
-		/// Use: restore 1 HP for every second, lasts for 10 seconds.<para/>
+		/// Description: "Use: restore 1 HP for every second, lasts for 10 seconds."<para/>
 		/// Effect: [ Recovery ]<para/>
 		/// PlayerHealth: 10%<para/>
 		/// PlayerSatiety: 1%<para/>
@@ -35,7 +35,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food Nectar { get; } = new Food("Nectar", 4);
 		/// <summary>
-		/// Use: Get one of the mutated effects.<para/>
+		/// Description: "Use: Get one of the mutated effects."<para/>
 		/// RandomEffect: 1 -> [ MutatedLeg, MutatedArm, MutatedSkin ]<para/>
 		/// PlayerSatiety: 10%<para/>
 		/// MinionSatiety: 30%<para/>
@@ -85,7 +85,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food VenomSac { get; } = new Food("VenomSac", 12);
 		/// <summary>
-		/// Use: walking speed decrease by 25%, lasts for 1 minitue<para/>
+		/// Description: "Use: walking speed decrease by 25%, lasts for 1 minitue"<para/>
 		/// Effect: [ Nausea ]<para/>
 		/// PlayerSatiety: 10%<para/>
 		/// MinionSatiety: 30%<para/>
@@ -99,7 +99,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food Jerky { get; } = new Food("Jerky", 17);
 		/// <summary>
-		/// Use: after using this,the stinky smell on you will attract the Boar King!<para/>
+		/// Description: "Use: after using this,the stinky smell on you will attract the Boar King!"<para/>
 		/// PlayerHealth: 10%<para/>
 		/// PlayerSatiety: 5%<para/>
 		/// MinionHealth: 30%<para/>
@@ -109,31 +109,31 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food WildBoarGlands { get; } = new Food("WildBoarGlands", 18);
 		/// <summary>
-		/// Use: attract chickens around you, lasts for 30 seconds.<para/>
+		/// Description: "Use: attract chickens around you, lasts for 30 seconds."<para/>
 		/// Effect: [ PheromonesChicken ]<para/>
 		/// BreedingSatiety: 1u<para/>
 		/// </summary>
 		public static Food PheromonesChicken { get; } = new Food("PheromonesChicken", 19);
 		/// <summary>
-		/// Use: attract goats around you, lasts for 30 seconds.<para/>
+		/// Description: "Use: attract goats around you, lasts for 30 seconds."<para/>
 		/// Effect: [ PheromonesGoat ]<para/>
 		/// BreedingSatiety: 1u<para/>
 		/// </summary>
 		public static Food PheromonesGoat { get; } = new Food("PheromonesGoat", 20);
 		/// <summary>
-		/// Use: attract pigs around you, lasts for 30 seconds.<para/>
+		/// Description: "Use: attract pigs around you, lasts for 30 seconds."<para/>
 		/// Effect: [ PheromonesPig ]<para/>
 		/// BreedingSatiety: 1u<para/>
 		/// </summary>
 		public static Food PheromonesPig { get; } = new Food("PheromonesPig", 21);
 		/// <summary>
-		/// Use: attract cows around you, lasts for 30 seconds.<para/>
+		/// Description: "Use: attract cows around you, lasts for 30 seconds."<para/>
 		/// Effect: [ PheromonesCow ]<para/>
 		/// BreedingSatiety: 1u<para/>
 		/// </summary>
 		public static Food PheromonesCow { get; } = new Food("PheromonesCow", 22);
 		/// <summary>
-		/// Use: attract horses around you, lasts for 30 seconds.<para/>
+		/// Description: "Use: attract horses around you, lasts for 30 seconds."<para/>
 		/// Effect: [ PheromonesHorse ]<para/>
 		/// BreedingSatiety: 1u<para/>
 		/// </summary>
@@ -224,17 +224,17 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food RecoveryAgentV { get; } = new Food("RecoveryAgentV", 615);
 		/// <summary>
-		/// Use: increase attack speed and walking speed by 20%, hunger speed will also be increased. Lasts for 1 minitue.<para/>
+		/// Description: "Use: increase attack speed and walking speed by 20%, hunger speed will also be increased. Lasts for 1 minitue."<para/>
 		/// Effect: [ StimulantsI ]<para/>
 		/// </summary>
 		public static Food StimulantsI { get; } = new Food("StimulantsI", 616);
 		/// <summary>
-		/// Use: increase attack speed and walking speed by 40% , hunger speed will also be substantially increased. Lasts for 1 minute.<para/>
+		/// Description: "Use: increase attack speed and walking speed by 40% , hunger speed will also be substantially increased. Lasts for 1 minute."<para/>
 		/// Effect: [ StimulantsII ]<para/>
 		/// </summary>
 		public static Food StimulantsII { get; } = new Food("StimulantsII", 617);
 		/// <summary>
-		/// Use: increase attack speed and walking speed by 60%, lasts for 1 minute. Satiety will be decreased to 0 once the effect is over.<para/>
+		/// Description: "Use: increase attack speed and walking speed by 60%, lasts for 1 minute. Satiety will be decreased to 0 once the effect is over."<para/>
 		/// Effect: [ StimulantsIII ]<para/>
 		/// </summary>
 		public static Food StimulantsIII { get; } = new Food("StimulantsIII", 618);
@@ -265,125 +265,125 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food XXMedicine1 { get; } = new Food("XXMedicine1", 625);
 		/// <summary>
-		/// Use: increase attack by 2 points, lasts for 10 minutes.<para/>
+		/// Description: "Use: increase attack by 2 points, lasts for 10 minutes."<para/>
 		/// Effect: [ StrengthI ]<para/>
 		/// </summary>
 		public static Food DamagedATKCapsule { get; } = new Food("DamagedATKCapsule", 626);
 		/// <summary>
-		/// Use: increase attack by 3 points, lasts for 10 minutes.<para/>
+		/// Description: "Use: increase attack by 3 points, lasts for 10 minutes."<para/>
 		/// Effect: [ StrengthII ]<para/>
 		/// </summary>
 		public static Food ExpiredATKCapsule { get; } = new Food("ExpiredATKCapsule", 627);
 		/// <summary>
-		/// Use: increase attack by 4 points, lasts for 10 minutes.<para/>
+		/// Description: "Use: increase attack by 4 points, lasts for 10 minutes."<para/>
 		/// Effect: [ StrengthIII ]<para/>
 		/// </summary>
 		public static Food ATKCapsule { get; } = new Food("ATKCapsule", 628);
 		/// <summary>
-		/// Use: increase attack by 6 points, lasts for 10 minutes.<para/>
+		/// Description: "Use: increase attack by 6 points, lasts for 10 minutes."<para/>
 		/// Effect: [ StrengthIV ]<para/>
 		/// </summary>
 		public static Food ATKCapsuleExtra { get; } = new Food("ATKCapsuleExtra", 629);
 		/// <summary>
-		/// Use: increase attack by 9 points, lasts for 10 minutes.<para/>
+		/// Description: "Use: increase attack by 9 points, lasts for 10 minutes."<para/>
 		/// Effect: [ StrengthV ]<para/>
 		/// </summary>
 		public static Food ATKCapsuleExtraAdvance { get; } = new Food("ATKCapsuleExtraAdvance", 630);
 		/// <summary>
-		/// Use: increase defense by 3 points, lasts for 10 minutes.<para/>
+		/// Description: "Use: increase defense by 3 points, lasts for 10 minutes."<para/>
 		/// Effect: [ EnduranceI ]<para/>
 		/// </summary>
 		public static Food DamagedDEFCapsule { get; } = new Food("DamagedDEFCapsule", 631);
 		/// <summary>
-		/// Use: increase defense by 5 points, lasts for 10 minutes.<para/>
+		/// Description: "Use: increase defense by 5 points, lasts for 10 minutes."<para/>
 		/// Effect: [ EnduranceII ]<para/>
 		/// </summary>
 		public static Food ExpiredDEFCapsule { get; } = new Food("ExpiredDEFCapsule", 632);
 		/// <summary>
-		/// Use: increase defense by 8 points, lasts for 10 minutes.<para/>
+		/// Description: "Use: increase defense by 8 points, lasts for 10 minutes."<para/>
 		/// Effect: [ EnduranceIII ]<para/>
 		/// </summary>
 		public static Food DEFCapsule { get; } = new Food("DEFCapsule", 633);
 		/// <summary>
-		/// Use: increase defense by 12 points, lasts for 10 minutes.<para/>
+		/// Description: "Use: increase defense by 12 points, lasts for 10 minutes."<para/>
 		/// Effect: [ EnduranceIV ]<para/>
 		/// </summary>
 		public static Food DEFCapsuleExtra { get; } = new Food("DEFCapsuleExtra", 634);
 		/// <summary>
-		/// Use: increase defense by 19 points, lasts for 10 minutes.<para/>
+		/// Description: "Use: increase defense by 19 points, lasts for 10 minutes."<para/>
 		/// Effect: [ EnduranceV ]<para/>
 		/// </summary>
 		public static Food DEFCapsuleExtraAdvance { get; } = new Food("DEFCapsuleExtraAdvance", 635);
 		/// <summary>
-		/// Use: increase walking speed by 10%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken.<para/>
+		/// Description: "Use: increase walking speed by 10%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken."<para/>
 		/// Effect: [ SpeedI ]<para/>
 		/// </summary>
 		public static Food DamagedAGLPotion { get; } = new Food("DamagedAGLPotion", 636);
 		/// <summary>
-		/// Use: increase walking speed by 15%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken.<para/>
+		/// Description: "Use: increase walking speed by 15%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken."<para/>
 		/// Effect: [ SpeedII ]<para/>
 		/// </summary>
 		public static Food ExpiredAGLPotion { get; } = new Food("ExpiredAGLPotion", 637);
 		/// <summary>
-		/// Use: increase walking speed by 20%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken.<para/>
+		/// Description: "Use: increase walking speed by 20%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken."<para/>
 		/// Effect: [ SpeedIII ]<para/>
 		/// </summary>
 		public static Food AGLPotion { get; } = new Food("AGLPotion", 638);
 		/// <summary>
-		/// Use: increase walking speed by 25%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken.<para/>
+		/// Description: "Use: increase walking speed by 25%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken."<para/>
 		/// Effect: [ SpeedIV ]<para/>
 		/// </summary>
 		public static Food AGLPotionExtra { get; } = new Food("AGLPotionExtra", 639);
 		/// <summary>
-		/// Use: increase walking speed by 30%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken.<para/>
+		/// Description: "Use: increase walking speed by 30%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken."<para/>
 		/// Effect: [ SpeedV ]<para/>
 		/// </summary>
 		public static Food AGLPotionExtraAdvance { get; } = new Food("AGLPotionExtraAdvance", 640);
 		/// <summary>
-		/// Use: increase attack speed by 10%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken.<para/>
+		/// Description: "Use: increase attack speed by 10%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken."<para/>
 		/// Effect: [ AgilityI ]<para/>
 		/// </summary>
 		public static Food MecoJoyfulI { get; } = new Food("MecoJoyfulI", 641);
 		/// <summary>
-		/// Use: increase attack speed by 15%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken.<para/>
+		/// Description: "Use: increase attack speed by 15%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken."<para/>
 		/// Effect: [ AgilityII ]<para/>
 		/// </summary>
 		public static Food MecoJoyfulII { get; } = new Food("MecoJoyfulII", 642);
 		/// <summary>
-		/// Use: increase attack speed by 20%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken.<para/>
+		/// Description: "Use: increase attack speed by 20%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken."<para/>
 		/// Effect: [ AgilityIII ]<para/>
 		/// </summary>
 		public static Food MecoJoyfulIII { get; } = new Food("MecoJoyfulIII", 643);
 		/// <summary>
-		/// Use: increase attack speed by 25%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken.<para/>
+		/// Description: "Use: increase attack speed by 25%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken."<para/>
 		/// Effect: [ AgilityIV ]<para/>
 		/// </summary>
 		public static Food MecoJoyfulIV { get; } = new Food("MecoJoyfulIV", 644);
 		/// <summary>
-		/// Use: increase attack speed by 30%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken.<para/>
+		/// Description: "Use: increase attack speed by 30%, lasts for 10 minutes. Its efficacy will be lost if stimulant is taken."<para/>
 		/// Effect: [ AgilityV ]<para/>
 		/// </summary>
 		public static Food MecoJoyfulV { get; } = new Food("MecoJoyfulV", 645);
 		/// <summary>
-		/// Press the button! It will take you back home through the rift.<para/>
+		/// Description: "Press the button! It will take you back home through the rift."<para/>
 		/// SpecialEvent: #2<para/>
 		/// </summary>
 		public static Food RifterStone { get; } = new Food("RifterStone", 901);
 		/// <summary>
-		/// Use: after using this, you will attract an angry Coopapa!<para/>
+		/// Description: "Use: after using this, you will attract an angry Coopapa!"<para/>
 		/// PlayerHealth: 10%<para/>
 		/// MinionHealth: 30%<para/>
 		/// SpecialEvent: #3<para/>
 		/// </summary>
 		public static Food CoocooJelly { get; } = new Food("CoocooJelly", 902);
 		/// <summary>
-		/// Summon a friendly Coocoo, but the Coocoo will vanish after 2 minutes.<para/>
+		/// Description: "Summon a friendly Coocoo, but the Coocoo will vanish after 2 minutes."<para/>
 		/// SpecialEvent: #4<para/>
 		/// Cooldown: 300s<para/>
 		/// </summary>
 		public static Food DollCoocoo { get; } = new Food("DollCoocoo", 903);
 		/// <summary>
-		/// Use: place a coocoo bomb. It will explode after 8 seconds and cause 40 damage.<para/>
+		/// Description: "Use: place a coocoo bomb. It will explode after 8 seconds and cause 40 damage."<para/>
 		/// SpecialEvent: #5<para/>
 		/// Cooldown: 15s<para/>
 		/// </summary>
@@ -433,7 +433,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food RoastedEgg { get; } = new Food("RoastedEgg", 10006);
 		/// <summary>
-		/// Use: Get one of the mutated effects.<para/>
+		/// Description: "Use: Get one of the mutated effects."<para/>
 		/// RandomEffect: 1 -> [ MutatedLeg, MutatedArm, MutatedSkin ]<para/>
 		/// PlayerSatiety: 12%<para/>
 		/// MinionSatiety: 36%<para/>
@@ -441,7 +441,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food RoastedMonsterMeat { get; } = new Food("RoastedMonsterMeat", 10007);
 		/// <summary>
-		/// Use: walking speed decrease by 25%, lasts for 1 minutes.<para/>
+		/// Description: "Use: walking speed decrease by 25%, lasts for 1 minutes."<para/>
 		/// Effect: [ Nausea ]<para/>
 		/// PlayerSatiety: 12%<para/>
 		/// MinionSatiety: 36%<para/>
@@ -449,7 +449,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food RoastedDisgustingOrgans { get; } = new Food("RoastedDisgustingOrgans", 10008);
 		/// <summary>
-		/// Use: Get one of the mushroom toxin effects.<para/>
+		/// Description: "Use: Get one of the mushroom toxin effects."<para/>
 		/// RandomEffect: 1 -> [ MushroomToxinNausea, MushroomToxinExcited, MushroomToxinTired, MushroomToxinCureI, MushroomToxinAGI, MushroomToxin ]<para/>
 		/// PlayerSatiety: 1%<para/>
 		/// MinionSatiety: 3%<para/>
@@ -463,7 +463,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food RoastedHorseMeat { get; } = new Food("RoastedHorseMeat", 10010);
 		/// <summary>
-		/// Use: Get one of the mushroom toxin effects.<para/>
+		/// Description: "Use: Get one of the mushroom toxin effects."<para/>
 		/// RandomEffect: 1 -> [ MushroomToxinNausea, MushroomToxinExcited, MushroomToxinTired, MushroomToxinCureI, MushroomToxinAGI, MushroomToxin ]<para/>
 		/// PlayerSatiety: 1%<para/>
 		/// MinionSatiety: 3%<para/>
@@ -477,7 +477,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food BigFeast { get; } = new Food("BigFeast", 11001);
 		/// <summary>
-		/// Use: feeling satisfied with a delicious meal. Hunger speed decrease by 35%,lasts for 1 minutes.<para/>
+		/// Description: "Use: feeling satisfied with a delicious meal. Hunger speed decrease by 35%,lasts for 1 minutes."<para/>
 		/// Effect: [ Tasty ]<para/>
 		/// PlayerSatiety: 50%<para/>
 		/// MinionSatiety: 100%<para/>
@@ -485,7 +485,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food AllMeat { get; } = new Food("AllMeat", 11002);
 		/// <summary>
-		/// Use: feeling satisfied with a delicious meal. Hunger speed decrease by 35%,lasts for 1 minutes.<para/>
+		/// Description: "Use: feeling satisfied with a delicious meal. Hunger speed decrease by 35%,lasts for 1 minutes."<para/>
 		/// Effect: [ Tasty ]<para/>
 		/// PlayerSatiety: 32%<para/>
 		/// MinionSatiety: 96%<para/>
@@ -493,7 +493,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food Meatballs { get; } = new Food("Meatballs", 11003);
 		/// <summary>
-		/// Use: feeling satisfied with a delicious meal. Hunger speed decrease by 35%,lasts for 1 minutes.<para/>
+		/// Description: "Use: feeling satisfied with a delicious meal. Hunger speed decrease by 35%,lasts for 1 minutes."<para/>
 		/// Effect: [ Tasty ]<para/>
 		/// PlayerSatiety: 21%<para/>
 		/// MinionSatiety: 63%<para/>
@@ -501,7 +501,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food ScrambledEggs { get; } = new Food("ScrambledEggs", 11004);
 		/// <summary>
-		/// Use: restore 1 HP for every second, lasts for 20 seconds.<para/>
+		/// Description: "Use: restore 1 HP for every second, lasts for 20 seconds."<para/>
 		/// Effect: [ ContinuousRecovery ]<para/>
 		/// PlayerHealth: 10%<para/>
 		/// PlayerSatiety: 25%<para/>
@@ -519,7 +519,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food FruitJam { get; } = new Food("FruitJam", 11006);
 		/// <summary>
-		/// Use: restore 1 HP for every second, lasts for 20 seconds.<para/>
+		/// Description: "Use: restore 1 HP for every second, lasts for 20 seconds."<para/>
 		/// Effect: [ ContinuousRecovery ]<para/>
 		/// PlayerHealth: 15%<para/>
 		/// PlayerSatiety: 5%<para/>
@@ -529,7 +529,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food FruitSalad { get; } = new Food("FruitSalad", 11007);
 		/// <summary>
-		/// Use： feeling satisfied with a delicious meal. Hunger speed decrease by 35%,lasts for 1 minutes.<para/>
+		/// Description: "Use： feeling satisfied with a delicious meal. Hunger speed decrease by 35%,lasts for 1 minutes."<para/>
 		/// Effect: [ Tasty ]<para/>
 		/// PlayerHealth: 10%<para/>
 		/// PlayerSatiety: 30%<para/>
@@ -547,7 +547,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food Pie { get; } = new Food("Pie", 11009);
 		/// <summary>
-		/// Use: restore 2 HP for every second, lasts for 40 seconds.<para/>
+		/// Description: "Use: restore 2 HP for every second, lasts for 40 seconds."<para/>
 		/// Effect: [ SweetSoup ]<para/>
 		/// PlayerSatiety: 2%<para/>
 		/// MinionHealth: 100%<para/>
@@ -556,7 +556,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food SweetSoup { get; } = new Food("SweetSoup", 11010);
 		/// <summary>
-		/// Use: Get one or two of the mushroom toxin effects.<para/>
+		/// Description: "Use: Get one or two of the mushroom toxin effects."<para/>
 		/// RandomEffect: 2 -> [ MushroomToxinNausea, MushroomToxinExcited, MushroomToxinTired, MushroomToxinCureI, MushroomToxinAGI, MushroomToxin ]<para/>
 		/// PlayerSatiety: 3%<para/>
 		/// MinionSatiety: 9%<para/>
@@ -564,7 +564,7 @@ namespace ChassisMod.KeplerthDatabase
 		/// </summary>
 		public static Food MushroomSoup { get; } = new Food("MushroomSoup", 11011);
 		/// <summary>
-		/// Use: walking speed decrease by 25%, lasts for 1 minitue<para/>
+		/// Description: "Use: walking speed decrease by 25%, lasts for 1 minitue"<para/>
 		/// Effect: [ Nausea ]<para/>
 		/// PlayerSatiety: 25%<para/>
 		/// MinionSatiety: 75%<para/>

@@ -30,9 +30,17 @@ namespace ChassisMod.Core.Data
         {
             try
             {
+
+                var result = new List<string>();
                 var item = Database[entityID];
 
-                return FormatUtil.GetPropertiesWithValues(item, nameof(item.Name), nameof(item.Description), nameof(item.FunctionDes));
+                if (LanguageDataHelper.TryGetInEnglish(item.Name, out var name)) { result.Add($"Name: \"{name}\""); }
+                if (LanguageDataHelper.TryGetInEnglish(item.Description, out var description)) { result.Add($"Description: \"{description}\""); }
+                if (LanguageDataHelper.TryGetInEnglish(item.FunctionDes, out var funcDes)) { result.Add($"Function: \"{funcDes}\""); }
+
+                result.AddRange(FormatUtil.GetPropertiesWithValues(item, nameof(item.Name), nameof(item.Description), nameof(item.FunctionDes)));
+
+                return result;
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
 

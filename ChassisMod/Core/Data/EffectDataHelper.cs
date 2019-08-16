@@ -33,7 +33,7 @@ namespace ChassisMod.Core.Data
                 var result = new List<string>();
                 var effect = Database[entityID];
 
-                if (LanguageDataHelper.TryGetInEnglish(effect.Description, out var info)) { result.Add(info); }
+                if (LanguageDataHelper.TryGetInEnglish(effect.Description, out var info)) { result.Add($"Description: \"{info}\""); }
 
                 var modifiers = Effect.ReadModifiers(effect).Select(x => x.ToString());
 
