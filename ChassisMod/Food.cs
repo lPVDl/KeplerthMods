@@ -25,5 +25,27 @@ namespace ChassisMod
                 food.SetInstanceFieldValue("eatBuffDescription", buffInfo);
             });
         }
+
+        public void SetDescription(Language language, string description)
+        {
+            if (language == null) throw new ArgumentNullException("language was null");
+            if (string.IsNullOrEmpty(description)) throw new ArgumentException("description was null or empty");
+
+            LanguagePatcher.Set(language, "EatBuffDescription" + ID, description);
+        }
+
+        public void SetDefaultDescription(string description)
+        {
+            if (string.IsNullOrEmpty(description)) throw new ArgumentException("description was null or empty");
+
+            LanguagePatcher.SetDefault("EatBuffDescription" + ID, description);
+        }
+
+        public void ModifyDescription(Func<string, string> modification)
+        {
+            if (modification == null) throw new ArgumentNullException("modification was null");
+
+            LanguagePatcher.AddModification("EatBuffDescription" + ID, modification);
+        }
     }
 }

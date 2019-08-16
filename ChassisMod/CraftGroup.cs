@@ -42,9 +42,9 @@ namespace ChassisMod
             if (string.IsNullOrEmpty(description)) throw new ArgumentException("description was null or empty");
             if (string.IsNullOrEmpty(materials)) throw new ArgumentException("materials was null or empty");
 
-            LanguagePatcher.Add(language, "CraftBaseName" + ID, name);
-            LanguagePatcher.Add(language, "CraftBaseTips" + ID, materials);
-            LanguagePatcher.Add(language, "CraftBaseIntroduce" + ID, description);
+            LanguagePatcher.Set(language, "CraftBaseName" + ID, name);
+            LanguagePatcher.Set(language, "CraftBaseTips" + ID, materials);
+            LanguagePatcher.Set(language, "CraftBaseIntroduce" + ID, description);
         }
 
         public void SetDefaultTranslation(string name, string description, string materials)
@@ -53,9 +53,9 @@ namespace ChassisMod
             if (string.IsNullOrEmpty(description)) throw new ArgumentException("description was null or empty");
             if (string.IsNullOrEmpty(materials)) throw new ArgumentException("materials was null or empty");
 
-            LanguagePatcher.AddDefault("CraftBaseName" + ID, name);
-            LanguagePatcher.AddDefault("CraftBaseTips" + ID, materials);
-            LanguagePatcher.AddDefault("CraftBaseIntroduce" + ID, description);
+            LanguagePatcher.SetDefault("CraftBaseName" + ID, name);
+            LanguagePatcher.SetDefault("CraftBaseTips" + ID, materials);
+            LanguagePatcher.SetDefault("CraftBaseIntroduce" + ID, description);
         }
     }
 }

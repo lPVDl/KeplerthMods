@@ -86,8 +86,8 @@ namespace ChassisMod
             Weapon.CopyFrom(source.Weapon);
             if (Food != null) { Food.CopyFrom(source.Food); }
 
-            LanguagePatcher.AddDefault(data.Description, "0");
-            LanguagePatcher.AddDefault(data.FunctionDes, "0");
+            LanguagePatcher.SetDefault(data.Description, "0");
+            LanguagePatcher.SetDefault(data.FunctionDes, "0");
         }
 
         internal void CopyFrom(Item source)
@@ -115,9 +115,9 @@ namespace ChassisMod
             if (string.IsNullOrEmpty(description)) throw new ArgumentException("description was null or empty");
             if (string.IsNullOrEmpty(functional)) throw new ArgumentException("function was null or empty");
 
-            LanguagePatcher.AddDefault("ItemName" + ID, name);
-            LanguagePatcher.AddDefault("ItemDes" + ID, description);
-            LanguagePatcher.AddDefault("ItemFunctionDes" + ID, functional);
+            LanguagePatcher.SetDefault("ItemName" + ID, name);
+            LanguagePatcher.SetDefault("ItemDes" + ID, description);
+            LanguagePatcher.SetDefault("ItemFunctionDes" + ID, functional);
         }
     }
 }
