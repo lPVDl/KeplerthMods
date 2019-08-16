@@ -57,7 +57,7 @@ namespace ChassisMod.Core.Data.Util
 
             var result = new List<string>();
             var source = values.ToArray();
-            for(var i = 0; i < source.Length; i += groupSize)
+            for (var i = 0; i < source.Length; i += groupSize)
             {
                 var size = Math.Min(groupSize, source.Length - i);
                 var line = string.Join(separator, source, i, size);

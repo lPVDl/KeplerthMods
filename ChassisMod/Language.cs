@@ -10,14 +10,14 @@ namespace ChassisMod
         public static Language English { get; } = new Language() { Name = "english", FriendlyName = "English" };
         public static Language SimplifiedChinese { get; } = new Language() { Name = "schinese", FriendlyName = "简体中文" };
 
-        public static IEnumerable<Language> All { get; } = new Language[]{ Russian, English, SimplifiedChinese };
+        public static IEnumerable<Language> All { get; } = new Language[] { Russian, English, SimplifiedChinese };
 
         private static Regex BadCharacters { get; } = new Regex("[^a-zA-Z0-9]", RegexOptions.Compiled);
         private static Regex FirstNumber { get; } = new Regex("^[0-9]{1,}", RegexOptions.Compiled);
         private static CultureInfo CultureUS { get; } = new CultureInfo("en-US", false);
 
         internal string Name { get; private set; }
-        internal string FriendlyName { get; private set; }       
+        internal string FriendlyName { get; private set; }
 
         internal static string Normalize(string name)
         {

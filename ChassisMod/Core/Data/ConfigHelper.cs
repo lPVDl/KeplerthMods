@@ -5,7 +5,7 @@ using DataBase;
 
 namespace ChassisMod.Core.Data
 {
-    internal abstract class DataHelper<TConfig> where TConfig : DBBase
+    internal abstract class ConfigHelper<TConfig> where TConfig : DBBase
     {
         public static Dictionary<int, TConfig> Database { get; } = LoadDatabase();
 
@@ -17,11 +17,12 @@ namespace ChassisMod.Core.Data
             return JsonConvert.DeserializeObject<Dictionary<int, TConfig>>(text);
         }
 
-        protected DataHelper() { }
+        protected ConfigHelper() { }
 
-        public IEnumerable<int> Keys { get; } = Database.Keys;
-        public abstract string NameFor(int entityID);
-        public abstract IEnumerable<string> CommentFor(int entityID);
-   
+        public virtual IEnumerable<int> Keys { get; } = Database.Keys;
+
+        public abstract string Name(int entityID);
+        public abstract IEnumerable<string> Comment(int entityID);
+
     }
 }

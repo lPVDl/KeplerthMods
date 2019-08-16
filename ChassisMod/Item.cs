@@ -1,7 +1,4 @@
-﻿using ChassisMod.Core.Data;
-using Common.Reflection;
-using System.Reflection;
-using ChassisMod.Core;
+﻿using ChassisMod.Core;
 using UnityEngine;
 using Keplerth;
 using DataBase;
@@ -9,115 +6,107 @@ using System;
 
 namespace ChassisMod
 {
-    public sealed class Item : DataWrapper<ConfigItem>
+    public class Item : SmartConfig, IWrapper<ConfigItem>
     {
-        public Weapon Weapon { get; }
-        public Food Food { get; }
+        ConfigItem IWrapper<ConfigItem>.GetObject() => ConfigItem.Table[ID];
 
-        public PropertyWrapper<Sprite, PropertyIdentity.ID0> Icon
+        public Property<Sprite> Icon    { get => _icon;       set => _icon.Set(value); }
+        public Property<int> Durability { get => _durability; set => _durability.Set(value); }
+        public Property<int> Category   { get => _category;   set => _category.Set(value); }
+        public Property<int> BuildDamageBonus { get => _buildDamageBonus; set => _buildDamageBonus.Set(value); }
+        public Property<int> TreeDamageBonus  { get => _treeDamageBonus;  set => _treeDamageBonus.Set(value); }
+        public Property<int> WallDamageBonus  { get => _wallDamageBonus;  set => _wallDamageBonus.Set(value); }
+
+        private readonly Property<Sprite> _icon;
+        private readonly Property<int> _durability;
+        private readonly Property<int> _category;
+        private readonly Property<int> _buildDamageBonus;
+        private readonly Property<int> _treeDamageBonus;
+        private readonly Property<int> _wallDamageBonus;
+
+        internal Item()
         {
-            get => this;
-            set => value.Patch(this, "Icon", x => CustomResources.Load<Sprite>(x.DropTexture), (x, v) => x.DropTexture = SpritePatcher.FindOrAdd(v));
-        }
-
-        public PropertyWrapper<int, PropertyIdentity.ID1> Durability
-        {
-            get => this;
-            set => value.Patch(this, "Durability", x => x.Durability, (x, v) => x.Durability = Math.Max(v, 1));
-        }
-
-        public PropertyWrapper<int, PropertyIdentity.ID2> Category
-        {
-            get => this;
-            set => value.Patch(this, "Category", x => x.ItemType, (x, v) => x.ItemType = Math.Max(v, 0));
-        }
-
-        public PropertyWrapper<int, PropertyIdentity.ID3> WallDamageBonus
-        {
-            get => this;
-            set => value.Patch(this, "WallDamageBonus", x => x.AttWall, (x, v) => x.AttWall = Math.Max(v, 1));
-        }
-
-        public PropertyWrapper<int, PropertyIdentity.ID4> TreeDamageBonus
-        {
-            get => this;
-            set => value.Patch(this, "TreeDamageBonus", x => x.AttTree, (x, v) => x.AttTree = Math.Max(v, 1));
-        }
-
-        public PropertyWrapper<int, PropertyIdentity.ID5> BuildDamageBonus
-        {
-            get => this;
-            set => value.Patch(this, "BuildDamageBonus", x => x.AttBuild, (x, v) => x.AttBuild = Math.Max(v, 1));
-        }
-
-        internal Item(string name, int id) : base(name, id)
-        {
-            Weapon = new Weapon(AssemblyID, Name + ".Weapon", ID);
-
-            if (FoodDataHelper.Database.ContainsKey(id))
+            _icon = new Property<ConfigItem, Sprite>()
             {
-                Food = new Food(AssemblyID, Name + ".Food", ID);
-            }
-        }
-
-        public Item(string name, Item source) : base(Assembly.GetCallingAssembly().GetName().Name, name)
-        {
-            if (source == null) throw new ArgumentNullException("source was null");
-
-            var data = new ConfigItem()
-            {
-                Name = "ItemName" + ID,
-                Description = "ItemDes" + ID,
-                FunctionDes = "ItemFunctionDes" + ID,
+                Name = nameof(Icon),
+                Owner = this,
+                ValidateData = x => x != null,
+                ReadData = x => CustomResources.Load<Sprite>(x.DropTexture),
+                WriteData = (x, v) => x.DropTexture = SpritePatcher.FindOrAdd(v),
+                Patcher = DatabasePatcher
             };
-            AddInstatiation(data, source.ToString());
 
-            Weapon = new Weapon(AssemblyID, Name + ".Weapon", ID);
-            Weapon.AddInstatiation(new ConfigWeapon(), source.Weapon.ToString());
-
-            if (source.Food != null)
+            _durability = new Property<ConfigItem, int>()
             {
-                Food = new Food(AssemblyID, Name + ".Food", ID);
-                var foodData = new ConfigFood() { EatBuffDescription = "EatBuffDescription" + ID };
-                Food.AddInstatiation(foodData, source.Food.ToString());
-            }
+                Name = nameof(Durability),
+                Owner = this,
+                ValidateData = x => x >= 0,
+                ReadData = x => x.Durability,
+                WriteData = (x, v) => x.Durability = v,
+                Patcher = DatabasePatcher
+            };
 
-            CopyFrom(source);
-            Weapon.CopyFrom(source.Weapon);
-            if (Food != null) { Food.CopyFrom(source.Food); }
+            _category = new Property<ConfigItem, int>()
+            {
+                Name = nameof(Category),
+                Owner = this,
+                ValidateData = x => x >= 0,
+                ReadData = x => x.ItemType,
+                WriteData = (x, v) => x.ItemType = v,
+                Patcher = DatabasePatcher
+            };
 
-            LanguagePatcher.SetDefault(data.Description, "0");
-            LanguagePatcher.SetDefault(data.FunctionDes, "0");
+            _buildDamageBonus = new Property<ConfigItem, int>()
+            {
+                Name = nameof(BuildDamageBonus),
+                Owner = this,
+                ValidateData = x => x > 0,
+                ReadData = x => x.AttBuild,
+                WriteData = (x, v) => x.AttBuild = v,
+                Patcher = DatabasePatcher
+            };
+
+            _wallDamageBonus = new Property<ConfigItem, int>()
+            {
+                Name = nameof(WallDamageBonus),
+                Owner = this,
+                ValidateData = x => x > 0,
+                ReadData = x => x.AttWall,
+                WriteData = (x, v) => x.AttWall = v,
+                Patcher = DatabasePatcher
+            };
+
+            _treeDamageBonus = new Property<ConfigItem, int>()
+            {
+                Name = nameof(TreeDamageBonus),
+                Owner = this,
+                ValidateData = x => x > 0,
+                ReadData = x => x.AttTree,
+                WriteData = (x, v) => x.AttTree = v,
+                Patcher = DatabasePatcher
+            };
         }
 
-        internal void CopyFrom(Item source)
-        {
-            AddModification("", CopyData);
-
-            void CopyData(ConfigItem item)
-            {
-                var name = item.GetInstanceFieldValue("name");
-                var description = item.GetInstanceFieldValue("description");
-                var functionDes = item.GetInstanceFieldValue("functionDes");
-
-                var data = ConfigItem.Table[source.ID];
-                item.CopyInstanceFieldValues(data);
-
-                item.SetInstanceFieldValue("name", name);
-                item.SetInstanceFieldValue("description", description);
-                item.SetInstanceFieldValue("functionDes", functionDes);
-            }
-        }
-
-        public void SetDefaultTranslation(string name, string description = "0", string functional = "0")
+        public Item(string name, Item source) : this()
         {
             if (string.IsNullOrEmpty(name)) throw new ArgumentException("name was null or empty");
-            if (string.IsNullOrEmpty(description)) throw new ArgumentException("description was null or empty");
-            if (string.IsNullOrEmpty(functional)) throw new ArgumentException("function was null or empty");
+            if (source == null) throw new ArgumentNullException("source was null");
 
-            LanguagePatcher.SetDefault("ItemName" + ID, name);
-            LanguagePatcher.SetDefault("ItemDes" + ID, description);
-            LanguagePatcher.SetDefault("ItemFunctionDes" + ID, functional);
+            Name = name;
+            Assembly = System.Reflection.Assembly.GetCallingAssembly().GetName().Name;
+            ID = IDGenerator.CreateID("Item." + Assembly + "." + Name);
+
+            Action patch = () =>
+            {
+                ConfigItem.Table[ID] = new ConfigItem(ConfigItem.Table[source.ID])
+                {
+                    Name = "ItemName" + ID,
+                    Description = "ItemDes" + ID,
+                    FunctionDes = "ItemFunctionDes" + ID,
+                };
+            };
+
+            DatabasePatcher.Add(patch, $"{this} = {source}");
         }
     }
 }

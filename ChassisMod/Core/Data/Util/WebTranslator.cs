@@ -56,7 +56,7 @@ namespace ChassisMod.Core.Data.Util
             Client.Encoding = Encoding.Default;
             Client.Headers["User-Agent"] = "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.9) Gecko/20100824 Firefox/3.6.9";
             Client.Headers["Accept-Language"] = "en-us,en;q=0.5";
-            Client.Headers["Accept-Charset"] = "ISO-8859-1,utf-8;q=0.7,*;q=0.7";           
+            Client.Headers["Accept-Charset"] = "ISO-8859-1,utf-8;q=0.7,*;q=0.7";
         }
 
         public static void WaitUntilAvailable() => Limiter.WaitForNextUse();
@@ -94,7 +94,7 @@ namespace ChassisMod.Core.Data.Util
             Log.Message($"WebTranslator: '{text}' => '{result}'");
 
             Cash[languageID][text] = result;
-            
+
             return true;
         }
 

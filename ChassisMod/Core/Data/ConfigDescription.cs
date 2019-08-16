@@ -5,24 +5,24 @@ using Common;
 
 namespace ChassisMod.Core.Data
 {
-    internal sealed class DataDescription
+    internal sealed class ConfigDescription
     {
         public string Name { get; private set; }
         public int ID { get; private set; }
         public IEnumerable<string> Comment { get; private set; }
 
-        public static IEnumerable<DataDescription> Create<TConfig>(DataHelper<TConfig> helper) where TConfig : DBBase
+        public static IEnumerable<ConfigDescription> Create<TConfig>(ConfigHelper<TConfig> helper) where TConfig : DBBase
         {
             var keys = helper.Keys.ToArray();
-            var data = new DataDescription[keys.Length];
+            var data = new ConfigDescription[keys.Length];
 
             for (var i = 0; i < keys.Length; i++)
             {
                 if ((i + 1) % 30 == 0) Log.Message($"{helper.GetType().Name}: {i + 1}/{keys.Length}...");
-                data[i] = new DataDescription()
+                data[i] = new ConfigDescription()
                 {
-                    Comment = helper.CommentFor(keys[i]),
-                    Name = helper.NameFor(keys[i]),
+                    Comment = helper.Comment(keys[i]),
+                    Name = helper.Name(keys[i]),
                     ID = keys[i]
                 };
             }
@@ -48,11 +48,11 @@ namespace ChassisMod.Core.Data
             return data;
         }
 
-        private DataDescription() { }
+        private ConfigDescription() { }
 
         public string CreateDefinition(string className)
         {
-            return string.Format("public static {0} {1} {{ get; }} = new {0}(\"{1}\", {2});", className, Name, ID);
+            return string.Format("public static {0} {1} {{ get; }} = new {0}() {{ ID = {2}, Name = \"{1}\", Assembly = \"Keplerth\" }};", className, Name, ID);
         }
     }
 }

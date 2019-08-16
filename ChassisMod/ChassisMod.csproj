@@ -65,15 +65,17 @@
     <Compile Include="Core\CollectionWrapper.cs" />
     <Compile Include="Core\Data\EffectDataHelper.cs" />
     <Compile Include="Core\Data\CraftTableDataHelper.cs" />
-    <Compile Include="Core\Data\FoodDataHelper.cs" />
+    <Compile Include="Core\Data\FoodHelper.cs" />
     <Compile Include="Core\Data\Util\RateLimiter.cs" />
     <Compile Include="Core\Data\Util\WebTranslator.cs" />
-    <Compile Include="Core\Data\WeaponDataHelper.cs" />
-    <Compile Include="Core\SmartProperty.cs" />
+    <Compile Include="Core\Data\WeaponHelper.cs" />
+    <Compile Include="Core\IPatcher.cs" />
+    <Compile Include="Core\IWrapper.cs" />
+    <Compile Include="Core\Readonly.cs" />
+    <Compile Include="Core\Property.cs" />
+    <Compile Include="FoodDB.cs" />
     <Compile Include="InsertFlags.cs" />
     <Compile Include="Food.cs" />
-    <Compile Include="Core\PropertyIdentity.cs" />
-    <Compile Include="Core\PropertyWrapper.cs" />
     <Compile Include="Core\SpritePatcher.cs" />
     <Compile Include="Core\Data\Util\FormatUtil.cs" />
     <Compile Include="Core\Data\Util\PathUtil.cs" />
@@ -83,18 +85,19 @@
     <Compile Include="Core\PatchLog.cs" />
     <Compile Include="CraftTable.cs" />
     <Compile Include="Building.cs" />
-    <Compile Include="Core\Data\DataDescription.cs" />
-    <Compile Include="Core\Data\DataHelper.cs" />
+    <Compile Include="Core\Data\ConfigDescription.cs" />
+    <Compile Include="Core\Data\ConfigHelper.cs" />
     <Compile Include="Core\Data\CraftDataHelper.cs" />
     <Compile Include="Core\Data\CraftGroupDataHelper.cs" />
     <Compile Include="Core\Data\BuildingDataHelper.cs" />
-    <Compile Include="Core\Data\ItemDataHelper.cs" />
-    <Compile Include="Core\Data\LanguageDataHelper.cs" />
-    <Compile Include="Core\Data\DataScanner.cs" />
-    <Compile Include="Core\DataWrapper.cs" />
+    <Compile Include="Core\Data\ItemHelper.cs" />
+    <Compile Include="Core\Data\LanguageHelper.cs" />
+    <Compile Include="Core\Data\ConfigScanner.cs" />
+    <Compile Include="Core\SmartConfig.cs" />
     <Compile Include="Core\LanguagePatcher.cs" />
-    <Compile Include="Core\DataPatch.cs" />
+    <Compile Include="Core\Patch.cs" />
     <Compile Include="Core\DataPatcher.cs" />
+    <Compile Include="ItemDB.cs" />
     <Compile Include="KeplerthDatabase\BuildingDB.cs" />
     <Compile Include="KeplerthDatabase\CraftDB.cs" />
     <Compile Include="KeplerthDatabase\CraftGroupDB.cs" />
@@ -116,6 +119,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="WeaponDB.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

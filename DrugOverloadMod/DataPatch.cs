@@ -1,4 +1,4 @@
-﻿using ChassisMod.KeplerthDatabase;
+﻿using ChassisMod.Core.Data;
 using ChassisMod;
 using Keplerth;
 using Common;
@@ -13,10 +13,12 @@ namespace DrugOverloadMod
         {
             try
             {
-                FoodDB.AGLPotion.ModifyDescription(x => x.Replace("20%", "125%"));
-                EffectDB.SpeedIII.ModifyDescription(x => x.Replace("20%", "125%"));
+                ConfigScanner.SaveDefinitions(@"T:\KeplerthDatabase\");
 
-                EffectDB.SpeedIII.Modifiers.Replace<Effect.MovementSpeedMul>(new Effect.MovementSpeedMul(1.25f));
+                // FoodDB.AGLPotion.ModifyDescription(x => x.Replace("20%", "125%"));
+                // EffectDB.SpeedIII.ModifyDescription(x => x.Replace("20%", "125%"));
+
+                // EffectDB.SpeedIII.Modifiers.Replace<Effect.MovementSpeedMul>(new Effect.MovementSpeedMul(1.25f));
             }
             catch (Exception e) { Log.Exception(e); }
         }

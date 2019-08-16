@@ -7,7 +7,7 @@ using Common;
 
 namespace ChassisMod.Core.Data
 {
-    internal static class LanguageDataHelper
+    internal static class LanguageHelper
     {
         internal static List<Dictionary<string, string>> Database { get; } = LoadDatabase();
 
@@ -41,7 +41,7 @@ namespace ChassisMod.Core.Data
             return false;
         }
 
-        public static bool IsDefault(string text) => DefaultText.Any(x => x == text);    
+        public static bool IsDefault(string text) => DefaultText.Any(x => x == text);
 
         private static List<Dictionary<string, string>> LoadDatabase()
         {

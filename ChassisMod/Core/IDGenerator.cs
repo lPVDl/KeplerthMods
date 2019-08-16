@@ -7,7 +7,7 @@ namespace ChassisMod.Core
     {
         private static Dictionary<int, string> OccupiedID { get; } = new Dictionary<int, string>();
 
-        internal static int New(string name)
+        internal static int CreateID(string name)
         {
             var random = new Random(name.GetHashCode());
             var id = random.Next((int)1e+6, int.MaxValue);

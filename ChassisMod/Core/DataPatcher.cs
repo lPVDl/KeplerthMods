@@ -7,31 +7,30 @@ using Common;
 namespace ChassisMod.Core
 {
     [HarmonyPatch(typeof(Init), "InitTableData")]
-    internal static class DataPatcher
+    internal sealed class ConfigPatcher : IPatcher
     {
-        private static List<DataPatch> patches = new List<DataPatch>();
-
-        public static void Add(DataPatch patch)
+        private sealed class Patch
         {
-            patches.Add(patch);
+            public Action Action { get; set; }
+            public string Info { get; set; }        
         }
 
-        public static void Add(Action patch, string description)
-        {
-            patches.Add(new DataPatch() { PatchAction = patch, Description = description });
-        }
+        public static ConfigPatcher Instance { get; } = new ConfigPatcher();
+
+        private static List<Patch> Patches { get; } = new List<Patch>();
+
+        void IPatcher.Add(Action action, string info) => Patches.Add(new Patch() { Action = action, Info = info });
 
         private static void Postfix()
         {
-            foreach(var patch in patches)
+            foreach(var patch in Patches)
             {
                 try
                 {
-                    patch.PatchAction();
-                    if (!string.IsNullOrEmpty(patch.Description))
-                        PatchLog.WriteLine(patch.Description);
+                    patch.Action();
+                    PatchLog.WriteLine(patch.Info);
                 }
-                catch(Exception e) { Log.Exception(e, patch.Description); }
+                catch(Exception e) { Log.Exception(e, patch.Info); }
             }
         }
     }
