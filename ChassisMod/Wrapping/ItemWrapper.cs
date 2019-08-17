@@ -1,11 +1,12 @@
-﻿using System.Reflection;
+﻿using ChassisMod.Patching;
+using System.Reflection;
 using ChassisMod.Core;
 using UnityEngine;
 using Keplerth;
 using DataBase;
 using System;
 
-namespace ChassisMod.Wrappers
+namespace ChassisMod.Wrapping
 {
     public sealed class ItemWrapper : Entity, IWrapper<ConfigItem>
     {

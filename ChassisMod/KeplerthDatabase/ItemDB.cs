@@ -16049,7 +16049,7 @@ namespace ChassisMod.KeplerthDatabase
         //        /// Keyboard: "0"<para/>
         //        /// KeyboardInfo: "0"<para/>
         //        /// </summary>
-        public static Wrappers.ItemWrapper StonePickaxe { get; } = new Wrappers.ItemWrapper() { ID = 6102, Name = "StonePickaxe" };
+        public static Wrapping.ItemWrapper StonePickaxe { get; } = new Wrapping.ItemWrapper() { ID = 6102, Name = "StonePickaxe" };
 //        /// <summary>
 //        /// Name: "Stone Pickaxe"<para/>
 //        /// Type: 2<para/>

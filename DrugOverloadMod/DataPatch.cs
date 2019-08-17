@@ -12,7 +12,7 @@ namespace DrugOverloadMod
         {
             try
             {
-                ChassisMod.KeplerthDatabase.ItemDB.StonePickaxe.TreeDamageBonus.Set(500, System.Reflection.Assembly.GetCallingAssembly());
+                ChassisMod.KeplerthDatabase.ItemDB.StonePickaxe.TreeDamageBonus.Set(500, System.Reflection.Assembly.GetExecutingAssembly());
 
                 //ConfigScanner.SaveDefinitions(@"T:\KeplerthDatabase\");
 

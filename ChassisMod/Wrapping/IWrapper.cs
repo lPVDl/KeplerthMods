@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System;
 
-namespace ChassisMod.Wrappers
+namespace ChassisMod.Wrapping
 {
     interface IWrapper<T>
     {

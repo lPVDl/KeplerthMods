@@ -5,7 +5,7 @@ using Harmony;
 using System;
 using Common;
 
-namespace ChassisMod.Core
+namespace ChassisMod.Patching
 {
     [HarmonyPatch(typeof(Init), "InitTableData")]
     internal sealed class ConfigPatcher
@@ -35,11 +35,19 @@ namespace ChassisMod.Core
         {
             foreach(var patch in Patches)
             {
+                PatchLog.Patcher = patch.Owner;
+
                 try
                 {
                     patch.Action();
                 }
-                catch(Exception e) { Log.Exception(e); }
+                catch(Exception e)
+                {
+                    Log.Exception(e);
+                    PatchLog.Error = e;
+                }
+
+                PatchLog.Flush();
             }
         }
     }

@@ -1,7 +1,8 @@
-﻿using System.Reflection;
+﻿using ChassisMod.Patching;
+using System.Reflection;
 using System;
 
-namespace ChassisMod.Wrappers
+namespace ChassisMod.Wrapping
 {
     internal sealed class Property<TObject, TData> : Property<TData>
     {
@@ -49,8 +50,16 @@ namespace ChassisMod.Wrappers
 
             Action patch = () =>
             {
+                PatchLog.Entity = this;
+
+                PatchLog.OldValue = Read();
+
                 var data = source.Read();
-                if (!Validate(data)) throw new InvalidOperationException($"{this} = {source}");
+
+                PatchLog.NewValue = data;
+
+                if (!Validate(data)) throw new InvalidOperationException($"Data was invalid");
+
                 Write(data);
             };
 

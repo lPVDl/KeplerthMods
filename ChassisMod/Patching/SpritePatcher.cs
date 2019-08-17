@@ -4,7 +4,7 @@ using System.Linq;
 using Keplerth;
 using Harmony;
 
-namespace ChassisMod.Core
+namespace ChassisMod.Patching
 {
     [HarmonyPatch(typeof(WorkshopMod), "GetSprite")]
     internal static class SpritePatcher

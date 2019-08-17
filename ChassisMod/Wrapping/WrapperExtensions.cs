@@ -3,7 +3,7 @@ using Common.Reflection;
 using System.Reflection;
 using System;
 
-namespace ChassisMod.Wrappers
+namespace ChassisMod.Wrapping
 {
     internal static class WrapperExtensions
     {
