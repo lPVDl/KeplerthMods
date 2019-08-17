@@ -1,5 +1,4 @@
-﻿using ChassisMod.Core.Data;
-using ChassisMod;
+﻿using ChassisMod;
 using Keplerth;
 using Common;
 using System;
@@ -13,7 +12,9 @@ namespace DrugOverloadMod
         {
             try
             {
-                ConfigScanner.SaveDefinitions(@"T:\KeplerthDatabase\");
+                ChassisMod.KeplerthDatabase.ItemDB.StonePickaxe.TreeDamageBonus.Set(500, System.Reflection.Assembly.GetCallingAssembly());
+
+                //ConfigScanner.SaveDefinitions(@"T:\KeplerthDatabase\");
 
                 // FoodDB.AGLPotion.ModifyDescription(x => x.Replace("20%", "125%"));
                 // EffectDB.SpeedIII.ModifyDescription(x => x.Replace("20%", "125%"));

@@ -1,15 +1,15 @@
-﻿using System;
+﻿using System.Reflection;
+using System;
 
-namespace ChassisMod.Core
+namespace ChassisMod.Wrappers
 {
-    internal class Property<TObject, TData> : Property<TData>
+    internal sealed class Property<TObject, TData> : Property<TData>
     {
         public string Name { get; set; }
         public IWrapper<TObject> Owner { get; set; }
         public Func<TObject, TData> ReadData { get; set; }
         public Action<TObject, TData> WriteData { get; set; }
         public Func<TData, bool> ValidateData { get; set; }
-        public IPatcher Patcher { get; set; }
 
         protected override TData Read() => ReadData(Owner.GetObject());
 
@@ -17,7 +17,7 @@ namespace ChassisMod.Core
 
         protected override bool Validate(TData data) => ValidateData(data);
 
-        protected override void AddPatch(Action patch, string description) => Patcher.Add(patch, description);
+        protected override void AddPatch(Action patch, Assembly patchOwner) => Owner.AddPatch(patch, patchOwner);
 
         public override string ToString() => $"{Owner}.{Name}";
     }
@@ -36,14 +36,14 @@ namespace ChassisMod.Core
 
             protected override bool Validate(TData data) => throw new InvalidOperationException($"Impossible to validate {nameof(Container)}");
 
-            protected override void AddPatch(Action patch, string description) => throw new InvalidOperationException($"Impossible to add patch {nameof(Container)}");
+            protected override void AddPatch(Action patch, Assembly patchOwner) => throw new InvalidOperationException($"Impossible to add patch {nameof(Container)}");
 
             public override string ToString() => Value.ToString();
         }
 
         public static implicit operator Property<TData> (TData data) => new Container() { Value = data };
 
-        public void Set(Property<TData> source)
+        public void Set(Property<TData> source, Assembly patchOwner)
         {
             if (source == null) throw new ArgumentNullException("source was null");
 
@@ -54,7 +54,7 @@ namespace ChassisMod.Core
                 Write(data);
             };
 
-            AddPatch(patch, $"{this} = {source}");
+            AddPatch(patch, patchOwner);
         }
 
         protected abstract TData Read();
@@ -63,6 +63,6 @@ namespace ChassisMod.Core
 
         protected abstract bool Validate(TData data);
 
-        protected abstract void AddPatch(Action patch, string description);
+        protected abstract void AddPatch(Action patch, Assembly patchOwner);
     }
 }

@@ -70,9 +70,9 @@
     <Compile Include="Core\Data\Util\WebTranslator.cs" />
     <Compile Include="Core\Data\WeaponHelper.cs" />
     <Compile Include="Core\IPatcher.cs" />
-    <Compile Include="Core\IWrapper.cs" />
+    <Compile Include="Wrappers\IWrapper.cs" />
     <Compile Include="Core\Readonly.cs" />
-    <Compile Include="Core\Property.cs" />
+    <Compile Include="Wrappers\Property.cs" />
     <Compile Include="FoodDB.cs" />
     <Compile Include="InsertFlags.cs" />
     <Compile Include="Food.cs" />
@@ -109,7 +109,7 @@
     <Compile Include="Effect.cs" />
     <Compile Include="Effect_Modifiers.cs" />
     <Compile Include="Weapon.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="Wrappers\ItemWrapper.cs" />
     <Compile Include="Craft.cs" />
     <Compile Include="CraftGroup.cs" />
     <Compile Include="Language.cs" />
@@ -120,6 +120,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="WeaponDB.cs" />
+    <Compile Include="Wrappers\WrapperExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

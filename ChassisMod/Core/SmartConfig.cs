@@ -1,29 +1,25 @@
 ﻿namespace ChassisMod.Core
 {
-    public abstract class SmartConfig
+    public abstract class Entity
     {
-        internal static IPatcher DatabasePatcher { get; } = ConfigPatcher.Instance;
-
-        public int ID { get => _id; internal set => _id.Set(value); }
-        public string Name { get => _name; internal set => _name.Set(value); }
-        public string Assembly { get => _assembly; internal set => _assembly.Set(value); }
+        public virtual int ID { get => _id.Get(); internal set => _id.Set(value); }
+        public virtual string Name { get => _name.Get(); internal set => _name.Set(value); }
         
         private readonly Readonly<int> _id = new Readonly<int>();
         private readonly Readonly<string> _name = new Readonly<string>();
-        private readonly Readonly<string> _assembly = new Readonly<string>();
 
-        internal SmartConfig() { }
+        internal Entity() { }
 
         public override bool Equals(object obj)
         {
             if (obj == null || obj.GetType() != GetType())
                 return false;
 
-            return (obj as SmartConfig).ID == ID;
+            return (obj as Entity).ID == ID;
         }
 
         public override int GetHashCode() => ID;
 
-        public override string ToString() => _name;
+        public override string ToString() => Name;
     }
 }

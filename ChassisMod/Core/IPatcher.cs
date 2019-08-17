@@ -1,9 +1,9 @@
-﻿using System;
+﻿//using System;
 
-namespace ChassisMod.Core
-{
-    interface IPatcher
-    {
-        void Add(Action patch, string description);
-    }
-}
+//namespace ChassisMod.Core
+//{
+//    interface IPatcher
+//    {
+//        void Add(Action patch, string description);
+//    }
+//}

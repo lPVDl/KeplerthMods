@@ -1,105 +1,54 @@
-﻿using System.Collections.Generic;
+﻿using Common.Extensions;
+using System.Collections.Generic;
 using System.Reflection;
+using System;
 
 namespace Common.Reflection
 {
     internal static class ReflectionHelper
     {
-        private static class Storage<TObject, TItem>
+        private static BindingFlags InstanceFlags { get; } = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic;
+
+        private static Dictionary<Type, IEnumerable<PropertyInfo>> PropertyCollectionCash { get; } = new Dictionary<Type, IEnumerable<PropertyInfo>>();
+
+        private static Dictionary<Type, Dictionary<string, PropertyInfo>> PropertyCash { get; } = new Dictionary<Type, Dictionary<string, PropertyInfo>>();
+
+        public static IEnumerable<PropertyInfo> GetInstanceProperties(this object obj)
         {
-            public static IEnumerable<TItem> instanceGroup;
-            public static readonly Dictionary<string, TItem> instanceItems = new Dictionary<string, TItem>();
-            public static readonly Dictionary<string, TItem> staticItems = new Dictionary<string, TItem>();
+            if (obj == null) throw new ArgumentNullException("obj was null");
+
+            var objType = obj.GetType();
+
+            if (PropertyCollectionCash.TryGetValue(objType, out var cash)) { return cash; }
+
+            var newCash = objType.GetProperties(InstanceFlags);
+            PropertyCollectionCash[objType] = newCash;
+
+            return newCash;
         }
 
-        private static readonly BindingFlags instanceFlags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic;
-        private static readonly BindingFlags staticFlags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic;
-
-        public static object GetStaticFieldValue<T>(string fieldName)
+        public static void SetInstancePropertyValue(this object obj, string name, object value)
         {
-            var cash = Storage<T, FieldInfo>.staticItems;
-            if (cash.TryGetValue(fieldName, out var field))
-            {
-                return field.GetValue(null);
-            }
-            else
-            {
-                cash[fieldName] = typeof(T).GetField(fieldName, staticFlags);
-                return cash[fieldName].GetValue(null);
-            }
+            var prop = GetInstanceProperty(obj, name);
+            prop.SetValue(obj, value);
         }
 
-        public static void CopyInstanceFieldValues<T>(this T obj, T source)
+        public static PropertyInfo GetInstanceProperty(this object obj, string name)
         {
-            var fields = obj.GetInstanceFields();
-            foreach (var field in fields)
-                field.SetValue(obj, field.GetValue(source));
-        }
+            if (obj == null) throw new ArgumentNullException("obj was null");
+            if (string.IsNullOrEmpty(name)) throw new ArgumentException("name was null or empty");
 
-        public static IEnumerable<FieldInfo> GetInstanceFields<T>(this T Object)
-        {
-            var fields = Storage<T, FieldInfo>.instanceGroup;
-            if (fields == null)
-            {
-                fields = typeof(T).GetFields(instanceFlags);
-                Storage<T, FieldInfo>.instanceGroup = fields;
-            }
+            var objType = obj.GetType();
 
-            return fields;
-        }
+            var cashSet = PropertyCash.GetOrCreate(objType);
 
-        public static IEnumerable<PropertyInfo> GetInstanceProperties<T>(this T Object)
-        {
-            var properties = Storage<T, PropertyInfo>.instanceGroup;
-            if (properties == null)
-            {
-                properties = typeof(T).GetProperties(instanceFlags);
-                Storage<T, PropertyInfo>.instanceGroup = properties;
-            }
+            if (cashSet.TryGetValue(name, out var cash)) { return cash; }
 
-            return properties;
-        }
+            var newCash = objType.GetProperty(name, InstanceFlags);
 
-        public static object GetInstancePropertyValue<T>(this T obj, string propertyName)
-        {
-            var cash = Storage<T, PropertyInfo>.instanceItems;
-            if (cash.TryGetValue(propertyName, out var property))
-            {
-                return property.GetValue(obj);
-            }
-            else
-            {
-                cash[propertyName] = typeof(T).GetProperty(propertyName, instanceFlags);
-                return cash[propertyName].GetValue(obj);
-            }
-        }
+            cashSet[name] = newCash ?? throw new InvalidOperationException($"Property {obj.GetType()}.{name} was not found");
 
-        public static object GetInstanceFieldValue<T>(this T obj, string fieldName)
-        {
-            var cash = Storage<T, FieldInfo>.instanceItems;
-            if (cash.TryGetValue(fieldName, out var field))
-            {
-                return field.GetValue(obj);
-            }
-            else
-            {
-                cash[fieldName] = typeof(T).GetField(fieldName, instanceFlags);
-                return cash[fieldName].GetValue(obj);
-            }
-        }
-
-        public static void SetInstanceFieldValue<T>(this T obj, string fieldName, object value)
-        {
-            var cash = Storage<T, FieldInfo>.instanceItems;
-            if (cash.TryGetValue(fieldName, out var field))
-            {
-                field.SetValue(obj, value);
-            }
-            else
-            {
-                cash[fieldName] = typeof(T).GetField(fieldName, instanceFlags);
-                cash[fieldName].SetValue(obj, value);
-            }
-        }
+            return newCash;
+        }    
     }
 }

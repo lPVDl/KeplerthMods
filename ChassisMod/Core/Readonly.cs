@@ -7,8 +7,6 @@ namespace ChassisMod.Core
         private TValue _value;
         private bool _hasValue;
 
-        public static implicit operator TValue (Readonly<TValue> container) => container.Get();
-
         public void Set(TValue value)
         {
             if (_hasValue) throw new InvalidOperationException("Tried to set value more than once");
