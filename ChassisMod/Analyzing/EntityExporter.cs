@@ -101,6 +101,8 @@ namespace ChassisMod.Analyzing
 
         private static IEnumerable<string> AnalizeProperties(Entity entity)
         {
+            Container<object> _;
+
             var props = entity.GetType().GetProperties();
 
             var result = new List<string>() { "ID: " + entity.ID };
@@ -108,8 +110,9 @@ namespace ChassisMod.Analyzing
             var containers = from p in props
                              let value = p.GetValue(entity)
                              where value != null && value.IsDerivedFromGeneric(typeof(Container<>))
-                             let data = value.InvokeMethod("Read")
-                             select $"{p.Name}: {data}";
+                             let data = value.InvokeMethod(nameof(_.Read))
+                             let str = value.InvokeMethod(nameof(_.Format), data)
+                             select $"{p.Name}: {str}";
 
             result.AddRange(containers);
 

@@ -13,6 +13,7 @@ namespace ChassisMod.Wrapping
             public Func<TConfig, TValue> ReadValue { get; set; }
             public Action<TConfig, TValue> WriteValue { get; set; }
             public Func<TValue, bool> ValidateValue { get; set; }
+            public Func<TValue, string> ValueToString { get; set; }
 
             internal override TValue Read()
             {
@@ -37,6 +38,13 @@ namespace ChassisMod.Wrapping
             protected override void AddPatch(Action patch, Assembly patcher) => ConfigPatcher.Add(patch, patcher);
 
             public override string ToString() => $"{Owner}.{Name}";
+
+            internal override string Format(TValue value)
+            {
+                if (ValueToString != null) { return ValueToString(value); }
+
+                return base.Format(value);
+            }
         }
     }
 }

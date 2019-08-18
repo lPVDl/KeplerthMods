@@ -29,7 +29,7 @@ namespace ChassisMod
             }
         }
 
-        public Container<int> PlayerSatiety
+        public Container<float> PlayerSatiety
         {
             get => _food.PlayerSatiety;
             set => _food.PlayerSatiety.Set(value, Assembly.GetCallingAssembly());

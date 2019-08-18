@@ -72,6 +72,8 @@
     <Compile Include="Analyzing\LanguageUtil.WebTranslator.RateLimiter.cs" />
     <Compile Include="Analyzing\LanguageUtil.WebTranslator.cs" />
     <Compile Include="Core\Data\WeaponHelper.cs" />
+    <Compile Include="Food_DB.cs" />
+    <Compile Include="Constant.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Item_DB.cs" />
     <Compile Include="Wrapping\Container.Data.cs" />
