@@ -1,14 +1,41 @@
-﻿//using ChassisMod.Core;
-//using DataBase;
+﻿using ChassisMod.Wrapping;
+using System.Reflection;
 
-//namespace ChassisMod
-//{
-//    public partial class Food : Item, IWrapper<ConfigFood>
-//    {
-//        ConfigFood IWrapper<ConfigFood>.GetObject() => ConfigFood.Table[ID]; 
+namespace ChassisMod
+{
+    public sealed partial class Food : Entity
+    {
+        public override int ID
+        {
+            get => base.ID;
 
-//        internal Food() : base() { }
+            internal set
+            {
+                base.ID = value;
+                _item.ID = value;
+                _food.ID = value;
+            }
+        }
 
-//        public Food(string name, Food source) : base(name, source) { }
-//    }
-//}
+        public override string Name
+        {
+            get => base.Name;
+
+            internal set
+            {
+                base.Name = value;
+                _item.Name = value;
+                _food.Name = value;
+            }
+        }
+
+        public Container<int> PlayerSatiety
+        {
+            get => _food.PlayerSatiety;
+            set => _food.PlayerSatiety.Set(value, Assembly.GetCallingAssembly());
+        }
+
+        private readonly ItemWrapper _item = new ItemWrapper();
+        private readonly FoodWrapper _food = new FoodWrapper();
+    }
+}

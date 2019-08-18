@@ -3,28 +3,26 @@ using System.Reflection;
 
 namespace ChassisMod
 {
-    public sealed class Item : Entity
+    public sealed partial class Item : Entity
     {
-        public static Item StonePickaxe = new Item() { ID = 6102, Name = "StonePickaxe" };
-
         public override int ID
         {
-            get => id.Get();
+            get => base.ID;
 
             internal set
             {
-                id.Set(value);
+                base.ID = value;
                 _item.ID = value;
             }
         }
 
         public override string Name
         {
-            get => name.Get();
+            get => base.Name;
 
             internal set
             {
-                name.Set(value);
+                base.Name = value;
                 _item.Name = value;
             }
         }

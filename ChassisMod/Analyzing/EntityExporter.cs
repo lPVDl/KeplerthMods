@@ -30,7 +30,10 @@ namespace ChassisMod.Analyzing
 
             var entities = EntityIdentifier.GetAll();
 
-            Export(entities, folder);
+            var groups = from e in entities
+                         group e by e.GetType();
+
+            foreach (var g in groups) { Export(g, folder); }
         }     
 
         private static void Export(IEnumerable<Entity> entities, string folder)
@@ -39,7 +42,7 @@ namespace ChassisMod.Analyzing
 
             var className = entities.First().GetType().Name;
 
-            var fileName = Path.Combine(folder, className + "DB.cs");
+            var fileName = Path.Combine(folder, className + "_DB.cs");
 
             var resolved = ResolveDuplicatedNames(entities);
 
