@@ -11,7 +11,7 @@ using Common;
 
 namespace ChassisMod.Analyzing
 {
-    partial class LanguageHelper
+    partial class LanguageUtil
     {
         private static partial class WebTranslator
         {

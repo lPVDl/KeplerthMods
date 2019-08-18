@@ -7,12 +7,8 @@ using System;
 
 namespace ChassisMod.Wrapping
 {
-    public sealed class ItemWrapper : Entity, IWrapper<ConfigItem>
+    internal sealed class ItemWrapper : Wrapper<ConfigItem>
     {
-        ConfigItem IWrapper<ConfigItem>.GetObject() => ConfigItem.Table[ID];
-
-        void IWrapper<ConfigItem>.AddPatch(Action patch, Assembly patchOwner) => ConfigPatcher.Add(patch, patchOwner);
-
         public Container<Sprite> Icon { get; }
         public Container<int> Durability { get; }
         public Container<int> Category { get; }
@@ -22,7 +18,7 @@ namespace ChassisMod.Wrapping
 
         internal ItemWrapper()
         {
-            Icon = new WrapperContainer<ConfigItem, Sprite>()
+            Icon = new Container<Sprite>()
             {
                 Name = nameof(Icon),
                 Owner = this,
@@ -31,7 +27,7 @@ namespace ChassisMod.Wrapping
                 WriteValue = (x, v) => x.DropTexture = SpritePatcher.FindOrAdd(v),
             };
 
-            Durability = new WrapperContainer<ConfigItem, int>()
+            Durability = new Container<int>()
             {
                 Name = nameof(Durability),
                 Owner = this,
@@ -40,7 +36,7 @@ namespace ChassisMod.Wrapping
                 WriteValue = (x, v) => x.Durability = v,
             };
 
-            Category = new WrapperContainer<ConfigItem, int>()
+            Category = new Container<int>()
             {
                 Name = nameof(Category),
                 Owner = this,
@@ -49,7 +45,7 @@ namespace ChassisMod.Wrapping
                 WriteValue = (x, v) => x.ItemType = v,
             };
 
-            BuildDamageBonus = new WrapperContainer<ConfigItem, int>()
+            BuildDamageBonus = new Container<int>()
             {
                 Name = nameof(BuildDamageBonus),
                 Owner = this,
@@ -58,7 +54,7 @@ namespace ChassisMod.Wrapping
                 WriteValue = (x, v) => x.AttBuild = v,
             };
 
-            TreeDamageBonus = new WrapperContainer<ConfigItem, int>()
+            TreeDamageBonus = new Container<int>()
             {
                 Name = nameof(TreeDamageBonus),
                 Owner = this,
@@ -67,7 +63,7 @@ namespace ChassisMod.Wrapping
                 WriteValue = (x, v) => x.AttTree = v,
             };
 
-            WallDamageBonus = new WrapperContainer<ConfigItem, int>()
+            WallDamageBonus = new Container<int>()
             {
                 Name = nameof(WallDamageBonus),
                 Owner = this,
@@ -86,7 +82,7 @@ namespace ChassisMod.Wrapping
                 try
                 {
                     info.Patcher = patcher;
-                    info.Entity = this;
+                    info.Target = this;
                     info.NewValue = source;
 
                     ConfigItem.Table[ID] = new ConfigItem(ConfigItem.Table[source.ID])
@@ -98,7 +94,7 @@ namespace ChassisMod.Wrapping
                 }
                 catch(Exception e)
                 {
-                    info.Exception = e;
+                    info.Error = e;
                     throw;
                 }
                 finally

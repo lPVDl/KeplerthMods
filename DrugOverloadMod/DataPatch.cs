@@ -1,4 +1,5 @@
-﻿using ChassisMod;
+﻿using ChassisMod.Analyzing;
+using ChassisMod;
 using Keplerth;
 using Common;
 using System;
@@ -12,7 +13,9 @@ namespace DrugOverloadMod
         {
             try
             {
-                Item.StonePickaxe.TreeDamageBonus = -1;
+                EntityExporter.AddRequest(@"T:\KeplerthDatabase\");
+
+                Item.StonePickaxe.TreeDamageBonus = 5000;
                 // ChassisMod.KeplerthDatabase.ItemDB.StonePickaxe.TreeDamageBonus.Set(500, System.Reflection.Assembly.GetExecutingAssembly());
 
                 //ConfigScanner.SaveDefinitions(@"T:\KeplerthDatabase\");

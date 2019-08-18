@@ -1,8 +1,6 @@
 ﻿using ChassisMod.Wrapping;
 using System.Reflection;
 
-using System.Linq;
-
 namespace ChassisMod
 {
     public sealed class Item : Entity
@@ -31,7 +29,11 @@ namespace ChassisMod
             }
         }
 
-        public Container<int> TreeDamageBonus { get => _item.TreeDamageBonus; set => _item.TreeDamageBonus.Set(value, Assembly.GetCallingAssembly()); }
+        public Container<int> TreeDamageBonus
+        {
+            get => _item.TreeDamageBonus;
+            set => _item.TreeDamageBonus.Set(value, Assembly.GetCallingAssembly());
+        }
 
         private readonly ItemWrapper _item = new ItemWrapper();
 

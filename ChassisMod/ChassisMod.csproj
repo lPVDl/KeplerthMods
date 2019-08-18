@@ -62,18 +62,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Analyzing\DatabaseScanner.cs" />
-    <Compile Include="Analyzing\EntityScanner.cs" />
+    <Compile Include="Analyzing\EntityExporter.cs" />
+    <Compile Include="Analyzing\EntityIdentifier.cs" />
     <Compile Include="Core\CollectionWrapper.cs" />
     <Compile Include="Core\Data\EffectDataHelper.cs" />
     <Compile Include="Core\Data\CraftTableDataHelper.cs" />
     <Compile Include="Core\Data\FoodHelper.cs" />
-    <Compile Include="Analyzing\RateLimiter.cs" />
-    <Compile Include="Analyzing\WebTranslator.cs" />
+    <Compile Include="Analyzing\LanguageUtil.WebTranslator.RateLimiter.cs" />
+    <Compile Include="Analyzing\LanguageUtil.WebTranslator.cs" />
     <Compile Include="Core\Data\WeaponHelper.cs" />
     <Compile Include="Item.cs" />
-    <Compile Include="Wrapping\ContainerWithData.cs" />
-    <Compile Include="Wrapping\IWrapper.cs" />
+    <Compile Include="Wrapping\Container.Data.cs" />
     <Compile Include="Wrapping\Container.cs" />
     <Compile Include="InsertFlags.cs" />
     <Compile Include="Food.cs" />
@@ -92,7 +91,7 @@
     <Compile Include="Core\Data\CraftGroupDataHelper.cs" />
     <Compile Include="Core\Data\BuildingDataHelper.cs" />
     <Compile Include="Core\Data\ItemHelper.cs" />
-    <Compile Include="Analyzing\LanguageHelper.cs" />
+    <Compile Include="Analyzing\LanguageUtil.cs" />
     <Compile Include="Core\Data\ConfigScanner.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Core\LanguagePatcher.cs" />
@@ -116,7 +115,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Wrapping\WrapperProperty.cs" />
+    <Compile Include="Wrapping\Patchable.cs" />
+    <Compile Include="Wrapping\Wrapper.cs" />
+    <Compile Include="Wrapping\Wrapper.Container.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

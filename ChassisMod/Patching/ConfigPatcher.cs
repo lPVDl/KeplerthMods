@@ -16,6 +16,8 @@ namespace ChassisMod.Patching
             public Assembly Patcher { get; set; }     
         }
 
+        public static event Action PatchingStarted;
+
         public static ConfigPatcher Instance { get; } = new ConfigPatcher();
 
         private static List<Patch> Patches { get; } = new List<Patch>();
@@ -36,6 +38,12 @@ namespace ChassisMod.Patching
 
         private static void Postfix()
         {
+            try
+            {
+                PatchingStarted?.Invoke();
+            }
+            catch (Exception e) { Log.Exception(e); }
+
             foreach(var patch in Patches)
             {
                 try

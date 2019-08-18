@@ -6,7 +6,7 @@ using Common;
 
 namespace ChassisMod.Analyzing
 {
-    internal static partial class LanguageHelper
+    internal static partial class LanguageUtil
     {
         internal static List<Dictionary<string, string>> Database { get; } = LoadDatabase();
 

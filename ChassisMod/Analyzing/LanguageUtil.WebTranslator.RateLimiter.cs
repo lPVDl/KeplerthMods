@@ -2,7 +2,7 @@
 
 namespace ChassisMod.Analyzing
 {
-    partial class LanguageHelper
+    partial class LanguageUtil
     {
         partial class WebTranslator
         {
