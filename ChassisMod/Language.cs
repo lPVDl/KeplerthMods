@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
-using System.Collections.Generic;
 using System.Globalization;
+using System;
 
 namespace ChassisMod
 {
@@ -9,8 +9,6 @@ namespace ChassisMod
         public static Language Russian { get; } = new Language() { Name = "russian", FriendlyName = "Русский" };
         public static Language English { get; } = new Language() { Name = "english", FriendlyName = "English" };
         public static Language SimplifiedChinese { get; } = new Language() { Name = "schinese", FriendlyName = "简体中文" };
-
-        public static IEnumerable<Language> All { get; } = new Language[] { Russian, English, SimplifiedChinese };
 
         private static Regex BadCharacters { get; } = new Regex("[^a-zA-Z0-9]", RegexOptions.Compiled);
         private static Regex FirstNumber { get; } = new Regex("^[0-9]{1,}", RegexOptions.Compiled);
@@ -25,7 +23,7 @@ namespace ChassisMod
             normalized = BadCharacters.Replace(normalized, "");
             normalized = FirstNumber.Replace(normalized, "");
 
-            if (normalized == "") throw new System.FormatException($"'{name}' can not be used as entity name");
+            if (normalized == "") throw new FormatException($"'{name}' can not be used as entity name");
 
             return normalized;
         }

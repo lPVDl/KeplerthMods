@@ -16,32 +16,14 @@ namespace Common
             stackTraceCash.Add(stackTrace);
             var caller = Assembly.GetCallingAssembly().GetName().Name;
             var message = CreateExceptionString(exception);
-            Console.WriteLine($"[{caller}] Error: {message}");
-        }
-
-        public static void ExceptionOnce(Exception exception, string title)
-        {
-            var stackTrace = exception.StackTrace;
-            if (stackTraceCash.Contains(stackTrace)) return;
-
-            stackTraceCash.Add(stackTrace);
-            var caller = Assembly.GetCallingAssembly().GetName().Name;
-            var message = CreateExceptionString(exception);
-            Console.WriteLine($"[{caller}] Error: {title} {message}");
+            Console.WriteLine($"[{caller}] {message}");
         }
 
         public static void Exception(Exception exception)
         {
             var caller = Assembly.GetCallingAssembly().GetName().Name;
             var message = CreateExceptionString(exception);
-            Console.WriteLine($"[{caller}] Error: {message}");
-        }
-
-        public static void Exception(Exception exception, string title)
-        {
-            var caller = Assembly.GetCallingAssembly().GetName().Name;
-            var message = CreateExceptionString(exception);
-            Console.WriteLine($"[{caller}] Error: {title} {message}");
+            Console.WriteLine($"[{caller}] {message}");
         }
 
         private static string CreateExceptionString(Exception exception) => string.Format("{0}: '{1}'\n{2}", exception.GetType(), exception.Message, exception.StackTrace);

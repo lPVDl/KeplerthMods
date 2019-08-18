@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace ChassisMod.Core
+namespace ChassisMod
 {
     public abstract class Entity
     {
-        private sealed class Readonly<TValue>
+        protected sealed class Readonly<TValue>
         {
             private TValue _value;
             private bool _hasValue;
@@ -26,11 +26,11 @@ namespace ChassisMod.Core
             }
         }
 
-        public virtual int ID { get => _id.Get(); internal set => _id.Set(value); }
-        public virtual string Name { get => _name.Get(); internal set => _name.Set(value); }
+        public virtual int ID { get => id.Get(); internal set => id.Set(value); }
+        public virtual string Name { get => name.Get(); internal set => name.Set(value); }
         
-        private readonly Readonly<int> _id = new Readonly<int>();
-        private readonly Readonly<string> _name = new Readonly<string>();
+        protected readonly Readonly<int> id = new Readonly<int>();
+        protected readonly Readonly<string> name = new Readonly<string>();
 
         internal Entity() { }
 

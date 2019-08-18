@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using System.Text;
 using UnityEngine;
 using System.IO;
 using System;
@@ -8,12 +9,42 @@ namespace ChassisMod.Patching
 {
     internal static class PatchLog
     {
-        public static bool Ignore { private get; set; }
-        public static object Entity { private get; set; }
-        public static Assembly Patcher { private get; set; }
-        public static object OldValue { private get; set; }
-        public static object NewValue { private get; set; }
-        public static Exception Error { private get; set; }
+        public sealed class Message
+        {
+            public object Entity { get; set; }
+            public Assembly Patcher { get; set; }
+            public object OldValue { get; set; }
+            public object NewValue { get; set; }
+            public Exception Exception { get; set; }
+
+            public void Log() => Write(ToString());
+
+            public override string ToString()
+            {
+                var sb = new StringBuilder();
+
+                if (Exception != null) { sb.Append("[ERROR] "); }
+
+                sb.Append("[");
+                sb.Append(Patcher.GetName().Name);
+                sb.Append("] ");
+
+                sb.Append(Entity);
+                sb.Append(" = ");
+                sb.Append(NewValue);
+                sb.Append(" <- ");
+                sb.Append(OldValue);
+                
+                if (Exception != null)
+                {
+                    sb.Append(" (");
+                    sb.Append(Exception.Message);
+                    sb.Append(")");
+                }
+
+                return sb.ToString();
+            }            
+        }
 
         private static string FileName { get; }
 
@@ -28,38 +59,16 @@ namespace ChassisMod.Patching
             catch (Exception e) { Log.Exception(e); }
         }
 
-        public static void Flush()
+        public static void Write(string value)
         {
-            if (Ignore)
+            try
             {
-                Reset();
-                return;
+                File.AppendAllText(FileName, value);
             }
-
-            var message = "";
-
-            if (Error != null) message += "ERROR! ";
-
-            message += $"[{Patcher.GetName().Name}] {Entity} = {NewValue} <- {OldValue}";
-
-            if (Error != null) message += $" (\"{Error.Message}\")";
-
-            WriteLine(message);
-
-            Reset();
+            catch (Exception e) { Log.Exception(e); }
         }
 
-        private static void Reset()
-        {
-            Ignore = false;
-            Entity = null;
-            Patcher = null;
-            OldValue = null;
-            NewValue = null;
-            Error = null;
-        }
-
-        private static void WriteLine(string value)
+        public static void WriteLine(string value)
         {
             try
             {
