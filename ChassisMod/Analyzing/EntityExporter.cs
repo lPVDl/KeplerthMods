@@ -55,13 +55,13 @@ namespace ChassisMod.Analyzing
 
                 foreach(var (newName, entity) in resolved)
                 {
-                    var props = AnalizeProperties(entity);
+                    var info = GetInfo(entity);
 
                     file.WriteLine("\t\t/// <summary>");
-                    foreach(var p in props)
+                    foreach(var i in info)
                     {
                         file.Write("\t\t/// ");
-                        file.Write(p);
+                        file.Write(i);
                         file.WriteLine("<para/>");
                     }
                     file.WriteLine("\t\t/// </summary>");
@@ -99,25 +99,43 @@ namespace ChassisMod.Analyzing
             return data.Zip(entities, Tuple.Create);
         }
 
-        private static IEnumerable<string> AnalizeProperties(Entity entity)
+        private static IEnumerable<string> GetInfo(Entity entity)
         {
-            Container<object> _;
+            var result = new List<string>() { "ID: " + entity.ID };
 
             var props = entity.GetType().GetProperties();
 
-            var result = new List<string>() { "ID: " + entity.ID };
+            var info = from p in props
+                       let v = p.GetValue(entity) where v != null
+                       let i = (v as IEntityInfo) where i != null && i.Display
+                       select p.Name + ": " + i.Info;
 
-            var containers = from p in props
-                             let value = p.GetValue(entity)
-                             where value != null && value.IsDerivedFromGeneric(typeof(Container<>))
-                             let data = value.InvokeMethod(nameof(_.Read))
-                             let str = value.InvokeMethod(nameof(_.Format), data)
-                             select $"{p.Name}: {str}";
-
-            result.AddRange(containers);
+            result.AddRange(info);
 
             return result;
         }
+
+        //private static IEnumerable<string> AnalizeProperties(Entity entity)
+        //{
+        //    Container<object> _;
+
+        //    var props = entity.GetType().GetProperties();
+
+        //    var result = new List<string>() { "ID: " + entity.ID };
+
+        //    var containers = from p in props
+        //                     let value = p.GetValue(entity)
+        //                     where value != null && value.IsDerivedFromGeneric(typeof(Container<>))
+        //                     where value is IEntityInfo
+        //                     // let data = value.InvokeMethod(nameof(_.Read))
+        //                     // let str = value.InvokeMethod(nameof(_.Format), data)
+        //                     let str = (value as IEntityInfo).Info
+        //                     select $"{p.Name}: {str}";
+
+        //    result.AddRange(containers);
+
+        //    return result;
+        //}
 
         
     }

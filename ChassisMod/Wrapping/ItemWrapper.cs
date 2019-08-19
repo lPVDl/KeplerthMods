@@ -7,18 +7,18 @@ using System;
 
 namespace ChassisMod.Wrapping
 {
-    internal sealed class ItemWrapper : Wrapper<ConfigItem>
+    internal sealed class ItemWrapper : ConfigWrapper<ConfigItem>
     {
-        public Container<Sprite> Icon { get; }
-        public Container<int> Durability { get; }
-        public Container<int> Category { get; }
-        public Container<int> BuildDamageBonus { get; }
-        public Container<int> TreeDamageBonus { get ; }
-        public Container<int> WallDamageBonus { get; }
+        public ConfigContainer<Sprite> Icon { get; }
+        public ConfigContainer<int> Durability { get; }
+        public ConfigContainer<int> Category { get; }
+        public ConfigContainer<int> BuildDamageBonus { get; }
+        public ConfigContainer<int> TreeDamageBonus { get ; }
+        public ConfigContainer<int> WallDamageBonus { get; }
 
         internal ItemWrapper()
         {
-            Icon = new Container<Sprite>()
+            Icon = new ConfigContainer<Sprite>()
             {
                 Name = nameof(Icon),
                 Owner = this,
@@ -27,7 +27,7 @@ namespace ChassisMod.Wrapping
                 ValidateValue = x => x != null,
             };
 
-            Durability = new Container<int>()
+            Durability = new ConfigContainer<int>()
             {
                 Name = nameof(Durability),
                 Owner = this,
@@ -36,7 +36,7 @@ namespace ChassisMod.Wrapping
                 ValidateValue = x => x > 0,
             };
 
-            Category = new Container<int>()
+            Category = new ConfigContainer<int>()
             {
                 Name = nameof(Category),
                 Owner = this,
@@ -45,7 +45,7 @@ namespace ChassisMod.Wrapping
                 ValidateValue = x => x >= 0,
             };
 
-            BuildDamageBonus = new Container<int>()
+            BuildDamageBonus = new ConfigContainer<int>()
             {
                 Name = nameof(BuildDamageBonus),
                 Owner = this,
@@ -54,7 +54,7 @@ namespace ChassisMod.Wrapping
                 ValidateValue = x => x > 0,
             };
 
-            TreeDamageBonus = new Container<int>()
+            TreeDamageBonus = new ConfigContainer<int>()
             {
                 Name = nameof(TreeDamageBonus),
                 Owner = this,
@@ -63,7 +63,7 @@ namespace ChassisMod.Wrapping
                 ValidateValue = x => x > 0,
             };
 
-            WallDamageBonus = new Container<int>()
+            WallDamageBonus = new ConfigContainer<int>()
             {
                 Name = nameof(WallDamageBonus),
                 Owner = this,

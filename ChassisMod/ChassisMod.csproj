@@ -110,6 +110,7 @@
     <Compile Include="Effect_Modifiers.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="Wrapping\FoodWrapper.cs" />
+    <Compile Include="Wrapping\IEntityInfo.cs" />
     <Compile Include="Wrapping\ItemWrapper.cs" />
     <Compile Include="Craft.cs" />
     <Compile Include="CraftGroup.cs" />
@@ -121,7 +122,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Wrapping\Patchable.cs" />
-    <Compile Include="Wrapping\Wrapper.cs" />
+    <Compile Include="Wrapping\ConfigWrapper.cs" />
     <Compile Include="Wrapping\Wrapper.Container.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,31 +4,66 @@ using System;
 
 namespace ChassisMod.Wrapping
 {
-    partial class Wrapper<TConfig>
+    partial class ConfigWrapper<TConfig>
     {
-        public sealed class Container<TValue> : Patchable<TValue>
+        public sealed class ConfigContainer<TValue> : Patchable<TValue>, IEntityInfo
         {
+            string IEntityInfo.Info
+            {
+                get
+                {
+                    var config = GetConfig();
+                    var value = ReadValue(config);
+
+                    if (FormatValue != null) { return FormatValue(config, value); }
+
+                    if (value == null) { return "null"; }
+
+                    return value.ToString();
+                }
+            }
+
+            bool IEntityInfo.Display
+            {
+                get
+                {
+                    if (DisplayValue != null)
+                    {
+                        var config = GetConfig();
+                        var value = ReadValue(config);
+
+                        return DisplayValue(config, value);
+                    }
+
+                    return true;
+                }
+            }
+
             public string Name { get; set; }
-            public Wrapper<TConfig> Owner { get; set; }
+            public ConfigWrapper<TConfig> Owner { get; set; }
             public Func<TConfig, TValue> ReadValue { get; set; }
             public Action<TConfig, TValue> WriteValue { get; set; }
             public Func<TValue, bool> ValidateValue { get; set; }
-            public Func<TValue, string> ValueToString { get; set; }
+            public Func<TConfig, TValue, string> FormatValue { get; set; }
+            public Func<TConfig, TValue, bool> DisplayValue { get; set; }
 
             internal override TValue Read()
             {
-                if (Table.TryGetValue(Owner.ID, out var entity)) { return ReadValue(entity); }
+                var config = GetConfig();
 
-                throw new InvalidOperationException($"{Owner}({Owner.ID}) was not found in {typeof(TConfig).Name}.{nameof(Table)}");
+                return ReadValue(config);
             }
 
             internal override void Write(TValue value)
             {
-                if (Table.TryGetValue(Owner.ID, out var entity))
-                {
-                    WriteValue(entity, value);
-                    return;
-                }
+                var config = GetConfig();
+
+                WriteValue(config, value);             
+            }
+
+            private TConfig GetConfig()
+            {
+                if (Table.TryGetValue(Owner.ID, out var config)) { return config; }
 
                 throw new InvalidOperationException($"{Owner}({Owner.ID}) was not found in {typeof(TConfig).Name}.{nameof(Table)}");
             }
@@ -38,13 +73,6 @@ namespace ChassisMod.Wrapping
             protected override void AddPatch(Action patch, Assembly patcher) => ConfigPatcher.Add(patch, patcher);
 
             public override string ToString() => $"{Owner}.{Name}";
-
-            internal override string Format(TValue value)
-            {
-                if (ValueToString != null) { return ValueToString(value); }
-
-                return base.Format(value);
-            }
         }
     }
 }
