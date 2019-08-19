@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using ChassisMod.Patching;
 using ChassisMod.Wrapping;
-using Common.Reflection;
 using System.Linq;
 using System.IO;
 using System;
@@ -113,30 +112,6 @@ namespace ChassisMod.Analyzing
             result.AddRange(info);
 
             return result;
-        }
-
-        //private static IEnumerable<string> AnalizeProperties(Entity entity)
-        //{
-        //    Container<object> _;
-
-        //    var props = entity.GetType().GetProperties();
-
-        //    var result = new List<string>() { "ID: " + entity.ID };
-
-        //    var containers = from p in props
-        //                     let value = p.GetValue(entity)
-        //                     where value != null && value.IsDerivedFromGeneric(typeof(Container<>))
-        //                     where value is IEntityInfo
-        //                     // let data = value.InvokeMethod(nameof(_.Read))
-        //                     // let str = value.InvokeMethod(nameof(_.Format), data)
-        //                     let str = (value as IEntityInfo).Info
-        //                     select $"{p.Name}: {str}";
-
-        //    result.AddRange(containers);
-
-        //    return result;
-        //}
-
-        
+        }      
     }
 }
