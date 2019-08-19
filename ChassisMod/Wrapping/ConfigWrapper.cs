@@ -10,13 +10,13 @@ namespace ChassisMod.Wrapping
 {
     internal abstract partial class ConfigWrapper<TConfig> : Entity where TConfig : DBBase
     {
-        private static FieldInfo TableHook { get; }
+        private static FieldInfo TableField { get; }
 
         public static Dictionary<int, TConfig> Table
         {
             get
             {
-                var table = TableHook.GetValue(null);
+                var table = TableField.GetValue(null);
                 if (table == null) throw new Exception($"{typeof(TConfig).Name}.Table was null");
 
                 return table as Dictionary<int, TConfig>;
@@ -25,15 +25,15 @@ namespace ChassisMod.Wrapping
 
         static ConfigWrapper()
         {
-            TableHook = typeof(TConfig).GetField("Table", BindingFlags.Public | BindingFlags.Static);
+            TableField = typeof(TConfig).GetField("Table", BindingFlags.Public | BindingFlags.Static);
 
-            if (TableHook == null)
+            if (TableField == null)
             {
                 Log.Error($"{typeof(TConfig).Name}.Table was not found!");
                 return;
             }
 
-            if (TableHook.FieldType != typeof(Dictionary<int, TConfig>))
+            if (TableField.FieldType != typeof(Dictionary<int, TConfig>))
             {
                 Log.Error($"{typeof(TConfig).Name}.Table has invalid type!");
             }
@@ -43,7 +43,7 @@ namespace ChassisMod.Wrapping
         private static readonly object ContainerNameCash = new object();
         private static readonly object ContainerOwnerCash = new object();
 
-        protected void FinishContainerInitialization()
+        protected void FinishContainersInitialization()
         {
             var props = Cash.Read(ContainerPropertiesCash, GetType(), GetContainerProperties);
 

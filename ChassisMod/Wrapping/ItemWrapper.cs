@@ -1,5 +1,4 @@
 ﻿using ChassisMod.Patching;
-using System.Reflection;
 using UnityEngine;
 using Keplerth;
 using DataBase;
@@ -63,7 +62,7 @@ namespace ChassisMod.Wrapping
 
             try
             {
-                FinishContainerInitialization();
+                FinishContainersInitialization();
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
         }

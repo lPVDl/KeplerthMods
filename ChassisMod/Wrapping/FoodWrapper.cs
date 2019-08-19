@@ -22,7 +22,7 @@ namespace ChassisMod.Wrapping
 
             try
             {
-                FinishContainerInitialization();
+                FinishContainersInitialization();
             }
             catch (Exception e) { Log.ExceptionOnce(e); }
         }
