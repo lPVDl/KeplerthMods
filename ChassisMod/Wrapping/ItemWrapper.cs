@@ -4,6 +4,7 @@ using UnityEngine;
 using Keplerth;
 using DataBase;
 using System;
+using Common;
 
 namespace ChassisMod.Wrapping
 {
@@ -20,8 +21,6 @@ namespace ChassisMod.Wrapping
         {
             Icon = new ConfigContainer<ConfigItem, Sprite>()
             {
-                Name = nameof(Icon),
-                Owner = this,
                 ReadValue = x => CustomResources.Load<Sprite>(x.DropTexture),
                 WriteValue = (x, v) => x.DropTexture = SpritePatcher.FindOrAdd(v),
                 ValidateValue = x => x != null,
@@ -29,8 +28,6 @@ namespace ChassisMod.Wrapping
 
             Durability = new ConfigContainer<ConfigItem, int>()
             {
-                Name = nameof(Durability),
-                Owner = this,
                 ReadValue = x => x.Durability,
                 WriteValue = (x, v) => x.Durability = v,
                 ValidateValue = x => x > 0,
@@ -38,8 +35,6 @@ namespace ChassisMod.Wrapping
 
             Category = new ConfigContainer<ConfigItem, int>()
             {
-                Name = nameof(Category),
-                Owner = this,
                 ReadValue = x => x.ItemType,
                 WriteValue = (x, v) => x.ItemType = v,
                 ValidateValue = x => x >= 0,
@@ -47,8 +42,6 @@ namespace ChassisMod.Wrapping
 
             BuildDamageBonus = new ConfigContainer<ConfigItem, int>()
             {
-                Name = nameof(BuildDamageBonus),
-                Owner = this,
                 ReadValue = x => x.AttBuild,
                 WriteValue = (x, v) => x.AttBuild = v,
                 ValidateValue = x => x > 0,
@@ -56,8 +49,6 @@ namespace ChassisMod.Wrapping
 
             TreeDamageBonus = new ConfigContainer<ConfigItem, int>()
             {
-                Name = nameof(TreeDamageBonus),
-                Owner = this,
                 ReadValue = x => x.AttTree,
                 WriteValue = (x, v) => x.AttTree = v,
                 ValidateValue = x => x > 0,
@@ -65,12 +56,16 @@ namespace ChassisMod.Wrapping
 
             WallDamageBonus = new ConfigContainer<ConfigItem, int>()
             {
-                Name = nameof(WallDamageBonus),
-                Owner = this,
                 ReadValue = x => x.AttWall,
                 WriteValue = (x, v) => x.AttWall = v,
                 ValidateValue = x => x > 0,
             };
+
+            try
+            {
+                FinishContainerInitialization();
+            }
+            catch (Exception e) { Log.ExceptionOnce(e); }
         }
 
         //internal void CopyData(ItemWrapper source, Assembly patcher, bool log = true)

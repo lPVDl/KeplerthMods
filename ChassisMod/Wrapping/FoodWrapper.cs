@@ -1,5 +1,6 @@
 ﻿using DataBase;
 using System;
+using Common;
 
 namespace ChassisMod.Wrapping
 {
@@ -11,9 +12,6 @@ namespace ChassisMod.Wrapping
         {
             PlayerSatiety = new ConfigContainer<ConfigFood, float>()
             {
-                Owner = this,
-                Name = nameof(PlayerSatiety),           
-
                 ReadValue = x => x.EffectHunger / (float)Constant.PlayerMaxSatiety,
                 WriteValue = (x, v) => x.EffectHunger = (int)Math.Floor(v * Constant.PlayerMaxSatiety),
                 ValidateValue = x => x >= 0 && x <= 1,
@@ -21,6 +19,12 @@ namespace ChassisMod.Wrapping
                 FormatValue = (x, v) => v * 100 + "%",
                 DisplayValue = (x, v) => x.EffectHunger > 0
             };
+
+            try
+            {
+                FinishContainerInitialization();
+            }
+            catch (Exception e) { Log.ExceptionOnce(e); }
         }
     }
 }

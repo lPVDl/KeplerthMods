@@ -123,7 +123,7 @@
     </Compile>
     <Compile Include="Wrapping\Patchable.cs" />
     <Compile Include="Wrapping\ConfigWrapper.cs" />
-    <Compile Include="Wrapping\Wrapper.Container.cs" />
+    <Compile Include="Wrapping\ConfigContainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
