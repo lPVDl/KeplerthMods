@@ -4,8 +4,8 @@
     {       
         public static implicit operator Container<TValue> (TValue value) => new Data() { Value = value };
 
-        protected abstract TValue Read();
+        internal abstract TValue Read();
 
-        protected abstract void Write(TValue value);
+        internal abstract void Write(TValue value);
     }
 }

@@ -46,14 +46,14 @@ namespace ChassisMod.Wrapping
         public Func<TConfig, TValue, string> FormatValue { get; set; }
         public Func<TConfig, TValue, bool> DisplayValue { get; set; }
 
-        protected override TValue Read()
+        internal override TValue Read()
         {
             var config = GetConfig();
 
             return ReadValue(config);
         }
 
-        protected override void Write(TValue value)
+        internal override void Write(TValue value)
         {
             var config = GetConfig();
 
