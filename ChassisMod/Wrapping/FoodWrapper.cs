@@ -5,11 +5,11 @@ namespace ChassisMod.Wrapping
 {
     internal sealed class FoodWrapper : ConfigWrapper<ConfigFood>
     {
-        public ConfigContainer<float> PlayerSatiety { get; }
+        public ConfigContainer<ConfigFood, float> PlayerSatiety { get; }
 
         internal FoodWrapper()
         {
-            PlayerSatiety = new ConfigContainer<float>()
+            PlayerSatiety = new ConfigContainer<ConfigFood, float>()
             {
                 Owner = this,
                 Name = nameof(PlayerSatiety),           
