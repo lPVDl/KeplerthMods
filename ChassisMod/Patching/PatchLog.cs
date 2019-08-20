@@ -56,7 +56,7 @@ namespace ChassisMod.Patching
                     {
                         sb.Append(" = ");
 
-                        if (_newValue && _source)
+                        if (_newValue && _source && _newValue.ToString() != _source.ToString())
                         {
                             sb.Append(_newValue.Value).Append('(').Append(_source.Value).Append(')');
                         }

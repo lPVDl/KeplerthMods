@@ -60,7 +60,7 @@ namespace ChassisMod.Wrapping
             }
 
             public string Name { get; set; }
-            public Wrapper<TConfig> Owner { get; set; }
+            public IWrapper<TConfig> Owner { get; set; }
             public Func<TConfig, TValue> Read { get; set; }
             public Action<TConfig, TValue> Write { get; set; }
             public Func<TValue, bool> Validate { get; set; }
@@ -98,6 +98,8 @@ namespace ChassisMod.Wrapping
 
                         var newValue = value.Read();
 
+                        info.NewValue = newValue;
+
                         if (!Validate(newValue)) throw new InvalidOperationException($"'{newValue}' is invalid value");
 
                         Write(config, newValue);
@@ -118,12 +120,7 @@ namespace ChassisMod.Wrapping
                 ConfigPatcher.Add(patch, patcher);
             }
 
-            private TConfig GetConfig()
-            {
-                if (Table.TryGetValue(Owner.ID, out var config)) { return config; }
-
-                throw new InvalidOperationException($"{Owner}({Owner.ID}) was not found in {typeof(TConfig).Name}.{nameof(Table)}");
-            }
+            private TConfig GetConfig() => Owner.GetConfig();
 
             public override string ToString() => $"{Owner}.{Name}";
         }

@@ -19,7 +19,7 @@ namespace DrugOverloadMod
             {
                 //PatchCenter.CreateEntities(Assembly.GetExecutingAssembly());
 
-                EntityExporter.AddRequest(@"T:\KeplerthDatabase\");
+                // EntityExporter.AddRequest(@"T:\KeplerthDatabase\");
 
                 Item.StonePickaxe.TreeDamageBonus = 5000;
                 // ChassisMod.KeplerthDatabase.ItemDB.StonePickaxe.TreeDamageBonus.Set(500, System.Reflection.Assembly.GetExecutingAssembly());
