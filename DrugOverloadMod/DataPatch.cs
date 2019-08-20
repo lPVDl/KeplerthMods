@@ -1,4 +1,5 @@
-﻿using ChassisMod.Analyzing;
+﻿using System.Reflection;
+using ChassisMod.Analyzing;
 using ChassisMod;
 using Keplerth;
 using Common;
@@ -7,12 +8,17 @@ using System;
 namespace DrugOverloadMod
 {
     [StaticConstructorOnStartup]
-    internal static class DataPatch
+    internal class DataPatch
     {
+        [CreateFrom("GoldPickaxe0")]
+        public static readonly Item CopperAxe;
+
         static DataPatch()
         {
             try
             {
+                PatchCenter.CreateEntities(Assembly.GetExecutingAssembly());
+
                 EntityExporter.AddRequest(@"T:\KeplerthDatabase\");
 
                 Item.StonePickaxe.TreeDamageBonus = 5000;

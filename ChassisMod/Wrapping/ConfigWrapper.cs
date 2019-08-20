@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 using Common.Reflection;
+using Common.Extensions;
 using System.Linq;
 using DataBase;
 using Common;
@@ -39,13 +40,13 @@ namespace ChassisMod.Wrapping
             }
         }
 
-        private static readonly object ContainerPropertiesCash = new object();
-        private static readonly object ContainerNameCash = new object();
-        private static readonly object ContainerOwnerCash = new object();
+        private static readonly Dictionary<Type, IEnumerable<PropertyInfo>> ContainerProperties = new Dictionary<Type, IEnumerable<PropertyInfo>>();
+        private static readonly Dictionary<Type, PropertyInfo> ContainerName = new Dictionary<Type, PropertyInfo>();
+        private static readonly Dictionary<Type, PropertyInfo> ContainerOwner = new Dictionary<Type, PropertyInfo>();
 
         protected void FinishContainersInitialization()
         {
-            var props = Cash.Read(ContainerPropertiesCash, GetType(), GetContainerProperties);
+            var props = ContainerProperties.Cash(GetType(), GetContainerProperties);
 
             foreach(var p in props)
             {
@@ -57,8 +58,8 @@ namespace ChassisMod.Wrapping
                     continue;
                 }
 
-                var name = Cash.Read(ContainerNameCash, container.GetType(), x => x.GetProperty("Name"));
-                var owner = Cash.Read(ContainerOwnerCash, container.GetType(), x => x.GetProperty("Owner"));
+                var name = ContainerName.Cash(container.GetType(), x => x.GetProperty("Name"));
+                var owner = ContainerOwner.Cash(container.GetType(), x => x.GetProperty("Owner"));
 
                 name.SetValue(container, p.Name);
                 owner.SetValue(container, this);

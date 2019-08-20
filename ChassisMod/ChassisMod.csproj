@@ -65,6 +65,8 @@
     <Compile Include="Analyzing\EntityIdentifier.Table.cs" />
     <Compile Include="Analyzing\EntityExporter.cs" />
     <Compile Include="Analyzing\EntityIdentifier.cs" />
+    <Compile Include="IWrapperManipulator.cs" />
+    <Compile Include="PatchCenter.cs" />
     <Compile Include="Core\CollectionWrapper.cs" />
     <Compile Include="Core\Data\EffectDataHelper.cs" />
     <Compile Include="Core\Data\CraftTableDataHelper.cs" />
@@ -72,6 +74,7 @@
     <Compile Include="Analyzing\LanguageUtil.WebTranslator.RateLimiter.cs" />
     <Compile Include="Analyzing\LanguageUtil.WebTranslator.cs" />
     <Compile Include="Core\Data\WeaponHelper.cs" />
+    <Compile Include="CreateFromAttribute.cs" />
     <Compile Include="Food_DB.cs" />
     <Compile Include="Constant.cs" />
     <Compile Include="Item.cs" />

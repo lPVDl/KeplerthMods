@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace ChassisMod
 {
-    public sealed partial class Food : Entity
+    public sealed partial class Food : Entity, IWrapperManipulator
     {
         public override int ID
         {
@@ -37,5 +37,10 @@ namespace ChassisMod
 
         private readonly ItemWrapper _item = new ItemWrapper();
         private readonly FoodWrapper _food = new FoodWrapper();
+
+        internal Food()
+        {
+
+        }
     }
 }

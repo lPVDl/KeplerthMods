@@ -26,7 +26,7 @@ namespace Common
             Console.WriteLine($"[{caller}] {message}");
         }
 
-        private static string CreateExceptionString(Exception exception) => string.Format("{0}: '{1}'\n{2}", exception.GetType(), exception.Message, exception.StackTrace);
+        private static string CreateExceptionString(Exception exception) => string.Format("{0}: {1}\n{2}", exception.GetType(), exception.Message, exception.StackTrace);
 
         public static void Error(string message)
         {

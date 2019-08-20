@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace ChassisMod
 {
-    public sealed partial class Item : Entity
+    public sealed partial class Item : Entity, IWrapperManipulator
     {
         public override int ID
         {
