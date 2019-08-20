@@ -65,6 +65,7 @@
     <Compile Include="Analyzing\EntityIdentifier.Table.cs" />
     <Compile Include="Analyzing\EntityExporter.cs" />
     <Compile Include="Analyzing\EntityIdentifier.cs" />
+    <Compile Include="Wrapping\IWrappedPropertyInfo.cs" />
     <Compile Include="IWrapperManipulator.cs" />
     <Compile Include="PatchCenter.cs" />
     <Compile Include="Core\CollectionWrapper.cs" />
@@ -79,8 +80,9 @@
     <Compile Include="Constant.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Item_DB.cs" />
-    <Compile Include="Wrapping\Container.Data.cs" />
-    <Compile Include="Wrapping\Container.cs" />
+    <Compile Include="Wrapping\Wrapper.IPatchable.cs" />
+    <Compile Include="Wrapping\Reader.Data.cs" />
+    <Compile Include="Wrapping\Reader.cs" />
     <Compile Include="InsertFlags.cs" />
     <Compile Include="Food.cs" />
     <Compile Include="Patching\SpritePatcher.cs" />
@@ -113,7 +115,6 @@
     <Compile Include="Effect_Modifiers.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="Wrapping\FoodWrapper.cs" />
-    <Compile Include="Wrapping\IEntityInfo.cs" />
     <Compile Include="Wrapping\ItemWrapper.cs" />
     <Compile Include="Craft.cs" />
     <Compile Include="CraftGroup.cs" />
@@ -124,9 +125,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Wrapping\Patchable.cs" />
-    <Compile Include="Wrapping\ConfigWrapper.cs" />
-    <Compile Include="Wrapping\ConfigContainer.cs" />
+    <Compile Include="Wrapping\Wrapper.cs" />
+    <Compile Include="Wrapping\Wrapper.Patchable.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

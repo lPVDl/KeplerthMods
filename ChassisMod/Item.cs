@@ -27,9 +27,9 @@ namespace ChassisMod
             }
         }
 
-        public Container<int> TreeDamageBonus
+        public Reader<int> TreeDamageBonus
         {
-            get => _item.TreeDamageBonus;
+            get => _item.TreeDamageBonus.Reader;
             set => _item.TreeDamageBonus.Set(value, Assembly.GetCallingAssembly());
         }
 

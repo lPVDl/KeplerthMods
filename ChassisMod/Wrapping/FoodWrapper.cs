@@ -1,30 +1,26 @@
 ﻿using DataBase;
 using System;
-using Common;
 
 namespace ChassisMod.Wrapping
 {
-    internal sealed class FoodWrapper : ConfigWrapper<ConfigFood>
+    internal sealed class FoodWrapper : Wrapper<ConfigFood>
     {
-        public ConfigContainer<ConfigFood, float> PlayerSatiety { get; }
+        public IPatchable<float> PlayerSatiety { get; }
 
         internal FoodWrapper()
         {
-            PlayerSatiety = new ConfigContainer<ConfigFood, float>()
+            PlayerSatiety = new Patchable<float>()
             {
-                ReadValue = x => x.EffectHunger / (float)Constant.PlayerMaxSatiety,
-                WriteValue = (x, v) => x.EffectHunger = (int)Math.Floor(v * Constant.PlayerMaxSatiety),
-                ValidateValue = x => x >= 0 && x <= 1,
+                Owner = this,
+                Name = nameof(PlayerSatiety),
 
-                FormatValue = (x, v) => v * 100 + "%",
-                DisplayValue = (x, v) => x.EffectHunger > 0
+                Read = x => x.EffectHunger / (float)Constant.PlayerMaxSatiety,
+                Write = (x, v) => x.EffectHunger = (int)Math.Floor(v * Constant.PlayerMaxSatiety),
+                Validate = x => x >= 0 && x <= 1,
+
+                Format = (x, v) => v * 100 + "%",
+                IsDefault = (x, v) => x.EffectHunger == 0
             };
-
-            try
-            {
-                FinishContainersInitialization();
-            }
-            catch (Exception e) { Log.ExceptionOnce(e); }
         }
     }
 }

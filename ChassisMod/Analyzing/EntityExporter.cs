@@ -41,7 +41,7 @@ namespace ChassisMod.Analyzing
 
             var className = entities.First().GetType().Name;
 
-            var fileName = Path.Combine(folder, className + "_DB.cs");
+            var fileName = Path.Combine(folder, className + "DB.cs");
 
             var resolved = ResolveDuplicatedNames(entities);
 
@@ -106,8 +106,8 @@ namespace ChassisMod.Analyzing
 
             var info = from p in props
                        let v = p.GetValue(entity) where v != null
-                       let i = (v as IEntityInfo) where i != null && i.Display
-                       select p.Name + ": " + i.Info;
+                       let i = v as IWrapperPropertyInfo where i != null && !i.ValueIsDefault
+                       select p.Name + ": " + i.Value;
 
             result.AddRange(info);
 

@@ -17,7 +17,7 @@ namespace DrugOverloadMod
         {
             try
             {
-                PatchCenter.CreateEntities(Assembly.GetExecutingAssembly());
+                //PatchCenter.CreateEntities(Assembly.GetExecutingAssembly());
 
                 EntityExporter.AddRequest(@"T:\KeplerthDatabase\");
 

@@ -2,69 +2,79 @@
 using UnityEngine;
 using Keplerth;
 using DataBase;
-using System;
-using Common;
 
 namespace ChassisMod.Wrapping
 {
-    internal sealed class ItemWrapper : ConfigWrapper<ConfigItem>
+    internal sealed class ItemWrapper : Wrapper<ConfigItem>
     {
-        public ConfigContainer<ConfigItem, Sprite> Icon { get; }
-        public ConfigContainer<ConfigItem, int> Durability { get; }
-        public ConfigContainer<ConfigItem, int> Category { get; }
-        public ConfigContainer<ConfigItem, int> BuildDamageBonus { get; }
-        public ConfigContainer<ConfigItem, int> TreeDamageBonus { get ; }
-        public ConfigContainer<ConfigItem, int> WallDamageBonus { get; }
+        public IPatchable<Sprite> Icon { get; }
+        public IPatchable<int> Durability { get; }
+        public IPatchable<int> Category { get; }
+        public IPatchable<int> BuildDamageBonus { get; }
+        public IPatchable<int> TreeDamageBonus { get ; }
+        public IPatchable<int> WallDamageBonus { get; }
 
         internal ItemWrapper()
         {
-            Icon = new ConfigContainer<ConfigItem, Sprite>()
+            Icon = new Patchable<Sprite>()
             {
-                ReadValue = x => CustomResources.Load<Sprite>(x.DropTexture),
-                WriteValue = (x, v) => x.DropTexture = SpritePatcher.FindOrAdd(v),
-                ValidateValue = x => x != null,
+                Owner = this,
+                Name = nameof(Icon),
+
+                Read = x => CustomResources.Load<Sprite>(x.DropTexture),
+                Write = (x, v) => x.DropTexture = SpritePatcher.FindOrAdd(v),
+                Validate = x => x != null,
             };
 
-            Durability = new ConfigContainer<ConfigItem, int>()
+            Durability = new Patchable<int>()
             {
-                ReadValue = x => x.Durability,
-                WriteValue = (x, v) => x.Durability = v,
-                ValidateValue = x => x > 0,
+                Owner = this,
+                Name = nameof(Durability),
+
+                Read = x => x.Durability,
+                Write = (x, v) => x.Durability = v,
+                Validate = x => x > 0,
             };
 
-            Category = new ConfigContainer<ConfigItem, int>()
+            Category = new Patchable<int>()
             {
-                ReadValue = x => x.ItemType,
-                WriteValue = (x, v) => x.ItemType = v,
-                ValidateValue = x => x >= 0,
+                Owner = this,
+                Name = nameof(Category),
+
+                Read = x => x.ItemType,
+                Write = (x, v) => x.ItemType = v,
+                Validate = x => x >= 0,
             };
 
-            BuildDamageBonus = new ConfigContainer<ConfigItem, int>()
+            BuildDamageBonus = new Patchable<int>()
             {
-                ReadValue = x => x.AttBuild,
-                WriteValue = (x, v) => x.AttBuild = v,
-                ValidateValue = x => x > 0,
+                Owner = this,
+                Name = nameof(BuildDamageBonus),
+
+                Read = x => x.AttBuild,
+                Write = (x, v) => x.AttBuild = v,
+                Validate = x => x > 0,
             };
 
-            TreeDamageBonus = new ConfigContainer<ConfigItem, int>()
+            TreeDamageBonus = new Patchable<int>()
             {
-                ReadValue = x => x.AttTree,
-                WriteValue = (x, v) => x.AttTree = v,
-                ValidateValue = x => x > 0,
+                Owner = this,
+                Name = nameof(TreeDamageBonus),
+
+                Read = x => x.AttTree,
+                Write = (x, v) => x.AttTree = v,
+                Validate  = x => x > 0,
             };
 
-            WallDamageBonus = new ConfigContainer<ConfigItem, int>()
+            WallDamageBonus = new Patchable<int>()
             {
-                ReadValue = x => x.AttWall,
-                WriteValue = (x, v) => x.AttWall = v,
-                ValidateValue = x => x > 0,
-            };
+                Owner = this,
+                Name = nameof(WallDamageBonus),
 
-            try
-            {
-                FinishContainersInitialization();
-            }
-            catch (Exception e) { Log.ExceptionOnce(e); }
+                Read = x => x.AttWall,
+                Write = (x, v) => x.AttWall = v,
+                Validate = x => x > 0,
+            };
         }
 
         //internal void CopyData(ItemWrapper source, Assembly patcher, bool log = true)

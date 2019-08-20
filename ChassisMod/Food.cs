@@ -29,9 +29,9 @@ namespace ChassisMod
             }
         }
 
-        public Container<float> PlayerSatiety
+        public Reader<float> PlayerSatiety
         {
-            get => _food.PlayerSatiety;
+            get => _food.PlayerSatiety.Reader;
             set => _food.PlayerSatiety.Set(value, Assembly.GetCallingAssembly());
         }
 
