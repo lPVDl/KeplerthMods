@@ -4,7 +4,7 @@ using System.Linq;
 using System;
 using Common;
 
-namespace ChassisMod.Analyzing
+namespace ChassisMod.Utilities
 {
     internal static partial class LanguageUtil
     {
@@ -15,7 +15,18 @@ namespace ChassisMod.Analyzing
 
         private static string[] DefaultText = { "English", "0", "", null };
 
-        public static bool TryGetInEnglish(string textID, out string result)
+        public static string NameFromTextID(string textID)
+        {
+            try
+            {
+                if (TryGetInEnglish(textID, out var name)) { return Language.Normalize(name); }
+            }
+            catch (Exception e) { Log.Exception(e); }
+
+            return null;
+        }
+
+        private static bool TryGetInEnglish(string textID, out string result)
         {
             result = null;
 
@@ -40,7 +51,7 @@ namespace ChassisMod.Analyzing
             return false;
         }
 
-        public static bool IsDefault(string text) => DefaultText.Any(x => x == text);
+        private static bool IsDefault(string text) => DefaultText.Any(x => x == text);
 
         private static List<Dictionary<string, string>> LoadDatabase()
         {

@@ -9,7 +9,7 @@ using System.IO;
 using System;
 using Common;
 
-namespace ChassisMod.Analyzing
+namespace ChassisMod.Utilities
 {
     partial class LanguageUtil
     {

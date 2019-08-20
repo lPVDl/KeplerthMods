@@ -11,7 +11,7 @@ namespace ChassisMod.Wrapping
     {
         private static FieldInfo TableField { get; }
 
-        private static Dictionary<int, TConfig> Table
+        internal static Dictionary<int, TConfig> Table
         {
             get
             {
@@ -22,7 +22,7 @@ namespace ChassisMod.Wrapping
             }
         }
 
-        private readonly IWrapperHybrid _owner;
+        private readonly IHybrid _owner;
 
         static Wrapper()
         {
@@ -40,7 +40,7 @@ namespace ChassisMod.Wrapping
             }
         }
 
-        protected Wrapper(IWrapperHybrid owner)
+        protected Wrapper(IHybrid owner)
         {
             _owner = owner;
         }

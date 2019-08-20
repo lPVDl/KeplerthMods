@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ChassisMod.Analyzing
+namespace ChassisMod.Utilities
 {
     partial class LanguageUtil
     {

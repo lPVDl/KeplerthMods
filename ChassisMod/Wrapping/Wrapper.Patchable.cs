@@ -10,6 +10,8 @@ namespace ChassisMod.Wrapping
         {
             private sealed class ConfigReader : Reader<TValue>, IWrapperPropertyInfo
             {
+                string IWrapperPropertyInfo.Name => _owner.Name;
+
                 string IWrapperPropertyInfo.Value => (_owner as IWrapperPropertyInfo).Value;
 
                 bool IWrapperPropertyInfo.ValueIsDefault => (_owner as IWrapperPropertyInfo).ValueIsDefault;
