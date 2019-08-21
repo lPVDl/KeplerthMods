@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChassisMod", "ChassisMod\ChassisMod.csproj", "{476408A8-4A66-40D2-AC92-F881FD748587}"
-EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common", "Common\Common.shproj", "{5BFA7C46-6C25-41DC-806D-666E10A291F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScytheMod", "ScytheMod\ScytheMod.csproj", "{A4A43B87-3E3B-4BDC-8140-465B6D3B192D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chassis", "Chassis\Chassis.csproj", "{476408A8-4A66-40D2-AC92-F881FD748587}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackSplitMod", "StackSplitMod\StackSplitMod.csproj", "{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugOverload", "DrugOverload\DrugOverload.csproj", "{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugOverloadMod", "DrugOverloadMod\DrugOverloadMod.csproj", "{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scythe", "Scythe\Scythe.csproj", "{A4A43B87-3E3B-4BDC-8140-465B6D3B192D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackSplitMod", "StackSplit\StackSplitMod.csproj", "{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -30,6 +30,10 @@ Global
 		{476408A8-4A66-40D2-AC92-F881FD748587}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{476408A8-4A66-40D2-AC92-F881FD748587}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{476408A8-4A66-40D2-AC92-F881FD748587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4A43B87-3E3B-4BDC-8140-465B6D3B192D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4A43B87-3E3B-4BDC-8140-465B6D3B192D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A43B87-3E3B-4BDC-8140-465B6D3B192D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -38,10 +42,6 @@ Global
 		{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
