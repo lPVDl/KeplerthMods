@@ -15,7 +15,7 @@ namespace ChassisMod.Utilities
 
         private static string[] DefaultText = { "English", "0", "", null };
 
-        public static string NameFromTextID(string textID)
+        public static string GetNameOrNull(string textID)
         {
             try
             {

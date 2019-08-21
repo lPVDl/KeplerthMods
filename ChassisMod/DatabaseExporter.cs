@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using ChassisMod.Patching;
-using ChassisMod.Wrapping;
 using System.IO;
 using System;
 using Common;
@@ -21,7 +20,7 @@ namespace ChassisMod
         private static void OnPatchingStarted()
         {
             foreach (var folder in ExportRequests)
-                foreach (var manager in WrapperHybrid.Managers)
+                foreach (var manager in Entity.Managers)
                 {
                     try
                     {
@@ -32,7 +31,7 @@ namespace ChassisMod
                     
         }
 
-        private static void ExportEntities(IHybridManager manager, string folder)
+        private static void ExportEntities(IEntityManager manager, string folder)
         {
             if (!Directory.Exists(folder)) { Directory.CreateDirectory(folder); }
 
@@ -49,12 +48,12 @@ namespace ChassisMod
 
                 var entities = manager.RuntimeInstances;
 
-                foreach (var hybrid in entities)
+                foreach (var entity in entities)
                 {
-                    var info = manager.GetProperties(hybrid);
+                    var info = manager.GetProperties(entity);
 
                     file.WriteLine("\t\t/// <summary>");
-                    file.WriteLine($"\t\t/// ID: {hybrid.ID}<para/>");
+                    file.WriteLine($"\t\t/// ID: {entity.ID}<para/>");
                     foreach (var i in info)
                     {
                         if (i.ValueIsDefault) continue;
@@ -67,7 +66,7 @@ namespace ChassisMod
                     }
                     file.WriteLine("\t\t/// </summary>");
 
-                    file.WriteLine($"\t\tpublic static readonly {@class} {hybrid.Name} = new {@class}(\"{hybrid.Name}\", {hybrid.ID});");
+                    file.WriteLine($"\t\tpublic static readonly {@class} {entity.Name} = new {@class}({entity.ID}, \"{ entity.Name}\");");
                 }
 
                 file.WriteLine("\t}");

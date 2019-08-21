@@ -7,7 +7,7 @@ namespace ChassisMod.Wrapping
     {
         public IPatchable<float> PlayerSatiety { get; }
 
-        internal FoodWrapper(IHybrid owner) : base(owner)
+        internal FoodWrapper(IEntity owner) : base(owner)
         {
             PlayerSatiety = new Patchable<float>()
             {

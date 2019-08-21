@@ -22,7 +22,7 @@ namespace ChassisMod.Wrapping
             }
         }
 
-        private readonly IHybrid _owner;
+        private readonly IEntity _owner;
 
         static Wrapper()
         {
@@ -40,7 +40,7 @@ namespace ChassisMod.Wrapping
             }
         }
 
-        protected Wrapper(IHybrid owner)
+        protected Wrapper(IEntity owner)
         {
             _owner = owner;
         }

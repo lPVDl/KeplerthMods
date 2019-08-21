@@ -68,9 +68,9 @@
     <Compile Include="Database\FoodDB.cs" />
     <Compile Include="Database\ItemDB.cs" />
     <Compile Include="Utilities\FormatUtil.cs" />
-    <Compile Include="Wrapping\IHybridManager.cs" />
-    <Compile Include="Wrapping\IWrapperPropertyInfo.cs" />
-    <Compile Include="Wrapping\IHybrid.cs" />
+    <Compile Include="IEntityManager.cs" />
+    <Compile Include="IPropertyInfo.cs" />
+    <Compile Include="IEntity.cs" />
     <Compile Include="PatchCenter.cs" />
     <Compile Include="Core\CollectionWrapper.cs" />
     <Compile Include="Core\Data\EffectDataHelper.cs" />
@@ -129,7 +129,7 @@
     <Compile Include="Wrapping\Wrapper.cs" />
     <Compile Include="Wrapping\IWrapper.cs" />
     <Compile Include="Wrapping\Wrapper.Patchable.cs" />
-    <Compile Include="Wrapping\WrapperHybrid.cs" />
+    <Compile Include="Entity.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -150,5 +150,8 @@ copy $(TargetPath) $(ProjectDir)\mod\Assemblies\$(TargetFileName)
 rmdir /s/q G:\Steam\steamapps\common\KEPLERTH\Keplerth_Data\StreamingAssets\Mods\$(ProjectName)
 mkdir G:\Steam\steamapps\common\KEPLERTH\Keplerth_Data\StreamingAssets\Mods\$(ProjectName)
 xcopy /s $(ProjectDir)\mod G:\Steam\steamapps\common\KEPLERTH\Keplerth_Data\StreamingAssets\Mods\$(ProjectName)</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>copy T:\KeplerthDatabase\*.cs $(ProjectDir)\Database\</PreBuildEvent>
   </PropertyGroup>
 </Project>

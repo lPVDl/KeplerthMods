@@ -1,6 +1,6 @@
-﻿namespace ChassisMod.Wrapping
+﻿namespace ChassisMod
 {
-    internal interface IHybrid
+    internal interface IEntity
     {
         int ID { get; }
         string Name { get; }

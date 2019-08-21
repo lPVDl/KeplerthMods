@@ -14,7 +14,7 @@ namespace ChassisMod.Wrapping
         public IPatchable<int> TreeDamageBonus { get ; }
         public IPatchable<int> WallDamageBonus { get; }
 
-        internal ItemWrapper(IHybrid owner) : base(owner)
+        internal ItemWrapper(IEntity owner) : base(owner)
         {
             Icon = new Patchable<Sprite>()
             {

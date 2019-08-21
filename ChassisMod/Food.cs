@@ -7,8 +7,26 @@ using System;
 
 namespace ChassisMod
 {
-    public sealed partial class Food : WrapperHybrid
+    public sealed partial class Food : IEntity, IEntityManager
     {
+        IEnumerable<IEntity> IEntityManager.CompiledInstances => Entity.FindCompiledEntitiesCashed<Food>();
+
+        IEnumerable<IEntity> IEntityManager.RuntimeInstances => Entity.CreateRuntimeEntitiesCashed(GetIDs, GetNameOrNull, (id, name) => new Food(id, name));
+
+        IEnumerable<IPropertyInfo> IEntityManager.GetProperties(IEntity entity)
+        {
+            if (entity == null) throw new ArgumentNullException("entity was null");
+
+            var food = entity as Food;
+
+            if (food == null) throw new InvalidOperationException($"entity was not {typeof(Food)}");
+
+            return Entity.GetPropertyValues<Food, IPropertyInfo>(food);
+        }
+
+        public int ID { get; }
+        public string Name { get; }
+
         public Reader<float> PlayerSatiety
         {
             get => _food.PlayerSatiety.Reader;
@@ -18,19 +36,22 @@ namespace ChassisMod
         private readonly ItemWrapper _item;
         private readonly FoodWrapper _food;
 
-        private Food(string name, int id) : base(name, id)
+        private Food(int id, string name)
         {
+            ID = id;
+            Name = name;
+
             _item = new ItemWrapper(this);
             _food = new FoodWrapper(this);
         }
 
-        protected internal override IEnumerable<WrapperHybrid> GetRuntimeInstances()
+        private static IEnumerable<int> GetIDs()
         {
-            var data = from id in FoodWrapper.Table.Keys
-                       let name = LanguageUtil.NameFromTextID(ItemWrapper.Table[id].Name) ?? "Food" + id
-                       select Tuple.Create(name, id);
-
-            return CreateInstances(data, (name, id) => { return new Food(name, id); });
+            return from id in FoodWrapper.Table.Keys
+                   where ItemWrapper.Table.ContainsKey(id)
+                   select id;
         }
+
+        private static string GetNameOrNull(int id) => LanguageUtil.GetNameOrNull(ItemWrapper.Table[id].Name);
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace ChassisMod.Wrapping
+﻿namespace ChassisMod
 {
-    interface IWrapperPropertyInfo
+    interface IPropertyInfo
     {
         string Name { get; }
 

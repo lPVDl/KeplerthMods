@@ -6,15 +6,15 @@ namespace ChassisMod.Wrapping
 {  
     partial class Wrapper<TConfig>
     {
-        protected sealed class Patchable<TValue> : IPatchable<TValue>, IWrapperPropertyInfo
+        protected sealed class Patchable<TValue> : IPatchable<TValue>, IPropertyInfo
         {
-            private sealed class ConfigReader : Reader<TValue>, IWrapperPropertyInfo
+            private sealed class ConfigReader : Reader<TValue>, IPropertyInfo
             {
-                string IWrapperPropertyInfo.Name => _owner.Name;
+                string IPropertyInfo.Name => _owner.Name;
 
-                string IWrapperPropertyInfo.Value => (_owner as IWrapperPropertyInfo).Value;
+                string IPropertyInfo.Value => (_owner as IPropertyInfo).Value;
 
-                bool IWrapperPropertyInfo.ValueIsDefault => (_owner as IWrapperPropertyInfo).ValueIsDefault;
+                bool IPropertyInfo.ValueIsDefault => (_owner as IPropertyInfo).ValueIsDefault;
 
                 private readonly Patchable<TValue> _owner;
           
@@ -30,7 +30,7 @@ namespace ChassisMod.Wrapping
                 public override string ToString() => _owner.ToString();
             }
 
-            string IWrapperPropertyInfo.Value
+            string IPropertyInfo.Value
             {
                 get
                 {
@@ -45,7 +45,7 @@ namespace ChassisMod.Wrapping
                 }
             }
 
-            bool IWrapperPropertyInfo.ValueIsDefault
+            bool IPropertyInfo.ValueIsDefault
             {
                 get
                 {
