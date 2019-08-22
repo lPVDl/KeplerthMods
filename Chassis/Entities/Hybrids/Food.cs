@@ -5,24 +5,30 @@ using System.Reflection;
 using System.Linq;
 using System;
 
-namespace Chassis
+namespace Chassis.Entities
 {
     public sealed partial class Food : IEntity, IEntityManager
     {
-        IEnumerable<IEntity> IEntityManager.CompiledInstances => Entity.FindCompiledEntitiesCashed<Food>();
+        #region Manager
+        IEnumerable<IEntity> IEntityManager.CompiledEntities => Entity.FindCompiledEntitiesCashed<Food>();
 
-        IEnumerable<IEntity> IEntityManager.RuntimeInstances => Entity.CreateRuntimeEntitiesCashed(GetIDs, GetNameOrNull, (id, name) => new Food(id, name));
+        IEnumerable<IEntity> IEntityManager.RuntimeEntities => Entity.CreateRuntimeEntitiesCashed(GetIDs, GetNameOrNull, (id, name) => new Food(id, name));
+
+        bool IEntityManager.RequiresSourceForCreation => true;
+
+        Entity.ManagerGroup IEntityManager.NamingGroup => Item.NamingGroup;
 
         IEnumerable<IPropertyInfo> IEntityManager.GetProperties(IEntity entity)
         {
             if (entity == null) throw new ArgumentNullException("entity was null");
-
             var food = entity as Food;
-
             if (food == null) throw new InvalidOperationException($"entity was not {typeof(Food)}");
 
             return Entity.GetPropertyValues<Food, IPropertyInfo>(food);
         }
+
+        IEntity IEntityManager.Create(Assembly owner, string entityName, IEntity source) => throw new NotImplementedException();
+        #endregion
 
         public int ID { get; }
         public string Name { get; }

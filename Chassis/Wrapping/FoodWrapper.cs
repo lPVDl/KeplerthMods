@@ -1,4 +1,5 @@
-﻿using DataBase;
+﻿using Chassis.Entities;
+using DataBase;
 using System;
 
 namespace Chassis.Wrapping

@@ -1,4 +1,5 @@
 ﻿using Chassis.Patching;
+using Chassis.Entities;
 using UnityEngine;
 using Keplerth;
 using DataBase;

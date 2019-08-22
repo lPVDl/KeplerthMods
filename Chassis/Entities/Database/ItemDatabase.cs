@@ -1,4 +1,4 @@
-namespace Chassis
+namespace Chassis.Entities
 {
 	partial class Item
 	{

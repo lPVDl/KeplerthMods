@@ -1,17 +1,16 @@
 ﻿using System.Reflection;
-using Chassis;
+using Chassis.Entities;
 using Keplerth;
 using Common;
 using System;
-using Chassis.Wrapping;
 
 namespace DrugOverload
 {
     [StaticConstructorOnStartup]
     internal class DataPatch
     {
-        //[CreateFrom("GoldPickaxe0")]
-        //public static readonly Item CopperAxe;
+        [Entity.Create(SourceName = nameof(Item.GoldPickaxe0))]
+        public static readonly Item GoldScythe;
 
         static DataPatch()
         {
@@ -19,13 +18,19 @@ namespace DrugOverload
             {
                 //PatchCenter.CreateEntities(Assembly.GetExecutingAssembly());
 
-                DatabaseExporter.AddRequest(@"T:\KeplerthDatabase\");
+                Entity.InitializeAttributes(Assembly.GetExecutingAssembly());
+
+                // Entity.InitializeAttributes(Assembly.GetExecutingAssembly());
+
+                Entity.Exporter.AddRequest(@"T:\Keplerth\Entities.Database\");
+
+                // DatabaseExporter.AddRequest(@"T:\KeplerthDatabase\");
 
                 // EntityExporter.AddRequest(@"T:\KeplerthDatabase\");
 
                 //var hb = WrapperHybrid.GetManagerNames();
 
-                
+
 
                 Item.StonePickaxe.TreeDamageBonus = 5000;
                 // ChassisMod.KeplerthDatabase.ItemDB.StonePickaxe.TreeDamageBonus.Set(500, System.Reflection.Assembly.GetExecutingAssembly());

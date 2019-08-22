@@ -5,24 +5,32 @@ using System.Reflection;
 using System.Linq;
 using System;
 
-namespace Chassis
+namespace Chassis.Entities
 {
     public sealed partial class Item : IEntity, IEntityManager
     {
-        IEnumerable<IEntity> IEntityManager.CompiledInstances => Entity.FindCompiledEntitiesCashed<Item>();
+        #region Manager
+        IEnumerable<IEntity> IEntityManager.CompiledEntities => Entity.FindCompiledEntitiesCashed<Item>();
 
-        IEnumerable<IEntity> IEntityManager.RuntimeInstances => Entity.CreateRuntimeEntitiesCashed(GetIDs, GetNameOrNull, (id, name) => new Item(id, name));
+        IEnumerable<IEntity> IEntityManager.RuntimeEntities => Entity.CreateRuntimeEntitiesCashed(GetIDs, GetNameOrNull, (id, name) => new Item(id, name));
+
+        bool IEntityManager.RequiresSourceForCreation => true;
+
+        Entity.ManagerGroup IEntityManager.NamingGroup => Item.NamingGroup;
 
         IEnumerable<IPropertyInfo> IEntityManager.GetProperties(IEntity entity)
         {
             if (entity == null) throw new ArgumentNullException("entity was null");
-
             var item = entity as Item;
-
             if (item == null) throw new InvalidOperationException($"entity was not {typeof(Item)}");
 
             return Entity.GetPropertyValues<Item, IPropertyInfo>(item);
-        }          
+        }
+
+        IEntity IEntityManager.Create(Assembly owner, string entityName, IEntity source) => throw new NotImplementedException();
+        #endregion
+
+        internal static readonly Entity.ManagerGroup NamingGroup = new Entity.ManagerGroup(Entity.GetManager<Item>(), Entity.GetManager<Food>());
 
         public int ID { get; }
         public string Name { get; }
@@ -48,7 +56,7 @@ namespace Chassis
             return from id in ItemWrapper.Table.Keys
                    where !FoodWrapper.Table.ContainsKey(id)
                    select id;
-        }
+        }      
 
         private static string GetNameOrNull(int id) => LanguageUtil.GetNameOrNull(ItemWrapper.Table[id].Name);
     }

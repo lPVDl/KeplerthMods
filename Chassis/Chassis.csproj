@@ -62,15 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Analyzing\EntityIdentifier.Table.cs" />
-    <Compile Include="DatabaseExporter.cs" />
-    <Compile Include="Analyzing\EntityIdentifier.cs" />
-    <Compile Include="Database\FoodDB.cs" />
-    <Compile Include="Database\ItemDB.cs" />
+    <Compile Include="Entities\Entity.CreateAttribute.cs" />
+    <Compile Include="Entities\Entity.Exporter.cs" />
+    <Compile Include="Entities\Database\FoodDatabase.cs" />
+    <Compile Include="Entities\Database\ItemDatabase.cs" />
     <Compile Include="Utilities\FormatUtil.cs" />
-    <Compile Include="IEntityManager.cs" />
+    <Compile Include="Entities\IEntityManager.cs" />
     <Compile Include="IPropertyInfo.cs" />
-    <Compile Include="IEntity.cs" />
+    <Compile Include="Entities\IEntity.cs" />
     <Compile Include="PatchCenter.cs" />
     <Compile Include="Core\CollectionWrapper.cs" />
     <Compile Include="Core\Data\EffectDataHelper.cs" />
@@ -81,12 +80,13 @@
     <Compile Include="Core\Data\WeaponHelper.cs" />
     <Compile Include="CreateFromAttribute.cs" />
     <Compile Include="Constant.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="Entities\Hybrids\Item.cs" />
+    <Compile Include="Properties\Entity.CreationRequest.cs" />
     <Compile Include="Wrapping\Wrapper.IPatchable.cs" />
     <Compile Include="Wrapping\Reader.Data.cs" />
     <Compile Include="Wrapping\Reader.cs" />
     <Compile Include="InsertFlags.cs" />
-    <Compile Include="Food.cs" />
+    <Compile Include="Entities\Hybrids\Food.cs" />
     <Compile Include="Patching\SpritePatcher.cs" />
     <Compile Include="Core\Data\Util\FormatUtil.cs" />
     <Compile Include="Core\Data\Util\PathUtil.cs" />
@@ -102,7 +102,7 @@
     <Compile Include="Core\Data\CraftGroupDataHelper.cs" />
     <Compile Include="Core\Data\BuildingDataHelper.cs" />
     <Compile Include="Core\Data\ItemHelper.cs" />
-    <Compile Include="Utilities\LanguageUtil.cs" />
+    <Compile Include="Utilities\LanguageUtil!.cs" />
     <Compile Include="Core\Data\ConfigScanner.cs" />
     <Compile Include="Core\LanguagePatcher.cs" />
     <Compile Include="Patching\ConfigPatcher.cs" />
@@ -129,7 +129,7 @@
     <Compile Include="Wrapping\Wrapper.cs" />
     <Compile Include="Wrapping\IWrapper.cs" />
     <Compile Include="Wrapping\Wrapper.Patchable.cs" />
-    <Compile Include="Entity.cs" />
+    <Compile Include="Entities\Entity!.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -152,6 +152,6 @@ mkdir G:\Steam\steamapps\common\KEPLERTH\Keplerth_Data\StreamingAssets\Mods\$(Pr
 xcopy /s $(ProjectDir)\mod G:\Steam\steamapps\common\KEPLERTH\Keplerth_Data\StreamingAssets\Mods\$(ProjectName)</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PreBuildEvent>copy T:\KeplerthDatabase\*.cs $(ProjectDir)\Database\</PreBuildEvent>
+    <PreBuildEvent>copy T:\Keplerth\Entities.Database\*.cs $(ProjectDir)\Entities\Database\</PreBuildEvent>
   </PropertyGroup>
 </Project>

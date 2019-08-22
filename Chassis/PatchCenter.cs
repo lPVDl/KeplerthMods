@@ -23,9 +23,9 @@
 //            try
 //            {
 //                ValidTypes = from type in Assembly.GetExecutingAssembly().GetTypes()
-//                              from inter in type.GetInterfaces()
-//                              where inter == typeof(IWrapperHybrid)
-//                              select type;
+//                             from inter in type.GetInterfaces()
+//                             where inter == typeof(IWrapperHybrid)
+//                             select type;
 //            }
 //            catch (System.Exception e) { Log.Exception(e); }
 //        }
@@ -45,7 +45,7 @@
 
 //            var creationAttributes = GetAttributes<CreateFromAttribute>(assembly);
 
-//            foreach(var (@class, field, attr) in creationAttributes)
+//            foreach (var (@class, field, attr) in creationAttributes)
 //            {
 //                var targetName = field.Name;
 
@@ -79,7 +79,7 @@
 //                        $"\nPlease, choose another name to avoid ambiguity in the patch log.");
 //                }
 //            }
-            
+
 //        }
 
 //        private struct AttributeInfo
@@ -98,5 +98,5 @@
 //        }
 //    }
 
-    
+
 //}
