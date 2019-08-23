@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+﻿using Chassis.Patching;
 
 namespace Chassis.Wrapping
 {
@@ -8,7 +8,7 @@ namespace Chassis.Wrapping
         {
             Reader<TValue> Reader { get; }
 
-            void Set(Reader<TValue> value, Assembly patcher);
+            void Set(Reader<TValue> value, IInvokationAddress patcher);
         }
     }
 }

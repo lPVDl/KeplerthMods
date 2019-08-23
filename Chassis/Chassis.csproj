@@ -63,10 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\CreateEntityAttribute.cs" />
-    <Compile Include="Entities\Entity.Exporter.cs" />
+    <Compile Include="Entities\EntityExporter.cs" />
     <Compile Include="Entities\Database\FoodDatabase.cs" />
     <Compile Include="Entities\Database\ItemDatabase.cs" />
-    <Compile Include="Utilities\FormatUtil.cs" />
     <Compile Include="Entities\IEntityManager.cs" />
     <Compile Include="IPropertyInfo.cs" />
     <Compile Include="Entities\IEntity.cs" />
@@ -75,6 +74,7 @@
     <Compile Include="Core\Data\EffectDataHelper.cs" />
     <Compile Include="Core\Data\CraftTableDataHelper.cs" />
     <Compile Include="Core\Data\FoodHelper.cs" />
+    <Compile Include="InvokationAddress.cs" />
     <Compile Include="Utilities\LanguageUtil.WebTranslator.RateLimiter.cs" />
     <Compile Include="Utilities\LanguageUtil.WebTranslator.cs" />
     <Compile Include="Core\Data\WeaponHelper.cs" />

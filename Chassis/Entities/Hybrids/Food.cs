@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
-using Chassis.Utilities;
-using Chassis.Wrapping;
 using System.Reflection;
+using Chassis.Utilities;
+using Chassis.Patching;
+using Chassis.Wrapping;
 using System.Linq;
 using System;
 
@@ -27,7 +28,7 @@ namespace Chassis.Entities
             return Entity.GetPropertyValues<Food, IPropertyInfo>(food);
         }
 
-        IEntity IEntityManager.Create(string entityName, IEntity source, Assembly patcher)
+        IEntity IEntityManager.Create(string entityName, IEntity source, IInvokationAddress patcher)
         {
             if (string.IsNullOrEmpty(entityName)) throw new ArgumentException("entityName was null or empty");
             if (source == null) throw new ArgumentNullException("source was null");
@@ -52,7 +53,7 @@ namespace Chassis.Entities
         public Reader<float> PlayerSatiety
         {
             get => _food.PlayerSatiety.Reader;
-            set => _food.PlayerSatiety.Set(value, Assembly.GetExecutingAssembly());
+            set => _food.PlayerSatiety.Set(value, new InvokationAddress(Assembly.GetCallingAssembly(), Environment.StackTrace));
         }
 
         private readonly ItemWrapper _item;

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Reflection;
+using Chassis.Patching;
 
 namespace Chassis.Entities
 {
@@ -13,7 +13,7 @@ namespace Chassis.Entities
 
         Entity.ManagerGroup NamingGroup { get; }
 
-        IEntity Create(string entityName, IEntity source, Assembly patcher);
+        IEntity Create(string entityName, IEntity source, IInvokationAddress patcher);
 
         IEnumerable<IPropertyInfo> GetProperties(IEntity entity);
     }

@@ -22,7 +22,7 @@ namespace DrugOverload
 
                 // Entity.InitializeAttributes(Assembly.GetExecutingAssembly());
 
-                Entity.Exporter.AddRequest(@"T:\Keplerth\Entities.Database\");
+                EntityExporter.AddRequest(@"T:\Keplerth\Entities.Database\");
 
                 if (Grapes != null) Log.Message(Grapes.ToString());
 
@@ -32,9 +32,9 @@ namespace DrugOverload
 
                 //var hb = WrapperHybrid.GetManagerNames();
 
-
-
                 Item.StonePickaxe.TreeDamageBonus = 5000;
+
+                Item.StonePickaxe.TreeDamageBonus = -1;
                 // ChassisMod.KeplerthDatabase.ItemDB.StonePickaxe.TreeDamageBonus.Set(500, System.Reflection.Assembly.GetExecutingAssembly());
 
                 //ConfigScanner.SaveDefinitions(@"T:\KeplerthDatabase\");

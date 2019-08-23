@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using Chassis.Entities;
 using System.Text;
 using UnityEngine;
 using System.IO;
@@ -23,28 +24,40 @@ namespace Chassis.Patching
 
             public object Target { set => _target = value; }
             public object Source { set => _source = value; }
-            public Assembly Patcher { set => _patcher = value; }
+            public IInvokationAddress Patcher { set { _patcher = value; } }
             public object NewValue { set => _newValue = value; }
             public object OldValue { set => _oldValue = value; }
             public Exception Error { set => _error = value; }
 
             private Container<object> _target;
             private Container<object> _source;
-            private Container<Assembly> _patcher;
+            private IInvokationAddress _patcher;
             private Container<object> _newValue;
             private Container<object> _oldValue;
             private Container<Exception> _error;
 
-            public void Log() => Write(ToString());
+            public void Log()
+            {
+                if (_error) Write("ERROR! ");
+
+                Write(ToString());
+
+                if (_error)
+                {
+                    WriteLine($" [{_error.Value.Message}]");
+                }
+                else
+                {
+                    WriteLine();
+                }
+            }
 
             public override string ToString()
             {
                 var sb = new StringBuilder();
 
-                if (_error) { sb.Append("[ERROR]"); }
-
                 sb.Append('[');
-                if (_patcher) sb.Append(_patcher.Value.GetName().Name);
+                if (_patcher != null) sb.Append(_patcher.Assembly.GetName().Name);
                 sb.Append(']');
 
                 if (_target)
@@ -77,16 +90,6 @@ namespace Chassis.Patching
                     }
                 }
 
-                if (_error)
-                {
-                    sb.Append(' ');
-                    sb.Append('[');
-                    sb.Append(_error.Value.Message);
-                    sb.Append(']');
-                }
-
-                sb.Append('\n');
-
                 return sb.ToString();
             }            
         }
@@ -103,6 +106,8 @@ namespace Chassis.Patching
             }
             catch (Exception e) { Log.Exception(e); }
         }
+
+        public static void WriteLine() => Write(Environment.NewLine);
 
         public static void Write(string value)
         {
@@ -123,6 +128,16 @@ namespace Chassis.Patching
                 writer.Close();
             }
             catch (Exception e) { Log.Exception(e); }
+        }
+
+        public static void ReportInitalization(IEntity entity, IInvokationAddress patcher)
+        {
+            if (entity == null) throw new ArgumentNullException("entity was null");
+            if (patcher == null) throw new ArgumentNullException("patcher was null");
+
+            var message = $"[{patcher.Assembly.GetName().Name}] {entity.GetType().Name}.{entity.Name}({entity.ID})";
+
+            WriteLine(message);
         }
     }
 }

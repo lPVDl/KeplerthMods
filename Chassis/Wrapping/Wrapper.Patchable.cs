@@ -78,7 +78,7 @@ namespace Chassis.Wrapping
                 _reader = new ConfigReader(this);
             }
 
-            void IPatchable<TValue>.Set(Reader<TValue> value, Assembly patcher)
+            void IPatchable<TValue>.Set(Reader<TValue> value, IInvokationAddress patcher)
             {
                 if (value == null) throw new ArgumentNullException("value was null");
 

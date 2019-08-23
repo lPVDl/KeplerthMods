@@ -1,10 +1,8 @@
-﻿using System.Reflection;
-using Chassis.Patching;
+﻿using Chassis.Patching;
 using Chassis.Entities;
 using UnityEngine;
 using Keplerth;
 using DataBase;
-using System;
 
 namespace Chassis.Wrapping
 {
@@ -80,7 +78,7 @@ namespace Chassis.Wrapping
             };
         }
 
-        internal void Initialize(ItemWrapper source, Assembly patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);
+        internal void Initialize(ItemWrapper source, IInvokationAddress patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);
 
         private void SetTranslationKeys(ConfigItem config)
         {

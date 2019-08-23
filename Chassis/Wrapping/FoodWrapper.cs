@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+﻿using Chassis.Patching;
 using Chassis.Entities;
 using DataBase;
 using System;
@@ -25,7 +25,7 @@ namespace Chassis.Wrapping
             };
         }
 
-        internal void Initialize(FoodWrapper source, Assembly patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);
+        internal void Initialize(FoodWrapper source, IInvokationAddress patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);
 
         private void SetTranslationKeys(ConfigFood config)
         {

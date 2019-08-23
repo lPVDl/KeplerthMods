@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Chassis.Patching;
 using System.Reflection;
 using System.Linq;
 using Common;
@@ -50,7 +51,8 @@ namespace Chassis.Entities
 
             public static Registration Process(CreationRequest request)
             {
-                var entity = request.Manager.Create(request.EntityName, request.Source, request.Address.Assembly);
+                var owner = new InvokationAddress(request.Address.Assembly, request.Address.ToString());
+                var entity = request.Manager.Create(request.EntityName, request.Source, owner);
                 request.Address.Field.SetValue(null, entity);
 
                 return new Registration()

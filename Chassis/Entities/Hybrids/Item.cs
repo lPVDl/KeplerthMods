@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Chassis.Utilities;
-using Chassis.Wrapping;
 using System.Reflection;
+using Chassis.Wrapping;
 using System.Linq;
 using System;
 
@@ -27,7 +27,7 @@ namespace Chassis.Entities
             return Entity.GetPropertyValues<Item, IPropertyInfo>(item);
         }
 
-        IEntity IEntityManager.Create(string entityName, IEntity source, Assembly patcher)
+        IEntity IEntityManager.Create(string entityName, IEntity source, IInvokationAddress patcher)
         {
             if (string.IsNullOrEmpty(entityName)) throw new ArgumentException("entityName was null or empty");
             if (source == null) throw new ArgumentNullException("source was null");
@@ -53,7 +53,7 @@ namespace Chassis.Entities
         public Reader<int> TreeDamageBonus
         {
             get => _item.TreeDamageBonus.Reader;
-            set => _item.TreeDamageBonus.Set(value, Assembly.GetCallingAssembly());
+            set => _item.TreeDamageBonus.Set(value, new InvokationAddress(Assembly.GetCallingAssembly(), Environment.StackTrace));
         }
 
         private readonly ItemWrapper _item;

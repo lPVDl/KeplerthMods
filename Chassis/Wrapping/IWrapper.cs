@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-using DataBase;
-using System;
+﻿using System;
 
 namespace Chassis.Wrapping
 {
@@ -8,6 +6,6 @@ namespace Chassis.Wrapping
     {
         TConfig GetConfig();
 
-        void AddPatch(Action patch, Assembly patcher);
+        void AddPatch(Action patch, IInvokationAddress patcher);
     }
 }

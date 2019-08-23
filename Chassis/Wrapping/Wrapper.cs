@@ -46,7 +46,7 @@ namespace Chassis.Wrapping
             Owner = owner;
         }
 
-        void IWrapper<TConfig>.AddPatch(Action patch, Assembly patcher) => ConfigPatcher.Add(patch, patcher);
+        void IWrapper<TConfig>.AddPatch(Action patch, IInvokationAddress patcher) => ConfigPatcher.Add(patch, patcher);
 
         TConfig IWrapper<TConfig>.GetConfig() => GetConfig();
 
@@ -62,11 +62,13 @@ namespace Chassis.Wrapping
             throw new InvalidOperationException($"{Owner.Name}({Owner.ID}) was not found in {typeof(TConfig).Name}.{nameof(Table)}");
         }
 
-        protected void Initialize(Wrapper<TConfig> source, Action<TConfig> overrideData, Assembly patcher, bool log)
+        protected void Initialize(Wrapper<TConfig> source, Action<TConfig> overrideData, IInvokationAddress patcher, bool log)
         {
             if (source == null) throw new ArgumentNullException("source was null");
             if (overrideData == null) throw new ArgumentNullException("overrideData was null");
             if (patcher == null) throw new ArgumentNullException("patcher was null");
+
+            if (log) PatchLog.ReportInitalization(Owner, patcher);
 
             Action patch = () =>
             {

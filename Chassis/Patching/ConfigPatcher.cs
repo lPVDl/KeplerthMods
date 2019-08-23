@@ -8,29 +8,31 @@ using Common;
 namespace Chassis.Patching
 {
     [HarmonyPatch(typeof(Init), "InitTableData")]
-    internal sealed class ConfigPatcher
+    internal static class ConfigPatcher
     {
         private sealed class Patch
         {
             public Action Action { get; set; }
-            public Assembly Patcher { get; set; }     
+            public IInvokationAddress Owner { get; set; }    
         }
 
         public static event Action PatchingStarted;
+        public static event Action PatchingEnded;
 
-        public static ConfigPatcher Instance { get; } = new ConfigPatcher();
+        private static readonly List<Patch> Patches = new List<Patch>();
+        private static readonly List<string> IgnoredAssemblies = new List<string>();
+        private static bool PatchingNow;
 
-        private static List<Patch> Patches { get; } = new List<Patch>();
-
-        public static void Add(Action patch, Assembly patcher)
+        public static void Add(Action patch, IInvokationAddress patcher)
         {
+            if (PatchingNow) throw new InvalidOperationException("Tried to add new patch while patching was running"); 
             if (patch == null) throw new ArgumentNullException("patch was null");
-            if (patcher == null) throw new ArgumentNullException("patcher was null");
+            if (patcher == null) throw new ArgumentNullException("patcherAddress was null");
 
             var patchData = new Patch()
             {
                 Action = patch,
-                Patcher = patcher,
+                Owner = patcher,
             };
 
             Patches.Add(patchData);
@@ -38,23 +40,41 @@ namespace Chassis.Patching
 
         private static void Postfix()
         {
-            try
+            if (!PatchingNow)
             {
-                PatchingStarted?.Invoke();
-            }
-            catch (Exception e) { Log.Exception(e); }
+                PatchingNow = true;
+                PatchLog.WriteLine();
+                PatchLog.WriteLine("===PATCHING STARTED===");
+                try { PatchingStarted?.Invoke(); }
+                catch (Exception e) { Log.Exception(e); }
+            }                   
 
             foreach(var patch in Patches)
             {
-                try
-                {
-                    patch.Action();
-                }
+                var asmName = patch.Owner.Assembly.GetName().Name;
+
+                if (IgnoredAssemblies.Contains(asmName)) continue;
+
+                try { patch.Action(); }
                 catch(Exception e)
                 {
-                    Log.Exception(e);
+                    Log.Message("Patch error: " + e.Message + Environment.NewLine + e.StackTrace);
+                    Log.Message("Patch created:" + Environment.NewLine + patch.Owner.StackTrace);
+                    IgnoredAssemblies.Add(asmName);
+                    PatchLog.WriteLine($"[{nameof(Chassis)}] Moved '{asmName}.dll' to blacklist.");
+                    PatchLog.WriteLine("===RELOADING===");
+                    Init.InitTableData();
                 }
             }
+
+            if (PatchingNow)
+            {
+                PatchingNow = false;
+                PatchLog.WriteLine("===PATCHING ENDED===");
+                try { PatchingEnded?.Invoke(); }
+                catch (Exception e) { Log.Exception(e); }
+            }
+            
         }
     }
 }
