@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System;
 
-namespace Chassis.Core
+namespace Chassis
 {
     internal static class IDGenerator
     {
@@ -9,6 +9,10 @@ namespace Chassis.Core
 
         internal static int CreateID(string name)
         {
+            if (string.IsNullOrEmpty(name)) throw new ArgumentException("name was null or empty");
+
+            name = name.ToLower();
+
             var random = new Random(name.GetHashCode());
             var id = random.Next((int)1e+6, int.MaxValue);
 

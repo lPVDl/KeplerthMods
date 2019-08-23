@@ -21,18 +21,41 @@ namespace Chassis.Entities
             }
         }
 
+        private static class RuntimeEntityCash<T>
+        {
+            public static IEnumerable<T> Values;
+        }
+
+        private static class CompiledEntityCash<T>
+        {
+            public static IEnumerable<T> Values;
+        }
+
+        private static class PropertyCash<TObject, TInterface>
+        {
+            public static IEnumerable<PropertyInfo> Values;
+        }
+
+        private class Manager<T>
+        {
+            public static readonly IEntityManager Instance = Managers.Single(e => e.GetType() == typeof(T));
+        }
+
         private class Registration
         {
             public IEntity Entity { get; private set; }
-            public FieldAttribute<CreateAttribute> InitializationAddress { get; private set; }
+            public FieldAttribute<CreateEntityAttribute> InitializationAddress { get; private set; }
 
             public string AssemblyName => InitializationAddress.Assembly.GetName().Name;
 
             public static Registration Process(CreationRequest request)
             {
+                var entity = request.Manager.Create(request.EntityName, request.Source, request.Address.Assembly);
+                request.Address.Field.SetValue(null, entity);
+
                 return new Registration()
                 {
-                    Entity = request.Manager.Create(request.Address.Assembly, request.EntityName, request.Source),
+                    Entity = entity,
                     InitializationAddress = request.Address
                 };
             }
@@ -69,15 +92,15 @@ namespace Chassis.Entities
             public string EntityName { get; set; }
             public IEntityManager Manager { get; private set; }
             public IEntity Source { get; private set; }
-            public FieldAttribute<CreateAttribute> Address { get; private set; }
+            public FieldAttribute<CreateEntityAttribute> Address { get; private set; }
 
-            public static CreationRequest Convert(FieldAttribute<CreateAttribute> address)
+            public static CreationRequest Convert(FieldAttribute<CreateEntityAttribute> address)
             {
                 var entityName = address.Field.Name;
                 var entityType = address.Field.FieldType;
-                var sourceName = address.Attribute.SourceName;
+                var sourceName = address.Attribute.Source;
 
-                if (!address.Field.IsStatic) throw new Exception($"{address} is not static. All fields with {nameof(CreateAttribute)} must be static");
+                if (!address.Field.IsStatic) throw new Exception($"{address} is not static. All fields with {nameof(CreateEntityAttribute)} must be static");
 
                 var manager = Managers.FirstOrDefault(m => m.GetType() == entityType);
                 if (manager == null)
@@ -95,15 +118,15 @@ namespace Chassis.Entities
                 var modHolder = Registrations.FirstOrDefault(x => Equal(x.Entity.Name, entityName));
                 if (modHolder != null) NameOccupiedException(modHolder.AssemblyName, modHolder.Entity);
 
-                if (sourceName == "") throw new Exception($"{address}: SourceName can not empty string");
+                if (sourceName == "") throw new Exception($"{address}: Source can not empty string");
                 IEntity source = null;
-                if (sourceName == null && manager.RequiresSourceForCreation) throw new Exception($"{address}: SourceName can not be null for ({entityType.Name})");
+                if (sourceName == null && manager.CreationRequiresSource) throw new Exception($"{address}: Source can not be null for ({entityType.Name})");
                 if (sourceName != null)
                 {
                     source = manager.CompiledEntities.SingleOrDefault(e => string.Compare(e.Name, sourceName, true) == 0);
                     if (source == null)
                     {
-                        var message = $"{address}: source ({entityType.Name}.{sourceName}) was not found.";
+                        var message = $"{address}: Source ({entityType.Name}.{sourceName}) was not found.";
                         var predictedNames = from mgr in Managers
                                              from ent in mgr.CompiledEntities
                                              where Equal(ent.Name, sourceName)
@@ -137,22 +160,9 @@ namespace Chassis.Entities
             }
         }
 
-        private static class RuntimeEntityCash<T>
-        {
-            public static IEnumerable<T> Values;
-        }
-
-        private static class CompiledEntityCash<T>
-        {
-            public static IEnumerable<T> Values;
-        }
-
-        private static class PropertyCash<TObject, TInterface>
-        {
-            public static IEnumerable<PropertyInfo> Values;
-        }
-
         internal static IEnumerable<IEntityManager> Managers { get; }
+        private static readonly List<string> Assemblies = new List<string>();
+        private static readonly List<Registration> Registrations = new List<Registration>();
 
         static Entity()
         {
@@ -160,10 +170,24 @@ namespace Chassis.Entities
             {
                 Managers = from type in Assembly.GetExecutingAssembly().GetTypes()
                            where type.GetInterfaces().Contains(typeof(IEntityManager))
-                           let ctor = type.GetConstructors(BindingFlags.NonPublic | BindingFlags.Instance).Single()
-                           select ctor.Invoke(new object[ctor.GetParameters().Length]) as IEntityManager;
+                           let cctor = type.GetConstructors(BindingFlags.NonPublic | BindingFlags.Instance).Single()
+                           select cctor.Invoke(new object[cctor.GetParameters().Length]) as IEntityManager;
             }
             catch (Exception e) { Log.Exception(e); }
+        }
+
+        public static void InitializeAttributes(Assembly assembly)
+        {
+            if (assembly == null) throw new ArgumentNullException("assembly was null");
+            var asmName = assembly.GetName().Name;
+            if (Assemblies.Contains(asmName)) throw new InvalidOperationException($"Assembly {asmName} was already initialized");
+            Assemblies.Add(asmName);
+
+            var requests = from attr in FieldAttribute<CreateEntityAttribute>.GetAll(assembly)
+                           select CreationRequest.Convert(attr);
+
+            var regs = from req in requests select Registration.Process(req);
+            Registrations.AddRange(regs);
         }
 
         internal static IEnumerable<T> FindCompiledEntitiesCashed<T>() where T : class
@@ -200,13 +224,6 @@ namespace Chassis.Entities
             return cash;
         }
 
-        private class Manager<T>
-        {
-            public static readonly IEntityManager Instance = Managers.Single(e => e.GetType() == typeof(T)); 
-        }
-
-        internal static IEntityManager GetManager<T>() where T : IEntityManager => Manager<T>.Instance;
-
         private static IEnumerable<T> CreateRuntimeEntities<T>(Func<IEnumerable<int>> getIDs, Func<int, string> getNameOrNull, Func<int, string, T> createInstance)
         {
             var typeName = typeof(T).Name;
@@ -234,7 +251,9 @@ namespace Chassis.Entities
 
             return ids.Zip(names, (id, name) => createInstance(id, name));
         }
-        
+
+        internal static IEntityManager GetManager<T>() where T : IEntityManager => Manager<T>.Instance;
+
         internal static IEnumerable<TValue> GetPropertyValues<TObject, TValue>(TObject obj) where TValue : class
         {
             if (obj == null) throw new NullReferenceException("obj was null");
@@ -251,26 +270,6 @@ namespace Chassis.Entities
             PropertyCash<TObject, TValue>.Values = cash;
 
             return cash.Select(x => x.GetValue(obj) as TValue);
-        }
-
-        private static readonly List<string> Assemblies = new List<string>();
-
-        private static readonly List<Registration> Registrations = new List<Registration>();
-
-        public static void InitializeAttributes(Assembly assembly)
-        {
-            if (assembly == null) throw new ArgumentNullException("assembly was null");
-            var asmName = assembly.GetName().Name;
-            if (Assemblies.Contains(asmName)) throw new InvalidOperationException($"Assembly {asmName} was already initialized");
-            Assemblies.Add(asmName);
-
-            var requests = from attr in FieldAttribute<CreateAttribute>.GetAll(assembly)
-                           select CreationRequest.Convert(attr);
-
-            foreach (var r in requests) ;
-
-            // var regs = from req in requests select Registration.Process(req);
-            // Registrations.AddRange(regs);
-        }    
+        }        
     }
 }

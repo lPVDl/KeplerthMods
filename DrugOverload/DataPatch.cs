@@ -9,8 +9,8 @@ namespace DrugOverload
     [StaticConstructorOnStartup]
     internal class DataPatch
     {
-        [Entity.Create(SourceName = nameof(Item.GoldPickaxe0))]
-        public static readonly Item GoldScythe;
+        [CreateEntity(Source = nameof(Food.Apple))]
+        public static readonly Food Grapes;
 
         static DataPatch()
         {
@@ -23,6 +23,8 @@ namespace DrugOverload
                 // Entity.InitializeAttributes(Assembly.GetExecutingAssembly());
 
                 Entity.Exporter.AddRequest(@"T:\Keplerth\Entities.Database\");
+
+                if (Grapes != null) Log.Message(Grapes.ToString());
 
                 // DatabaseExporter.AddRequest(@"T:\KeplerthDatabase\");
 

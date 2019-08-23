@@ -62,7 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Entity.CreateAttribute.cs" />
+    <Compile Include="Entities\CreateEntityAttribute.cs" />
     <Compile Include="Entities\Entity.Exporter.cs" />
     <Compile Include="Entities\Database\FoodDatabase.cs" />
     <Compile Include="Entities\Database\ItemDatabase.cs" />
@@ -92,7 +92,7 @@
     <Compile Include="Core\Data\Util\PathUtil.cs" />
     <Compile Include="Core\Data\SpriteHelper.cs" />
     <Compile Include="Core\Data\SpriteScanner.cs" />
-    <Compile Include="Core\IDGenerator.cs" />
+    <Compile Include="IDGenerator.cs" />
     <Compile Include="Patching\PatchLog.cs" />
     <Compile Include="CraftTable.cs" />
     <Compile Include="Building.cs" />

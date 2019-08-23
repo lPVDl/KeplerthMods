@@ -1,4 +1,5 @@
-﻿using Chassis.Entities;
+﻿using System.Reflection;
+using Chassis.Entities;
 using DataBase;
 using System;
 
@@ -22,6 +23,13 @@ namespace Chassis.Wrapping
                 Format = (x, v) => v * 100 + "%",
                 IsDefault = (x, v) => x.EffectHunger == 0
             };
+        }
+
+        internal void Initialize(FoodWrapper source, Assembly patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);
+
+        private void SetTranslationKeys(ConfigFood config)
+        {
+            config.EatBuffDescription = "EatBuffDescription" + Owner.ID;
         }
     }
 }

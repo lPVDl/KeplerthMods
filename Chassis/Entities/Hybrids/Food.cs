@@ -14,7 +14,7 @@ namespace Chassis.Entities
 
         IEnumerable<IEntity> IEntityManager.RuntimeEntities => Entity.CreateRuntimeEntitiesCashed(GetIDs, GetNameOrNull, (id, name) => new Food(id, name));
 
-        bool IEntityManager.RequiresSourceForCreation => true;
+        bool IEntityManager.CreationRequiresSource => true;
 
         Entity.ManagerGroup IEntityManager.NamingGroup => Item.NamingGroup;
 
@@ -27,7 +27,23 @@ namespace Chassis.Entities
             return Entity.GetPropertyValues<Food, IPropertyInfo>(food);
         }
 
-        IEntity IEntityManager.Create(Assembly owner, string entityName, IEntity source) => throw new NotImplementedException();
+        IEntity IEntityManager.Create(string entityName, IEntity source, Assembly patcher)
+        {
+            if (string.IsNullOrEmpty(entityName)) throw new ArgumentException("entityName was null or empty");
+            if (source == null) throw new ArgumentNullException("source was null");
+            if (patcher == null) throw new ArgumentNullException("patcher was null");
+
+            var sourceFood = source as Food;
+            if (sourceFood == null) throw new InvalidOperationException($"source was not {typeof(Food)}");
+
+            var id = Item.CreateID(entityName);
+            var food = new Food(id, entityName);
+
+            food._item.Initialize(sourceFood._item, patcher, true);
+            food._food.Initialize(sourceFood._food, patcher, false);
+
+            return food;
+        }
         #endregion
 
         public int ID { get; }

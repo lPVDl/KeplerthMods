@@ -9,11 +9,11 @@ namespace Chassis.Entities
 
         IEnumerable<IEntity> CompiledEntities { get; }
 
-        bool RequiresSourceForCreation { get; }
+        bool CreationRequiresSource { get; }
 
         Entity.ManagerGroup NamingGroup { get; }
 
-        IEntity Create(Assembly owner, string entityName, IEntity source);
+        IEntity Create(string entityName, IEntity source, Assembly patcher);
 
         IEnumerable<IPropertyInfo> GetProperties(IEntity entity);
     }

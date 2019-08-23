@@ -14,7 +14,7 @@ namespace Chassis.Entities
 
         IEnumerable<IEntity> IEntityManager.RuntimeEntities => Entity.CreateRuntimeEntitiesCashed(GetIDs, GetNameOrNull, (id, name) => new Item(id, name));
 
-        bool IEntityManager.RequiresSourceForCreation => true;
+        bool IEntityManager.CreationRequiresSource => true;
 
         Entity.ManagerGroup IEntityManager.NamingGroup => Item.NamingGroup;
 
@@ -27,7 +27,22 @@ namespace Chassis.Entities
             return Entity.GetPropertyValues<Item, IPropertyInfo>(item);
         }
 
-        IEntity IEntityManager.Create(Assembly owner, string entityName, IEntity source) => throw new NotImplementedException();
+        IEntity IEntityManager.Create(string entityName, IEntity source, Assembly patcher)
+        {
+            if (string.IsNullOrEmpty(entityName)) throw new ArgumentException("entityName was null or empty");
+            if (source == null) throw new ArgumentNullException("source was null");
+            if (patcher == null) throw new ArgumentNullException("patcher was null");
+
+            var sourceItem = source as Item;
+            if (sourceItem == null) throw new InvalidOperationException($"source was not {typeof(Item)}");
+
+            var id = CreateID(entityName);
+            var item = new Item(id, entityName);
+
+            item._item.Initialize(sourceItem._item, patcher, true);
+
+            return item;
+        }
         #endregion
 
         internal static readonly Entity.ManagerGroup NamingGroup = new Entity.ManagerGroup(Entity.GetManager<Item>(), Entity.GetManager<Food>());
@@ -59,5 +74,7 @@ namespace Chassis.Entities
         }      
 
         private static string GetNameOrNull(int id) => LanguageUtil.GetNameOrNull(ItemWrapper.Table[id].Name);
+
+        internal static int CreateID(string name) => IDGenerator.CreateID("Item." + name);
     }
 }

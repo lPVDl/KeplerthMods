@@ -1,8 +1,10 @@
-﻿using Chassis.Patching;
+﻿using System.Reflection;
+using Chassis.Patching;
 using Chassis.Entities;
 using UnityEngine;
 using Keplerth;
 using DataBase;
+using System;
 
 namespace Chassis.Wrapping
 {
@@ -78,37 +80,13 @@ namespace Chassis.Wrapping
             };
         }
 
-        //internal void CopyData(ItemWrapper source, Assembly patcher, bool log = true)
-        //{
-        //    Action patch = () =>
-        //    {
-        //        var info = new PatchLog.Message();
+        internal void Initialize(ItemWrapper source, Assembly patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);
 
-        //        try
-        //        {
-        //            info.Patcher = patcher;
-        //            info.Target = this;
-        //            info.NewValue = source;
-
-        //            ConfigItem.Table[ID] = new ConfigItem(ConfigItem.Table[source.ID])
-        //            {
-        //                Name = "ItemName" + ID,
-        //                Description = "ItemDes" + ID,
-        //                FunctionDes = "ItemFunctionDes" + ID,
-        //            };
-        //        }
-        //        catch(Exception e)
-        //        {
-        //            info.Error = e;
-        //            throw;
-        //        }
-        //        finally
-        //        {
-        //            if (log) { info.Log(); }
-        //        }
-        //    };
-
-        //    ConfigPatcher.Add(patch, patcher);
-        //}
+        private void SetTranslationKeys(ConfigItem config)
+        {
+            config.Name = "ItemName" + Owner.ID;
+            config.Description = "ItemDes" + Owner.ID;
+            config.FunctionDes = "ItemFunctionDes" + Owner.ID;
+        }
     }
 }
