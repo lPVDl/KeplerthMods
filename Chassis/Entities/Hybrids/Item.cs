@@ -48,7 +48,11 @@ namespace Chassis.Entities
         internal static readonly Entity.ManagerGroup NamingGroup = new Entity.ManagerGroup(Entity.GetManager<Item>(), Entity.GetManager<Food>());
 
         public int ID { get; }
-        public string Name { get; }
+
+        string IEntity.Name => _name;
+
+        public ILocalization Name => _item.Name;
+        public ILocalization Description => _item.Description;
 
         public Reader<int> TreeDamageBonus
         {
@@ -57,11 +61,12 @@ namespace Chassis.Entities
         }
 
         private readonly ItemWrapper _item;
+        private readonly string _name;
 
         private Item(int id, string name)
         {
             ID = id;
-            Name = name;
+            _name = name;
 
             _item = new ItemWrapper(this);
         }

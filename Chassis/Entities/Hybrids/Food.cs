@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 using Chassis.Utilities;
-using Chassis.Patching;
 using Chassis.Wrapping;
 using System.Linq;
 using System;
@@ -48,7 +47,11 @@ namespace Chassis.Entities
         #endregion
 
         public int ID { get; }
-        public string Name { get; }
+        string IEntity.Name => _name;
+
+        public ILocalization Name => _item.Name;
+        public ILocalization Description => _item.Description;
+        public ILocalization EffectInfo => _food.EffectInfo;
 
         public Reader<float> PlayerSatiety
         {
@@ -58,11 +61,12 @@ namespace Chassis.Entities
 
         private readonly ItemWrapper _item;
         private readonly FoodWrapper _food;
+        private readonly string _name;
 
         private Food(int id, string name)
         {
             ID = id;
-            Name = name;
+            _name = name;
 
             _item = new ItemWrapper(this);
             _food = new FoodWrapper(this);

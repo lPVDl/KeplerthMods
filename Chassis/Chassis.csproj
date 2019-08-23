@@ -67,6 +67,7 @@
     <Compile Include="Entities\Database\FoodDatabase.cs" />
     <Compile Include="Entities\Database\ItemDatabase.cs" />
     <Compile Include="Entities\IEntityManager.cs" />
+    <Compile Include="ExecuteStaticConstructor.cs" />
     <Compile Include="IPropertyInfo.cs" />
     <Compile Include="Entities\IEntity.cs" />
     <Compile Include="PatchCenter.cs" />
@@ -82,6 +83,8 @@
     <Compile Include="Constant.cs" />
     <Compile Include="Entities\Hybrids\Item.cs" />
     <Compile Include="Properties\Entity.CreationRequest.cs" />
+    <Compile Include="Wrapping\ILocalization.cs" />
+    <Compile Include="Wrapping\Localization.cs" />
     <Compile Include="Wrapping\Wrapper.IPatchable.cs" />
     <Compile Include="Wrapping\Reader.Data.cs" />
     <Compile Include="Wrapping\Reader.cs" />
@@ -104,7 +107,7 @@
     <Compile Include="Core\Data\ItemHelper.cs" />
     <Compile Include="Utilities\LanguageUtil!.cs" />
     <Compile Include="Core\Data\ConfigScanner.cs" />
-    <Compile Include="Core\LanguagePatcher.cs" />
+    <Compile Include="Patching\LanguagePatcher.cs" />
     <Compile Include="Patching\ConfigPatcher.cs" />
     <Compile Include="KeplerthDatabase\CraftDB.cs" />
     <Compile Include="KeplerthDatabase\CraftGroupDB.cs" />

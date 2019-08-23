@@ -8,6 +8,9 @@ namespace Chassis.Wrapping
 {
     internal sealed class ItemWrapper : Wrapper<ConfigItem>
     {
+        public ILocalization Name { get; }
+        public ILocalization Description { get; }
+
         public IPatchable<Sprite> Icon { get; }
         public IPatchable<int> Durability { get; }
         public IPatchable<int> Category { get; }
@@ -17,6 +20,20 @@ namespace Chassis.Wrapping
 
         internal ItemWrapper(IEntity owner) : base(owner)
         {
+            Name = new Localization()
+            {
+                Owner = owner,
+                Name = "Name",
+                Prefix = "ItemName",
+            };
+
+            Description = new Localization()
+            {
+                Owner = owner,
+                Name = "Description",
+                Prefix = "ItemDes",
+            };
+
             Icon = new Patchable<Sprite>()
             {
                 Owner = this,
@@ -75,7 +92,7 @@ namespace Chassis.Wrapping
                 Read = x => x.AttWall,
                 Write = (x, v) => x.AttWall = v,
                 Validate = x => x > 0,
-            };
+            };       
         }
 
         internal void Initialize(ItemWrapper source, IInvokationAddress patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);

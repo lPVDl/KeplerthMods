@@ -1,5 +1,4 @@
-﻿using Chassis.Patching;
-using Chassis.Entities;
+﻿using Chassis.Entities;
 using DataBase;
 using System;
 
@@ -7,10 +6,19 @@ namespace Chassis.Wrapping
 {
     internal sealed class FoodWrapper : Wrapper<ConfigFood>
     {
+        public ILocalization EffectInfo { get; }
+
         public IPatchable<float> PlayerSatiety { get; }
 
         internal FoodWrapper(IEntity owner) : base(owner)
         {
+            EffectInfo = new Localization()
+            {
+                Owner = owner,
+                Name = "EffectInfo",
+                Prefix = "EatBuffDescription",
+            };
+
             PlayerSatiety = new Patchable<float>()
             {
                 Owner = this,

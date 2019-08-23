@@ -1,5 +1,4 @@
 ﻿using Chassis.Patching;
-using System.Reflection;
 using System;
 
 namespace Chassis.Wrapping

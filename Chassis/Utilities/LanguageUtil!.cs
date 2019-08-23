@@ -26,7 +26,7 @@ namespace Chassis.Utilities
             return null;
         }
 
-        private static bool TryGetInEnglish(string textID, out string result)
+        public static bool TryGetInEnglish(string textID, out string result)
         {
             result = null;
 

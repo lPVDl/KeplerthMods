@@ -1,17 +1,18 @@
 ﻿using System.Reflection;
 using Chassis.Entities;
-using Keplerth;
+using Chassis;
 using Common;
 using System;
 
 namespace DrugOverload
 {
-    [StaticConstructorOnStartup]
+    [ExecuteStaticConstructor]
     internal class DataPatch
     {
         [CreateEntity(Source = nameof(Food.Apple))]
         public static readonly Food Grapes;
 
+        
         static DataPatch()
         {
             try
@@ -34,7 +35,7 @@ namespace DrugOverload
 
                 Item.StonePickaxe.TreeDamageBonus = 5000;
 
-                Item.StonePickaxe.TreeDamageBonus = -1;
+                Item.StonePickaxe.Name.Edit(x => x + "WARNING VERY OP PICKAXE");
                 // ChassisMod.KeplerthDatabase.ItemDB.StonePickaxe.TreeDamageBonus.Set(500, System.Reflection.Assembly.GetExecutingAssembly());
 
                 //ConfigScanner.SaveDefinitions(@"T:\KeplerthDatabase\");
