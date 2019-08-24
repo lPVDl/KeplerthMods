@@ -63,9 +63,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\CreateEntityAttribute.cs" />
+    <Compile Include="Entities\Database\WeaponDatabase.cs" />
     <Compile Include="Entities\EntityExporter.cs" />
     <Compile Include="Entities\Database\FoodDatabase.cs" />
     <Compile Include="Entities\Database\ItemDatabase.cs" />
+    <Compile Include="Entities\Hybrids\Weapon.cs" />
     <Compile Include="Entities\IEntityManager.cs" />
     <Compile Include="ExecuteStaticConstructor.cs" />
     <Compile Include="IPropertyInfo.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="Core\Data\CraftTableDataHelper.cs" />
     <Compile Include="Core\Data\FoodHelper.cs" />
     <Compile Include="InvokationAddress.cs" />
+    <Compile Include="Utilities\FormatUtil.cs" />
     <Compile Include="Utilities\LanguageUtil.WebTranslator.RateLimiter.cs" />
     <Compile Include="Utilities\LanguageUtil.WebTranslator.cs" />
     <Compile Include="Core\Data\WeaponHelper.cs" />
@@ -83,6 +86,7 @@
     <Compile Include="Constant.cs" />
     <Compile Include="Entities\Hybrids\Item.cs" />
     <Compile Include="Properties\Entity.CreationRequest.cs" />
+    <Compile Include="Wrapping\ConfigWrappers\WeaponWrapper.cs" />
     <Compile Include="Wrapping\ILocalization.cs" />
     <Compile Include="Wrapping\Localization.cs" />
     <Compile Include="Wrapping\Wrapper.IPatchable.cs" />
@@ -118,8 +122,8 @@
     <Compile Include="Effect.cs" />
     <Compile Include="Effect_Modifiers.cs" />
     <Compile Include="Weapon.cs" />
-    <Compile Include="Wrapping\FoodWrapper.cs" />
-    <Compile Include="Wrapping\ItemWrapper.cs" />
+    <Compile Include="Wrapping\ConfigWrappers\FoodWrapper.cs" />
+    <Compile Include="Wrapping\ConfigWrappers\ItemWrapper.cs" />
     <Compile Include="Craft.cs" />
     <Compile Include="CraftGroup.cs" />
     <Compile Include="Language.cs" />

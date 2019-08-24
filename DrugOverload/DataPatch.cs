@@ -11,7 +11,6 @@ namespace DrugOverload
     {
         [CreateEntity(Source = nameof(Food.Apple))]
         public static readonly Food Grapes;
-
         
         static DataPatch()
         {
@@ -33,9 +32,9 @@ namespace DrugOverload
 
                 //var hb = WrapperHybrid.GetManagerNames();
 
-                Item.StonePickaxe.TreeDamageBonus = 5000;
+                
 
-                Item.StonePickaxe.Name.Edit(x => x + "WARNING VERY OP PICKAXE");
+                // Item.StonePickaxe.Name.Edit(x => x + "WARNING VERY OP PICKAXE");
                 // ChassisMod.KeplerthDatabase.ItemDB.StonePickaxe.TreeDamageBonus.Set(500, System.Reflection.Assembly.GetExecutingAssembly());
 
                 //ConfigScanner.SaveDefinitions(@"T:\KeplerthDatabase\");

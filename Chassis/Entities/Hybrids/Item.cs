@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Chassis.Utilities;
-using System.Reflection;
 using Chassis.Wrapping;
 using System.Linq;
 using System;
+using Common;
 
 namespace Chassis.Entities
 {
@@ -45,23 +45,31 @@ namespace Chassis.Entities
         }
         #endregion
 
-        internal static readonly Entity.ManagerGroup NamingGroup = new Entity.ManagerGroup(Entity.GetManager<Item>(), Entity.GetManager<Food>());
-
-        public int ID { get; }
-
-        string IEntity.Name => _name;
+        internal static Entity.ManagerGroup NamingGroup { get; }
 
         public ILocalization Name => _item.Name;
         public ILocalization Description => _item.Description;
 
-        public Reader<int> TreeDamageBonus
-        {
-            get => _item.TreeDamageBonus.Reader;
-            set => _item.TreeDamageBonus.Set(value, new InvokationAddress(Assembly.GetCallingAssembly(), Environment.StackTrace));
-        }
+        public int ID { get; }
+        string IEntity.Name => _name;
 
         private readonly ItemWrapper _item;
         private readonly string _name;
+
+        static Item()
+        {
+            try
+            {
+                IEntityManager[] managers =
+                {
+                    Entity.GetManager<Item>(),
+                    Entity.GetManager<Food>(),
+                    Entity.GetManager<Weapon>()
+                };
+                NamingGroup = new Entity.ManagerGroup(managers);
+            }
+            catch (Exception e) { Log.Exception(e); }
+        }
 
         private Item(int id, string name)
         {
@@ -75,6 +83,7 @@ namespace Chassis.Entities
         {
             return from id in ItemWrapper.Table.Keys
                    where !FoodWrapper.Table.ContainsKey(id)
+                   where !WeaponWrapper.Table.ContainsKey(id)
                    select id;
         }      
 

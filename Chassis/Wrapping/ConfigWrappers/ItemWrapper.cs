@@ -18,13 +18,14 @@ namespace Chassis.Wrapping
         public IPatchable<int> TreeDamageBonus { get ; }
         public IPatchable<int> WallDamageBonus { get; }
 
-        internal ItemWrapper(IEntity owner) : base(owner)
+        public ItemWrapper(IEntity owner) : base(owner)
         {
             Name = new Localization()
             {
                 Owner = owner,
                 Name = "Name",
                 Prefix = "ItemName",
+                Display = false,
             };
 
             Description = new Localization()
@@ -72,6 +73,8 @@ namespace Chassis.Wrapping
                 Read = x => x.AttBuild,
                 Write = (x, v) => x.AttBuild = v,
                 Validate = x => x > 0,
+
+                IsDefault = (x, v) => v == 1,
             };
 
             TreeDamageBonus = new Patchable<int>()
@@ -82,6 +85,8 @@ namespace Chassis.Wrapping
                 Read = x => x.AttTree,
                 Write = (x, v) => x.AttTree = v,
                 Validate  = x => x > 0,
+
+                IsDefault = (x, v) => v == 1,
             };
 
             WallDamageBonus = new Patchable<int>()
@@ -92,10 +97,12 @@ namespace Chassis.Wrapping
                 Read = x => x.AttWall,
                 Write = (x, v) => x.AttWall = v,
                 Validate = x => x > 0,
+
+                IsDefault = (x, v) => v == 1,
             };       
         }
 
-        internal void Initialize(ItemWrapper source, IInvokationAddress patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);
+        public void Initialize(ItemWrapper source, IInvokationAddress patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);
 
         private void SetTranslationKeys(ConfigItem config)
         {

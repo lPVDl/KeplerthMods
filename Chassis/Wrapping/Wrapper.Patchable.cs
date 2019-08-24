@@ -1,4 +1,5 @@
-﻿using Chassis.Patching;
+﻿using Chassis.Utilities;
+using Chassis.Patching;
 using System;
 
 namespace Chassis.Wrapping
@@ -29,44 +30,17 @@ namespace Chassis.Wrapping
                 public override string ToString() => _owner.ToString();
             }
 
-            string IPropertyInfo.Value
-            {
-                get
-                {
-                    var config = GetConfig();
-                    var value = Read(config);
+            string IPropertyInfo.Value => Format(GetConfig(), Read(GetConfig()));
 
-                    if (Format != null) { return Format(config, value); }
-
-                    if (value == null) { return "null"; }
-
-                    return value.ToString();
-                }
-            }
-
-            bool IPropertyInfo.ValueIsDefault
-            {
-                get
-                {
-                    if (IsDefault != null)
-                    {
-                        var config = GetConfig();
-                        var value = Read(config);
-
-                        return IsDefault(config, value);
-                    }
-
-                    return false;
-                }
-            }
+            bool IPropertyInfo.ValueIsDefault => IsDefault(GetConfig(), Read(GetConfig()));
 
             public string Name { get; set; }
             public IWrapper<TConfig> Owner { get; set; }
             public Func<TConfig, TValue> Read { get; set; }
             public Action<TConfig, TValue> Write { get; set; }
             public Func<TValue, bool> Validate { get; set; }
-            public Func<TConfig, TValue, string> Format { get; set; }
-            public Func<TConfig, TValue, bool> IsDefault { get; set; }
+            public Func<TConfig, TValue, string> Format { get; set; } = (x, v) => FormatUtil.ToString(v);
+            public Func<TConfig, TValue, bool> IsDefault { get; set; } = (x, v) => false;
 
             Reader<TValue> IPatchable<TValue>.Reader => _reader;
 

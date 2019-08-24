@@ -10,7 +10,7 @@ namespace Chassis.Wrapping
 
         public IPatchable<float> PlayerSatiety { get; }
 
-        internal FoodWrapper(IEntity owner) : base(owner)
+        public FoodWrapper(IEntity owner) : base(owner)
         {
             EffectInfo = new Localization()
             {
@@ -33,7 +33,7 @@ namespace Chassis.Wrapping
             };
         }
 
-        internal void Initialize(FoodWrapper source, IInvokationAddress patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);
+        public void Initialize(FoodWrapper source, IInvokationAddress patcher, bool log) => Initialize(source, SetTranslationKeys, patcher, log);
 
         private void SetTranslationKeys(ConfigFood config)
         {

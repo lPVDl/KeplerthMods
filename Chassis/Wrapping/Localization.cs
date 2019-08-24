@@ -11,6 +11,7 @@ namespace Chassis.Wrapping
         public IEntity Owner { get; set; }
         public string Prefix { get; set; }
         public string Name { get; set; }
+        public bool Display { get; set; } = true;
 
         string IPropertyInfo.Name => Name;
 
@@ -18,10 +19,12 @@ namespace Chassis.Wrapping
         {
             get
             {
-                var key = Prefix + Owner.ID;
-                if (LanguageUtil.TryGetInEnglish(key, out var text)) return true;
+                if (!Display) return true;
 
-                return false;
+                var key = Prefix + Owner.ID;
+                if (LanguageUtil.TryGetInEnglish(key, out var text)) return false;
+
+                return true;
             }
         }
 
@@ -30,7 +33,7 @@ namespace Chassis.Wrapping
             get
             {
                 var key = Prefix + Owner.ID;
-                if (LanguageUtil.TryGetInEnglish(key, out var text)) return text;
+                if (LanguageUtil.TryGetInEnglish(key, out var text)) return '"' + text + '"';
 
                 return "";
             }
