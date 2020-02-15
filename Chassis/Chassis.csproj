@@ -162,6 +162,7 @@ mkdir G:\Steam\steamapps\common\KEPLERTH\Keplerth_Data\StreamingAssets\Mods\$(Pr
 xcopy /s $(ProjectDir)\mod G:\Steam\steamapps\common\KEPLERTH\Keplerth_Data\StreamingAssets\Mods\$(ProjectName)</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PreBuildEvent>copy T:\Keplerth\Entities.Database\*.cs $(ProjectDir)\Entities\Database\</PreBuildEvent>
+    <PreBuildEvent>copy T:\Keplerth\Entities.Database\*.cs $(ProjectDir)\Entities\Database\
+copy C:\Users\Admin\AppData\LocalLow\Taro\Keplerth\WebTranslator.cash $(SolutionDir)\Dependencies</PreBuildEvent>
   </PropertyGroup>
 </Project>
