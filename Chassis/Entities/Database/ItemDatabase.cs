@@ -56,8 +56,9 @@ namespace Chassis.Entities
 		public static readonly Item GoldenPlate = new Item(2006, "GoldenPlate");
 		/// <summary>
 		/// ID: 2007<para/>
+		/// Description: "A new type of armor that is made by Meco company for their soldiers."<para/>
 		/// </summary>
-		public static readonly Item DiamondPlate = new Item(2007, "DiamondPlate");
+		public static readonly Item MecoBattleRhino0 = new Item(2007, "MecoBattleRhino0");
 		/// <summary>
 		/// ID: 2008<para/>
 		/// </summary>
@@ -110,7 +111,7 @@ namespace Chassis.Entities
 		/// ID: 2020<para/>
 		/// Description: "A new type of armor that is made by Meco company for their soldiers."<para/>
 		/// </summary>
-		public static readonly Item MecoBattleRhino = new Item(2020, "MecoBattleRhino");
+		public static readonly Item MecoBattleRhino1 = new Item(2020, "MecoBattleRhino1");
 		/// <summary>
 		/// ID: 2021<para/>
 		/// </summary>
@@ -146,11 +147,11 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 2031<para/>
 		/// </summary>
-		public static readonly Item MatthewSchippersCostume = new Item(2031, "MatthewSchippersCostume");
+		public static readonly Item MatthewSchipholsAttire = new Item(2031, "MatthewSchipholsAttire");
 		/// <summary>
 		/// ID: 2032<para/>
 		/// </summary>
-		public static readonly Item DannysCostume = new Item(2032, "DannysCostume");
+		public static readonly Item DanisCostume = new Item(2032, "DanisCostume");
 		/// <summary>
 		/// ID: 2033<para/>
 		/// </summary>
@@ -200,6 +201,66 @@ namespace Chassis.Entities
 		/// </summary>
 		public static readonly Item GrounderAntiMecoPlate1 = new Item(2044, "GrounderAntiMecoPlate1");
 		/// <summary>
+		/// ID: 2045<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate2 = new Item(2045, "GrounderAntiMecoPlate2");
+		/// <summary>
+		/// ID: 2046<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate3 = new Item(2046, "GrounderAntiMecoPlate3");
+		/// <summary>
+		/// ID: 2047<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate4 = new Item(2047, "GrounderAntiMecoPlate4");
+		/// <summary>
+		/// ID: 2048<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate5 = new Item(2048, "GrounderAntiMecoPlate5");
+		/// <summary>
+		/// ID: 2049<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate6 = new Item(2049, "GrounderAntiMecoPlate6");
+		/// <summary>
+		/// ID: 2050<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate7 = new Item(2050, "GrounderAntiMecoPlate7");
+		/// <summary>
+		/// ID: 2051<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate8 = new Item(2051, "GrounderAntiMecoPlate8");
+		/// <summary>
+		/// ID: 2052<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate9 = new Item(2052, "GrounderAntiMecoPlate9");
+		/// <summary>
+		/// ID: 2053<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate10 = new Item(2053, "GrounderAntiMecoPlate10");
+		/// <summary>
+		/// ID: 2054<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate11 = new Item(2054, "GrounderAntiMecoPlate11");
+		/// <summary>
+		/// ID: 2055<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate12 = new Item(2055, "GrounderAntiMecoPlate12");
+		/// <summary>
+		/// ID: 2056<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate13 = new Item(2056, "GrounderAntiMecoPlate13");
+		/// <summary>
+		/// ID: 2057<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate14 = new Item(2057, "GrounderAntiMecoPlate14");
+		/// <summary>
+		/// ID: 2058<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate15 = new Item(2058, "GrounderAntiMecoPlate15");
+		/// <summary>
+		/// ID: 2059<para/>
+		/// </summary>
+		public static readonly Item GrounderAntiMecoPlate16 = new Item(2059, "GrounderAntiMecoPlate16");
+		/// <summary>
 		/// ID: 2099<para/>
 		/// </summary>
 		public static readonly Item PapaArmor = new Item(2099, "PapaArmor");
@@ -230,7 +291,7 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 2107<para/>
 		/// </summary>
-		public static readonly Item DiamondGloves = new Item(2107, "DiamondGloves");
+		public static readonly Item MecoBattleGloves = new Item(2107, "MecoBattleGloves");
 		/// <summary>
 		/// ID: 2108<para/>
 		/// </summary>
@@ -270,7 +331,7 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 2207<para/>
 		/// </summary>
-		public static readonly Item DiamondShoes = new Item(2207, "DiamondShoes");
+		public static readonly Item MecoBattleShoes = new Item(2207, "MecoBattleShoes");
 		/// <summary>
 		/// ID: 2208<para/>
 		/// </summary>
@@ -392,6 +453,34 @@ namespace Chassis.Entities
 		/// ID: 2325<para/>
 		/// </summary>
 		public static readonly Item ModifiedDetector = new Item(2325, "ModifiedDetector");
+		/// <summary>
+		/// ID: 2327<para/>
+		/// </summary>
+		public static readonly Item TenergyBelt = new Item(2327, "TenergyBelt");
+		/// <summary>
+		/// ID: 2328<para/>
+		/// </summary>
+		public static readonly Item CourageMedal = new Item(2328, "CourageMedal");
+		/// <summary>
+		/// ID: 2329<para/>
+		/// </summary>
+		public static readonly Item IronWallMedal = new Item(2329, "IronWallMedal");
+		/// <summary>
+		/// ID: 2330<para/>
+		/// </summary>
+		public static readonly Item SwiftMedal = new Item(2330, "SwiftMedal");
+		/// <summary>
+		/// ID: 2331<para/>
+		/// </summary>
+		public static readonly Item BloodsuckingFliesPetriDish = new Item(2331, "BloodsuckingFliesPetriDish");
+		/// <summary>
+		/// ID: 2332<para/>
+		/// </summary>
+		public static readonly Item PoliceBodyArmor = new Item(2332, "PoliceBodyArmor");
+		/// <summary>
+		/// ID: 2333<para/>
+		/// </summary>
+		public static readonly Item PoliceShield = new Item(2333, "PoliceShield");
 		/// <summary>
 		/// ID: 2401<para/>
 		/// </summary>
@@ -597,6 +686,66 @@ namespace Chassis.Entities
 		/// </summary>
 		public static readonly Item RifterOutfit = new Item(2712, "RifterOutfit");
 		/// <summary>
+		/// ID: 2713<para/>
+		/// </summary>
+		public static readonly Item AncientPoliceUniform = new Item(2713, "AncientPoliceUniform");
+		/// <summary>
+		/// ID: 2714<para/>
+		/// </summary>
+		public static readonly Item AncientICUPatientDress = new Item(2714, "AncientICUPatientDress");
+		/// <summary>
+		/// ID: 2715<para/>
+		/// </summary>
+		public static readonly Item AncientDoctorUniform = new Item(2715, "AncientDoctorUniform");
+		/// <summary>
+		/// ID: 2716<para/>
+		/// </summary>
+		public static readonly Item AncientNurseUniform = new Item(2716, "AncientNurseUniform");
+		/// <summary>
+		/// ID: 2717<para/>
+		/// </summary>
+		public static readonly Item AncientKhakiTrenchCoat = new Item(2717, "AncientKhakiTrenchCoat");
+		/// <summary>
+		/// ID: 2718<para/>
+		/// </summary>
+		public static readonly Item AncientGreenExplorerSuit = new Item(2718, "AncientGreenExplorerSuit");
+		/// <summary>
+		/// ID: 2719<para/>
+		/// </summary>
+		public static readonly Item AncientPrisonSuit = new Item(2719, "AncientPrisonSuit");
+		/// <summary>
+		/// ID: 2720<para/>
+		/// </summary>
+		public static readonly Item AncientStudentSear = new Item(2720, "AncientStudentSear");
+		/// <summary>
+		/// ID: 2721<para/>
+		/// </summary>
+		public static readonly Item AncientYellowBikini = new Item(2721, "AncientYellowBikini");
+		/// <summary>
+		/// ID: 2722<para/>
+		/// </summary>
+		public static readonly Item AncientBlueHoodedCasualWear = new Item(2722, "AncientBlueHoodedCasualWear");
+		/// <summary>
+		/// ID: 2723<para/>
+		/// </summary>
+		public static readonly Item AncientTuxedo = new Item(2723, "AncientTuxedo");
+		/// <summary>
+		/// ID: 2724<para/>
+		/// </summary>
+		public static readonly Item AncientYellowHoodedCasualWea = new Item(2724, "AncientYellowHoodedCasualWea");
+		/// <summary>
+		/// ID: 2725<para/>
+		/// </summary>
+		public static readonly Item AncientGreenBikini = new Item(2725, "AncientGreenBikini");
+		/// <summary>
+		/// ID: 2726<para/>
+		/// </summary>
+		public static readonly Item AncientPurpleExplorerSuit = new Item(2726, "AncientPurpleExplorerSuit");
+		/// <summary>
+		/// ID: 2727<para/>
+		/// </summary>
+		public static readonly Item AncientGrayTrenchCoat = new Item(2727, "AncientGrayTrenchCoat");
+		/// <summary>
 		/// ID: 3001<para/>
 		/// </summary>
 		public static readonly Item DirtBlock = new Item(3001, "DirtBlock");
@@ -667,7 +816,31 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 3017<para/>
 		/// </summary>
-		public static readonly Item ParasytorWall0 = new Item(3017, "ParasytorWall0");
+		public static readonly Item ParasytorWall = new Item(3017, "ParasytorWall");
+		/// <summary>
+		/// ID: 3018<para/>
+		/// </summary>
+		public static readonly Item SporeDirtWall = new Item(3018, "SporeDirtWall");
+		/// <summary>
+		/// ID: 3019<para/>
+		/// </summary>
+		public static readonly Item SporeStoneWall = new Item(3019, "SporeStoneWall");
+		/// <summary>
+		/// ID: 3020<para/>
+		/// </summary>
+		public static readonly Item MossyDirtBlock = new Item(3020, "MossyDirtBlock");
+		/// <summary>
+		/// ID: 3021<para/>
+		/// </summary>
+		public static readonly Item MossyStoneBlock = new Item(3021, "MossyStoneBlock");
+		/// <summary>
+		/// ID: 3022<para/>
+		/// </summary>
+		public static readonly Item ParasytorDirtBlock = new Item(3022, "ParasytorDirtBlock");
+		/// <summary>
+		/// ID: 3023<para/>
+		/// </summary>
+		public static readonly Item ParasytorStoneBlock = new Item(3023, "ParasytorStoneBlock");
 		/// <summary>
 		/// ID: 3101<para/>
 		/// </summary>
@@ -759,43 +932,59 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 3124<para/>
 		/// </summary>
-		public static readonly Item ParasytorWall1 = new Item(3124, "ParasytorWall1");
+		public static readonly Item MecoTenergyWall = new Item(3124, "MecoTenergyWall");
 		/// <summary>
 		/// ID: 3125<para/>
 		/// </summary>
-		public static readonly Item ParasytorWall2 = new Item(3125, "ParasytorWall2");
+		public static readonly Item MecoBiotechWall = new Item(3125, "MecoBiotechWall");
 		/// <summary>
 		/// ID: 3126<para/>
 		/// </summary>
-		public static readonly Item ParasytorWall3 = new Item(3126, "ParasytorWall3");
+		public static readonly Item ParasectMecoWall = new Item(3126, "ParasectMecoWall");
 		/// <summary>
 		/// ID: 3127<para/>
 		/// </summary>
-		public static readonly Item ParasytorWall4 = new Item(3127, "ParasytorWall4");
+		public static readonly Item OldMecoTenergyWall = new Item(3127, "OldMecoTenergyWall");
 		/// <summary>
 		/// ID: 3128<para/>
 		/// </summary>
-		public static readonly Item ParasytorWall5 = new Item(3128, "ParasytorWall5");
+		public static readonly Item DamagedMecoTenergyWall = new Item(3128, "DamagedMecoTenergyWall");
 		/// <summary>
 		/// ID: 3129<para/>
 		/// </summary>
-		public static readonly Item ParasytorWall6 = new Item(3129, "ParasytorWall6");
+		public static readonly Item BrokenMecoTenergyWall = new Item(3129, "BrokenMecoTenergyWall");
 		/// <summary>
 		/// ID: 3130<para/>
 		/// </summary>
-		public static readonly Item ParasytorWall7 = new Item(3130, "ParasytorWall7");
+		public static readonly Item OldMecoBiotechWall = new Item(3130, "OldMecoBiotechWall");
 		/// <summary>
 		/// ID: 3131<para/>
 		/// </summary>
-		public static readonly Item ParasytorWall8 = new Item(3131, "ParasytorWall8");
+		public static readonly Item DamagedMecoBiotechWall = new Item(3131, "DamagedMecoBiotechWall");
 		/// <summary>
 		/// ID: 3132<para/>
 		/// </summary>
-		public static readonly Item ParasytorWall9 = new Item(3132, "ParasytorWall9");
+		public static readonly Item BrokenMecoBiotechWall = new Item(3132, "BrokenMecoBiotechWall");
 		/// <summary>
 		/// ID: 3133<para/>
 		/// </summary>
 		public static readonly Item IceWall1 = new Item(3133, "IceWall1");
+		/// <summary>
+		/// ID: 3134<para/>
+		/// </summary>
+		public static readonly Item AncientWall0 = new Item(3134, "AncientWall0");
+		/// <summary>
+		/// ID: 3135<para/>
+		/// </summary>
+		public static readonly Item AncientWall1 = new Item(3135, "AncientWall1");
+		/// <summary>
+		/// ID: 3136<para/>
+		/// </summary>
+		public static readonly Item AncientWall2 = new Item(3136, "AncientWall2");
+		/// <summary>
+		/// ID: 3137<para/>
+		/// </summary>
+		public static readonly Item AncientWall3 = new Item(3137, "AncientWall3");
 		/// <summary>
 		/// ID: 3201<para/>
 		/// </summary>
@@ -899,6 +1088,146 @@ namespace Chassis.Entities
 		/// ID: 3226<para/>
 		/// </summary>
 		public static readonly Item ParasytorSeed = new Item(3226, "ParasytorSeed");
+		/// <summary>
+		/// ID: 3227<para/>
+		/// </summary>
+		public static readonly Item GiantDictyophoraSeed = new Item(3227, "GiantDictyophoraSeed");
+		/// <summary>
+		/// ID: 3228<para/>
+		/// </summary>
+		public static readonly Item LightSpores1 = new Item(3228, "LightSpores1");
+		/// <summary>
+		/// ID: 3229<para/>
+		/// </summary>
+		public static readonly Item LightSpores2 = new Item(3229, "LightSpores2");
+		/// <summary>
+		/// ID: 3230<para/>
+		/// </summary>
+		public static readonly Item LightSpores3 = new Item(3230, "LightSpores3");
+		/// <summary>
+		/// ID: 3231<para/>
+		/// </summary>
+		public static readonly Item LightSpores4 = new Item(3231, "LightSpores4");
+		/// <summary>
+		/// ID: 3232<para/>
+		/// </summary>
+		public static readonly Item LightSpores5 = new Item(3232, "LightSpores5");
+		/// <summary>
+		/// ID: 3233<para/>
+		/// </summary>
+		public static readonly Item LightSpores6 = new Item(3233, "LightSpores6");
+		/// <summary>
+		/// ID: 3234<para/>
+		/// </summary>
+		public static readonly Item ParasiticSpore0 = new Item(3234, "ParasiticSpore0");
+		/// <summary>
+		/// ID: 3235<para/>
+		/// </summary>
+		public static readonly Item ParasiticSpore1 = new Item(3235, "ParasiticSpore1");
+		/// <summary>
+		/// ID: 3236<para/>
+		/// </summary>
+		public static readonly Item GasSpore = new Item(3236, "GasSpore");
+		/// <summary>
+		/// ID: 3237<para/>
+		/// </summary>
+		public static readonly Item LightMushroom0 = new Item(3237, "LightMushroom0");
+		/// <summary>
+		/// ID: 3238<para/>
+		/// </summary>
+		public static readonly Item LightMushroom1 = new Item(3238, "LightMushroom1");
+		/// <summary>
+		/// ID: 3251<para/>
+		/// </summary>
+		public static readonly Item RainforestFern1 = new Item(3251, "RainforestFern1");
+		/// <summary>
+		/// ID: 3252<para/>
+		/// </summary>
+		public static readonly Item RainforestFern2 = new Item(3252, "RainforestFern2");
+		/// <summary>
+		/// ID: 3253<para/>
+		/// </summary>
+		public static readonly Item RainforestFern3 = new Item(3253, "RainforestFern3");
+		/// <summary>
+		/// ID: 3254<para/>
+		/// </summary>
+		public static readonly Item RainforestFern4 = new Item(3254, "RainforestFern4");
+		/// <summary>
+		/// ID: 3255<para/>
+		/// </summary>
+		public static readonly Item RainforestFern5 = new Item(3255, "RainforestFern5");
+		/// <summary>
+		/// ID: 3256<para/>
+		/// </summary>
+		public static readonly Item RainforestFern6 = new Item(3256, "RainforestFern6");
+		/// <summary>
+		/// ID: 3257<para/>
+		/// </summary>
+		public static readonly Item RainforestFern7 = new Item(3257, "RainforestFern7");
+		/// <summary>
+		/// ID: 3258<para/>
+		/// </summary>
+		public static readonly Item RainforestFern8 = new Item(3258, "RainforestFern8");
+		/// <summary>
+		/// ID: 3259<para/>
+		/// </summary>
+		public static readonly Item RainforestFern9 = new Item(3259, "RainforestFern9");
+		/// <summary>
+		/// ID: 3260<para/>
+		/// </summary>
+		public static readonly Item RainforestShrub1 = new Item(3260, "RainforestShrub1");
+		/// <summary>
+		/// ID: 3261<para/>
+		/// </summary>
+		public static readonly Item RainforestShrub2 = new Item(3261, "RainforestShrub2");
+		/// <summary>
+		/// ID: 3262<para/>
+		/// </summary>
+		public static readonly Item RainforestShrub3 = new Item(3262, "RainforestShrub3");
+		/// <summary>
+		/// ID: 3263<para/>
+		/// </summary>
+		public static readonly Item RainforestShrub4 = new Item(3263, "RainforestShrub4");
+		/// <summary>
+		/// ID: 3264<para/>
+		/// </summary>
+		public static readonly Item RainforestShrub5 = new Item(3264, "RainforestShrub5");
+		/// <summary>
+		/// ID: 3265<para/>
+		/// </summary>
+		public static readonly Item RainforestGravel1 = new Item(3265, "RainforestGravel1");
+		/// <summary>
+		/// ID: 3266<para/>
+		/// </summary>
+		public static readonly Item RainforestGravel2 = new Item(3266, "RainforestGravel2");
+		/// <summary>
+		/// ID: 3267<para/>
+		/// </summary>
+		public static readonly Item RainforestGravel3 = new Item(3267, "RainforestGravel3");
+		/// <summary>
+		/// ID: 3268<para/>
+		/// </summary>
+		public static readonly Item RainforestGravel4 = new Item(3268, "RainforestGravel4");
+		/// <summary>
+		/// ID: 3269<para/>
+		/// </summary>
+		public static readonly Item RainforestGravel5 = new Item(3269, "RainforestGravel5");
+		/// <summary>
+		/// ID: 3270<para/>
+		/// </summary>
+		public static readonly Item RainforestGravel6 = new Item(3270, "RainforestGravel6");
+		/// <summary>
+		/// ID: 3271<para/>
+		/// </summary>
+		public static readonly Item RainforestGravel7 = new Item(3271, "RainforestGravel7");
+		/// <summary>
+		/// ID: 3272<para/>
+		/// </summary>
+		public static readonly Item RainforestSapling = new Item(3272, "RainforestSapling");
+		/// <summary>
+		/// ID: 3273<para/>
+		/// </summary>
+		public static readonly Item SunlightFungi = new Item(3273, "SunlightFungi");
 		/// <summary>
 		/// ID: 3501<para/>
 		/// </summary>
@@ -1070,15 +1399,15 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 3543<para/>
 		/// </summary>
-		public static readonly Item WoodCraftTable = new Item(3543, "WoodCraftTable");
+		public static readonly Item WoodenCraftTable = new Item(3543, "WoodenCraftTable");
 		/// <summary>
 		/// ID: 3544<para/>
 		/// </summary>
-		public static readonly Item StoneCraft = new Item(3544, "StoneCraft");
+		public static readonly Item StoneCraftTable = new Item(3544, "StoneCraftTable");
 		/// <summary>
 		/// ID: 3545<para/>
 		/// </summary>
-		public static readonly Item CopperCraftTable = new Item(3545, "CopperCraftTable");
+		public static readonly Item CopperCraftDesk = new Item(3545, "CopperCraftDesk");
 		/// <summary>
 		/// ID: 3546<para/>
 		/// </summary>
@@ -1094,7 +1423,7 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 3549<para/>
 		/// </summary>
-		public static readonly Item DiamondCraftTable = new Item(3549, "DiamondCraftTable");
+		public static readonly Item DiamondCraftStation = new Item(3549, "DiamondCraftStation");
 		/// <summary>
 		/// ID: 3550<para/>
 		/// </summary>
@@ -1126,27 +1455,27 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 3557<para/>
 		/// </summary>
-		public static readonly Item StoneDigester = new Item(3557, "StoneDigester");
+		public static readonly Item StoneBiogasTank = new Item(3557, "StoneBiogasTank");
 		/// <summary>
 		/// ID: 3558<para/>
 		/// </summary>
-		public static readonly Item CopperBiogasTank = new Item(3558, "CopperBiogasTank");
+		public static readonly Item CopperBiogasDigester = new Item(3558, "CopperBiogasDigester");
 		/// <summary>
 		/// ID: 3559<para/>
 		/// </summary>
-		public static readonly Item IronDigester = new Item(3559, "IronDigester");
+		public static readonly Item IronBiogasDigester = new Item(3559, "IronBiogasDigester");
 		/// <summary>
 		/// ID: 3560<para/>
 		/// </summary>
-		public static readonly Item SilverBiogasPool = new Item(3560, "SilverBiogasPool");
+		public static readonly Item SilverBiogasTank = new Item(3560, "SilverBiogasTank");
 		/// <summary>
 		/// ID: 3561<para/>
 		/// </summary>
-		public static readonly Item GoldBiogasPool = new Item(3561, "GoldBiogasPool");
+		public static readonly Item GoldenBiogasTank = new Item(3561, "GoldenBiogasTank");
 		/// <summary>
 		/// ID: 3562<para/>
 		/// </summary>
-		public static readonly Item DiamondBiogasTank = new Item(3562, "DiamondBiogasTank");
+		public static readonly Item DiamondBiogasDigester = new Item(3562, "DiamondBiogasDigester");
 		/// <summary>
 		/// ID: 3563<para/>
 		/// </summary>
@@ -1163,7 +1492,7 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 3566<para/>
 		/// </summary>
-		public static readonly Item WorkbenchFoundry = new Item(3566, "WorkbenchFoundry");
+		public static readonly Item TechnologyFoundry = new Item(3566, "TechnologyFoundry");
 		/// <summary>
 		/// ID: 3567<para/>
 		/// Description: "Can be used to make materials for making Meco items."<para/>
@@ -1181,6 +1510,7 @@ namespace Chassis.Entities
 		public static readonly Item GrounderWorkbench = new Item(3569, "GrounderWorkbench");
 		/// <summary>
 		/// ID: 3570<para/>
+		/// Description: "Can be used to make materials for making Meco items."<para/>
 		/// </summary>
 		public static readonly Item MecoTenergyFoundry = new Item(3570, "MecoTenergyFoundry");
 		/// <summary>
@@ -1267,11 +1597,11 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 3619<para/>
 		/// </summary>
-		public static readonly Item BoneRoundTable0 = new Item(3619, "BoneRoundTable0");
+		public static readonly Item BoneRoundTable = new Item(3619, "BoneRoundTable");
 		/// <summary>
 		/// ID: 3620<para/>
 		/// </summary>
-		public static readonly Item BoneRoundTable1 = new Item(3620, "BoneRoundTable1");
+		public static readonly Item MecoRoundTable = new Item(3620, "MecoRoundTable");
 		/// <summary>
 		/// ID: 3621<para/>
 		/// </summary>
@@ -1307,11 +1637,11 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 3629<para/>
 		/// </summary>
-		public static readonly Item BoneChair0 = new Item(3629, "BoneChair0");
+		public static readonly Item BoneChair = new Item(3629, "BoneChair");
 		/// <summary>
 		/// ID: 3630<para/>
 		/// </summary>
-		public static readonly Item BoneChair1 = new Item(3630, "BoneChair1");
+		public static readonly Item MecoChair = new Item(3630, "MecoChair");
 		/// <summary>
 		/// ID: 3631<para/>
 		/// </summary>
@@ -1371,7 +1701,7 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 3645<para/>
 		/// </summary>
-		public static readonly Item DamagedSafe = new Item(3645, "DamagedSafe");
+		public static readonly Item MecoSafe = new Item(3645, "MecoSafe");
 		/// <summary>
 		/// ID: 3646<para/>
 		/// Description: "A place to store your items."<para/>
@@ -1444,7 +1774,7 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 3666<para/>
 		/// </summary>
-		public static readonly Item TitaniumDoor = new Item(3666, "TitaniumDoor");
+		public static readonly Item MecoDoor = new Item(3666, "MecoDoor");
 		/// <summary>
 		/// ID: 3667<para/>
 		/// </summary>
@@ -1649,6 +1979,10 @@ namespace Chassis.Entities
 		/// </summary>
 		public static readonly Item MecoHibernationPot = new Item(3801, "MecoHibernationPot");
 		/// <summary>
+		/// ID: 3802<para/>
+		/// </summary>
+		public static readonly Item MecoMedBed = new Item(3802, "MecoMedBed");
+		/// <summary>
 		/// ID: 3811<para/>
 		/// </summary>
 		public static readonly Item MecoLamp = new Item(3811, "MecoLamp");
@@ -1656,6 +1990,11 @@ namespace Chassis.Entities
 		/// ID: 3821<para/>
 		/// </summary>
 		public static readonly Item MecoPortal = new Item(3821, "MecoPortal");
+		/// <summary>
+		/// ID: 3822<para/>
+		/// Description: "A completely broken portal, but it can be fixed by using Meco Tenergy Foundry."<para/>
+		/// </summary>
+		public static readonly Item BrokenMecoPortal = new Item(3822, "BrokenMecoPortal");
 		/// <summary>
 		/// ID: 3831<para/>
 		/// </summary>
@@ -1843,7 +2182,11 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 5029<para/>
 		/// </summary>
-		public static readonly Item StoneFloor6 = new Item(5029, "StoneFloor6");
+		public static readonly Item MecoBiotechFloor = new Item(5029, "MecoBiotechFloor");
+		/// <summary>
+		/// ID: 5030<para/>
+		/// </summary>
+		public static readonly Item MecoTenergyFloor = new Item(5030, "MecoTenergyFloor");
 		/// <summary>
 		/// ID: 5501<para/>
 		/// </summary>
@@ -1965,6 +2308,30 @@ namespace Chassis.Entities
 		/// </summary>
 		public static readonly Item OldSandFloor3 = new Item(5530, "OldSandFloor3");
 		/// <summary>
+		/// ID: 5531<para/>
+		/// </summary>
+		public static readonly Item OldSandFloor4 = new Item(5531, "OldSandFloor4");
+		/// <summary>
+		/// ID: 5532<para/>
+		/// </summary>
+		public static readonly Item OldSandFloor5 = new Item(5532, "OldSandFloor5");
+		/// <summary>
+		/// ID: 5533<para/>
+		/// </summary>
+		public static readonly Item OldSandFloor6 = new Item(5533, "OldSandFloor6");
+		/// <summary>
+		/// ID: 5534<para/>
+		/// </summary>
+		public static readonly Item OldSandFloor7 = new Item(5534, "OldSandFloor7");
+		/// <summary>
+		/// ID: 5535<para/>
+		/// </summary>
+		public static readonly Item OldSandFloor8 = new Item(5535, "OldSandFloor8");
+		/// <summary>
+		/// ID: 5536<para/>
+		/// </summary>
+		public static readonly Item OldSandFloor9 = new Item(5536, "OldSandFloor9");
+		/// <summary>
 		/// ID: 6301<para/>
 		/// Description: "An item used to capture animals and hostile creatures."<para/>
 		/// </summary>
@@ -1993,7 +2360,7 @@ namespace Chassis.Entities
 		/// ID: 7305<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest1 = new Item(7305, "InsectorNest1");
+		public static readonly Item GrounderTentMonster = new Item(7305, "GrounderTentMonster");
 		/// <summary>
 		/// ID: 7601<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
@@ -2023,72 +2390,72 @@ namespace Chassis.Entities
 		/// ID: 7606<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest2 = new Item(7606, "InsectorNest2");
+		public static readonly Item InsectorNest1 = new Item(7606, "InsectorNest1");
 		/// <summary>
 		/// ID: 7607<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest3 = new Item(7607, "InsectorNest3");
+		public static readonly Item InsectorNest2 = new Item(7607, "InsectorNest2");
 		/// <summary>
 		/// ID: 7608<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest4 = new Item(7608, "InsectorNest4");
+		public static readonly Item InsectorNest3 = new Item(7608, "InsectorNest3");
 		/// <summary>
 		/// ID: 7609<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest5 = new Item(7609, "InsectorNest5");
+		public static readonly Item InsectorNest4 = new Item(7609, "InsectorNest4");
 		/// <summary>
 		/// ID: 7610<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest6 = new Item(7610, "InsectorNest6");
+		public static readonly Item InsectorNest5 = new Item(7610, "InsectorNest5");
 		/// <summary>
 		/// ID: 7611<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest7 = new Item(7611, "InsectorNest7");
+		public static readonly Item InsectorNest6 = new Item(7611, "InsectorNest6");
 		/// <summary>
 		/// ID: 7612<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest8 = new Item(7612, "InsectorNest8");
+		public static readonly Item InsectorNest7 = new Item(7612, "InsectorNest7");
 		/// <summary>
 		/// ID: 7613<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest9 = new Item(7613, "InsectorNest9");
+		public static readonly Item InsectorNest8 = new Item(7613, "InsectorNest8");
 		/// <summary>
 		/// ID: 7614<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest10 = new Item(7614, "InsectorNest10");
+		public static readonly Item InsectorNest9 = new Item(7614, "InsectorNest9");
 		/// <summary>
 		/// ID: 7615<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest11 = new Item(7615, "InsectorNest11");
+		public static readonly Item InsectorNest10 = new Item(7615, "InsectorNest10");
 		/// <summary>
 		/// ID: 7616<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest12 = new Item(7616, "InsectorNest12");
+		public static readonly Item InsectorNest11 = new Item(7616, "InsectorNest11");
 		/// <summary>
 		/// ID: 7617<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest13 = new Item(7617, "InsectorNest13");
+		public static readonly Item InsectorNest12 = new Item(7617, "InsectorNest12");
 		/// <summary>
 		/// ID: 7618<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest14 = new Item(7618, "InsectorNest14");
+		public static readonly Item InsectorNest13 = new Item(7618, "InsectorNest13");
 		/// <summary>
 		/// ID: 7619<para/>
 		/// Description: "A place for insectors to hatch out."<para/>
 		/// </summary>
-		public static readonly Item InsectorNest15 = new Item(7619, "InsectorNest15");
+		public static readonly Item InsectorNest14 = new Item(7619, "InsectorNest14");
 		/// <summary>
 		/// ID: 7621<para/>
 		/// </summary>
@@ -2156,11 +2523,11 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 8012<para/>
 		/// </summary>
-		public static readonly Item MecoStructureComputer = new Item(8012, "MecoStructureComputer");
+		public static readonly Item MecoComputer0 = new Item(8012, "MecoComputer0");
 		/// <summary>
 		/// ID: 8013<para/>
 		/// </summary>
-		public static readonly Item MecoStructureComputerOblique = new Item(8013, "MecoStructureComputerOblique");
+		public static readonly Item MecoComputer1 = new Item(8013, "MecoComputer1");
 		/// <summary>
 		/// ID: 8014<para/>
 		/// </summary>
@@ -2172,135 +2539,155 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 8017<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline1 = new Item(8017, "MecoPipeline1");
+		public static readonly Item MecoPipe1 = new Item(8017, "MecoPipe1");
 		/// <summary>
 		/// ID: 8018<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline2 = new Item(8018, "MecoPipeline2");
+		public static readonly Item MecoPipe2 = new Item(8018, "MecoPipe2");
 		/// <summary>
 		/// ID: 8019<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline3 = new Item(8019, "MecoPipeline3");
+		public static readonly Item MecoPipe3 = new Item(8019, "MecoPipe3");
 		/// <summary>
 		/// ID: 8020<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline4 = new Item(8020, "MecoPipeline4");
+		public static readonly Item MecoPipe4 = new Item(8020, "MecoPipe4");
 		/// <summary>
 		/// ID: 8021<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline5 = new Item(8021, "MecoPipeline5");
+		public static readonly Item MecoPipe5 = new Item(8021, "MecoPipe5");
 		/// <summary>
 		/// ID: 8022<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline6 = new Item(8022, "MecoPipeline6");
+		public static readonly Item MecoPipe6 = new Item(8022, "MecoPipe6");
 		/// <summary>
 		/// ID: 8023<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline7 = new Item(8023, "MecoPipeline7");
+		public static readonly Item MecoPipe7 = new Item(8023, "MecoPipe7");
 		/// <summary>
 		/// ID: 8024<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline8 = new Item(8024, "MecoPipeline8");
+		public static readonly Item MecoPipe8 = new Item(8024, "MecoPipe8");
 		/// <summary>
 		/// ID: 8025<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline9 = new Item(8025, "MecoPipeline9");
+		public static readonly Item MecoPipe9 = new Item(8025, "MecoPipe9");
 		/// <summary>
 		/// ID: 8026<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline10 = new Item(8026, "MecoPipeline10");
+		public static readonly Item MecoPipe10 = new Item(8026, "MecoPipe10");
 		/// <summary>
 		/// ID: 8027<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline11 = new Item(8027, "MecoPipeline11");
+		public static readonly Item MecoPipe11 = new Item(8027, "MecoPipe11");
 		/// <summary>
 		/// ID: 8028<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline12 = new Item(8028, "MecoPipeline12");
+		public static readonly Item MecoPipe12 = new Item(8028, "MecoPipe12");
 		/// <summary>
 		/// ID: 8029<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline13 = new Item(8029, "MecoPipeline13");
+		public static readonly Item MecoPipe13 = new Item(8029, "MecoPipe13");
 		/// <summary>
 		/// ID: 8030<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline14 = new Item(8030, "MecoPipeline14");
+		public static readonly Item MecoPipe14 = new Item(8030, "MecoPipe14");
 		/// <summary>
 		/// ID: 8031<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline15 = new Item(8031, "MecoPipeline15");
+		public static readonly Item MecoPipe15 = new Item(8031, "MecoPipe15");
 		/// <summary>
 		/// ID: 8032<para/>
 		/// </summary>
-		public static readonly Item MecoPipeline16 = new Item(8032, "MecoPipeline16");
+		public static readonly Item MecoPipe16 = new Item(8032, "MecoPipe16");
 		/// <summary>
 		/// ID: 8033<para/>
 		/// </summary>
-		public static readonly Item Server = new Item(8033, "Server");
+		public static readonly Item MecoServer0 = new Item(8033, "MecoServer0");
 		/// <summary>
 		/// ID: 8034<para/>
 		/// </summary>
-		public static readonly Item ServerStop = new Item(8034, "ServerStop");
+		public static readonly Item MecoServer1 = new Item(8034, "MecoServer1");
 		/// <summary>
 		/// ID: 8035<para/>
 		/// </summary>
-		public static readonly Item TestTube1 = new Item(8035, "TestTube1");
+		public static readonly Item TestTubeRack0 = new Item(8035, "TestTubeRack0");
 		/// <summary>
 		/// ID: 8036<para/>
 		/// </summary>
-		public static readonly Item TestTubeTable2 = new Item(8036, "TestTubeTable2");
+		public static readonly Item TestTubeRack1 = new Item(8036, "TestTubeRack1");
 		/// <summary>
 		/// ID: 8037<para/>
 		/// </summary>
-		public static readonly Item MecoHost1 = new Item(8037, "MecoHost1");
+		public static readonly Item MecoProcessor0 = new Item(8037, "MecoProcessor0");
 		/// <summary>
 		/// ID: 8038<para/>
 		/// </summary>
-		public static readonly Item MecoHost2 = new Item(8038, "MecoHost2");
+		public static readonly Item MecoProcessor1 = new Item(8038, "MecoProcessor1");
 		/// <summary>
 		/// ID: 8039<para/>
 		/// </summary>
-		public static readonly Item MecoHost3Off = new Item(8039, "MecoHost3Off");
+		public static readonly Item MecoProcessor2 = new Item(8039, "MecoProcessor2");
 		/// <summary>
 		/// ID: 8040<para/>
 		/// </summary>
-		public static readonly Item MecoHost3Open = new Item(8040, "MecoHost3Open");
+		public static readonly Item MecoProcessor3 = new Item(8040, "MecoProcessor3");
 		/// <summary>
 		/// ID: 8041<para/>
 		/// </summary>
-		public static readonly Item MecoHost1Broken = new Item(8041, "MecoHost1Broken");
+		public static readonly Item MecoProcessor4 = new Item(8041, "MecoProcessor4");
 		/// <summary>
 		/// ID: 8042<para/>
 		/// </summary>
-		public static readonly Item MecoHost2Broken = new Item(8042, "MecoHost2Broken");
+		public static readonly Item MecoProcessor5 = new Item(8042, "MecoProcessor5");
 		/// <summary>
 		/// ID: 8043<para/>
 		/// </summary>
-		public static readonly Item MecoHost3Broken = new Item(8043, "MecoHost3Broken");
+		public static readonly Item MecoProcessor6 = new Item(8043, "MecoProcessor6");
 		/// <summary>
 		/// ID: 8044<para/>
 		/// </summary>
-		public static readonly Item InfectedBioMecoMeatPie1 = new Item(8044, "InfectedBioMecoMeatPie1");
+		public static readonly Item InfectedBiomeatCuts1 = new Item(8044, "InfectedBiomeatCuts1");
 		/// <summary>
 		/// ID: 8045<para/>
 		/// </summary>
-		public static readonly Item InfectedBioMecoMeatPieces2 = new Item(8045, "InfectedBioMecoMeatPieces2");
+		public static readonly Item InfectedBiomeatCuts2 = new Item(8045, "InfectedBiomeatCuts2");
 		/// <summary>
 		/// ID: 8046<para/>
 		/// </summary>
-		public static readonly Item InfectedBioMecoMeatPieces3 = new Item(8046, "InfectedBioMecoMeatPieces3");
+		public static readonly Item InfectedBiomeatCuts3 = new Item(8046, "InfectedBiomeatCuts3");
 		/// <summary>
 		/// ID: 8047<para/>
 		/// </summary>
-		public static readonly Item InfectedBioMecoMeatPieces4 = new Item(8047, "InfectedBioMecoMeatPieces4");
+		public static readonly Item InfectedBiomeatCuts4 = new Item(8047, "InfectedBiomeatCuts4");
 		/// <summary>
 		/// ID: 8048<para/>
 		/// </summary>
-		public static readonly Item InfectedBioMecoMeatPieces5 = new Item(8048, "InfectedBioMecoMeatPieces5");
+		public static readonly Item InfectedBiomeatCuts5 = new Item(8048, "InfectedBiomeatCuts5");
 		/// <summary>
 		/// ID: 8049<para/>
 		/// </summary>
-		public static readonly Item InfectedBioMecoMeatPieces6 = new Item(8049, "InfectedBioMecoMeatPieces6");
+		public static readonly Item InfectedBiomeatCuts6 = new Item(8049, "InfectedBiomeatCuts6");
+		/// <summary>
+		/// ID: 8050<para/>
+		/// </summary>
+		public static readonly Item ResearchSampleDanny = new Item(8050, "ResearchSampleDanny");
+		/// <summary>
+		/// ID: 8051<para/>
+		/// </summary>
+		public static readonly Item ResearchSampleMatthew = new Item(8051, "ResearchSampleMatthew");
+		/// <summary>
+		/// ID: 8052<para/>
+		/// </summary>
+		public static readonly Item DivoTeleport = new Item(8052, "DivoTeleport");
+		/// <summary>
+		/// ID: 8053<para/>
+		/// </summary>
+		public static readonly Item MecoShelterEntrance = new Item(8053, "MecoShelterEntrance");
+		/// <summary>
+		/// ID: 8054<para/>
+		/// </summary>
+		public static readonly Item MecoShelterExit = new Item(8054, "MecoShelterExit");
 		/// <summary>
 		/// ID: 8101<para/>
 		/// </summary>
@@ -2672,7 +3059,27 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 9033<para/>
 		/// </summary>
-		public static readonly Item DivilGeneBall = new Item(9033, "DivilGeneBall");
+		public static readonly Item DivilGeneBall0 = new Item(9033, "DivilGeneBall0");
+		/// <summary>
+		/// ID: 9034<para/>
+		/// </summary>
+		public static readonly Item VGeneBall = new Item(9034, "VGeneBall");
+		/// <summary>
+		/// ID: 9035<para/>
+		/// </summary>
+		public static readonly Item DivilGeneBall1 = new Item(9035, "DivilGeneBall1");
+		/// <summary>
+		/// ID: 9036<para/>
+		/// </summary>
+		public static readonly Item DivilGeneBall2 = new Item(9036, "DivilGeneBall2");
+		/// <summary>
+		/// ID: 9037<para/>
+		/// </summary>
+		public static readonly Item DivilGeneBall3 = new Item(9037, "DivilGeneBall3");
+		/// <summary>
+		/// ID: 9038<para/>
+		/// </summary>
+		public static readonly Item CircuitBoard = new Item(9038, "CircuitBoard");
 		/// <summary>
 		/// ID: 9501<para/>
 		/// </summary>
@@ -2692,7 +3099,7 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 9505<para/>
 		/// </summary>
-		public static readonly Item InsectorNest16 = new Item(9505, "InsectorNest16");
+		public static readonly Item InsectorNest15 = new Item(9505, "InsectorNest15");
 		/// <summary>
 		/// ID: 9506<para/>
 		/// </summary>
@@ -2701,6 +3108,10 @@ namespace Chassis.Entities
 		/// ID: 9507<para/>
 		/// </summary>
 		public static readonly Item GrounderBase = new Item(9507, "GrounderBase");
+		/// <summary>
+		/// ID: 9508<para/>
+		/// </summary>
+		public static readonly Item UndergroundRemains = new Item(9508, "UndergroundRemains");
 		/// <summary>
 		/// ID: 12010<para/>
 		/// </summary>
@@ -2752,7 +3163,11 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 12130<para/>
 		/// </summary>
-		public static readonly Item Clue13 = new Item(12130, "Clue13");
+		public static readonly Item Clue130 = new Item(12130, "Clue130");
+		/// <summary>
+		/// ID: 12135<para/>
+		/// </summary>
+		public static readonly Item Clue131 = new Item(12135, "Clue131");
 		/// <summary>
 		/// ID: 12140<para/>
 		/// </summary>
@@ -2914,9 +3329,268 @@ namespace Chassis.Entities
 		/// </summary>
 		public static readonly Item Clue53 = new Item(13016, "Clue53");
 		/// <summary>
-		/// ID: 99999<para/>
-		/// Description: "Mine description"<para/>
+		/// ID: 14001<para/>
 		/// </summary>
-		public static readonly Item TestLeadPlacement = new Item(99999, "TestLeadPlacement");
+		public static readonly Item AncientBedsideTable = new Item(14001, "AncientBedsideTable");
+		/// <summary>
+		/// ID: 14002<para/>
+		/// </summary>
+		public static readonly Item AncientBench = new Item(14002, "AncientBench");
+		/// <summary>
+		/// ID: 14003<para/>
+		/// </summary>
+		public static readonly Item AncientBlackboard = new Item(14003, "AncientBlackboard");
+		/// <summary>
+		/// ID: 14004<para/>
+		/// </summary>
+		public static readonly Item AncientCheckoutCounter = new Item(14004, "AncientCheckoutCounter");
+		/// <summary>
+		/// ID: 14005<para/>
+		/// </summary>
+		public static readonly Item AncientCementBarrier = new Item(14005, "AncientCementBarrier");
+		/// <summary>
+		/// ID: 14006<para/>
+		/// </summary>
+		public static readonly Item AncientChair0 = new Item(14006, "AncientChair0");
+		/// <summary>
+		/// ID: 14007<para/>
+		/// </summary>
+		public static readonly Item AncientChair1 = new Item(14007, "AncientChair1");
+		/// <summary>
+		/// ID: 14008<para/>
+		/// </summary>
+		public static readonly Item AncientChair2 = new Item(14008, "AncientChair2");
+		/// <summary>
+		/// ID: 14009<para/>
+		/// </summary>
+		public static readonly Item AncientChair3 = new Item(14009, "AncientChair3");
+		/// <summary>
+		/// ID: 14010<para/>
+		/// </summary>
+		public static readonly Item AncientSchoolChair = new Item(14010, "AncientSchoolChair");
+		/// <summary>
+		/// ID: 14011<para/>
+		/// </summary>
+		public static readonly Item AncientHospitalBedsideScreen0 = new Item(14011, "AncientHospitalBedsideScreen0");
+		/// <summary>
+		/// ID: 14012<para/>
+		/// </summary>
+		public static readonly Item AncientHospitalBedsideScreen1 = new Item(14012, "AncientHospitalBedsideScreen1");
+		/// <summary>
+		/// ID: 14013<para/>
+		/// </summary>
+		public static readonly Item AncientTable0 = new Item(14013, "AncientTable0");
+		/// <summary>
+		/// ID: 14014<para/>
+		/// </summary>
+		public static readonly Item AncientTable1 = new Item(14014, "AncientTable1");
+		/// <summary>
+		/// ID: 14015<para/>
+		/// </summary>
+		public static readonly Item AncientTable2 = new Item(14015, "AncientTable2");
+		/// <summary>
+		/// ID: 14016<para/>
+		/// </summary>
+		public static readonly Item AncientTable3 = new Item(14016, "AncientTable3");
+		/// <summary>
+		/// ID: 14017<para/>
+		/// </summary>
+		public static readonly Item AncientTable4 = new Item(14017, "AncientTable4");
+		/// <summary>
+		/// ID: 14018<para/>
+		/// </summary>
+		public static readonly Item AncientPedestalSink = new Item(14018, "AncientPedestalSink");
+		/// <summary>
+		/// ID: 14019<para/>
+		/// </summary>
+		public static readonly Item AncientPatientMonitor = new Item(14019, "AncientPatientMonitor");
+		/// <summary>
+		/// ID: 14020<para/>
+		/// </summary>
+		public static readonly Item AncientHospitalGuidanceDesk = new Item(14020, "AncientHospitalGuidanceDesk");
+		/// <summary>
+		/// ID: 14021<para/>
+		/// </summary>
+		public static readonly Item AncientFittingRoom0 = new Item(14021, "AncientFittingRoom0");
+		/// <summary>
+		/// ID: 14022<para/>
+		/// </summary>
+		public static readonly Item AncientFittingRoom1 = new Item(14022, "AncientFittingRoom1");
+		/// <summary>
+		/// ID: 14023<para/>
+		/// </summary>
+		public static readonly Item AncientHospitalBed = new Item(14023, "AncientHospitalBed");
+		/// <summary>
+		/// ID: 14024<para/>
+		/// </summary>
+		public static readonly Item AncientSurgicalLight = new Item(14024, "AncientSurgicalLight");
+		/// <summary>
+		/// ID: 14025<para/>
+		/// </summary>
+		public static readonly Item AncientOperatingTable = new Item(14025, "AncientOperatingTable");
+		/// <summary>
+		/// ID: 14026<para/>
+		/// </summary>
+		public static readonly Item AncientShelf0 = new Item(14026, "AncientShelf0");
+		/// <summary>
+		/// ID: 14027<para/>
+		/// </summary>
+		public static readonly Item AncientShelf1 = new Item(14027, "AncientShelf1");
+		/// <summary>
+		/// ID: 14028<para/>
+		/// </summary>
+		public static readonly Item AncientShelf2 = new Item(14028, "AncientShelf2");
+		/// <summary>
+		/// ID: 14029<para/>
+		/// </summary>
+		public static readonly Item AncientShelf3 = new Item(14029, "AncientShelf3");
+		/// <summary>
+		/// ID: 14030<para/>
+		/// </summary>
+		public static readonly Item AncientShelf4 = new Item(14030, "AncientShelf4");
+		/// <summary>
+		/// ID: 14031<para/>
+		/// </summary>
+		public static readonly Item AncientShelf5 = new Item(14031, "AncientShelf5");
+		/// <summary>
+		/// ID: 14032<para/>
+		/// </summary>
+		public static readonly Item AncientShelf6 = new Item(14032, "AncientShelf6");
+		/// <summary>
+		/// ID: 14033<para/>
+		/// </summary>
+		public static readonly Item AncientShoppingCart = new Item(14033, "AncientShoppingCart");
+		/// <summary>
+		/// ID: 14034<para/>
+		/// </summary>
+		public static readonly Item AncientStreetLight0 = new Item(14034, "AncientStreetLight0");
+		/// <summary>
+		/// ID: 14035<para/>
+		/// </summary>
+		public static readonly Item AncientToiletStall = new Item(14035, "AncientToiletStall");
+		/// <summary>
+		/// ID: 14036<para/>
+		/// </summary>
+		public static readonly Item AncientTrash = new Item(14036, "AncientTrash");
+		/// <summary>
+		/// ID: 14037<para/>
+		/// </summary>
+		public static readonly Item AncientStove = new Item(14037, "AncientStove");
+		/// <summary>
+		/// ID: 14038<para/>
+		/// </summary>
+		public static readonly Item AncientBed = new Item(14038, "AncientBed");
+		/// <summary>
+		/// ID: 14039<para/>
+		/// </summary>
+		public static readonly Item AncientSofa = new Item(14039, "AncientSofa");
+		/// <summary>
+		/// ID: 14040<para/>
+		/// </summary>
+		public static readonly Item AncientCurb = new Item(14040, "AncientCurb");
+		/// <summary>
+		/// ID: 14041<para/>
+		/// </summary>
+		public static readonly Item AncientStreetLight1 = new Item(14041, "AncientStreetLight1");
+		/// <summary>
+		/// ID: 14042<para/>
+		/// </summary>
+		public static readonly Item AncientPoliceEquipmentTableS = new Item(14042, "AncientPoliceEquipmentTableS");
+		/// <summary>
+		/// ID: 14043<para/>
+		/// </summary>
+		public static readonly Item AncientTableHospital = new Item(14043, "AncientTableHospital");
+		/// <summary>
+		/// ID: 14044<para/>
+		/// </summary>
+		public static readonly Item AncientTableSupermarket = new Item(14044, "AncientTableSupermarket");
+		/// <summary>
+		/// ID: 14045<para/>
+		/// </summary>
+		public static readonly Item AncientPoliceEquipmentTable = new Item(14045, "AncientPoliceEquipmentTable");
+		/// <summary>
+		/// ID: 14046<para/>
+		/// </summary>
+		public static readonly Item AncientPrisonCage0 = new Item(14046, "AncientPrisonCage0");
+		/// <summary>
+		/// ID: 14047<para/>
+		/// </summary>
+		public static readonly Item AncientPrisonCage1 = new Item(14047, "AncientPrisonCage1");
+		/// <summary>
+		/// ID: 14048<para/>
+		/// </summary>
+		public static readonly Item AncientResidentialSafe = new Item(14048, "AncientResidentialSafe");
+		/// <summary>
+		/// ID: 14049<para/>
+		/// </summary>
+		public static readonly Item AncientDoor = new Item(14049, "AncientDoor");
+		/// <summary>
+		/// ID: 14050<para/>
+		/// </summary>
+		public static readonly Item AncientHospitalSignboard = new Item(14050, "AncientHospitalSignboard");
+		/// <summary>
+		/// ID: 14051<para/>
+		/// </summary>
+		public static readonly Item AncientPoliceStationSignboard = new Item(14051, "AncientPoliceStationSignboard");
+		/// <summary>
+		/// ID: 14052<para/>
+		/// </summary>
+		public static readonly Item AncientSchoolSignboard = new Item(14052, "AncientSchoolSignboard");
+		/// <summary>
+		/// ID: 14053<para/>
+		/// </summary>
+		public static readonly Item AncientSupermarketSignboard = new Item(14053, "AncientSupermarketSignboard");
+		/// <summary>
+		/// ID: 14054<para/>
+		/// </summary>
+		public static readonly Item AncientPoliceCabinet = new Item(14054, "AncientPoliceCabinet");
+		/// <summary>
+		/// ID: 16001<para/>
+		/// </summary>
+		public static readonly Item WasteCloth = new Item(16001, "WasteCloth");
+		/// <summary>
+		/// ID: 16002<para/>
+		/// </summary>
+		public static readonly Item WastePlastic = new Item(16002, "WastePlastic");
+		/// <summary>
+		/// ID: 16003<para/>
+		/// </summary>
+		public static readonly Item WasteMetals = new Item(16003, "WasteMetals");
+		/// <summary>
+		/// ID: 16004<para/>
+		/// </summary>
+		public static readonly Item WasteRubber = new Item(16004, "WasteRubber");
+		/// <summary>
+		/// ID: 16005<para/>
+		/// </summary>
+		public static readonly Item WastePaper = new Item(16005, "WastePaper");
+		/// <summary>
+		/// ID: 16006<para/>
+		/// </summary>
+		public static readonly Item WasteStationery = new Item(16006, "WasteStationery");
+		/// <summary>
+		/// ID: 16007<para/>
+		/// </summary>
+		public static readonly Item WasteTape = new Item(16007, "WasteTape");
+		/// <summary>
+		/// ID: 16008<para/>
+		/// </summary>
+		public static readonly Item ScrapScrew = new Item(16008, "ScrapScrew");
+		/// <summary>
+		/// ID: 16009<para/>
+		/// </summary>
+		public static readonly Item ShatteredGlass = new Item(16009, "ShatteredGlass");
+		/// <summary>
+		/// ID: 16010<para/>
+		/// </summary>
+		public static readonly Item AncientSlippers = new Item(16010, "AncientSlippers");
+		/// <summary>
+		/// ID: 16011<para/>
+		/// </summary>
+		public static readonly Item AncientBanknotes = new Item(16011, "AncientBanknotes");
+		/// <summary>
+		/// ID: 99999<para/>
+		/// </summary>
+		public static readonly Item TestPlacement = new Item(99999, "TestPlacement");
 	}
 }

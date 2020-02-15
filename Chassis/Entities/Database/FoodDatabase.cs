@@ -114,6 +114,32 @@ namespace Chassis.Entities
 		/// </summary>
 		public static readonly Food HorseMeat = new Food(24, "HorseMeat");
 		/// <summary>
+		/// ID: 25<para/>
+		/// EffectInfo: "Use: Small area glow for 30 seconds"<para/>
+		/// PlayerSatiety: -1%<para/>
+		/// </summary>
+		public static readonly Food LightSporesSeed = new Food(25, "LightSporesSeed");
+		/// <summary>
+		/// ID: 26<para/>
+		/// PlayerSatiety: 6%<para/>
+		/// </summary>
+		public static readonly Food ExpiredCannedFood = new Food(26, "ExpiredCannedFood");
+		/// <summary>
+		/// ID: 27<para/>
+		/// PlayerSatiety: 4%<para/>
+		/// </summary>
+		public static readonly Food ExpiredFood = new Food(27, "ExpiredFood");
+		/// <summary>
+		/// ID: 28<para/>
+		/// PlayerSatiety: 4%<para/>
+		/// </summary>
+		public static readonly Food ExpiredCookies = new Food(28, "ExpiredCookies");
+		/// <summary>
+		/// ID: 29<para/>
+		/// PlayerSatiety: 10%<para/>
+		/// </summary>
+		public static readonly Food RottenFlesh = new Food(29, "RottenFlesh");
+		/// <summary>
 		/// ID: 502<para/>
 		/// Description: "Is this inedible?"<para/>
 		/// </summary>
@@ -138,57 +164,57 @@ namespace Chassis.Entities
 		/// ID: 605<para/>
 		/// Description: "Restore life"<para/>
 		/// </summary>
-		public static readonly Food LifeAgentV = new Food(605, "LifeAgentV");
+		public static readonly Food LifeElixirV = new Food(605, "LifeElixirV");
 		/// <summary>
 		/// ID: 606<para/>
-		/// Description: "Give recovery effect and continue to recover life"<para/>
+		/// Description: "Gives recovery effect and continuously restores life"<para/>
 		/// </summary>
-		public static readonly Food HealingAgentI = new Food(606, "HealingAgentI");
+		public static readonly Food HealingElixirI0 = new Food(606, "HealingElixirI0");
 		/// <summary>
 		/// ID: 607<para/>
-		/// Description: "Give recovery effect and continue to recover life"<para/>
+		/// Description: "Gives recovery effect and continuously restores life"<para/>
 		/// </summary>
-		public static readonly Food HealingAgentII = new Food(607, "HealingAgentII");
+		public static readonly Food HealingElixirII0 = new Food(607, "HealingElixirII0");
 		/// <summary>
 		/// ID: 608<para/>
-		/// Description: "Give recovery effect and continue to recover life"<para/>
+		/// Description: "Gives recovery effect and continuously restores life"<para/>
 		/// </summary>
-		public static readonly Food HealingAgentIII = new Food(608, "HealingAgentIII");
+		public static readonly Food HealingElixirIII0 = new Food(608, "HealingElixirIII0");
 		/// <summary>
 		/// ID: 609<para/>
-		/// Description: "Give recovery effect and continue to recover life"<para/>
+		/// Description: "Gives recovery effect and continuously restores life"<para/>
 		/// </summary>
-		public static readonly Food HealingAgentIV = new Food(609, "HealingAgentIV");
+		public static readonly Food HealingElixirIV0 = new Food(609, "HealingElixirIV0");
 		/// <summary>
 		/// ID: 610<para/>
-		/// Description: "Give recovery effect and continue to recover life"<para/>
+		/// Description: "Gives recovery effect and continuously restores life"<para/>
 		/// </summary>
-		public static readonly Food HealingAgentV = new Food(610, "HealingAgentV");
+		public static readonly Food HealingPotionV = new Food(610, "HealingPotionV");
 		/// <summary>
 		/// ID: 611<para/>
-		/// Description: "Restore life while giving recovery"<para/>
+		/// Description: "Restores life while giving a healing effect"<para/>
 		/// </summary>
-		public static readonly Food RecoveryAgentI = new Food(611, "RecoveryAgentI");
+		public static readonly Food HealingElixirI1 = new Food(611, "HealingElixirI1");
 		/// <summary>
 		/// ID: 612<para/>
-		/// Description: "Restore life while giving recovery"<para/>
+		/// Description: "Restores life while giving a healing effect"<para/>
 		/// </summary>
-		public static readonly Food RecoveryAgentII = new Food(612, "RecoveryAgentII");
+		public static readonly Food HealingElixirII1 = new Food(612, "HealingElixirII1");
 		/// <summary>
 		/// ID: 613<para/>
-		/// Description: "Restore life while giving recovery"<para/>
+		/// Description: "Restores life while giving a healing effect"<para/>
 		/// </summary>
-		public static readonly Food RecoveryAgentIII = new Food(613, "RecoveryAgentIII");
+		public static readonly Food HealingElixirIII1 = new Food(613, "HealingElixirIII1");
 		/// <summary>
 		/// ID: 614<para/>
-		/// Description: "Restore life while giving recovery"<para/>
+		/// Description: "Restores life while giving a healing effect"<para/>
 		/// </summary>
-		public static readonly Food RecoveryAgentIV = new Food(614, "RecoveryAgentIV");
+		public static readonly Food HealingElixirIV1 = new Food(614, "HealingElixirIV1");
 		/// <summary>
 		/// ID: 615<para/>
-		/// Description: "Restore life while giving recovery"<para/>
+		/// Description: "Restores life while giving a healing effect"<para/>
 		/// </summary>
-		public static readonly Food RecoveryAgentV = new Food(615, "RecoveryAgentV");
+		public static readonly Food RecoveryPotionV = new Food(615, "RecoveryPotionV");
 		/// <summary>
 		/// ID: 616<para/>
 		/// EffectInfo: "Use: increase attack speed and walking speed by 20%, hunger speed will also be increased. Lasts for 1 minitue."<para/>
@@ -207,16 +233,16 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 619<para/>
 		/// </summary>
-		public static readonly Food StimulantIV = new Food(619, "StimulantIV");
+		public static readonly Food DopingIV = new Food(619, "DopingIV");
 		/// <summary>
 		/// ID: 620<para/>
 		/// </summary>
-		public static readonly Food StimulantV = new Food(620, "StimulantV");
+		public static readonly Food DopingV = new Food(620, "DopingV");
 		/// <summary>
 		/// ID: 621<para/>
 		/// Description: "Night vision"<para/>
 		/// </summary>
-		public static readonly Food NightVisionAgent = new Food(621, "NightVisionAgent");
+		public static readonly Food NightVisionElixir = new Food(621, "NightVisionElixir");
 		/// <summary>
 		/// ID: 622<para/>
 		/// Description: "Stealth"<para/>
@@ -224,9 +250,9 @@ namespace Chassis.Entities
 		public static readonly Food StealthPotion = new Food(622, "StealthPotion");
 		/// <summary>
 		/// ID: 623<para/>
-		/// Description: "Illusion"<para/>
+		/// Description: "Hallucinations"<para/>
 		/// </summary>
-		public static readonly Food Hallucinogenic = new Food(623, "Hallucinogenic");
+		public static readonly Food Hallucinogen = new Food(623, "Hallucinogen");
 		/// <summary>
 		/// ID: 624<para/>
 		/// Description: "? "<para/>
@@ -354,9 +380,13 @@ namespace Chassis.Entities
 		public static readonly Food DollCoocoo = new Food(903, "DollCoocoo");
 		/// <summary>
 		/// ID: 904<para/>
-		/// EffectInfo: "Use: place a coocoo bomb. It will explode after 8 seconds and cause 40 damage."<para/>
+		/// EffectInfo: "Use: place a coocoo bomb. It will explode after 8 seconds and cause 25 damage."<para/>
 		/// </summary>
 		public static readonly Food CoocooBomb = new Food(904, "CoocooBomb");
+		/// <summary>
+		/// ID: 2326<para/>
+		/// </summary>
+		public static readonly Food Scapebear = new Food(2326, "Scapebear");
 		/// <summary>
 		/// ID: 3223<para/>
 		/// Description: "Is this inedible?"<para/>
@@ -497,5 +527,11 @@ namespace Chassis.Entities
 		/// PlayerSatiety: 25%<para/>
 		/// </summary>
 		public static readonly Food WeirdFood = new Food(11012, "WeirdFood");
+		/// <summary>
+		/// ID: 11013<para/>
+		/// EffectInfo: "Use: Wide range glow for 3 minutes"<para/>
+		/// PlayerSatiety: 3%<para/>
+		/// </summary>
+		public static readonly Food SporePudding = new Food(11013, "SporePudding");
 	}
 }

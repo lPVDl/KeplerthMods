@@ -34,7 +34,7 @@ namespace Chassis.Entities
 		/// ID: 1007<para/>
 		/// TreeDamageBonus: 2<para/>
 		/// </summary>
-		public static readonly Weapon DiamondSword = new Weapon(1007, "DiamondSword");
+		public static readonly Weapon MecoTenergySword = new Weapon(1007, "MecoTenergySword");
 		/// <summary>
 		/// ID: 1008<para/>
 		/// TreeDamageBonus: 2<para/>
@@ -92,6 +92,41 @@ namespace Chassis.Entities
 		/// </summary>
 		public static readonly Weapon GrounderSamuraiSwordMonster = new Weapon(1018, "GrounderSamuraiSwordMonster");
 		/// <summary>
+		/// ID: 1019<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon MecoTenergySwordMonster = new Weapon(1019, "MecoTenergySwordMonster");
+		/// <summary>
+		/// ID: 1020<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon NightmareKiller = new Weapon(1020, "NightmareKiller");
+		/// <summary>
+		/// ID: 1021<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon NightmareKillerMonster = new Weapon(1021, "NightmareKillerMonster");
+		/// <summary>
+		/// ID: 1022<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon AncientBaton = new Weapon(1022, "AncientBaton");
+		/// <summary>
+		/// ID: 1023<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon AncientCrowbar = new Weapon(1023, "AncientCrowbar");
+		/// <summary>
+		/// ID: 1024<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon AncientGolfClub = new Weapon(1024, "AncientGolfClub");
+		/// <summary>
+		/// ID: 1025<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon AncientSpatula = new Weapon(1025, "AncientSpatula");
+		/// <summary>
 		/// ID: 1101<para/>
 		/// </summary>
 		public static readonly Weapon WoodenBow = new Weapon(1101, "WoodenBow");
@@ -114,7 +149,7 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 1106<para/>
 		/// </summary>
-		public static readonly Weapon DiamondBow = new Weapon(1106, "DiamondBow");
+		public static readonly Weapon MecoBowGun = new Weapon(1106, "MecoBowGun");
 		/// <summary>
 		/// ID: 1107<para/>
 		/// </summary>
@@ -125,13 +160,25 @@ namespace Chassis.Entities
 		public static readonly Weapon SplitMonster = new Weapon(1108, "SplitMonster");
 		/// <summary>
 		/// ID: 1109<para/>
-		/// Description: "A heavy bow that is stained with blood. The arrows shot from this bow have punch through ability."<para/>
+		/// Description: "A heavy bow that is stained with blood, it can shoot multiple arrows at the same time."<para/>
 		/// </summary>
 		public static readonly Weapon Split = new Weapon(1109, "Split");
 		/// <summary>
 		/// ID: 1110<para/>
 		/// </summary>
 		public static readonly Weapon GoblinBoneBowMonster = new Weapon(1110, "GoblinBoneBowMonster");
+		/// <summary>
+		/// ID: 1111<para/>
+		/// </summary>
+		public static readonly Weapon MecoBowGunMonster = new Weapon(1111, "MecoBowGunMonster");
+		/// <summary>
+		/// ID: 1112<para/>
+		/// </summary>
+		public static readonly Weapon AncientRecurveBow = new Weapon(1112, "AncientRecurveBow");
+		/// <summary>
+		/// ID: 1113<para/>
+		/// </summary>
+		public static readonly Weapon AncientCompoundBow = new Weapon(1113, "AncientCompoundBow");
 		/// <summary>
 		/// ID: 1201<para/>
 		/// </summary>
@@ -187,6 +234,18 @@ namespace Chassis.Entities
 		/// </summary>
 		public static readonly Weapon GrounderGatlingGun = new Weapon(1225, "GrounderGatlingGun");
 		/// <summary>
+		/// ID: 1226<para/>
+		/// </summary>
+		public static readonly Weapon AncientRevolver = new Weapon(1226, "AncientRevolver");
+		/// <summary>
+		/// ID: 1227<para/>
+		/// </summary>
+		public static readonly Weapon AncientSubmachineGun = new Weapon(1227, "AncientSubmachineGun");
+		/// <summary>
+		/// ID: 1228<para/>
+		/// </summary>
+		public static readonly Weapon AncientSniperRifle = new Weapon(1228, "AncientSniperRifle");
+		/// <summary>
 		/// ID: 1301<para/>
 		/// Description: "An electric arc gun that is made by Meco company. It's heavy but powerful."<para/>
 		/// </summary>
@@ -207,9 +266,19 @@ namespace Chassis.Entities
 		/// </summary>
 		public static readonly Weapon MecoLG6B = new Weapon(1304, "MecoLG6B");
 		/// <summary>
+		/// ID: 1305<para/>
+		/// Description: "Meco Soldier's laser rifle."<para/>
+		/// </summary>
+		public static readonly Weapon LittleWhiteGun1 = new Weapon(1305, "LittleWhiteGun1");
+		/// <summary>
+		/// ID: 1306<para/>
+		/// Description: "Meco Soldier's laser rifle."<para/>
+		/// </summary>
+		public static readonly Weapon LittleWhiteGun2 = new Weapon(1306, "LittleWhiteGun2");
+		/// <summary>
 		/// ID: 1351<para/>
 		/// </summary>
-		public static readonly Weapon BlameLaserBlue = new Weapon(1351, "BlameLaserBlue");
+		public static readonly Weapon StrangeLaserBlue = new Weapon(1351, "StrangeLaserBlue");
 		/// <summary>
 		/// ID: 1352<para/>
 		/// </summary>
@@ -217,11 +286,11 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 1353<para/>
 		/// </summary>
-		public static readonly Weapon BlameTheLaserBlue0 = new Weapon(1353, "BlameTheLaserBlue0");
+		public static readonly Weapon StrangeLaserCannonBlue0 = new Weapon(1353, "StrangeLaserCannonBlue0");
 		/// <summary>
 		/// ID: 1354<para/>
 		/// </summary>
-		public static readonly Weapon BlameTheLaserCannonRed0 = new Weapon(1354, "BlameTheLaserCannonRed0");
+		public static readonly Weapon BlameLaserCannonRed0 = new Weapon(1354, "BlameLaserCannonRed0");
 		/// <summary>
 		/// ID: 1355<para/>
 		/// </summary>
@@ -235,7 +304,16 @@ namespace Chassis.Entities
 		/// ID: 1357<para/>
 		/// Description: "Meco Soldier's laser rifle."<para/>
 		/// </summary>
-		public static readonly Weapon MecoLG6BMonster = new Weapon(1357, "MecoLG6BMonster");
+		public static readonly Weapon MecoLG6BMonster0 = new Weapon(1357, "MecoLG6BMonster0");
+		/// <summary>
+		/// ID: 1358<para/>
+		/// Description: "Meco Soldier's laser rifle."<para/>
+		/// </summary>
+		public static readonly Weapon MecoLG6BMonster1 = new Weapon(1358, "MecoLG6BMonster1");
+		/// <summary>
+		/// ID: 1359<para/>
+		/// </summary>
+		public static readonly Weapon TestingForWormAttacks = new Weapon(1359, "TestingForWormAttacks");
 		/// <summary>
 		/// ID: 1401<para/>
 		/// TreeDamageBonus: 2<para/>
@@ -265,7 +343,7 @@ namespace Chassis.Entities
 		/// ID: 1406<para/>
 		/// TreeDamageBonus: 2<para/>
 		/// </summary>
-		public static readonly Weapon DiamondSpear = new Weapon(1406, "DiamondSpear");
+		public static readonly Weapon MecoTenergySpear = new Weapon(1406, "MecoTenergySpear");
 		/// <summary>
 		/// ID: 1407<para/>
 		/// TreeDamageBonus: 2<para/>
@@ -284,10 +362,19 @@ namespace Chassis.Entities
 		public static readonly Weapon InsectorSpearMonster = new Weapon(1409, "InsectorSpearMonster");
 		/// <summary>
 		/// ID: 1410<para/>
-		/// Description: "Equip: a powerful spear with a cost of absorbing its owner's energy."<para/>
 		/// TreeDamageBonus: 2<para/>
 		/// </summary>
 		public static readonly Weapon ParasectSpearMonster = new Weapon(1410, "ParasectSpearMonster");
+		/// <summary>
+		/// ID: 1411<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon MecoTenergySpearMonster = new Weapon(1411, "MecoTenergySpearMonster");
+		/// <summary>
+		/// ID: 1412<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon AncientUmbrella = new Weapon(1412, "AncientUmbrella");
 		/// <summary>
 		/// ID: 1501<para/>
 		/// </summary>
@@ -307,7 +394,7 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 1505<para/>
 		/// </summary>
-		public static readonly Weapon DiamondDagger = new Weapon(1505, "DiamondDagger");
+		public static readonly Weapon MecoTenergyDagger = new Weapon(1505, "MecoTenergyDagger");
 		/// <summary>
 		/// ID: 1506<para/>
 		/// </summary>
@@ -335,6 +422,18 @@ namespace Chassis.Entities
 		/// </summary>
 		public static readonly Weapon GrounderDaggerMonster = new Weapon(1511, "GrounderDaggerMonster");
 		/// <summary>
+		/// ID: 1512<para/>
+		/// </summary>
+		public static readonly Weapon MecoTenergyDaggerMonster = new Weapon(1512, "MecoTenergyDaggerMonster");
+		/// <summary>
+		/// ID: 1513<para/>
+		/// </summary>
+		public static readonly Weapon AncientIceSkate = new Weapon(1513, "AncientIceSkate");
+		/// <summary>
+		/// ID: 1514<para/>
+		/// </summary>
+		public static readonly Weapon AncientUtilityKnife = new Weapon(1514, "AncientUtilityKnife");
+		/// <summary>
 		/// ID: 1601<para/>
 		/// </summary>
 		public static readonly Weapon WoodenArrow = new Weapon(1601, "WoodenArrow");
@@ -361,11 +460,15 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 1607<para/>
 		/// </summary>
-		public static readonly Weapon BlameGoblinBOSSArrow = new Weapon(1607, "BlameGoblinBOSSArrow");
+		public static readonly Weapon StrangeGoblinBossArrow = new Weapon(1607, "StrangeGoblinBossArrow");
 		/// <summary>
 		/// ID: 1608<para/>
 		/// </summary>
 		public static readonly Weapon StoneArrowMonster = new Weapon(1608, "StoneArrowMonster");
+		/// <summary>
+		/// ID: 1609<para/>
+		/// </summary>
+		public static readonly Weapon MecoArrow = new Weapon(1609, "MecoArrow");
 		/// <summary>
 		/// ID: 1611<para/>
 		/// </summary>
@@ -393,7 +496,19 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 1617<para/>
 		/// </summary>
-		public static readonly Weapon ExplosionBlameGoblinBOSSArrow = new Weapon(1617, "ExplosionBlameGoblinBOSSArrow");
+		public static readonly Weapon BlastMonsterGoblinBossArrow = new Weapon(1617, "BlastMonsterGoblinBossArrow");
+		/// <summary>
+		/// ID: 1618<para/>
+		/// </summary>
+		public static readonly Weapon ExplosiveMecoArrow = new Weapon(1618, "ExplosiveMecoArrow");
+		/// <summary>
+		/// ID: 1619<para/>
+		/// </summary>
+		public static readonly Weapon AncientArrow = new Weapon(1619, "AncientArrow");
+		/// <summary>
+		/// ID: 1620<para/>
+		/// </summary>
+		public static readonly Weapon ExplosiveAncientArrow = new Weapon(1620, "ExplosiveAncientArrow");
 		/// <summary>
 		/// ID: 1651<para/>
 		/// </summary>
@@ -415,29 +530,29 @@ namespace Chassis.Entities
 		/// TreeDamageBonus: 2<para/>
 		/// WallDamageBonus: 2<para/>
 		/// </summary>
-		public static readonly Weapon TenergyBullet = new Weapon(1655, "TenergyBullet");
+		public static readonly Weapon TenergyBullet0 = new Weapon(1655, "TenergyBullet0");
 		/// <summary>
 		/// ID: 1656<para/>
 		/// </summary>
-		public static readonly Weapon BlameTheLaserBlue1 = new Weapon(1656, "BlameTheLaserBlue1");
+		public static readonly Weapon StrangeLaserBombBlue = new Weapon(1656, "StrangeLaserBombBlue");
 		/// <summary>
 		/// ID: 1657<para/>
 		/// </summary>
-		public static readonly Weapon BlameTheLaserRed = new Weapon(1657, "BlameTheLaserRed");
+		public static readonly Weapon StrangeLaserBombRed = new Weapon(1657, "StrangeLaserBombRed");
 		/// <summary>
 		/// ID: 1658<para/>
 		/// </summary>
-		public static readonly Weapon BlameTheLaserBlue2 = new Weapon(1658, "BlameTheLaserBlue2");
+		public static readonly Weapon StrangeLaserCannonBlue1 = new Weapon(1658, "StrangeLaserCannonBlue1");
 		/// <summary>
 		/// ID: 1659<para/>
 		/// </summary>
-		public static readonly Weapon BlameTheLaserCannonRed1 = new Weapon(1659, "BlameTheLaserCannonRed1");
+		public static readonly Weapon BlameLaserCannonRed1 = new Weapon(1659, "BlameLaserCannonRed1");
 		/// <summary>
 		/// ID: 1660<para/>
 		/// TreeDamageBonus: 2<para/>
 		/// WallDamageBonus: 2<para/>
 		/// </summary>
-		public static readonly Weapon BlameTheEnergyBomb = new Weapon(1660, "BlameTheEnergyBomb");
+		public static readonly Weapon StrangeEnergyBomb = new Weapon(1660, "StrangeEnergyBomb");
 		/// <summary>
 		/// ID: 1661<para/>
 		/// TreeDamageBonus: 0<para/>
@@ -448,7 +563,7 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 1662<para/>
 		/// </summary>
-		public static readonly Weapon BatteryBullet = new Weapon(1662, "BatteryBullet");
+		public static readonly Weapon TurretBullet = new Weapon(1662, "TurretBullet");
 		/// <summary>
 		/// ID: 1663<para/>
 		/// </summary>
@@ -459,7 +574,7 @@ namespace Chassis.Entities
 		/// WallDamageBonus: 0<para/>
 		/// BuildDamageBonus: 0<para/>
 		/// </summary>
-		public static readonly Weapon BlackBOSSBullet = new Weapon(1664, "BlackBOSSBullet");
+		public static readonly Weapon BlackBossBullet = new Weapon(1664, "BlackBossBullet");
 		/// <summary>
 		/// ID: 1665<para/>
 		/// </summary>
@@ -469,7 +584,7 @@ namespace Chassis.Entities
 		/// TreeDamageBonus: 3<para/>
 		/// WallDamageBonus: 3<para/>
 		/// </summary>
-		public static readonly Weapon BiomecoLaserBomb = new Weapon(1666, "BiomecoLaserBomb");
+		public static readonly Weapon BiomeconLaser = new Weapon(1666, "BiomeconLaser");
 		/// <summary>
 		/// ID: 1667<para/>
 		/// TreeDamageBonus: 3<para/>
@@ -481,29 +596,40 @@ namespace Chassis.Entities
 		/// TreeDamageBonus: 2<para/>
 		/// WallDamageBonus: 2<para/>
 		/// </summary>
-		public static readonly Weapon BiologicalMachineGunBullet = new Weapon(1668, "BiologicalMachineGunBullet");
+		public static readonly Weapon BioMachineGunBullet = new Weapon(1668, "BioMachineGunBullet");
 		/// <summary>
 		/// ID: 1669<para/>
 		/// </summary>
-		public static readonly Weapon BlameTheUseOfResearchPistolBullets = new Weapon(1669, "BlameTheUseOfResearchPistolBullets");
+		public static readonly Weapon StrangeResearchPistolBullets = new Weapon(1669, "StrangeResearchPistolBullets");
 		/// <summary>
 		/// ID: 1670<para/>
 		/// </summary>
-		public static readonly Weapon BlameTheMecoRedBullet = new Weapon(1670, "BlameTheMecoRedBullet");
+		public static readonly Weapon BlameMecoRedBullet = new Weapon(1670, "BlameMecoRedBullet");
 		/// <summary>
 		/// ID: 1671<para/>
 		/// TreeDamageBonus: 0<para/>
 		/// WallDamageBonus: 0<para/>
 		/// BuildDamageBonus: 0<para/>
 		/// </summary>
-		public static readonly Weapon PhantomBlackBOSSBullets = new Weapon(1671, "PhantomBlackBOSSBullets");
+		public static readonly Weapon PhantomBlackBOSSBullet = new Weapon(1671, "PhantomBlackBOSSBullet");
 		/// <summary>
 		/// ID: 1672<para/>
 		/// TreeDamageBonus: 0<para/>
 		/// WallDamageBonus: 0<para/>
 		/// BuildDamageBonus: 0<para/>
 		/// </summary>
-		public static readonly Weapon GatlinAppearanceBullet = new Weapon(1672, "GatlinAppearanceBullet");
+		public static readonly Weapon GatlingAppearanceBullet = new Weapon(1672, "GatlingAppearanceBullet");
+		/// <summary>
+		/// ID: 1673<para/>
+		/// TreeDamageBonus: 0<para/>
+		/// WallDamageBonus: 0<para/>
+		/// BuildDamageBonus: 0<para/>
+		/// </summary>
+		public static readonly Weapon TenergyBullet1 = new Weapon(1673, "TenergyBullet1");
+		/// <summary>
+		/// ID: 1674<para/>
+		/// </summary>
+		public static readonly Weapon AncientBullet = new Weapon(1674, "AncientBullet");
 		/// <summary>
 		/// ID: 1701<para/>
 		/// TreeDamageBonus: 0<para/>
@@ -538,14 +664,18 @@ namespace Chassis.Entities
 		/// <summary>
 		/// ID: 1708<para/>
 		/// </summary>
-		public static readonly Weapon GrounderGrenade = new Weapon(1708, "GrounderGrenade");
+		public static readonly Weapon GrounderGrenade0 = new Weapon(1708, "GrounderGrenade0");
 		/// <summary>
 		/// ID: 1709<para/>
 		/// </summary>
 		public static readonly Weapon GrounderGrenadeBoss = new Weapon(1709, "GrounderGrenadeBoss");
 		/// <summary>
+		/// ID: 1710<para/>
+		/// </summary>
+		public static readonly Weapon SleepDart = new Weapon(1710, "SleepDart");
+		/// <summary>
 		/// ID: 1801<para/>
-		/// Description: "Normally, you should not get this thing! "<para/>
+		/// Description: "Normally you should not get this thing! "<para/>
 		/// TreeDamageBonus: 0<para/>
 		/// WallDamageBonus: 0<para/>
 		/// BuildDamageBonus: 0<para/>
@@ -553,44 +683,49 @@ namespace Chassis.Entities
 		public static readonly Weapon SnowballThrowingEntity = new Weapon(1801, "SnowballThrowingEntity");
 		/// <summary>
 		/// ID: 1802<para/>
-		/// Description: "Normally, you should not get this thing! "<para/>
+		/// Description: "Normally you should not get this thing! "<para/>
 		/// </summary>
-		public static readonly Weapon SmallStoneThrowingBody = new Weapon(1802, "SmallStoneThrowingBody");
+		public static readonly Weapon SmallStoneThrower = new Weapon(1802, "SmallStoneThrower");
 		/// <summary>
 		/// ID: 1803<para/>
-		/// Description: "Normally, you should not get this thing! "<para/>
+		/// Description: "Normally you should not get this thing! "<para/>
 		/// </summary>
-		public static readonly Weapon DaxianHumanBallThrowingBody = new Weapon(1803, "DaxianHumanBallThrowingBody");
+		public static readonly Weapon LargePricklyPearThrowingBody = new Weapon(1803, "LargePricklyPearThrowingBody");
 		/// <summary>
 		/// ID: 1804<para/>
-		/// Description: "Normally, you should not get this thing! "<para/>
+		/// Description: "Normally you should not get this thing! "<para/>
 		/// </summary>
-		public static readonly Weapon BoneBallThrowingBody = new Weapon(1804, "BoneBallThrowingBody");
+		public static readonly Weapon SpurBallThrower = new Weapon(1804, "SpurBallThrower");
 		/// <summary>
 		/// ID: 1805<para/>
-		/// Description: "Normally, you should not get this thing! "<para/>
+		/// Description: "Normally you should not get this thing! "<para/>
 		/// </summary>
-		public static readonly Weapon MucusThrowingBody = new Weapon(1805, "MucusThrowingBody");
+		public static readonly Weapon MucusThrower = new Weapon(1805, "MucusThrower");
 		/// <summary>
 		/// ID: 1806<para/>
-		/// Description: "Normally, you should not get this thing! "<para/>
+		/// Description: "Normally you should not get this thing! "<para/>
 		/// </summary>
-		public static readonly Weapon MalignantSoreBody = new Weapon(1806, "MalignantSoreBody");
+		public static readonly Weapon MalignantSoreThrowingBody = new Weapon(1806, "MalignantSoreThrowingBody");
 		/// <summary>
 		/// ID: 1807<para/>
-		/// Description: "Normally, you should not get this thing! "<para/>
+		/// Description: "Normally you should not get this thing! "<para/>
 		/// </summary>
-		public static readonly Weapon BlameTheSoreMucusThrowingBody = new Weapon(1807, "BlameTheSoreMucusThrowingBody");
+		public static readonly Weapon StrangeUseOfMalignantSoreThrowingBody = new Weapon(1807, "StrangeUseOfMalignantSoreThrowingBody");
 		/// <summary>
 		/// ID: 1808<para/>
-		/// Description: "Normally, you should not get this thing! "<para/>
+		/// Description: "Normally you should not get this thing! "<para/>
 		/// </summary>
-		public static readonly Weapon GrenadeThrowingBody = new Weapon(1808, "GrenadeThrowingBody");
+		public static readonly Weapon GrenadeThrower = new Weapon(1808, "GrenadeThrower");
 		/// <summary>
 		/// ID: 1809<para/>
-		/// Description: "Normally, you should not get this thing! "<para/>
+		/// Description: "Normally you should not get this thing! "<para/>
 		/// </summary>
-		public static readonly Weapon BOSSGrenadeThrowingBody = new Weapon(1809, "BOSSGrenadeThrowingBody");
+		public static readonly Weapon BOSSGrenadeThrower = new Weapon(1809, "BOSSGrenadeThrower");
+		/// <summary>
+		/// ID: 1810<para/>
+		/// Description: "Normally you should not get this thing! "<para/>
+		/// </summary>
+		public static readonly Weapon AnesthesiaDartThrowingBody = new Weapon(1810, "AnesthesiaDartThrowingBody");
 		/// <summary>
 		/// ID: 1901<para/>
 		/// Description: "A ray-gun that can fire powerful biochemical plasma."<para/>
@@ -599,6 +734,24 @@ namespace Chassis.Entities
 		/// BuildDamageBonus: 2<para/>
 		/// </summary>
 		public static readonly Weapon ParasectPlasmaGun0 = new Weapon(1901, "ParasectPlasmaGun0");
+		/// <summary>
+		/// ID: 1911<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// WallDamageBonus: 2<para/>
+		/// BuildDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon ButcherChainsaw = new Weapon(1911, "ButcherChainsaw");
+		/// <summary>
+		/// ID: 1912<para/>
+		/// TreeDamageBonus: 2<para/>
+		/// WallDamageBonus: 2<para/>
+		/// BuildDamageBonus: 2<para/>
+		/// </summary>
+		public static readonly Weapon BossChainsaw = new Weapon(1912, "BossChainsaw");
+		/// <summary>
+		/// ID: 1913<para/>
+		/// </summary>
+		public static readonly Weapon GrounderGrenade1 = new Weapon(1913, "GrounderGrenade1");
 		/// <summary>
 		/// ID: 6001<para/>
 		/// TreeDamageBonus: 2<para/>
@@ -637,17 +790,17 @@ namespace Chassis.Entities
 		public static readonly Weapon GoldAxe = new Weapon(6006, "GoldAxe");
 		/// <summary>
 		/// ID: 6007<para/>
-		/// TreeDamageBonus: 12<para/>
+		/// TreeDamageBonus: 18<para/>
 		/// BuildDamageBonus: 5<para/>
 		/// </summary>
-		public static readonly Weapon DiamondAxe = new Weapon(6007, "DiamondAxe");
+		public static readonly Weapon MecoJetAxe = new Weapon(6007, "MecoJetAxe");
 		/// <summary>
 		/// ID: 6008<para/>
 		/// TreeDamageBonus: 0<para/>
 		/// WallDamageBonus: 0<para/>
 		/// BuildDamageBonus: 0<para/>
 		/// </summary>
-		public static readonly Weapon GoblinNoAttackStoneAxe = new Weapon(6008, "GoblinNoAttackStoneAxe");
+		public static readonly Weapon GoblinNonAttackStoneAxe = new Weapon(6008, "GoblinNonAttackStoneAxe");
 		/// <summary>
 		/// ID: 6101<para/>
 		/// WallDamageBonus: 2<para/>
@@ -686,20 +839,20 @@ namespace Chassis.Entities
 		public static readonly Weapon GoldPickaxe0 = new Weapon(6106, "GoldPickaxe0");
 		/// <summary>
 		/// ID: 6107<para/>
-		/// WallDamageBonus: 8<para/>
+		/// WallDamageBonus: 15<para/>
 		/// BuildDamageBonus: 5<para/>
 		/// </summary>
-		public static readonly Weapon Diamond = new Weapon(6107, "Diamond");
+		public static readonly Weapon MecoJetPickaxe = new Weapon(6107, "MecoJetPickaxe");
 		/// <summary>
 		/// ID: 6108<para/>
 		/// TreeDamageBonus: 0<para/>
 		/// WallDamageBonus: 0<para/>
 		/// BuildDamageBonus: 0<para/>
 		/// </summary>
-		public static readonly Weapon GoblinNoAttackStone = new Weapon(6108, "GoblinNoAttackStone");
+		public static readonly Weapon GoblinNonAttackStonePick = new Weapon(6108, "GoblinNonAttackStonePick");
 		/// <summary>
 		/// ID: 6109<para/>
-		/// Description: "GM dedicated, strong demolition artifact"<para/>
+		/// Description: "Special for GM, forced dismantling artifact"<para/>
 		/// TreeDamageBonus: 99<para/>
 		/// WallDamageBonus: 99<para/>
 		/// BuildDamageBonus: 99<para/>
@@ -755,5 +908,12 @@ namespace Chassis.Entities
 		/// BuildDamageBonus: 2<para/>
 		/// </summary>
 		public static readonly Weapon InsectorDrill = new Weapon(6401, "InsectorDrill");
+		/// <summary>
+		/// ID: 6402<para/>
+		/// Description: "A very precise and efficient tool used for mining ores and deconstructing objects."<para/>
+		/// WallDamageBonus: 7<para/>
+		/// BuildDamageBonus: 3<para/>
+		/// </summary>
+		public static readonly Weapon MecoDrill = new Weapon(6402, "MecoDrill");
 	}
 }

@@ -46,8 +46,6 @@ namespace Chassis.Utilities
 
                 Charset = new Regex("(?<=charset=)[\\w-]+", RegexOptions.Compiled);
                 StringValue = new Regex("(?<=\\\").+?(?=\\\")", RegexOptions.Compiled);
-
-                AppDomain.CurrentDomain.ProcessExit += OnProcessExit;
             }
 
             private static void RecreateWebClient()
@@ -97,10 +95,12 @@ namespace Chassis.Utilities
 
                 Cash[languageID][text] = result;
 
+                TryExportCash();
+
                 return true;
             }
 
-            private static void OnProcessExit(object sender, EventArgs args)
+            private static void TryExportCash()
             {
                 try
                 {
