@@ -1,38 +1,41 @@
-﻿//using Common.Reflection;
-//using Keplerth;
-//using Harmony;
-//using System;
-//using Common;
+﻿using Keplerth;
+using Harmony;
+using System;
+using Common;
+using System.Reflection;
 
-//namespace StackSplitMod
-//{
-//    internal static class BagItemPatch
-//    {
-//        [HarmonyPatch(typeof(BagItem), "MouseRightClickItem")]
-//        private static class MouseRightClickItem
-//        {
-//            private static bool Prefix(BagItem __instance)
-//            {
-//                try
-//                {
-//                    var rmbClicked = (bool)__instance.GetInstanceFieldValue("isMouseInButton") && UnityEngine.Input.GetMouseButtonDown(1);
-//                    if (!rmbClicked) { return true; }
+namespace StackSplit
+{
+    internal static class BagItemPatch
+    {
+        [HarmonyPatch(typeof(BagItem), "MouseRightClickItem")]
+        private static class MouseRightClickItem
+        {
+            private static readonly FieldInfo BagItem_isMouseInButton = typeof(BagItem).GetField("isMouseInButton", BindingFlags.NonPublic | BindingFlags.Instance);
 
-//                    var item = __instance.GetItem();
-//                    var moneyHovered = (item != null) && (item.id == 9027);
-//                    if (moneyHovered) { return true; }
+            private static bool Prefix(BagItem __instance)
+            {
+                try
+                {
+                    var isMouseInButton = (bool) BagItem_isMouseInButton.GetValue(__instance);
+                    var rmbClicked = isMouseInButton && UnityEngine.Input.GetMouseButtonDown(1);
+                    if (!rmbClicked) { return true; }
 
-//                    if (BaseBag.PickItem != null)
-//                    {
-//                        var count = KeyBindings.GetKey(KeyBindingType.Unpack) ? 10 : 1;
-//                        __instance.FillWithPickedItem(count);
-//                        return false;
-//                    }
-//                }
-//                catch(Exception e) { Log.ExceptionOnce(e); }
+                    var item = __instance.GetItem();
+                    var moneyHovered = (item != null) && (item.id == 9027);
+                    if (moneyHovered) { return true; }
 
-//                return true;
-//            }            
-//        }
-//    }
-//}
+                    if (BaseBag.PickItem != null)
+                    {
+                        var count = KeyBindings.GetKey(KeyBindingType.Unpack) ? 10 : 1;
+                        BagItemUtil.FillWithPickedItem(__instance, count);
+                        return false;
+                    }
+                }
+                catch (Exception e) { Log.ExceptionOnce(e); }
+
+                return true;
+            }
+        }
+    }
+}

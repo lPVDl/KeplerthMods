@@ -4,9 +4,9 @@ using Keplerth;
 
 namespace StackSplit
 {
-    internal static class BagItemExtensions
+    internal static class BagItemUtil
     {
-        public static void FillWithPickedItem(this BagItem bagSlot, int maxCount)
+        public static void FillWithPickedItem(BagItem bagSlot, int maxCount)
         {
             var items = bagSlot.GetBagItems(BaseBagItem.MouseOnBagIndex);
             if (items.ContainsKey(bagSlot.index))
