@@ -12,6 +12,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\DictionaryExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HarmonyPatcher.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Log.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Reflection\ReflectionHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Reflection\Reflector.cs" />
   </ItemGroup>
 </Project>
