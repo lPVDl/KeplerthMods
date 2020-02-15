@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common", "Common\Common.shproj", "{5BFA7C46-6C25-41DC-806D-666E10A291F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chassis", "Chassis\Chassis.csproj", "{476408A8-4A66-40D2-AC92-F881FD748587}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugOverload", "DrugOverload\DrugOverload.csproj", "{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scythe", "Scythe\Scythe.csproj", "{A4A43B87-3E3B-4BDC-8140-465B6D3B192D}"
@@ -15,7 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackSplit", "StackSplit\St
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Common\Common.projitems*{476408a8-4a66-40d2-ac92-f881fd748587}*SharedItemsImports = 4
 		Common\Common.projitems*{5bfa7c46-6c25-41dc-806d-666e10a291f8}*SharedItemsImports = 13
 		Common\Common.projitems*{a0da8528-f77c-4f11-bb80-2d2c7a5944e3}*SharedItemsImports = 4
 		Common\Common.projitems*{a4a43b87-3e3b-4bdc-8140-465b6d3b192d}*SharedItemsImports = 4
@@ -26,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{476408A8-4A66-40D2-AC92-F881FD748587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{476408A8-4A66-40D2-AC92-F881FD748587}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{476408A8-4A66-40D2-AC92-F881FD748587}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{476408A8-4A66-40D2-AC92-F881FD748587}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Release|Any CPU.ActiveCfg = Release|Any CPU

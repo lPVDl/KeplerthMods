@@ -50,12 +50,6 @@
     <Compile Include="DataPatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Chassis\Chassis.csproj">
-      <Project>{476408a8-4a66-40d2-ac92-f881fd748587}</Project>
-      <Name>Chassis</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="..\Common\Common.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
