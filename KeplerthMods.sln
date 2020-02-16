@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common", "Common\Common.shproj", "{5BFA7C46-6C25-41DC-806D-666E10A291F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugOverload", "DrugOverload\DrugOverload.csproj", "{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scythe", "Scythe\Scythe.csproj", "{A4A43B87-3E3B-4BDC-8140-465B6D3B192D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackSplit", "StackSplit\StackSplit.csproj", "{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokenItems", "BrokenItems\BrokenItems.csproj", "{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -23,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4A43B87-3E3B-4BDC-8140-465B6D3B192D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4A43B87-3E3B-4BDC-8140-465B6D3B192D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A43B87-3E3B-4BDC-8140-465B6D3B192D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +31,10 @@ Global
 		{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF6D136E-4CA7-4ED2-9EDA-065EFC83B09C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DA8528-F77C-4F11-BB80-2D2C7A5944E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

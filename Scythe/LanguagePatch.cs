@@ -32,8 +32,6 @@ namespace Scythe
                 Config.DictLang["CraftBaseName" + ConfigPatch.RecipeGroupID] = "Scythe";
                 Config.DictLang["CraftBaseIntroduce" + ConfigPatch.RecipeGroupID] = "An cutting-edge sharp tool which obviously your grass would not like to deal with.";
                 Config.DictLang["CraftBaseTips" + ConfigPatch.RecipeGroupID] = "Materials: Metal Bar + Wood";
-
-                Log.Message("Language data set");
             }
             catch (Exception e) { Log.Exception(e); }
         }
