@@ -14,33 +14,29 @@ namespace InventoryExpansion
             set
             {
                 _currentPanel = Mathf.Clamp(value, 0, 9);
-                for (var i = 0; i < 9; i++)
-                    _inventoryPanels[i].SetActive(i + 1 == _currentPanel);
+                for (var i = 0; i < _inventorySlots.Length - 10; i++)
+                {
+                    var panelIndex = i / 30;
+                    var transform = _inventorySlots[i + 10].GetComponent<RectTransform>();
+                    InventoryGrid.SnapToGrid(transform, panelIndex == _currentPanel ? (i % 30 + 10) : 1000);
+                }
                 for (var i = 0; i < 10; i++)
                     _navigationPanel.Buttons[i].SetSelected(i == _currentPanel);
                 _navigationPanel.Buttons[_currentPanel].StopAnimation();
             }
         }
 
-        private static GameObject[] _inventoryPanels = new GameObject[9];
+        private static GameObject[] _inventorySlots;
         private static NavigationPanelView _navigationPanel;
         private static int _currentPanel;
 
         public static void Initialize()
         {
-            
-
-            // Create 9 * 30 inventory slots
-            var panel = Config.BagInfoScript.BigBagButtonList[0].transform.parent.gameObject;
-            var newList = new GameObject[310];
-            Array.Copy(Config.BagInfoScript.BigBagButtonList, 0, newList, 0, 40);
-            for (var i = 0; i < 9; i++)
-                _inventoryPanels[i] = InventoryPanelBuilder.Build(panel, 40 + 30 * i, newList);
-            Config.BagInfoScript.BigBagButtonList = newList;
-            Config.BagInfoScript.MaxBagCount = 310;
+            InitializeInventorySlots();
 
             // Create navigation buttons
-            _navigationPanel = NavigationPanelBuilder.Build(panel);
+            var panel = _inventorySlots[0].transform.parent;
+            _navigationPanel = NavigationPanelBuilder.Build(panel.gameObject);
             for (var i = 0; i < 10; i++)
                 _navigationPanel.Buttons[i].OnClicked += OnButtonClicked;         
 
@@ -52,6 +48,31 @@ namespace InventoryExpansion
             grandPanel.GetChild(3).gameObject.SetActive(false);
 
             InventoryPanelIndex = 0;
+        }
+
+        private static void InitializeInventorySlots()
+        {
+            _inventorySlots = new GameObject[310];
+            Array.Copy(Config.BagInfoScript.BigBagButtonList, 0, _inventorySlots, 0, 40);
+            Config.BagInfoScript.BigBagButtonList = _inventorySlots;
+            Config.BagInfoScript.MaxBagCount = 310;
+
+            var panel = _inventorySlots[0].transform.parent;
+            for (var j = 0; j < 9; j++)
+            {
+                var indexOffset = 40 + j * 30;
+                for (var i = 10; i < 40; i++)
+                {
+                    var index = i - 10 + indexOffset;
+                    var button = GameObject.Instantiate(_inventorySlots[0], panel.transform);
+                    button.name = "Button (" + index + ")";
+                    _inventorySlots[index] = button;
+                }
+            }
+
+            panel.GetComponent<GridLayoutGroup>().enabled = false;
+            for (var i = 0; i < 40; i++)
+                InventoryGrid.SnapToGrid(Config.BagInfoScript.BigBagButtonList[i].GetComponent<RectTransform>(), i);
         }
 
         public static void OnItemMoved(int slotIndex)
