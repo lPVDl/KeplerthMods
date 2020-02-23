@@ -33,6 +33,7 @@ namespace InventoryExpansion
         public static void Initialize()
         {
             InitializeInventorySlots();
+            FixCraftSlots();
 
             // Create navigation buttons
             var panel = _inventorySlots[0].transform.parent;
@@ -56,6 +57,7 @@ namespace InventoryExpansion
             Array.Copy(Config.BagInfoScript.BigBagButtonList, 0, _inventorySlots, 0, 40);
             Config.BagInfoScript.BigBagButtonList = _inventorySlots;
             Config.BagInfoScript.MaxBagCount = 310;
+            
 
             var panel = _inventorySlots[0].transform.parent;
             for (var j = 0; j < 9; j++)
@@ -73,6 +75,17 @@ namespace InventoryExpansion
             panel.GetComponent<GridLayoutGroup>().enabled = false;
             for (var i = 0; i < 40; i++)
                 InventoryGrid.SnapToGrid(Config.BagInfoScript.BigBagButtonList[i].GetComponent<RectTransform>(), i);
+        }
+
+        private static void FixCraftSlots()
+        {
+            Config.BagInfoScript.MainMaterialStartIndex = 1000;
+            for (var i = 0; i < Config.CraftInfoScript.baseItemButtons.Length; i++)
+            {
+                var button = Config.CraftInfoScript.baseItemButtons[i];
+                button.name = "BaseItemButton (" + (1000 + i) + ")";
+                button.GetComponent<BagItem>().index = 1000 + i;
+            }
         }
 
         public static void OnItemMoved(int slotIndex)
