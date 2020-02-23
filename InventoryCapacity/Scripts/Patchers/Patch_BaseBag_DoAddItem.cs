@@ -1,7 +1,7 @@
 ﻿using Harmony;
 using Keplerth;
 
-namespace InventoryExpansion
+namespace InventoryCapacity
 {
     [HarmonyPatch(typeof(BaseBag), "DoAddItem")]
     public static class Patch_BaseBag_DoAddItem

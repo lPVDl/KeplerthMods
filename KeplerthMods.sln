@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokenItems", "BrokenItems\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chassis", "Chassis\Chassis.csproj", "{476408A8-4A66-40D2-AC92-F881FD748587}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryExpansion", "InventoryExpansion\InventoryExpansion.csproj", "{EFCD84FC-8CFA-434C-8735-E8109E3B141C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryCapacity", "InventoryCapacity\InventoryCapacity.csproj", "{EFCD84FC-8CFA-434C-8735-E8109E3B141C}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

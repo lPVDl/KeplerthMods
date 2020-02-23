@@ -4,7 +4,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace InventoryExpansion
+namespace InventoryCapacity
 {
     public static class InventoryController
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace InventoryExpansion
+namespace InventoryCapacity
 {
     public class NavigationPanelView : MonoBehaviour
     {

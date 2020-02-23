@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace InventoryExpansion
+namespace InventoryCapacity
 {
     public static class InventoryGrid
     {

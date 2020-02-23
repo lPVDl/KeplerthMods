@@ -2,7 +2,7 @@
 using Keplerth;
 using UnityEngine;
 
-namespace InventoryExpansion
+namespace InventoryCapacity
 {
     [HarmonyPatch(typeof(QuickItemBar), "Update")]
     public static class Patch_QuickItemBar_Update

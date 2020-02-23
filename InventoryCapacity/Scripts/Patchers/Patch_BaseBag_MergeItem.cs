@@ -2,7 +2,7 @@
 using Harmony;
 using Keplerth;
 
-namespace InventoryExpansion
+namespace InventoryCapacity
 {
     [HarmonyPatch(typeof(BaseBag), "MergeItem")]
     public static class Patch_BaseBag_MergeItem

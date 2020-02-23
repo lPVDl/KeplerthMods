@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace InventoryExpansion
+namespace InventoryCapacity
 {
     public static class Assets
     {

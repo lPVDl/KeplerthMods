@@ -4,7 +4,7 @@ using Harmony;
 using Keplerth;
 using System;
 
-namespace InventoryExpansion
+namespace InventoryCapacity
 {
     [HarmonyPatch(typeof(Config), "Init")]
     public static class Patch_Config_Init
