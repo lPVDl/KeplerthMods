@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace InventoryExpansion
 {
-    [HarmonyPatch(typeof(QuickItemBar), "MouseWheel")]
-    public static class Patch_QuickItemBar_MouseWheel
+    [HarmonyPatch(typeof(QuickItemBar), "Update")]
+    public static class Patch_QuickItemBar_Update
     {
         private static bool Prefix()
         {
