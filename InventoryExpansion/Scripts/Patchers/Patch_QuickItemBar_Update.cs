@@ -14,10 +14,12 @@ namespace InventoryExpansion
                 var axis = Input.GetAxis("Mouse ScrollWheel");
                 if (axis > 0) InventoryController.InventoryPanelIndex--;
                 if (axis < 0) InventoryController.InventoryPanelIndex++;
+                for (var key = KeyBindingType.Quickbar1; key <= KeyBindingType.Quickbar0; key++)
+                    if (KeyBindings.GetKeyDown(key))
+                        InventoryController.InventoryPanelIndex = key - KeyBindingType.Quickbar1;
 
                 return false;
             }
-                
 
             return true;
         }
