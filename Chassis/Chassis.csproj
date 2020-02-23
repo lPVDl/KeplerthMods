@@ -64,7 +64,7 @@
   <ItemGroup>
     <Compile Include="Chassis\DataExport.cs" />
     <Compile Include="Properties\Entity.CreationRequest.cs" />
-    <Compile Include="Chassis\SpriteUtil.cs" />
+    <Compile Include="Chassis\SpriteTool.cs" />
     <Compile Include="Chassis\SpriteScanner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

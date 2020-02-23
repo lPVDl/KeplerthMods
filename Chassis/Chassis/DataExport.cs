@@ -5,13 +5,13 @@ using System;
 namespace Chassis
 {
     [StaticConstructorOnStartup]
-    public class DataExport
+    public static class DataExport
     {
-        public DataExport()
+        static DataExport()
         {
             try
             {
-                SpriteScanner.ExportAll(@"T:/Keplerth/Sprites/");
+                //SpriteScanner.ExportAll(@"T:/Keplerth/Sprites/");
             }
             catch (Exception e)
             {

@@ -44,13 +44,20 @@ namespace Chassis
 
             foreach (var sprite in sprites)
             {
-                var texture = SpriteUtil.Render(sprite);
+                var texture = SpriteTool.Render(sprite);
                 var data = texture.EncodeToPNG();
                 var path = CreateUniqueFileName(folder, sprite.name, ".png");
                 File.WriteAllBytes(path, data);
                 File.WriteAllLines(path + ".info", sprite.GetInfo());
             }
 
+        }
+
+        public static void ExportSpriteToPNG(Sprite sprite, string filePath)
+        {
+            var texture = SpriteTool.Render(sprite);
+            var data = texture.EncodeToPNG();
+            File.WriteAllBytes(filePath, data);
         }
 
         private static string CreateUniqueFileName(string folder, string fileName, string extension)

@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace Chassis
 {
-    internal static class SpriteUtil
+    public static class SpriteTool
     {
         private static readonly Material drawMaterial;
 
-        static SpriteUtil()
+        static SpriteTool()
         {
             var assets = AssetBundle.LoadFromMemory(Properties.Resources.Shaders);
             var shader = assets.LoadAsset<Shader>("UnlitShader");
