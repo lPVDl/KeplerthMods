@@ -1,4 +1,5 @@
-﻿using Keplerth;
+﻿using Common;
+using Keplerth;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,6 +28,8 @@ namespace InventoryExpansion
 
         public static void Initialize()
         {
+            
+
             // Create 9 * 30 inventory slots
             var panel = Config.BagInfoScript.BigBagButtonList[0].transform.parent.gameObject;
             var newList = new GameObject[310];
