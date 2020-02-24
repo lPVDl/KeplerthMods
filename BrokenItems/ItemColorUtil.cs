@@ -23,7 +23,7 @@ namespace BrokenItems
                 _imageRed.color = Color.red;
             }
 
-            image.material = item.curDurability > 0 || item.maxDurability == 0 ? _imageNormal : _imageRed;
+            image.material = item.curDurability > 0 || item.maxDurability <= 1 ? _imageNormal : _imageRed;
         }
 
         public static void ModifyColor(SpriteRenderer spriteRenderer, ItemData item)
@@ -37,7 +37,7 @@ namespace BrokenItems
                 _spriteRed.color = Color.red;
             }
 
-            spriteRenderer.material = item.curDurability > 0 || item.maxDurability == 0 ? _spriteNormal : _spriteRed;
+            spriteRenderer.material = item.curDurability > 0 || item.maxDurability <= 1 ? _spriteNormal : _spriteRed;
         }
     }
 }

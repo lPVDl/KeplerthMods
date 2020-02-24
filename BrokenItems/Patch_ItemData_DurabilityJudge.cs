@@ -14,7 +14,7 @@ namespace DrugOverload
         {
             try
             {
-                if (ConfigWeapon.Table.ContainsKey(__instance.id))
+                if (ConfigWeapon.Table.ContainsKey(__instance.id) && ConfigItem.Table[__instance.id].Durability > 1)
                     return false;
             }
             catch(Exception e)

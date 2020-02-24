@@ -16,7 +16,7 @@ namespace BrokenItems
         {
             try
             {
-                if (item.maxDurability == 0) return;
+                if (item.maxDurability <= 1) return;
 
                 var t = item.curDurability / (float)item.maxDurability;
                 var color = "white";
