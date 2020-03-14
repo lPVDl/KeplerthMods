@@ -71,6 +71,7 @@
     <Compile Include="Scripts\Data\Assets.cs" />
     <Compile Include="Scripts\Controllers\InventoryController.cs" />
     <Compile Include="Scripts\Controllers\NavigationPanelBuilder.cs" />
+    <Compile Include="Scripts\Patchers\Patch_PlatingPool_Awake.cs" />
     <Compile Include="Scripts\Views\NavigationButtonView.cs" />
     <Compile Include="Scripts\Views\NavigationPanelView.cs" />
     <Compile Include="Scripts\Patchers\Patch_BaseBag_DoAddItem.cs" />
