@@ -1,4 +1,5 @@
 ﻿using Common;
+using DataBase;
 using Harmony;
 using Keplerth;
 using System;
@@ -14,7 +15,7 @@ namespace BrokenItems
             try
             {   
                 var item = Config.BagInfoScript.GetItem(__instance.Weapon.BagIndex);
-                if (item.curDurability == 0) return false;
+                if (ConfigItem.getDurability(item.id) > 0 && item.curDurability == 0) return false;
             }
             catch (Exception e)
             {
